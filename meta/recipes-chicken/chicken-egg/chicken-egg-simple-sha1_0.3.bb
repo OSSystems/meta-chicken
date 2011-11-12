@@ -1,0 +1,11 @@
+inherit chicken_install
+
+SECTION = "devel/chicken"
+DESCRIPTION = "A fast and simple SHA1 implementation with minimal dependencies"
+DEPENDS_virtclass-cross += "chicken-cross"
+DEPENDS += "chicken"
+
+BBCLASSEXTEND = "cross"
+
+LICENSE = "Public Domain"
+LIC_FILES_CHKSUM = "file://simple-sha1.meta;md5=5cb3ab517d8a2a51b0278b4f74bc7525"

@@ -1,0 +1,8 @@
+Layer with Chicken toolchain for use with OpenEmbedded
+
+This layer depends on:
+
+URI: git://git.openembedded.org/openembedded-core
+branch: master
+revision: HEAD
+
