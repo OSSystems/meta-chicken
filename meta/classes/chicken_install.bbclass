@@ -4,7 +4,7 @@ EGG = "${@bb.data.getVar('PN', d, 1).replace('chicken-egg-', '').replace('-cross
 EGG_VERSION = "${@base_ifelse(bb.data.getVar('PV', d, 1) == "trunk", "", ":" + bb.data.getVar('PV', d, 1))}"
 EGGDIR="${@bb.data.getVar('PN', d, 1).replace('-cross', '')}-${PV}"
 
-#INSANE_SKIP_${PN} = True
+INSANE_SKIP_${PN} = "useless-rpaths"
 
 # For recipes which use this class and need D.
 export DESTDIR=${D}
