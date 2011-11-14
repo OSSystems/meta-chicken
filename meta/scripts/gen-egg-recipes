@@ -24,6 +24,7 @@ exec csi -s $0 "$@"
        '(awful-ssl
          crypt
          expand-full
+         foreigners
          )))
 
 (define external-dependencies
