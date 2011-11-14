@@ -57,6 +57,7 @@ EXTRA_OEMAKE_virtclass-cross = " \
     TARGET_LIB_NAME=chicken \
     TARGET_PREFIX=${STAGING_DIR_TARGET} \
     TARGETSYSTEM=${TARGET_SYS} \
+    TARGET_RUN_PREFIX=${target_prefix} \
 "
 
 do_install_append_virtclass-cross() {
