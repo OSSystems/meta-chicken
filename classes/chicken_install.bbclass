@@ -1,8 +1,8 @@
 DEPENDS += "chicken"
 
-EGG = "${@bb.data.getVar('PN', d, 1).replace('chicken-egg-', '').replace('-cross', '')}"
-EGG_VERSION = "${@base_ifelse(bb.data.getVar('PV', d, 1) == "trunk", "", ":" + bb.data.getVar('PV', d, 1))}"
-EGGDIR = "${@bb.data.getVar('PN', d, 1).replace('-cross', '')}-${PV}"
+EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
+EGG_VERSION = "${@base_ifelse(d.getVar('PV', True) == "trunk", "", ":" + d.getVar('PV', True))}"
+EGGDIR = "${@d.getVar('PN', True).replace('-cross', '')}-${PV}"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 
@@ -10,7 +10,7 @@ INSANE_SKIP_${PN} += "useless-rpaths"
 export DESTDIR=${D}
 
 def chicken_install_has_src_uri(d):
-    src_uri = bb.data.getVar('SRC_URI', d, 1)
+    src_uri = d.getVar('SRC_URI', True)
     src_uris = src_uri.split()
     has = not (len(src_uris) == 1 and src_uris[0].endswith(".bb"))
     if has:
@@ -27,10 +27,10 @@ python chicken_install_do_fetch() {
         bb.build.exec_func("base_do_fetch", d)
     else:
         # Use chicken-install to fetch the sources
-        egg = bb.data.getVar('EGG', d, 1)
-        eggdir = bb.data.getVar('EGGDIR', d, 1)
-        eggver = bb.data.getVar('EGG_VERSION', d, 1)
-        target_prefix = bb.data.getVar('TARGET_PREFIX', d, 1)
+        egg = d.getVar('EGG', True)
+        eggdir = d.getVar('EGGDIR', True)
+        eggver = d.getVar('EGG_VERSION', True)
+        target_prefix = d.getVar('TARGET_PREFIX', True)
 
         if not os.path.exists(eggdir):
             bb.note("Calling: %schicken-install -debug -r %s%s" % (target_prefix, egg, eggver))
@@ -43,13 +43,13 @@ python chicken_install_do_fetch() {
 
 python chicken_install_do_unpack () {
     import os
-    egg = bb.data.getVar('EGG', d, 1)
+    egg = d.getVar('EGG', True)
 
     if chicken_install_has_src_uri(d):
         bb.build.exec_func("base_do_unpack", d)
     else:
-        eggdir = bb.data.getVar('EGGDIR', d, 1)
-        os.system('cp -a ' + bb.data.getVar('DL_DIR', d, 1) + '/' + eggdir + '/' + ' ' + bb.data.getVar('WORKDIR', d, 1))
+        eggdir = d.getVar('EGGDIR', True)
+        os.system('cp -a ' + d.getVar('DL_DIR', True) + '/' + eggdir + '/' + ' ' + d.getVar('WORKDIR', True))
 }
 
 do_install () {
