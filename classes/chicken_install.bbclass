@@ -70,10 +70,11 @@ do_install () {
 }
 
 do_install_virtclass-cross () {
-    CSC_OPTIONS="-L${STAGING_DIR_TARGET}${libdir} \
-                 -I${STAGING_DIR_TARGET}${includedir} \
-                 -I${STAGING_DIR_TARGET}${includedir}/chicken" \
-    CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/chicken \
+    CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
+                 -L${libdir} \
+                 -I${includedir} \
+                 -I${includedir}/chicken" \
+    CHICKEN_INCLUDE_PATH=${localstatedir}/share/chicken \
     \
     ${TARGET_PREFIX}chicken-install -host -prefix ${D}${localstatedir}
 
