@@ -9,4 +9,4 @@ RDEPENDS += "chicken-egg-spiffy chicken-egg-intarweb"
 BBCLASSEXTEND = "cross"
 
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://spiffy-cookies.meta;md5=d7d3c95f9633a75b2fbf95b8d59409ea"
+LIC_FILES_CHKSUM = "file://spiffy-cookies.meta;md5=ed39681648eee590cbc51b8ade0ac773"

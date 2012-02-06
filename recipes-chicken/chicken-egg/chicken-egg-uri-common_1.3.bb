@@ -9,4 +9,4 @@ RDEPENDS += "chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable
 BBCLASSEXTEND = "cross"
 
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://uri-common.meta;md5=924c2fcdea6cdaf4cb0f91f38a7ef1a1"
+LIC_FILES_CHKSUM = "file://uri-common.meta;md5=3a68c19704242347487cce53495c1dc8"

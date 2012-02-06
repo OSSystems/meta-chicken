@@ -9,4 +9,4 @@ RDEPENDS += "chicken-egg-awful chicken-egg-openssl chicken-egg-spiffy"
 BBCLASSEXTEND = "cross"
 
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://awful-ssl.meta;md5=76ef198d33d8a42fa0197f2965c18638"
+LIC_FILES_CHKSUM = "file://awful-ssl.meta;md5=3b9b3cb66ac772374accc483dfe155a9"
