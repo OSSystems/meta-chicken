@@ -10,11 +10,11 @@ DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
 # http://code.call-cc.org/releases/${PV}/chicken-${PV}.tar.gz
-SRC_URI = "http://code.call-cc.org/dev-snapshots/2011/06/25/chicken-4.7.2.tar.gz \
+SRC_URI = "http://code.call-cc.org/dev-snapshots/2012/02/07/chicken-4.7.4.tar.gz \
            file://fix-defaults.patch"
 
-SRC_URI[md5sum] = "e6e2fe0bfbb501a1470ac1c0e2608f78"
-SRC_URI[sha256sum] = "58f2096d38dfd750f3ae6f8460a54b88421290e1e5074c571e57332e8bb7720a"
+SRC_URI[md5sum] = "f15f2f8b4db393998e914611d05a43be"
+SRC_URI[sha256sum] = "f43b999593c2fdbaf236c9b450e7da49267abce45c9e56c63356f90734af6849"
 
 # Parallel building is not supported
 PARALLEL_MAKE = ""
