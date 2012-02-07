@@ -4,7 +4,6 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Bindings to the OpenSSL SSL/TLS library"
 DEPENDS_virtclass-cross += "chicken-cross openssl-native"
 DEPENDS += "chicken openssl"
-RDEPENDS += "openssl"
 
 BBCLASSEXTEND = "cross"
 
