@@ -1,3 +1,4 @@
+DEPENDS_virtclass-cross += "chicken-cross"
 DEPENDS += "chicken"
 
 EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
