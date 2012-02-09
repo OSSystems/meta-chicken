@@ -101,10 +101,17 @@ exec csi -s $0 "$@"
                  (description (meta-field 'synopsis meta-data))
                  (content
                   (list
-                   "inherit chicken_install\n"
                    "SECTION = \"devel/chicken\""
                    (and description
                         (string-append "DESCRIPTION = \"" (string-translate* (car description) `(("`" . ""))) "\""))
+                   (string-append "LICENSE = \"" (if license
+                                                     (car license)
+                                                     "Unknown") "\"")
+                   (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
+                                  ";md5=" (car (string-split (call-with-input-pipe
+                                                              (string-append "md5sum " (meta-file-pathname egg version))
+                                                              read-all)))
+                                  "\"")
                    (let* ((deps-list-eggs (map (lambda (dep)
                                                  (conc "chicken-egg-" dep))
                                                deps))
@@ -117,26 +124,29 @@ exec csi -s $0 "$@"
                                                      deps))
                           (deps-list-pkgs-native (map (lambda (dep)
                                                         (conc dep "-native"))
-                                                      ext-deps)))
-                     (string-append
-                      "DEPENDS_virtclass-cross += \"" (string-intersperse
-                                                       (cons "chicken-cross" (append deps-list-eggs-cross deps-list-pkgs-native))) "\"\n"
-                      "DEPENDS += \"" (string-intersperse
-                                       (cons "chicken" (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))) "\"\n"
-                      (if (null? deps-list-eggs)
-                          ""
-                          (string-append "RDEPENDS += \"" (string-intersperse deps-list-eggs) "\"\n"))))
-                   (string-append "BBCLASSEXTEND = \"cross\"\n")
-                   (string-append "LICENSE = \""
-                                  (if license
-                                      (car license)
-                                      "Unknown")
-                                  "\"")
-                   (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
-                                  ";md5=" (car (string-split (call-with-input-pipe
-                                                              (string-append "md5sum " (meta-file-pathname egg version))
-                                                              read-all)))
-                                  "\""))))
+                                                      ext-deps))
+
+                          (cross-deps (append deps-list-eggs-cross deps-list-pkgs-native))
+                          (target-deps (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))
+
+                          (output 
+                           (append
+                            (if (not (null? cross-deps))
+                                (list (string-append "DEPENDS_virtclass-cross += \"" (string-intersperse cross-deps) "\""))
+                                '())
+                            (if (not (null? target-deps))
+                                (list (string-append "DEPENDS += \"" (string-intersperse target-deps) "\""))
+                                '())
+                            (if (not (null? deps-list-eggs))
+                                (list (string-append "RDEPENDS += \"" (string-intersperse deps-list-eggs) "\""))
+                                '()))))
+
+                     (if (null? output)
+                         ""
+                         (string-append (string-intersperse output "\n") "\n")))
+
+                   (string-append "inherit chicken_install\n")
+                   (string-append "BBCLASSEXTEND = \"cross\""))))
             (print (string-intersperse (list egg version (->string deps)) "\t"))
             (with-output-to-file recipe-file
               (lambda ()
