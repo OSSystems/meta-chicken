@@ -4,6 +4,7 @@ DEPENDS += "chicken-cross chicken"
 EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
 EGG_VERSION = "${@base_ifelse(d.getVar('PV', True) == "trunk", "", ":" + d.getVar('PV', True))}"
 EGGDIR = "${@d.getVar('PN', True).replace('-cross', '')}-${PV}"
+DL_DIR_EGG = "${DL_DIR}/${EGGDIR}"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 
@@ -34,12 +35,17 @@ python chicken_install_do_fetch() {
         target_prefix = d.getVar('TARGET_PREFIX', True)
 
         if not os.path.exists(eggdir):
-            bb.note("Calling: %schicken-install -debug -r %s%s" % (target_prefix, egg, eggver))
-            if os.system("%schicken-install -debug -r %s%s" % (target_prefix, egg, eggver)) != 0:
-                raise bb.build.FuncFailed("chicken-install failed to run")
+            lf = bb.utils.lockfile(d.getVar('DL_DIR_EGG', True) + ".lockfile")
 
-            if os.system("mv %s %s" % (egg, eggdir)) != 0:
-                raise bb.build.FuncFailed("Failed to move %s to %s" % (egg, eggdir))
+            try:
+                bb.note("Calling: %schicken-install -debug -r %s%s" % (target_prefix, egg, eggver))
+                if os.system("%schicken-install -debug -r %s%s" % (target_prefix, egg, eggver)) != 0:
+                    raise bb.build.FuncFailed("chicken-install failed to run")
+
+                if os.system("mv %s %s" % (egg, eggdir)) != 0:
+                    raise bb.build.FuncFailed("Failed to move %s to %s" % (egg, eggdir))
+            finally:
+                bb.utils.unlockfile(lf)
 }
 
 python chicken_install_do_unpack () {
