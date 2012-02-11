@@ -23,8 +23,10 @@ exec csi -s $0 "$@"
   (map symbol->string
        '(awful-ssl
          crypt
+         dbus
          expand-full
          foreigners
+         ini-file
          )))
 
 (define (self-dependent-egg egg)
@@ -36,6 +38,7 @@ exec csi -s $0 "$@"
     (ncurses ncurses)
     (readline readline)
     (xlib    libx11)
+    (dbus    dbus)
     ))
 
 (define (egg-external-dependencies egg)
