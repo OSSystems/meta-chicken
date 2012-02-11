@@ -1,5 +1,5 @@
 DEPENDS_virtclass-cross += "chicken-cross"
-DEPENDS += "chicken"
+DEPENDS += "chicken-cross chicken"
 
 EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
 EGG_VERSION = "${@base_ifelse(d.getVar('PV', True) == "trunk", "", ":" + d.getVar('PV', True))}"
