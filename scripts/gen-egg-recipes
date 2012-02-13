@@ -27,6 +27,7 @@ exec csi -s $0 "$@"
          expand-full
          foreigners
          ini-file
+         scron
          )))
 
 (define (self-dependent-egg egg)
