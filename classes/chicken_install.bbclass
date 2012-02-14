@@ -21,6 +21,7 @@ def chicken_install_has_src_uri(d):
         bb.note("chicken_install: SRC_URI seems to be empty, assuming official Chicken egg")
     return has
 
+do_fetch[lockfiles] += "${DL_DIR_EGG}.lock"
 
 python chicken_install_do_fetch() {
     import os
@@ -35,17 +36,12 @@ python chicken_install_do_fetch() {
         target_prefix = d.getVar('TARGET_PREFIX', True)
 
         if not os.path.exists(eggdir):
-            lf = bb.utils.lockfile(d.getVar('DL_DIR_EGG', True) + ".lockfile")
+            bb.note("Calling: %schicken-install -debug -r %s%s" % (target_prefix, egg, eggver))
+            if os.system("%schicken-install -debug -r %s%s" % (target_prefix, egg, eggver)) != 0:
+                raise bb.build.FuncFailed("chicken-install failed to run")
 
-            try:
-                bb.note("Calling: %schicken-install -debug -r %s%s" % (target_prefix, egg, eggver))
-                if os.system("%schicken-install -debug -r %s%s" % (target_prefix, egg, eggver)) != 0:
-                    raise bb.build.FuncFailed("chicken-install failed to run")
-
-                if os.system("mv %s %s" % (egg, eggdir)) != 0:
-                    raise bb.build.FuncFailed("Failed to move %s to %s" % (egg, eggdir))
-            finally:
-                bb.utils.unlockfile(lf)
+            if os.system("mv %s %s" % (egg, eggdir)) != 0:
+                raise bb.build.FuncFailed("Failed to move %s to %s" % (egg, eggdir))
 }
 
 python chicken_install_do_unpack () {
