@@ -2,11 +2,21 @@
 
 egg_locations_uri="http://code.call-cc.org/svn/chicken-eggs/release/4/egg-locations"
 egg_locations_file=`mktemp`
-bb_download_dir=`bitbake -e | grep ^DL_DIR | sed 's/DL_DIR *= *"\(.*\)\"/\1/'`
+
+case "$1" in
+   --dl-dir=*)
+       bb_download_dir=${1##--dl-dir=}
+       ;;
+esac
 
 if [ -z "$bb_download_dir" ]; then
-    echo "Could not determine bitbake's DL_DIR value.  Aborting."
-    exit 1
+    bb_download_dir=`bitbake -e | grep ^DL_DIR | sed 's/DL_DIR *= *"\(.*\)\"/\1/'`
+
+    if [ -z "$bb_download_dir" ]; then
+        echo "Could not determine bitbake's DL_DIR value."
+        echo "You can provide it using command line --dl-dir=<path>. Aborting."
+        exit 1
+    fi
 fi
 
 cache_dir=$bb_download_dir/henrietta-cache
