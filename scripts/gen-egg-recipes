@@ -22,6 +22,7 @@ exec csi -s $0 "$@"
 (define all-eggs
   (map symbol->string
        '(awful-ssl
+         connman
          crypt
          dbus
          expand-full
