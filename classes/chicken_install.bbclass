@@ -6,6 +6,9 @@ EGG_VERSION = "${@base_ifelse(d.getVar('PV', True) == "trunk", "", ":" + d.getVa
 EGGDIR = "${@d.getVar('PN', True).replace('-cross', '')}-${PV}"
 DL_DIR_EGG = "${DL_DIR}/${EGGDIR}"
 
+PKG_CONFIG_PATH_virtclass-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
+PKG_CONFIG_SYSROOT_DIR_virtclass-cross = ""
+
 INSANE_SKIP_${PN} += "useless-rpaths"
 
 # For recipes which use this class and need D.
