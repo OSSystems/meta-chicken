@@ -1,10 +1,11 @@
-
 DESCRIPTION = "A compiler that translates Scheme source files to C, and an interpreter"
 HOMEPAGE = "http://www.call-cc.org/"
 SECTION = "devel"
 PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=74157fa744cef15057bcd749b4b0d1cf"
+
+PR = "r1"
 
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
@@ -32,9 +33,9 @@ def chicken_arch(bb, d):
 
 inherit autotools
 
-export C_COMPILER=${CC}
-export C_COMPILER_virtclass-cross=${HOST_PREFIX}gcc
-export TARGET_C_COMPILER=${TARGET_PREFIX}gcc
+export C_COMPILER="${CC}"
+export C_COMPILER_virtclass-cross="${HOST_PREFIX}gcc"
+export TARGET_C_COMPILER="${TARGET_PREFIX}gcc"
 
 EXTRA_OEMAKE = " \
     BINDIR=${bindir} \
