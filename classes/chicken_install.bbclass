@@ -12,7 +12,7 @@ PKG_CONFIG_SYSROOT_DIR_virtclass-cross = ""
 INSANE_SKIP_${PN} += "useless-rpaths"
 
 # For recipes which use this class and need D.
-export DESTDIR=${D}
+export DESTDIR="${D}"
 
 def chicken_install_has_src_uri(d):
     src_uri = d.getVar('SRC_URI', True)
