@@ -8,4 +8,6 @@ RDEPENDS += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmacros ch
 
 inherit chicken_install
 
+SRC_URI += "file://struct-support.patch"
+
 BBCLASSEXTEND = "cross"
