@@ -17,7 +17,7 @@ export DESTDIR="${D}"
 def chicken_install_has_src_uri(d):
     src_uri = d.getVar('SRC_URI', True)
     src_uris = src_uri.split()
-    has = not (len(src_uris) == 1 and src_uris[0].endswith(".bb"))
+    has = not src_uris[0].endswith(".bb")
     if has:
         bb.note("chicken_install: SRC_URI seems to contain something")
     else:
