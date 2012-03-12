@@ -28,6 +28,7 @@ exec csi -s $0 "$@"
          expand-full
          foreigners
          ini-file
+         json
          scron
          )))
 
