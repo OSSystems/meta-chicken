@@ -6,8 +6,10 @@ DEPENDS_virtclass-cross += "chicken-egg-easyffi-cross chicken-egg-matchable-cros
 DEPENDS += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmacros chicken-egg-foreigners dbus chicken-egg-easyffi-cross chicken-egg-matchable-cross chicken-egg-miscmacros-cross chicken-egg-foreigners-cross"
 RDEPENDS += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmacros chicken-egg-foreigners"
 
+PR = "r1"
+
 inherit chicken_install
 
-SRC_URI += "file://struct-support.patch"
+SRC_URI += "file://ossystems-changes.patch"
 
 BBCLASSEXTEND = "cross"
