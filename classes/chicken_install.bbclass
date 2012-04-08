@@ -25,6 +25,7 @@ def chicken_install_has_src_uri(d):
     return has
 
 do_fetch[lockfiles] += "${DL_DIR_EGG}.lock"
+do_fetch[depends] += "chicken-cross:do_populate_sysroot"
 
 python chicken_install_do_fetch() {
     import os
