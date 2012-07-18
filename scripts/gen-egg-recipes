@@ -28,6 +28,7 @@ exec csi -s $0 "$@"
          dbus
          expand-full
          foreigners
+         free-gettext
          ini-file
          json
          make
