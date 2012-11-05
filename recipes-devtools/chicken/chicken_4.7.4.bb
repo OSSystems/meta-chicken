@@ -17,6 +17,9 @@ SRC_URI = "http://code.call-cc.org/dev-snapshots/2012/02/07/chicken-4.7.4.tar.gz
 SRC_URI[md5sum] = "f15f2f8b4db393998e914611d05a43be"
 SRC_URI[sha256sum] = "f43b999593c2fdbaf236c9b450e7da49267abce45c9e56c63356f90734af6849"
 
+INSANE_SKIP_${PN} += "useless-rpaths"
+INSANE_SKIP_libchicken += "useless-rpaths"
+
 # Parallel building is not supported
 PARALLEL_MAKE = ""
 
