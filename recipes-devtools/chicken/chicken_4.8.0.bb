@@ -5,6 +5,8 @@ PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b45a224aef1428cb0364faf7331e1a8c"
 
+PR = "r1"
+
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
@@ -73,5 +75,6 @@ FILES_${PN} = "${bindir}/* ${datadir}/chicken/*.*"
 FILES_libchicken = "${libdir}/lib*chicken.so.* ${localstatedir}/lib/*chicken/*/*.so"
 FILES_${PN}-doc += "${datadir}/*chicken/doc"
 FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug"
+FILES_${PN}-dev += "${localstatedir}/lib/*chicken/*/types.db"
 
 BBCLASSEXTEND = "cross"
