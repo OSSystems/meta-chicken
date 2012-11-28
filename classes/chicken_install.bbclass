@@ -60,7 +60,8 @@ python chicken_install_do_unpack () {
 }
 
 do_install () {
-    CSC_OPTIONS="-L${STAGING_DIR_TARGET}${libdir} \
+    CSC_OPTIONS="-L --sysroot=${STAGING_DIR_TARGET} \
+                 -L${STAGING_DIR_TARGET}${libdir} \
                  -L${STAGING_DIR_TARGET}${base_libdir}\
                  -I${STAGING_DIR_TARGET}${includedir} \
                  -I${STAGING_DIR_TARGET}${includedir}/chicken" \
