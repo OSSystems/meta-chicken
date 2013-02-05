@@ -3,17 +3,17 @@ HOMEPAGE = "http://www.call-cc.org/"
 SECTION = "devel"
 PRIORITY = "optional"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=b45a224aef1428cb0364faf7331e1a8c"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=e1cea16bc145a58d50a8de4ec0072206"
 
 PR = "r1"
 
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
-SRC_URI = "http://code.call-cc.org/releases/${PV}/chicken-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "d344f603f9c202bf09535fcba5f6e36a"
-SRC_URI[sha256sum] = "5b2e8c6b4b13b502d8c684b394d80ed490d2884c03789353d895ab85d19979ab"
+SRC_URI[md5sum] = "3013145f5b8bc21641d5b586daed9f54"
+SRC_URI[sha256sum] = "a60efa9d2a621ecb9e03b41ebdd03ae27ecb32c1292671fd969506c9baf88d0c"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
