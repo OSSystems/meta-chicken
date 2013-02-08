@@ -147,7 +147,7 @@ exec csi -s $0 "$@"
                                 (list (string-append "DEPENDS += \"" (string-intersperse target-deps) "\""))
                                 '())
                             (if (not (null? deps-list-eggs))
-                                (list (string-append "RDEPENDS += \"" (string-intersperse deps-list-eggs) "\""))
+                                (list (string-append "RDEPENDS_${PN} += \"" (string-intersperse deps-list-eggs) "\""))
                                 '()))))
 
                      (if (null? output)
