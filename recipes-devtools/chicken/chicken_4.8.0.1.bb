@@ -35,7 +35,7 @@ def chicken_arch(bb, d):
 
 inherit autotools
 
-export C_COMPILER="${CC}"
+export C_COMPILER="${TARGET_PREFIX}gcc"
 export C_COMPILER_virtclass-cross="${HOST_PREFIX}gcc"
 export TARGET_C_COMPILER="${TARGET_PREFIX}gcc"
 
