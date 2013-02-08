@@ -10,7 +10,8 @@ PR = "r1"
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
-SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
+           file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch"
 
 SRC_URI[md5sum] = "3013145f5b8bc21641d5b586daed9f54"
 SRC_URI[sha256sum] = "a60efa9d2a621ecb9e03b41ebdd03ae27ecb32c1292671fd969506c9baf88d0c"

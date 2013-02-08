@@ -1,0 +1,28 @@
+>From f7c3c7191bd052685f655dc4c5cef0e0920eb4ab Mon Sep 17 00:00:00 2001
+From: felix <felix@call-with-current-continuation.org>
+Date: Wed, 6 Feb 2013 22:34:20 +0100
+Subject: [PATCH] Do not apply PROGRAM_PREFIX and PROGRAM_SUFFIX to include directory
+ for cross-built target installation - the prefix/suffix strings
+ are intended for the host system to distinguish cross-chickens or
+ multiple installations (often with the same PREFIX directory).
+
+---
+ defaults.make |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/defaults.make b/defaults.make
+index ea4dbc8..9bb2baf 100644
+--- a/defaults.make
++++ b/defaults.make
+@@ -443,7 +443,7 @@ endif
+ 	echo "# define C_TARGET_SHARE_HOME \"$(TARGET_PREFIX)/share\"" >>$@
+ 	echo "#endif" >>$@
+ 	echo "#ifndef C_TARGET_INCLUDE_HOME" >>$@
+-	echo "# define C_TARGET_INCLUDE_HOME \"$(TARGET_PREFIX)/include/$(PROGRAM_PREFIX)chicken$(PROGRAM_SUFFIX)\"" >>$@
++	echo "# define C_TARGET_INCLUDE_HOME \"$(TARGET_PREFIX)/include/chicken\"" >>$@
+ 	echo "#endif" >>$@
+ 	echo "#ifndef C_TARGET_STATIC_LIB_HOME" >>$@
+ 	echo "# define C_TARGET_STATIC_LIB_HOME \"$(TARGET_PREFIX)/lib\"" >>$@
+-- 
+1.7.0.4
+
