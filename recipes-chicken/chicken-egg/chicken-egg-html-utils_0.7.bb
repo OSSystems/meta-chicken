@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://html-utils.meta;md5=ea38559f1bf871a22854fa61d210c532"
 DEPENDS_virtclass-cross += "chicken-egg-html-tags-cross"
 DEPENDS += "chicken-egg-html-tags chicken-egg-html-tags-cross"
-RDEPENDS += "chicken-egg-html-tags"
+RDEPENDS_${PN} += "chicken-egg-html-tags"
 
 inherit chicken_install
 
