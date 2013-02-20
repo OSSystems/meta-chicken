@@ -5,16 +5,14 @@ PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e1cea16bc145a58d50a8de4ec0072206"
 
-PR = "r1"
-
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
 SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
            file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch"
 
-SRC_URI[md5sum] = "3013145f5b8bc21641d5b586daed9f54"
-SRC_URI[sha256sum] = "a60efa9d2a621ecb9e03b41ebdd03ae27ecb32c1292671fd969506c9baf88d0c"
+SRC_URI[md5sum] = "3e41b8d8447f5ff4a49964c70b4e9d80"
+SRC_URI[sha256sum] = "bf933f8cc4586b8b468c9abb8ec079a9f109ea20b5f12a1af2776f694e14791d"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
