@@ -11,8 +11,8 @@ DEPENDS_virtclass-cross = ""
 SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
            file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch"
 
-SRC_URI[md5sum] = "3e41b8d8447f5ff4a49964c70b4e9d80"
-SRC_URI[sha256sum] = "bf933f8cc4586b8b468c9abb8ec079a9f109ea20b5f12a1af2776f694e14791d"
+SRC_URI[md5sum] = "bd680e2956c272facb58de1c7bd87b99"
+SRC_URI[sha256sum] = "6a1414e6f35586e47d7f4470eaf1779a4f73dec664b14bebf8763dd804b399c3"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
