@@ -47,6 +47,16 @@ exec csi -s $0 "$@"
     (dbus    dbus)
     ))
 
+(define (fix-license license)
+  (if (and license (string? license)) ;; we can expect data type 
+                                      ;; in the .meta file
+      (cond ((string-ci=? license "public domain")
+             "PD")
+            ((string-ci=? license "LGPL-1")
+             "LGPL")
+            (else license))
+      license))
+
 (define (egg-external-dependencies egg)
   (let ((egg (if (string? egg)
                  (string->symbol egg)
@@ -114,7 +124,7 @@ exec csi -s $0 "$@"
                    (and description
                         (string-append "DESCRIPTION = \"" (string-translate* (car description) `(("`" . ""))) "\""))
                    (string-append "LICENSE = \"" (if license
-                                                     (car license)
+                                                     (fix-license (car license))
                                                      "Unknown") "\"")
                    (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
                                   ";md5=" (car (string-split (call-with-input-pipe
