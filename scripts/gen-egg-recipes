@@ -46,7 +46,7 @@ exec csi -s $0 "$@"
     ))
 
 (define (fix-license license)
-  (if (and license (string? license)) ;; we can expect data type 
+  (if (and license (string? license)) ;; we can expect data type
                                       ;; in the .meta file
       (cond ((string-ci=? license "public domain")
              "PD")
@@ -146,7 +146,7 @@ exec csi -s $0 "$@"
                           (cross-deps (append deps-list-eggs-cross deps-list-pkgs-native))
                           (target-deps (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))
 
-                          (output 
+                          (output
                            (append
                             (if (not (null? cross-deps))
                                 (list (string-append "DEPENDS_virtclass-cross += \"" (string-intersperse cross-deps) "\""))
