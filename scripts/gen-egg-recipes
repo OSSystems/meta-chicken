@@ -87,18 +87,28 @@ exec csi -s $0 "$@"
                 (cdr d))
       default))
 
+(define (chicken-unit? lib)
+  (and (member lib '("library" "eval" "expand" "data-strucutures" "ports"
+                     "files" "extras" "irregex" "srfi-1" "srfi-4" "srfi-13"
+                     "srfi-14" "srfi-18" "srfi-69" "posix" "utils" "tcp"
+                     "lolevel" "foreign"))
+       #t))
+
 (define (egg-dependencies meta-data)
-  (let ((deps
-         (append
-          (meta-field 'depends meta-data '())
-          (meta-field 'needs meta-data '()))))
+  (let* ((raw-deps (append
+                    (meta-field 'depends meta-data '())
+                    (meta-field 'needs meta-data '())))
+         (deps (map (lambda (dep)
+                      (->string (if (pair? dep)
+                                    (car dep)
+                                    dep)))
+                    raw-deps)))
+    ;; remove chicken and core units that some eggs [wrongly]
+    ;; add to their dependencies
     (remove (lambda (egg)
-              (member egg '("chicken" "extras" "utils" "srfi-69" "srfi-1" "srfi-13" "foreign" "data-structures" "ports")))
-            (map (lambda (dep)
-                   (->string (if (pair? dep)
-                                 (car dep)
-                                 dep)))
-                 deps))))
+              (or (equal? egg "chicken")
+                  (chicken-unit? egg)))
+            deps)))
 
 (define (gen-recipe egg)
   (let* ((version (latest-egg-version egg))
