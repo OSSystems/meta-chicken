@@ -81,10 +81,10 @@ exec csi -s $0 "$@"
 (define (read-meta-file egg version)
   (let ((meta-file (meta-file-pathname egg version)))
     (unless (file-exists? meta-file) ;; maybe the egg dir has no tags/trunk dirs
-            (let ((unversioned-meta (make-pathname (list *eggs-dir* egg) egg "meta")))
-              (if (file-exists? unversioned-meta)
-                  (set! meta-file unversioned-meta)
-                  (error 'read-meta-file "Could not find meta file for" egg))))
+      (let ((unversioned-meta (make-pathname (list *eggs-dir* egg) egg "meta")))
+        (if (file-exists? unversioned-meta)
+            (set! meta-file unversioned-meta)
+            (error 'read-meta-file "Could not find meta file for" egg))))
     (with-input-from-file meta-file read)))
 
 (define (meta-field key meta #!optional default)
@@ -110,66 +110,66 @@ exec csi -s $0 "$@"
          (recipe-file (make-pathname *egg-recipes-dir*
                                      (conc "chicken-egg-" (string-downcase egg) "_" version ".bb"))))
     (when (or (force?) (not (file-exists? recipe-file)))
-          (let* ((meta-data (read-meta-file egg version))
-                 (deps (egg-dependencies meta-data))
-                 (ext-deps (egg-external-dependencies egg))
-                 (has-deps? (or (not (null? ext-deps)) (not (null? deps))))
-                 (license (meta-field 'license meta-data))
-                 (description (meta-field 'synopsis meta-data))
-                 (content
-                  (list
-                   "SECTION = \"devel/chicken\""
-                   (and description
-                        (string-append "DESCRIPTION = \"" (string-translate* (car description) `(("`" . ""))) "\""))
-                   (string-append "LICENSE = \"" (if license
-                                                     (fix-license (car license))
-                                                     "Unknown") "\"")
-                   (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
-                                  ";md5=" (car (string-split (call-with-input-pipe
-                                                              (string-append "md5sum " (meta-file-pathname egg version))
-                                                              read-all)))
-                                  "\"")
-                   (let* ((deps-list-eggs (map (lambda (dep)
-                                                 (conc "chicken-egg-" dep))
-                                               deps))
-                          (deps-list-self-egg (if (self-dependent-egg (string->symbol egg))
-                                                  (list (conc "chicken-egg-" egg "-cross"))
-                                                  '()))
-                          (deps-list-pkgs (map symbol->string ext-deps))
-                          (deps-list-eggs-cross (map (lambda (dep)
-                                                       (conc "chicken-egg-" dep "-cross"))
-                                                     deps))
-                          (deps-list-pkgs-native (map (lambda (dep)
-                                                        (conc dep "-native"))
-                                                      ext-deps))
+      (let* ((meta-data (read-meta-file egg version))
+             (deps (egg-dependencies meta-data))
+             (ext-deps (egg-external-dependencies egg))
+             (has-deps? (or (not (null? ext-deps)) (not (null? deps))))
+             (license (meta-field 'license meta-data))
+             (description (meta-field 'synopsis meta-data))
+             (content
+              (list
+               "SECTION = \"devel/chicken\""
+               (and description
+                    (string-append "DESCRIPTION = \"" (string-translate* (car description) `(("`" . ""))) "\""))
+               (string-append "LICENSE = \"" (if license
+                                                 (fix-license (car license))
+                                                 "Unknown") "\"")
+               (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
+                              ";md5=" (car (string-split (call-with-input-pipe
+                                                          (string-append "md5sum " (meta-file-pathname egg version))
+                                                          read-all)))
+                              "\"")
+               (let* ((deps-list-eggs (map (lambda (dep)
+                                             (conc "chicken-egg-" dep))
+                                           deps))
+                      (deps-list-self-egg (if (self-dependent-egg (string->symbol egg))
+                                              (list (conc "chicken-egg-" egg "-cross"))
+                                              '()))
+                      (deps-list-pkgs (map symbol->string ext-deps))
+                      (deps-list-eggs-cross (map (lambda (dep)
+                                                   (conc "chicken-egg-" dep "-cross"))
+                                                 deps))
+                      (deps-list-pkgs-native (map (lambda (dep)
+                                                    (conc dep "-native"))
+                                                  ext-deps))
 
-                          (cross-deps (append deps-list-eggs-cross deps-list-pkgs-native))
-                          (target-deps (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))
+                      (cross-deps (append deps-list-eggs-cross deps-list-pkgs-native))
+                      (target-deps (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))
 
-                          (output
-                           (append
-                            (if (not (null? cross-deps))
-                                (list (string-append "DEPENDS_virtclass-cross += \"" (string-intersperse cross-deps) "\""))
-                                '())
-                            (if (not (null? target-deps))
-                                (list (string-append "DEPENDS += \"" (string-intersperse target-deps) "\""))
-                                '())
-                            (if (not (null? deps-list-eggs))
-                                (list (string-append "RDEPENDS_${PN} += \"" (string-intersperse deps-list-eggs) "\""))
-                                '()))))
+                      (output
+                       (append
+                        (if (not (null? cross-deps))
+                            (list (string-append "DEPENDS_virtclass-cross += \"" (string-intersperse cross-deps) "\""))
+                            '())
+                        (if (not (null? target-deps))
+                            (list (string-append "DEPENDS += \"" (string-intersperse target-deps) "\""))
+                            '())
+                        (if (not (null? deps-list-eggs))
+                            (list (string-append "RDEPENDS_${PN} += \"" (string-intersperse deps-list-eggs) "\""))
+                            '()))))
 
-                     (if (null? output)
-                         ""
-                         (string-append (string-intersperse output "\n") "\n")))
+                 (if (null? output)
+                     ""
+                     (string-append (string-intersperse output "\n") "\n")))
 
-                   (string-append "inherit chicken_install\n")
-                   (string-append "BBCLASSEXTEND = \"cross\""))))
-            (print (string-intersperse (list egg version (->string deps)) "\t"))
-            (with-output-to-file recipe-file
-              (lambda ()
-                (print (string-intersperse (filter identity content) "\n"))))
+               (string-append "inherit chicken_install\n")
+               (string-append "BBCLASSEXTEND = \"cross\""))))
+        (print (string-intersperse (list egg version (->string deps)) "\t"))
+        (with-output-to-file recipe-file
+          (lambda ()
+            (print (string-intersperse (filter identity content) "\n"))))
 
-            (when has-deps? (for-each gen-recipe deps))))))
+        (when has-deps? (for-each gen-recipe deps))))))
 
 (define (command-line-argument option args)
   ;; Returns the argument associated to the command line option OPTION
@@ -193,7 +193,7 @@ exec csi -s $0 "$@"
 
 (let ((args (command-line-arguments)))
   (when (null? args)
-        (usage 1))
+    (usage 1))
 
   (set! *eggs-dir* (command-line-argument '--eggs-dir args))
   (unless *eggs-dir* (die "Missing --eggs-dir=<eggs dir>"))
@@ -203,15 +203,15 @@ exec csi -s $0 "$@"
 
   (when (and (file-exists? *egg-recipes-dir*)
              (not (directory *egg-recipes-dir*)))
-        (die (string-append *egg-recipes-dir* " exists but is not a directory.")))
+    (die (string-append *egg-recipes-dir* " exists but is not a directory.")))
 
   (unless (file-exists? *egg-recipes-dir*)
-          (create-directory *egg-recipes-dir*))
+    (create-directory *egg-recipes-dir*))
 
   (when (member "--force" args)
-        (force? #t))
+    (force? #t))
 
   (unless (directory? *eggs-dir*)
-          (die (string-append "'" *eggs-dir* "' doesn't exist or is not a directory.")))
+    (die (string-append "'" *eggs-dir* "' doesn't exist or is not a directory.")))
 
   (for-each gen-recipe all-eggs))
