@@ -195,6 +195,11 @@ exec csi -s $0 "$@"
   (when (null? args)
     (usage 1))
 
+  (when (or (member "-h" args)
+            (member "-help" args)
+            (member "--help" args))
+    (usage 0))
+
   (set! *eggs-dir* (command-line-argument '--eggs-dir args))
   (unless *eggs-dir* (die "Missing --eggs-dir=<eggs dir>"))
 
