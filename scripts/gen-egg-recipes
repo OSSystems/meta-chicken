@@ -7,10 +7,11 @@ exec csi -s $0 "$@"
 
 (define force? (make-parameter #f))
 
-(define (die msg)
+(define (die fmt . args)
   (with-output-to-port (current-error-port)
     (lambda ()
-      (print (string-append msg " Aborting."))))
+      (apply printf (cons fmt args))
+      (newline)))
   (exit 1))
 
 (define *egg-recipes-dir* #f)
@@ -204,7 +205,7 @@ exec csi -s $0 "$@"
 
   (when (and (file-exists? *egg-recipes-dir*)
              (not (directory? *egg-recipes-dir*)))
-    (die (string-append *egg-recipes-dir* " exists but is not a directory.")))
+    (die "~a exists but is not a directory." *egg-recipes-dir* ))
 
   (unless (file-exists? *egg-recipes-dir*)
     (create-directory *egg-recipes-dir*))
@@ -213,6 +214,6 @@ exec csi -s $0 "$@"
     (force? #t))
 
   (unless (directory? *eggs-dir*)
-    (die (string-append "'" *eggs-dir* "' doesn't exist or is not a directory.")))
+    (die "'~a' doesn't exist or is not a directory." *eggs-dir*))
 
   (for-each gen-recipe all-eggs))
