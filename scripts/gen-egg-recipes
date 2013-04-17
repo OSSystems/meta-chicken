@@ -3,7 +3,11 @@
 exec csi -s $0 "$@"
 |#
 
-(use posix setup-download setup-api srfi-1)
+(module gen-egg-recipes ()
+
+(import chicken scheme)
+(use posix setup-download setup-api srfi-1 srfi-13
+     files extras data-structures utils ports)
 
 (define force? (make-parameter #f))
 
@@ -226,3 +230,5 @@ exec csi -s $0 "$@"
     (die "'~a' doesn't exist or is not a directory." *eggs-dir*))
 
   (for-each gen-recipe all-eggs))
+
+) ;; end module
