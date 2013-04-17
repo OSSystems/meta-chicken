@@ -110,10 +110,15 @@ exec csi -s $0 "$@"
                   (chicken-unit? egg)))
             deps)))
 
+(define (recipe-pathname egg version)
+  (make-pathname *egg-recipes-dir*
+                 (sprintf "chicken-egg-~a_~a.bb"
+                          (string-downcase egg)
+                          version)))
+
 (define (gen-recipe egg)
   (let* ((version (latest-egg-version egg))
-         (recipe-file (make-pathname *egg-recipes-dir*
-                                     (conc "chicken-egg-" (string-downcase egg) "_" version ".bb"))))
+         (recipe-file (recipe-pathname egg version)))
     (when (or (force?) (not (file-exists? recipe-file)))
       (let* ((meta-data (read-meta-file egg version))
              (deps (egg-dependencies meta-data))
