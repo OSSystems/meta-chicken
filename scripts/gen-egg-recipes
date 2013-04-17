@@ -5,8 +5,6 @@ exec csi -s $0 "$@"
 
 (use posix setup-download setup-api srfi-1)
 
-(define chicken-major-version "4")
-
 (define force? (make-parameter #f))
 
 (define (die msg)
