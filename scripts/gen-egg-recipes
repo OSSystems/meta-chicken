@@ -182,10 +182,6 @@ exec csi -s $0 "$@"
          (let ((tokens (string-split (last param/val) "=")))
            (string-intersperse (cdr tokens) "")))))
 
-(define (die msg)
-  (with-output-to-port (current-error-port) (cut print msg))
-  (exit 1))
-
 (define (usage #!optional exit-code)
   (print (pathname-strip-directory (program-name)) " --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [ --force ]")
   (when exit-code (exit exit-code)))
