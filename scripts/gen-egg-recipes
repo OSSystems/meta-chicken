@@ -69,24 +69,18 @@ exec csi -s $0 "$@"
            (list-extension-versions (->string egg) 'local *eggs-dir*)
            "\n")
           version>=?)))
-    (if (or (null? versions) (equal? (car versions) "unknown"))
-        "trunk"
+    (if (null? versions)
+        (error 'latest-egg-version
+               (sprintf "Could not determine version for ~a" egg))
         (car versions))))
 
 (define (meta-file-pathname egg version)
-  (make-pathname (if (equal? version "trunk")
-                     (list *eggs-dir* egg version)
-                     (list *eggs-dir* egg "tags" version))
-                 egg "meta"))
+  (make-pathname (list *eggs-dir* egg "tags" version)
+                 egg
+                 "meta"))
 
 (define (read-meta-file egg version)
-  (let ((meta-file (meta-file-pathname egg version)))
-    (unless (file-exists? meta-file) ;; maybe the egg dir has no tags/trunk dirs
-      (let ((unversioned-meta (make-pathname (list *eggs-dir* egg) egg "meta")))
-        (if (file-exists? unversioned-meta)
-            (set! meta-file unversioned-meta)
-            (error 'read-meta-file "Could not find meta file for" egg))))
-    (with-input-from-file meta-file read)))
+  (with-input-from-file (meta-file-pathname egg version) read))
 
 (define (meta-field key meta #!optional default)
   (or (and-let* ((d (assq key meta)))
