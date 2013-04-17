@@ -207,7 +207,7 @@ exec csi -s $0 "$@"
   (unless *egg-recipes-dir* (die "Missing --dest-dir=<dest-dir>"))
 
   (when (and (file-exists? *egg-recipes-dir*)
-             (not (directory *egg-recipes-dir*)))
+             (not (directory? *egg-recipes-dir*)))
     (die (string-append *egg-recipes-dir* " exists but is not a directory.")))
 
   (unless (file-exists? *egg-recipes-dir*)
