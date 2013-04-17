@@ -46,7 +46,7 @@ exec csi -s $0 "$@"
     ))
 
 (define (fix-license license)
-  (if (and license (string? license)) ;; we can expect data type
+  (if (and license (string? license)) ;; we can expect any data type
                                       ;; in the .meta file
       (cond ((string-ci=? license "public domain")
              "PD")
