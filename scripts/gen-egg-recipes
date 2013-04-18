@@ -263,6 +263,7 @@ exec csi -s $0 "$@"
                (format-all-deps egg deps ext-deps)
                (format-src-uri)
                (format-hash-sums egg version)
+               "S = \"${WORKDIR}/${EGG}-${PV}\""
                (format-recipe-extra-data egg version)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross\""))))
