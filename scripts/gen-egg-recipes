@@ -21,6 +21,10 @@ exec csi -s $0 "$@"
   (normalize-pathname
    (make-pathname (current-directory) "egg-tarballs")))
 
+(define recipes-extra-data-dir
+  (normalize-pathname
+   (make-pathname (current-directory) "recipes-extra-data")))
+
 (define force? (make-parameter #f))
 
 (define (die fmt . args)
@@ -223,6 +227,16 @@ exec csi -s $0 "$@"
   (sprintf "SRC_URI = \"~a/${EGG}/${EGG}-${PV}.tar.gz\"\n"
            egg-tarballs-uri))
 
+(define (format-recipe-extra-data egg version)
+  (let ((extra-data-file
+         (make-pathname recipes-extra-data-dir
+                        (sprintf "~a_~a.red"
+                                 egg
+                                 version))))
+    (if (file-exists? extra-data-file)
+        (read-all extra-data-file)
+        "")))
+
 (define (egg->recipe egg)
   (conc "chicken-egg-" egg))
 
@@ -249,6 +263,7 @@ exec csi -s $0 "$@"
                (format-all-deps egg deps ext-deps)
                (format-src-uri)
                (format-hash-sums egg version)
+               (format-recipe-extra-data egg version)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross\""))))
         (print (string-intersperse (list egg version (->string deps)) "\t"))
