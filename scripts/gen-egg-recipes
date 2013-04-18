@@ -3,11 +3,23 @@
 exec csi -s $0 "$@"
 |#
 
+;; This script requires the following external tools:
+;; - wget
+;; - md5
+;; - sha256sum
+
 (module gen-egg-recipes ()
 
 (import chicken scheme)
 (use posix setup-download setup-api srfi-1 srfi-13
      files extras data-structures utils ports)
+
+(define egg-tarballs-uri
+  "http://code.call-cc.org/egg-tarballs")
+
+(define egg-tarballs-dir
+  (normalize-pathname
+   (make-pathname (current-directory) "egg-tarballs")))
 
 (define force? (make-parameter #f))
 
@@ -120,6 +132,38 @@ exec csi -s $0 "$@"
                           (string-downcase egg)
                           version)))
 
+(define (hash-sum hash file)
+  (car (string-split
+        (call-with-input-pipe
+         (sprintf "~asum ~a" hash file)
+         read-all))))
+
+(define (download-egg-tarball egg version)
+  ;; Download tarball for egg/version.  Return a pair
+  ;; (<md5sum> . <sha256sum>) for the downloaded tarball
+  (create-directory egg-tarballs-dir 'with-parents)
+  (let* ((tarball (sprintf "~a-~a.tar.gz" egg version))
+         (tarball-uri (sprintf "~a/~a/~a" egg-tarballs-uri egg tarball))
+         (downloaded-tarball
+          (make-pathname egg-tarballs-dir tarball))
+         (md5sum-file (string-append downloaded-tarball ".md5"))
+         (sha256sum-file (string-append downloaded-tarball ".sha256")))
+    (if (and (file-exists? downloaded-tarball)
+             (file-exists? md5sum-file)
+             (file-exists? sha256sum-file))
+        (cons (read-all md5sum-file)
+              (read-all sha256sum-file))
+        (begin
+          (printf "Downloading ~a ...\n" tarball-uri)
+          (system* (sprintf "wget -q ~a -O ~a"
+                            tarball-uri
+                            downloaded-tarball))
+          (let ((md5sum (hash-sum 'md5 downloaded-tarball))
+                (sha256sum (hash-sum 'sha256 downloaded-tarball)))
+            (with-output-to-file md5sum-file (cut display md5sum))
+            (with-output-to-file sha256sum-file (cut display sha256sum))
+            (cons md5sum sha256sum))))))
+
 ;;;
 ;;; Recipe generation
 ;;;
@@ -140,10 +184,7 @@ exec csi -s $0 "$@"
   (let ((meta-file (meta-file-pathname egg version)))
     (sprintf "LIC_FILES_CHKSUM = \"file://~a;md5=~a\""
              (pathname-strip-directory meta-file)
-             (car (string-split
-                   (call-with-input-pipe
-                    (string-append "md5sum " meta-file)
-                    read-all))))))
+             (hash-sum 'md5 meta-file))))
 
 (define (format-deps var deps)
   (if (null? deps)
@@ -172,6 +213,16 @@ exec csi -s $0 "$@"
         ""
         (string-append (string-intersperse output "\n") "\n"))))
 
+(define (format-hash-sums egg version)
+  (let ((hashes (download-egg-tarball egg version)))
+    (sprintf "SRC_URI[md5sum] = \"~a\"\nSRC_URI[sha256sum] = \"~a\"\n"
+             (car hashes)
+             (cdr hashes))))
+
+(define (format-src-uri)
+  (sprintf "SRC_URI = \"~a/${EGG}/${EGG}-${PV}.tar.gz\"\n"
+           egg-tarballs-uri))
+
 (define (egg->recipe egg)
   (conc "chicken-egg-" egg))
 
@@ -196,6 +247,8 @@ exec csi -s $0 "$@"
                (format-license meta-data)
                (format-license-checksum egg version)
                (format-all-deps egg deps ext-deps)
+               (format-src-uri)
+               (format-hash-sums egg version)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross\""))))
         (print (string-intersperse (list egg version (->string deps)) "\t"))
