@@ -120,6 +120,67 @@ exec csi -s $0 "$@"
                           (string-downcase egg)
                           version)))
 
+;;;
+;;; Recipe generation
+;;;
+(define (format-description meta-data)
+  (let ((description (meta-field 'synopsis meta-data)))
+    (and description
+         (sprintf "DESCRIPTION = \"~a\""
+                  (string-translate* (car description) `(("`" . "")))))))
+
+(define (format-license meta-data)
+  (let ((license (meta-field 'license meta-data)))
+    (sprintf "LICENSE = \"~a\""
+             (if license
+                 (fix-license (car license))
+                 "Unknown"))))
+
+(define (format-license-checksum egg version)
+  (let ((meta-file (meta-file-pathname egg version)))
+    (sprintf "LIC_FILES_CHKSUM = \"file://~a;md5=~a\""
+             (pathname-strip-directory meta-file)
+             (car (string-split
+                   (call-with-input-pipe
+                    (string-append "md5sum " meta-file)
+                    read-all))))))
+
+(define (format-deps var deps)
+  (if (null? deps)
+      '()
+      (list (sprintf "~a += \"~a\""
+                     var
+                     (string-intersperse deps)))))
+
+(define (format-all-deps egg deps ext-deps)
+  (let* ((deps-eggs (map egg->recipe deps))
+         (deps-self-egg
+          (if (self-dependent-egg (string->symbol egg))
+              (list (egg->recipe/cross egg))
+              '()))
+         (deps-pkg (map symbol->string ext-deps))
+         (deps-pkg-cross (map egg->recipe/cross deps))
+         (deps-pkg-native (map recipe->native ext-deps))
+         (cross-deps (append deps-pkg-cross deps-pkg-native))
+         (target-deps (append deps-eggs deps-pkg deps-pkg-cross deps-self-egg))
+         (output
+          (append
+           (format-deps "DEPENDS_virtclass-cross" cross-deps)
+           (format-deps "DEPENDS" target-deps)
+           (format-deps "RDEPENDS_${PN}" deps-eggs))))
+    (if (null? output)
+        ""
+        (string-append (string-intersperse output "\n") "\n"))))
+
+(define (egg->recipe egg)
+  (conc "chicken-egg-" egg))
+
+(define (egg->recipe/cross egg)
+  (conc "chicken-egg-" egg "-cross"))
+
+(define (recipe->native recipe)
+  (conc recipe "-native"))
+
 (define (gen-recipe egg)
   (let* ((version (latest-egg-version egg))
          (recipe-file (recipe-pathname egg version)))
@@ -128,61 +189,19 @@ exec csi -s $0 "$@"
              (deps (egg-dependencies meta-data))
              (ext-deps (egg-external-dependencies egg))
              (has-deps? (or (not (null? ext-deps)) (not (null? deps))))
-             (license (meta-field 'license meta-data))
-             (description (meta-field 'synopsis meta-data))
              (content
               (list
                "SECTION = \"devel/chicken\""
-               (and description
-                    (string-append "DESCRIPTION = \"" (string-translate* (car description) `(("`" . ""))) "\""))
-               (string-append "LICENSE = \"" (if license
-                                                 (fix-license (car license))
-                                                 "Unknown") "\"")
-               (string-append "LIC_FILES_CHKSUM = \"file://" (pathname-strip-directory (meta-file-pathname egg version))
-                              ";md5=" (car (string-split (call-with-input-pipe
-                                                          (string-append "md5sum " (meta-file-pathname egg version))
-                                                          read-all)))
-                              "\"")
-               (let* ((deps-list-eggs (map (lambda (dep)
-                                             (conc "chicken-egg-" dep))
-                                           deps))
-                      (deps-list-self-egg (if (self-dependent-egg (string->symbol egg))
-                                              (list (conc "chicken-egg-" egg "-cross"))
-                                              '()))
-                      (deps-list-pkgs (map symbol->string ext-deps))
-                      (deps-list-eggs-cross (map (lambda (dep)
-                                                   (conc "chicken-egg-" dep "-cross"))
-                                                 deps))
-                      (deps-list-pkgs-native (map (lambda (dep)
-                                                    (conc dep "-native"))
-                                                  ext-deps))
-
-                      (cross-deps (append deps-list-eggs-cross deps-list-pkgs-native))
-                      (target-deps (append deps-list-eggs deps-list-pkgs deps-list-eggs-cross deps-list-self-egg))
-
-                      (output
-                       (append
-                        (if (not (null? cross-deps))
-                            (list (string-append "DEPENDS_virtclass-cross += \"" (string-intersperse cross-deps) "\""))
-                            '())
-                        (if (not (null? target-deps))
-                            (list (string-append "DEPENDS += \"" (string-intersperse target-deps) "\""))
-                            '())
-                        (if (not (null? deps-list-eggs))
-                            (list (string-append "RDEPENDS_${PN} += \"" (string-intersperse deps-list-eggs) "\""))
-                            '()))))
-
-                 (if (null? output)
-                     ""
-                     (string-append (string-intersperse output "\n") "\n")))
-
+               (format-description meta-data)
+               (format-license meta-data)
+               (format-license-checksum egg version)
+               (format-all-deps egg deps ext-deps)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross\""))))
         (print (string-intersperse (list egg version (->string deps)) "\t"))
         (with-output-to-file recipe-file
           (lambda ()
             (print (string-intersperse (filter identity content) "\n"))))
-
         (when has-deps? (for-each gen-recipe deps))))))
 
 (define (command-line-argument option args)
