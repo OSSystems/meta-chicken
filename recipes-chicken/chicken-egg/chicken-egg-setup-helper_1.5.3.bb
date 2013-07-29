@@ -1,12 +1,12 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Installation/Setup Shortcut Routines"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://setup-helper.meta;md5=64b2b850a5157a85bf7c0d13d28a1f6c"
+LIC_FILES_CHKSUM = "file://setup-helper.meta;md5=daf5ef3d9c531d2f70f0140f11daac33"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "7ed7c2f92a6a4b8c9eddcf39ef84e295"
-SRC_URI[sha256sum] = "24c97df3c9d5a9f69c7cc817b551957af1e7e1832181adf42976aff7a45607fa"
+SRC_URI[md5sum] = "208d1ad6a8d3a19f43c2cb83474cf9ca"
+SRC_URI[sha256sum] = "fc380b82a83656c58cc5facedeccc1c52796c01c7d76fff6808ee753268a0747"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
