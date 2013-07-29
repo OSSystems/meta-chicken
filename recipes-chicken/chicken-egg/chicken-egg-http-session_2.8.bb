@@ -8,8 +8,8 @@ RDEPENDS_${PN} += "chicken-egg-simple-sha1 chicken-egg-spiffy chicken-egg-intarw
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "d39f2de770e87fd55961912f7aab59be"
-SRC_URI[sha256sum] = "b0279231f775afbab1fb0ae1d7192a179faa725a4374891cbe499612d107da37"
+SRC_URI[md5sum] = "bfe6598de48ef59c2468e29191ef5059"
+SRC_URI[sha256sum] = "d5bc458598d50520cb9a1ad90596cde8fb8d2a75cb0888ff2e0f1edd0c84d6c8"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
