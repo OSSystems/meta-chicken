@@ -7,8 +7,8 @@ DEPENDS += "openssl"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "5d7409d99eb5150b09d4671577d99e33"
-SRC_URI[sha256sum] = "6831b23a81c8b5b0dc4f524117a9ddd7a8aa7fa8086956e23e0c0fd38f20ac18"
+SRC_URI[md5sum] = "9e98febad2b4a74855d188d0192d945f"
+SRC_URI[sha256sum] = "7dc9f9eaa62731ae7069709f61df33548f8ba803a9f89d9ce27353a404528bea"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
