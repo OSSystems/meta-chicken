@@ -8,13 +8,10 @@ RDEPENDS_${PN} += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmac
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "87f22261812aac8a13482a718a45adb2"
-SRC_URI[sha256sum] = "21b785a0d7e32ee016bf0eb43326074f343bddc4cbe3ab477f823f2957e720e4"
+SRC_URI[md5sum] = "cedbdb970aecb940b42b910c4743342b"
+SRC_URI[sha256sum] = "0b10d4aa4f4f9c285cb80af3b951ac50791fa99db7a2c1d86f1312153f5bbe93"
 
 S = "${WORKDIR}/${EGG}-${PV}"
-PR = "r1"
-
-SRC_URI += "file://ossystems-changes.patch"
 
 inherit chicken_install
 
