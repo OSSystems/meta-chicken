@@ -52,6 +52,7 @@ exec csi -s $0 "$@"
          json
          make
          scron
+         medea
          )))
 
 (define (self-dependent-egg egg)
