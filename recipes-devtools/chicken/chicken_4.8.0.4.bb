@@ -9,10 +9,13 @@ DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
 SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
-           file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch"
+           file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch \
+           file://0001-Drop-SONAME_VERSION-use-BINARYVERSION-instead.patch \
+           file://0001-Only-generate-a-versioned-.so-if-USES_SONAME.patch \
+"
 
-SRC_URI[md5sum] = "bd680e2956c272facb58de1c7bd87b99"
-SRC_URI[sha256sum] = "6a1414e6f35586e47d7f4470eaf1779a4f73dec664b14bebf8763dd804b399c3"
+SRC_URI[md5sum] = "71621afa6a39df98d011db08c76e2fa0"
+SRC_URI[sha256sum] = "cd6c4b05f76a6ac82ff32e8dbd53f7517a283bda32003c6b3baa0c6b24990fb2"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
