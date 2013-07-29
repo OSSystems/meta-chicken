@@ -1,15 +1,15 @@
 SECTION = "devel/chicken"
-DESCRIPTION = "Procedures to ease the generation of some frequently used [X]HTML structures"
+DESCRIPTION = "Procedures to ease the generation of some frequently used [X]HTML/SXML structures"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://html-utils.meta;md5=ea38559f1bf871a22854fa61d210c532"
+LIC_FILES_CHKSUM = "file://html-utils.meta;md5=853a82baebc676b58c852a858a48dd5f"
 DEPENDS_virtclass-cross += "chicken-egg-html-tags-cross"
 DEPENDS += "chicken-egg-html-tags chicken-egg-html-tags-cross"
 RDEPENDS_${PN} += "chicken-egg-html-tags"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "55ccf97e27f3ae1e70ec975abf946b39"
-SRC_URI[sha256sum] = "bd45d9b2a3923476aab513260ac3154852cf9e8db3ae22be5695d5c6547ecdf7"
+SRC_URI[md5sum] = "8bdb7d9d8b73da3ae94eb8d6d4fbee95"
+SRC_URI[sha256sum] = "320628bd19e110020f11d30936c13b10108e166174da643834505ed6f8ac7e29"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
