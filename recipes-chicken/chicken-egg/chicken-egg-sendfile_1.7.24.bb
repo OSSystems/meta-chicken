@@ -1,12 +1,12 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Sending a file over the network"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://sendfile.meta;md5=c547bb74c1ab1de0f2834318b7a4bf73"
+LIC_FILES_CHKSUM = "file://sendfile.meta;md5=c300507a211b909bdc69815095359a79"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "ed4890e0ee3a90172716d513e61d80ff"
-SRC_URI[sha256sum] = "d74842929354bd1f682dbecf0aca78325cb072dd0564f8398f392977e21c3da4"
+SRC_URI[md5sum] = "3957577ebb053be8bfecd02871bba236"
+SRC_URI[sha256sum] = "15d6351068953f47bee3597a1228365edb3ddf12bff3286f9bb0a5dbb9deb881"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
