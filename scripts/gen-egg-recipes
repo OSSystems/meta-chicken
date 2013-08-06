@@ -224,9 +224,30 @@ exec csi -s $0 "$@"
              (car hashes)
              (cdr hashes))))
 
-(define (format-src-uri)
-  (sprintf "SRC_URI = \"~a/${EGG}/${EGG}-${PV}.tar.gz\"\n"
-           egg-tarballs-uri))
+(define (egg-patches egg version)
+  (let ((patches-dir
+         (make-pathname *egg-recipes-dir*
+                        (sprintf "chicken-egg-~a-~a"
+                                 egg
+                                 version))))
+    (if (directory-exists? patches-dir)
+        (directory patches-dir)
+        '())))
+
+(define (format-egg-patches patches)
+  (string-intersperse
+   (map (lambda (patch)
+          (string-append "file://" patch))
+        patches)
+   " "))
+
+(define (format-src-uri egg version)
+  (let ((patches (egg-patches egg version)))
+    (sprintf "SRC_URI = \"~a/${EGG}/${EGG}-${PV}.tar.gz~a\"\n"
+             egg-tarballs-uri
+             (if (null? patches)
+                 ""
+                 (string-append " " (format-egg-patches patches))))))
 
 (define (format-recipe-extra-data egg version)
   (let ((extra-data-file
@@ -262,7 +283,7 @@ exec csi -s $0 "$@"
                (format-license meta-data)
                (format-license-checksum egg version)
                (format-all-deps egg deps ext-deps)
-               (format-src-uri)
+               (format-src-uri egg version)
                (format-hash-sums egg version)
                "S = \"${WORKDIR}/${EGG}-${PV}\""
                (format-recipe-extra-data egg version)
