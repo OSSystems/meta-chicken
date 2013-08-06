@@ -1,0 +1,76 @@
+Index: dbus.scm
+===================================================================
+--- a/dbus.scm	(revision 29516)
++++ b/dbus.scm	(working copy)
+@@ -339,6 +339,34 @@
+ 	(define make-message (foreign-lambda message-ptr "dbus_message_new_method_call"
+ 		c-string c-string c-string c-string))
+ 
++	(define make-error
++		(foreign-lambda* (c-pointer (struct "DBusError")) ()
++		 "DBusError err;
++                  dbus_error_init(&err);
++                  C_return(&err);"))
++
++	(define free-error!
++		(foreign-lambda* void (((c-pointer (struct "DBusError")) err))
++			"dbus_error_free(err);"))
++
++	(define (raise-dbus-error location err)
++		(let ((err-name
++			((foreign-lambda* c-string (((c-pointer (struct "DBusError")) err))
++					  "C_return(err->name);")
++			 err))
++		      (err-message
++		       ((foreign-lambda* c-string (((c-pointer (struct "DBusError")) err))
++					 "C_return(err->message);")
++			err)))
++		  (free-error! err)
++		  (signal
++		   (make-composite-condition
++		    (make-property-condition 'dbus-call)
++		    (make-property-condition
++		     'exn 
++		     'location location
++		     'message (string-append "(" err-name "): " err-message))))))
++
+ 	;; todo: garbage-collect this
+ 	(define make-iter-append
+ 		(foreign-lambda* message-iter-ptr ((message-ptr msg))
+@@ -679,22 +707,20 @@
+ 				(for-each (lambda (parm)
+ 					(iter-append-basic iter parm))	params)
+ 				(free-iter iter)
+-				(let* ([reply-msg ((foreign-lambda* message-ptr ((connection-ptr conn) (message-ptr msg))
+-							;; idealistic code here; todo: error checking
+-							;; todo: timeout comes from where?  (make-parameter) maybe
+-							"DBusMessage *reply;
+-							DBusError error;
+-							dbus_error_init (&error);
+-							reply = dbus_connection_send_with_reply_and_block(conn, msg, 5000, &error);
+-							if (dbus_error_is_set (&error))
+-								fprintf (stderr, \"Error %s: %s\\n\", error.name, error.message);
+-							else
+-								fprintf (stderr, \"reply signature %s\\n\", dbus_message_get_signature(reply));
+-							dbus_message_unref(msg);
+-							C_return(reply);") conn msg) ]
+-						[reply-iter (make-iter reply-msg)]
+-						[reply-args (iter->list reply-iter)] )
+-					reply-args)))))
++				(let* ([err (make-error)]
++				       [reply-msg
++								((foreign-lambda* message-ptr ((connection-ptr conn)
++																							 (message-ptr msg)
++																							 ((c-pointer (struct "DBusError")) err))
++							  ;; todo: timeout comes from where?  (make-parameter) maybe
++							  "DBusMessage *reply;
++							   reply = dbus_connection_send_with_reply_and_block(conn, msg, 5000, err);
++							   dbus_message_unref(msg);
++							   C_return(reply);") conn msg err) ])
++				  (if reply-msg
++				      (let ([reply-iter (make-iter reply-msg)])
++								(iter->list reply-iter))
++				      (raise-dbus-error 'call err)))))))
+ 
+ 	(set! make-method-proxy (lambda (context name)
+ 		(let ([service (symbol->string (vector-ref context context-idx-service))]
