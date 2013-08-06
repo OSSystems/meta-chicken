@@ -286,7 +286,12 @@ exec csi -s $0 "$@"
            (string-intersperse (cdr tokens) "")))))
 
 (define (usage #!optional exit-code)
-  (print (pathname-strip-directory (program-name)) " --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [ --force ]")
+  (let ((port (if (and exit-code (not (zero? exit-code)))
+                  (current-error-port)
+                  (current-output-port))))
+    (fprintf port
+             "~a --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [ --force ]\n"
+             (pathname-strip-directory (program-name))))
   (when exit-code (exit exit-code)))
 
 
