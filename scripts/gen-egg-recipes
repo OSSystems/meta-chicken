@@ -85,6 +85,8 @@ exec csi -s $0 "$@"
              "PD")
             ((string-ci=? license "LGPL-1")
              "LGPL")
+            ((equal? license "bsd")
+             "BSD")
             (else license))
       license))
 
