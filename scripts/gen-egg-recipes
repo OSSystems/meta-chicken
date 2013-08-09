@@ -81,6 +81,16 @@ exec csi -s $0 "$@"
     (xlib    libx11)
     ))
 
+(define extra-chicken-install-options
+  '())
+
+(define (egg-extra-chicken-install-options egg)
+  (let ((egg (if (string? egg)
+                 (string->symbol egg)
+                 egg)))
+    (and-let* ((opts (alist-ref egg extra-chicken-install-options)))
+      (car opts))))
+
 (define (fix-license license)
   (if (and license (string? license)) ;; we can expect any data type
                                       ;; in the .meta file
@@ -275,6 +285,10 @@ exec csi -s $0 "$@"
         (read-all extra-data-file)
         "")))
 
+(define (format-extra-chicken-install-options csc-options)
+  (sprintf "EXTRA_CHICKEN_INSTALL_OPTIONS += \" ~a \"\n"
+           csc-options))
+
 (define (egg->recipe egg)
   (conc "chicken-egg-" egg))
 
@@ -292,6 +306,7 @@ exec csi -s $0 "$@"
              (deps (egg-dependencies meta-data))
              (ext-deps (egg-external-dependencies egg))
              (has-deps? (or (not (null? ext-deps)) (not (null? deps))))
+             (csc-options (egg-extra-chicken-install-options egg))
              (content
               (list
                "SECTION = \"devel/chicken\""
@@ -299,6 +314,8 @@ exec csi -s $0 "$@"
                (format-license meta-data)
                (format-license-checksum egg version)
                (format-all-deps egg deps ext-deps)
+               (and csc-options
+                    (format-extra-chicken-install-options csc-options))
                (format-src-uri egg version)
                (format-hash-sums egg version)
                "S = \"${WORKDIR}/${EGG}-${PV}\""
