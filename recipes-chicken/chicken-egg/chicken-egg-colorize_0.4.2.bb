@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://colorize.meta;md5=67cab41305f064905e704435a4e968b1"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "f46951fe13cd3eae9247d5162a0c893c"
-SRC_URI[sha256sum] = "d7daf7af381f8fbbe7008d7fe66d5e3adfec7083030b07013458373eebe446d0"
+SRC_URI[md5sum] = "0c83fcdb6f2f1eaf8a436369a2a8d967"
+SRC_URI[sha256sum] = "769502029bbb47b5b2d098c0add99ffc733d426cc005eb9af1a70de4517fe449"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
