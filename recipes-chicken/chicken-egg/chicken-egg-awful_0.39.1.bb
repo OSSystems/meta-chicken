@@ -8,8 +8,8 @@ RDEPENDS_${PN} += "chicken-egg-spiffy chicken-egg-spiffy-request-vars chicken-eg
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "a043bd9628d2497166356dd0e26a7c1f"
-SRC_URI[sha256sum] = "6c0fd14391976d049b230e74eaa579b9d62b049f6ddbcb20192e7c22a0b91633"
+SRC_URI[md5sum] = "750b6c8a5158269992f9d8d4cfaa2f1e"
+SRC_URI[sha256sum] = "2a752f15693ccc620f5a2dbd1f8c4b8bd6ee55e9b2d6969b5e3bf25ca7f82b1a"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
