@@ -51,10 +51,10 @@ exec csi -s $0 "$@"
          ini-file
          json
          make
-         scron
          medea
-         scss
          pastiche
+         scss
+         scron
          )))
 
 (define self-dependent-eggs
@@ -70,12 +70,12 @@ exec csi -s $0 "$@"
   (and (memq egg self-dependent-eggs) #t))
 
 (define external-dependencies
-  '((openssl openssl)
+  '((dbus    dbus)
     (lzma    lzma)
+    (openssl openssl)
     (ncurses ncurses)
     (readline readline)
     (xlib    libx11)
-    (dbus    dbus)
     ))
 
 (define (fix-license license)
