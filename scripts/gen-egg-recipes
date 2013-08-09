@@ -54,6 +54,7 @@ exec csi -s $0 "$@"
          scron
          medea
          scss
+         pastiche
          )))
 
 (define self-dependent-eggs
