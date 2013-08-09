@@ -82,7 +82,7 @@ exec csi -s $0 "$@"
     ))
 
 (define extra-chicken-install-options
-  '())
+  '((sql-de-lite  "-D sql-de-lite-external-lib")))
 
 (define (egg-extra-chicken-install-options egg)
   (let ((egg (if (string? egg)
