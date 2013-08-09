@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A small awful app implementing a pastebin service"
-LICENSE = "bsd"
+LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://pastiche.meta;md5=9f94823ce1ed54eb9d785d1880aa279c"
 DEPENDS_virtclass-cross += "chicken-egg-awful-cross chicken-egg-awful-sql-de-lite-cross chicken-egg-simple-sha1-cross chicken-egg-html-parser-cross chicken-egg-colorize-cross chicken-egg-miscmacros-cross"
 DEPENDS += "chicken-egg-awful chicken-egg-awful-sql-de-lite chicken-egg-simple-sha1 chicken-egg-html-parser chicken-egg-colorize chicken-egg-miscmacros chicken-egg-awful-cross chicken-egg-awful-sql-de-lite-cross chicken-egg-simple-sha1-cross chicken-egg-html-parser-cross chicken-egg-colorize-cross chicken-egg-miscmacros-cross"
