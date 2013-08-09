@@ -55,6 +55,7 @@ exec csi -s $0 "$@"
          pastiche
          scss
          scron
+         http-client
          )))
 
 (define self-dependent-eggs
