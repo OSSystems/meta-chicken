@@ -51,6 +51,7 @@ exec csi -s $0 "$@"
          free-gettext
          http-client
          ini-file
+         jsmin
          json
          make
          medea
