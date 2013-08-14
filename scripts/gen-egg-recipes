@@ -55,6 +55,7 @@ exec csi -s $0 "$@"
          pastiche
          persistent-hash-map
          protobuf
+         random-bsd
          scss
          scron
          http-client
