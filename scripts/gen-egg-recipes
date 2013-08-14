@@ -54,6 +54,7 @@ exec csi -s $0 "$@"
          medea
          pastiche
          persistent-hash-map
+         protobuf
          scss
          scron
          http-client
@@ -66,6 +67,7 @@ exec csi -s $0 "$@"
   '(awful
     check-errors
     fast-generic
+    protobuf
     scss
     spiffy
     ))
