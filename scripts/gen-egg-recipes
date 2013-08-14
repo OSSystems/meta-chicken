@@ -60,6 +60,7 @@ exec csi -s $0 "$@"
          scss
          scron
          sequences
+         server-test
          slice
          vector-lib
          )))
