@@ -59,6 +59,7 @@ exec csi -s $0 "$@"
          random-bsd
          scss
          scron
+         vector-lib
          )))
 
 (define self-dependent-eggs
