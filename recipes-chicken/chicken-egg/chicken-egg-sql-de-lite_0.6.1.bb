@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "SQLite 3 interface"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://sql-de-lite.meta;md5=97dacb83502443b8f8406ae65aefb523"
-DEPENDS_virtclass-cross += "chicken-egg-lru-cache-cross chicken-egg-foreigners-cross"
-DEPENDS += "chicken-egg-lru-cache chicken-egg-foreigners chicken-egg-lru-cache-cross chicken-egg-foreigners-cross"
+DEPENDS_virtclass-cross += "chicken-egg-lru-cache-cross chicken-egg-foreigners-cross sqlite3-native"
+DEPENDS += "chicken-egg-lru-cache chicken-egg-foreigners sqlite3 chicken-egg-lru-cache-cross chicken-egg-foreigners-cross"
 RDEPENDS_${PN} += "chicken-egg-lru-cache chicken-egg-foreigners"
+
+EXTRA_CHICKEN_INSTALL_OPTIONS += " -D sql-de-lite-external-lib "
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
 
