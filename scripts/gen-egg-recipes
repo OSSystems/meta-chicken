@@ -45,6 +45,7 @@ exec csi -s $0 "$@"
          connman
          crypt
          dbus
+         describe
          expand-full
          foreigners
          free-gettext
