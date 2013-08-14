@@ -61,6 +61,7 @@ exec csi -s $0 "$@"
          scron
          sequences
          server-test
+         siphash
          slice
          test
          vector-lib
