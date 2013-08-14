@@ -48,6 +48,7 @@ exec csi -s $0 "$@"
          expand-full
          foreigners
          free-gettext
+         http-client
          ini-file
          json
          make
@@ -58,7 +59,6 @@ exec csi -s $0 "$@"
          random-bsd
          scss
          scron
-         http-client
          )))
 
 (define self-dependent-eggs
