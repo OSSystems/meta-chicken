@@ -53,6 +53,7 @@ exec csi -s $0 "$@"
          make
          medea
          pastiche
+         persistent-hash-map
          scss
          scron
          http-client
