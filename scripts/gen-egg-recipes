@@ -59,6 +59,7 @@ exec csi -s $0 "$@"
          random-bsd
          scss
          scron
+         sequences
          vector-lib
          )))
 
@@ -71,6 +72,7 @@ exec csi -s $0 "$@"
     fast-generic
     protobuf
     scss
+    sequences
     spiffy
     ))
 
