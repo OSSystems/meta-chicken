@@ -11,6 +11,8 @@ INSANE_SKIP_${PN} += "useless-rpaths"
 # For recipes which use this class and need D.
 export DESTDIR="${D}"
 
+EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
+
 do_fetch[depends] += "chicken-cross:do_populate_sysroot"
 
 do_install () {
@@ -21,7 +23,8 @@ do_install () {
                  -I${STAGING_DIR_TARGET}${includedir}/chicken" \
     CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/chicken \
     \
-    ${TARGET_PREFIX}chicken-install -target -prefix ${D}${localstatedir}
+    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
+                                    -target -prefix ${D}${localstatedir}
 
     # Fix install path
     if [ -d ${D}${localstatedir}/bin ]; then
@@ -37,10 +40,12 @@ do_install_virtclass-cross () {
                  -L${libdir} \
                  -L${base_libdir} \
                  -I${includedir} \
-                 -I${includedir}/chicken" \
+                 -I${includedir}/chicken \
+                 ${EXTRA_CSC_OPTIONS}" \
     CHICKEN_INCLUDE_PATH=${localstatedir}/share/chicken \
     \
-    ${TARGET_PREFIX}chicken-install -host -prefix ${D}${localstatedir}
+    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
+                                    -host -prefix ${D}${localstatedir}
 
     # Fix install path
     mv ${D}${localstatedir}/lib/chicken ${D}${localstatedir}/lib/${TARGET_PREFIX}chicken
