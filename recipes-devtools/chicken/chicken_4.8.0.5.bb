@@ -14,8 +14,8 @@ SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
            file://0001-Only-generate-a-versioned-.so-if-USES_SONAME.patch \
 "
 
-SRC_URI[md5sum] = "71621afa6a39df98d011db08c76e2fa0"
-SRC_URI[sha256sum] = "cd6c4b05f76a6ac82ff32e8dbd53f7517a283bda32003c6b3baa0c6b24990fb2"
+SRC_URI[md5sum] = "a63d8a0b6bc58a97ec5cc4c4a19b308a"
+SRC_URI[sha256sum] = "5b9192951bc61cc19dd4963cceb93908bff46b6868d7927f19850e8973c430fb"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
