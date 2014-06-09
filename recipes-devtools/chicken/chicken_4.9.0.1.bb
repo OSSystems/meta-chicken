@@ -3,19 +3,15 @@ HOMEPAGE = "http://www.call-cc.org/"
 SECTION = "devel"
 PRIORITY = "optional"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=e1cea16bc145a58d50a8de4ec0072206"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=627898e92f4ea7924d68a34baea22606"
 
 DEPENDS = "chicken-cross"
 DEPENDS_virtclass-cross = ""
 
-SRC_URI = "http://code.call-cc.org/releases/4.8.0/chicken-${PV}.tar.gz \
-           file://0001-Do-not-apply-PROGRAM_PREFIX-and-PROGRAM_SUFFIX-to-in.patch \
-           file://0001-Drop-SONAME_VERSION-use-BINARYVERSION-instead.patch \
-           file://0001-Only-generate-a-versioned-.so-if-USES_SONAME.patch \
-"
+SRC_URI = "http://code.call-cc.org/releases/4.9.0/chicken-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "a63d8a0b6bc58a97ec5cc4c4a19b308a"
-SRC_URI[sha256sum] = "5b9192951bc61cc19dd4963cceb93908bff46b6868d7927f19850e8973c430fb"
+SRC_URI[md5sum] = "f45e282c64714127309ae45119b4d306"
+SRC_URI[sha256sum] = "04df7c439c36fc16446bdfa186e7a70258f911d2d826b5216a8e6b1cb2aa2815"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
