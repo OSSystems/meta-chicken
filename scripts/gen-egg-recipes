@@ -65,6 +65,7 @@ exec csi -s $0 "$@"
          server-test
          siphash
          slice
+         stty
          test
          vector-lib
          )))
