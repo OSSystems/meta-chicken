@@ -1,15 +1,15 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "sql-de-lite support for awful"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://awful-sql-de-lite.meta;md5=1187d16bc4c38d5fb10fce75abfe33ec"
+LIC_FILES_CHKSUM = "file://awful-sql-de-lite.meta;md5=cedc6a2441dc8ed6a0ecc3dd0ec69ac0"
 DEPENDS_virtclass-cross += "chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
 DEPENDS += "chicken-egg-awful chicken-egg-sql-de-lite chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
 RDEPENDS_${PN} += "chicken-egg-awful chicken-egg-sql-de-lite"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "70e03c8a2638ff8de369b13603e95441"
-SRC_URI[sha256sum] = "ded74bb6fa49ad19a4eb63b85bb52920ca06ddae9dbdbd65c8ba2f51929a4482"
+SRC_URI[md5sum] = "1369b7ac0d9ebe2b61ad2efd1d802f46"
+SRC_URI[sha256sum] = "5047f21a6fb7a71bb2145538c9827e1081fc20cf3fd3209c85f44e6a4137f993"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
