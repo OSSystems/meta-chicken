@@ -8,10 +8,10 @@ RDEPENDS_${PN} += "chicken-egg-lru-cache chicken-egg-foreigners"
 
 EXTRA_CHICKEN_INSTALL_OPTIONS += " -D sql-de-lite-external-lib "
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "666f4931331554a665b64d1e7f298a74"
-SRC_URI[sha256sum] = "573464ea96d16cc1d37a2827837818a4b8bb5eec18590ec782e3f0c73c1d022b"
+SRC_URI[md5sum] = "864cb66c8aa397315142be7a7f964855"
+SRC_URI[sha256sum] = "e91c8a6779cbf4533dee2ccef5dfd4349fb3767246bfa126d82fc551c5f1d940"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
