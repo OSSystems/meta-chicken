@@ -1,15 +1,15 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Schemely parser combinators"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://comparse.meta;md5=7697a2e2af43ecdf4e7d9a69d0811f16"
+LIC_FILES_CHKSUM = "file://comparse.meta;md5=7f609215d3f4c25fac874a4b42960923"
 DEPENDS_virtclass-cross += "chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
 DEPENDS += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
 RDEPENDS_${PN} += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "838681231b1056501fad04ea40ef72e7"
-SRC_URI[sha256sum] = "6d22b820a2cf8dbcad86215f151fa74faca4de3c6d6967fbd01acb008b7d6db2"
+SRC_URI[md5sum] = "0abf303d6e0dd0b3f926a14d4654435f"
+SRC_URI[sha256sum] = "9d4b6e7c723a3faab93b115b078cc03703b700985d124e725a33e5b522ae7e7e"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
