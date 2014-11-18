@@ -1,15 +1,15 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Computes MD5 (RFC1321) checksums"
 LICENSE = "PD"
-LIC_FILES_CHKSUM = "file://md5.meta;md5=385cd5809b8d04d460c223fec18d0586"
+LIC_FILES_CHKSUM = "file://md5.meta;md5=e0865fe3e39fbe1c7c495179f221c358"
 DEPENDS_virtclass-cross += "chicken-egg-message-digest-cross"
 DEPENDS += "chicken-egg-message-digest chicken-egg-message-digest-cross"
 RDEPENDS_${PN} += "chicken-egg-message-digest"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "db56b8fdac9e8456ffa2a1b10b868783"
-SRC_URI[sha256sum] = "ef77a509218c743171275f908c50bcaf1417f9b2afd900589f0401e4a023c7f6"
+SRC_URI[md5sum] = "cdae9f97031ea84edfdc25e46bc213c9"
+SRC_URI[sha256sum] = "288d1818f892b3b1fdde8fdcf4504a7547491149aee342a7631b9dad31fcbf3f"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
