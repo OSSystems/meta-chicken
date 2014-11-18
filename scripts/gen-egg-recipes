@@ -14,8 +14,10 @@ exec csi -s $0 "$@"
 (use posix setup-download setup-api srfi-1 srfi-13
      files extras data-structures utils ports)
 
+(define chicken-major-version 4)
+
 (define egg-tarballs-uri
-  "http://code.call-cc.org/egg-tarballs")
+  (sprintf "http://code.call-cc.org/egg-tarballs/~a" chicken-major-version))
 
 (define egg-tarballs-dir
   (normalize-pathname
