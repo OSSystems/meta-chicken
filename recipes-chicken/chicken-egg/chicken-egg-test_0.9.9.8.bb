@@ -6,10 +6,10 @@ DEPENDS_virtclass-cross += "chicken-egg-regex-cross"
 DEPENDS += "chicken-egg-regex chicken-egg-regex-cross"
 RDEPENDS_${PN} += "chicken-egg-regex"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "f61353b6d7467b2d510c0eddd09fa3cc"
-SRC_URI[sha256sum] = "076095335ec559dd156280efb5d4132282dcfa6e111913657dca189ddcc0a3f0"
+SRC_URI[md5sum] = "08c58d021959a599704bdb70723c71ef"
+SRC_URI[sha256sum] = "c7f5025dc166ff69074b1be005147e105173f2cc00753118c30d62901713d2ff"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
