@@ -1,15 +1,15 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "URI generic syntax (RFC 3986) parsing and manipulation."
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://uri-generic.meta;md5=1b38ce87b80c8a88fa97bc45a01802e4"
+LIC_FILES_CHKSUM = "file://uri-generic.meta;md5=1250cd4a3012a28332463d6a072263d5"
 DEPENDS_virtclass-cross += "chicken-egg-matchable-cross chicken-egg-defstruct-cross"
 DEPENDS += "chicken-egg-matchable chicken-egg-defstruct chicken-egg-matchable-cross chicken-egg-defstruct-cross"
 RDEPENDS_${PN} += "chicken-egg-matchable chicken-egg-defstruct"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "02b16b3a05c66952ee9c868b3d9c5dc4"
-SRC_URI[sha256sum] = "0292e3be23223e55faa3a576e7b38bcb2d27ed58c39766dabdb42a4e0ecafe3e"
+SRC_URI[md5sum] = "18d9197d85699cdfdd46e147c715043c"
+SRC_URI[sha256sum] = "51653da1f19cf4e0e63520e0c56740866b26bed9c411555418fc7a5c3f99ba49"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
