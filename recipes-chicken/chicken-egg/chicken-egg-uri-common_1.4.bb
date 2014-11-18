@@ -6,10 +6,10 @@ DEPENDS_virtclass-cross += "chicken-egg-uri-generic-cross chicken-egg-defstruct-
 DEPENDS += "chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable chicken-egg-uri-generic-cross chicken-egg-defstruct-cross chicken-egg-matchable-cross"
 RDEPENDS_${PN} += "chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "aa9610ccd2992619bcc06d9678fe514e"
-SRC_URI[sha256sum] = "a5399917eacb950211a5c5cdd3ca6003d54d81815cf8d309e766cfb805d9d8df"
+SRC_URI[md5sum] = "7e734503a52ab80b3bdb6eed59decf74"
+SRC_URI[sha256sum] = "25c887bfb4b56572e02de7d9f9a21c34c5f0e21438912b135a42aa8d0e816b0b"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
