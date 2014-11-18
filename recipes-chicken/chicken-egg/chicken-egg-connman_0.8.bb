@@ -6,7 +6,7 @@ DEPENDS_virtclass-cross += "chicken-egg-dbus-cross chicken-egg-ssax-cross chicke
 DEPENDS += "chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice chicken-egg-dbus-cross chicken-egg-ssax-cross chicken-egg-matchable-cross chicken-egg-advice-cross"
 RDEPENDS_${PN} += "chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "71dc1f2342be0e6249c85f6641598d05"
 SRC_URI[sha256sum] = "335f7011d759e30f4a6e668699b62d0926abb77d0ebf0afd2f2c88c9d585e9f7"
