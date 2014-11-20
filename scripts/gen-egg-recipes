@@ -59,6 +59,7 @@ exec csi -s $0 "$@"
          medea
          pastiche
          persistent-hash-map
+         protobj
          protobuf
          random-bsd
          scss
