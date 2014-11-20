@@ -257,7 +257,7 @@ exec csi -s $0 "$@"
          (target-deps (append deps-eggs deps-pkg deps-pkg-cross deps-self-egg))
          (output
           (append
-           (format-deps "DEPENDS_virtclass-cross" cross-deps)
+           (format-deps "DEPENDS_class-cross" cross-deps)
            (format-deps "DEPENDS" target-deps)
            (format-deps "RDEPENDS_${PN}" deps-eggs))))
     (if (null? output)
