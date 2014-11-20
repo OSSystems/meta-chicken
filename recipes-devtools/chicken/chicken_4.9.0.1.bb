@@ -6,7 +6,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=627898e92f4ea7924d68a34baea22606"
 
 DEPENDS = "chicken-cross"
-DEPENDS_virtclass-cross = ""
+DEPENDS_class-cross = ""
 
 SRC_URI = "http://code.call-cc.org/releases/4.9.0/chicken-${PV}.tar.gz"
 
@@ -45,7 +45,7 @@ EXTRA_OEMAKE = " \
     ARCH=${@chicken_arch(bb, d)} \
 "
 
-EXTRA_OEMAKE_virtclass-cross = " \
+EXTRA_OEMAKE_class-cross = " \
     BINDIR=${bindir} \
     LIBDIR=${libdir} \
     VARDIR=${localstatedir}/lib \
@@ -60,7 +60,7 @@ EXTRA_OEMAKE_virtclass-cross = " \
     TARGET_RUN_PREFIX=${target_prefix} \
 "
 
-do_install_append_virtclass-cross() {
+do_install_append_class-cross() {
     # Remove things we don't need
     for d in share/${TARGET_SYS}-chicken/doc share/man; do
         rm -rf ${D}${STAGING_DIR_NATIVE}${prefix_native}/$d
