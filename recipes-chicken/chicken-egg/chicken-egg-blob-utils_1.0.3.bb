@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Blob Utilities"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://blob-utils.meta;md5=87426bbdce89b822db6138cec889179d"
-DEPENDS_virtclass-cross += "chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
+DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
 DEPENDS += "chicken-egg-setup-helper chicken-egg-string-utils chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
 RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-string-utils"
 

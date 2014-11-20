@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A more convenient HTTP library"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://intarweb.meta;md5=7f89d034a36ac9aacda9e4c972172d5f"
-DEPENDS_virtclass-cross += "chicken-egg-defstruct-cross chicken-egg-uri-common-cross chicken-egg-base64-cross"
+DEPENDS_class-cross += "chicken-egg-defstruct-cross chicken-egg-uri-common-cross chicken-egg-base64-cross"
 DEPENDS += "chicken-egg-defstruct chicken-egg-uri-common chicken-egg-base64 chicken-egg-defstruct-cross chicken-egg-uri-common-cross chicken-egg-base64-cross"
 RDEPENDS_${PN} += "chicken-egg-defstruct chicken-egg-uri-common chicken-egg-base64"
 

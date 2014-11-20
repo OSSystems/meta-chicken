@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "String Utilities"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://string-utils.meta;md5=fc33a5ce982e9299d15d91d0e76df450"
-DEPENDS_virtclass-cross += "chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-lookup-table-cross chicken-egg-check-errors-cross"
+DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-lookup-table-cross chicken-egg-check-errors-cross"
 DEPENDS += "chicken-egg-setup-helper chicken-egg-miscmacros chicken-egg-lookup-table chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-lookup-table-cross chicken-egg-check-errors-cross"
 RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-miscmacros chicken-egg-lookup-table chicken-egg-check-errors"
 

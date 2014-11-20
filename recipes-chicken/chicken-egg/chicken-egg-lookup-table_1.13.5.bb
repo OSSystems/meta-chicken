@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Simple Lookup Table"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://lookup-table.meta;md5=0ad1c04615c8f2abbf72424a471aec22"
-DEPENDS_virtclass-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross chicken-egg-miscmacros-cross chicken-egg-record-variants-cross chicken-egg-synch-cross"
+DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross chicken-egg-miscmacros-cross chicken-egg-record-variants-cross chicken-egg-synch-cross"
 DEPENDS += "chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-miscmacros chicken-egg-record-variants chicken-egg-synch chicken-egg-setup-helper-cross chicken-egg-check-errors-cross chicken-egg-miscmacros-cross chicken-egg-record-variants-cross chicken-egg-synch-cross"
 RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-miscmacros chicken-egg-record-variants chicken-egg-synch"
 

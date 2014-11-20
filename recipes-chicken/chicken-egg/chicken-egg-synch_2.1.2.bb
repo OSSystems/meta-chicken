@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Synchronization Forms"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://synch.meta;md5=97b3faf0fcdc0f4ef9cd1fd2a1ae58af"
-DEPENDS_virtclass-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
+DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
 DEPENDS += "chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
 RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-check-errors"
 

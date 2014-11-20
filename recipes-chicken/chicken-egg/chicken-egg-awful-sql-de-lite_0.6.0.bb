@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "sql-de-lite support for awful"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://awful-sql-de-lite.meta;md5=cedc6a2441dc8ed6a0ecc3dd0ec69ac0"
-DEPENDS_virtclass-cross += "chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
+DEPENDS_class-cross += "chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
 DEPENDS += "chicken-egg-awful chicken-egg-sql-de-lite chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
 RDEPENDS_${PN} += "chicken-egg-awful chicken-egg-sql-de-lite"
 

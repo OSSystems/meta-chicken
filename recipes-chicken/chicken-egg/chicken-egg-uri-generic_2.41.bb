@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "URI generic syntax (RFC 3986) parsing and manipulation."
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://uri-generic.meta;md5=1250cd4a3012a28332463d6a072263d5"
-DEPENDS_virtclass-cross += "chicken-egg-matchable-cross chicken-egg-defstruct-cross"
+DEPENDS_class-cross += "chicken-egg-matchable-cross chicken-egg-defstruct-cross"
 DEPENDS += "chicken-egg-matchable chicken-egg-defstruct chicken-egg-matchable-cross chicken-egg-defstruct-cross"
 RDEPENDS_${PN} += "chicken-egg-matchable chicken-egg-defstruct"
 

@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A JSON library"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://json.meta;md5=0a9020a355f36a4a5b66f5f940d1e373"
-DEPENDS_virtclass-cross += "chicken-egg-packrat-cross"
+DEPENDS_class-cross += "chicken-egg-packrat-cross"
 DEPENDS += "chicken-egg-packrat chicken-egg-packrat-cross"
 RDEPENDS_${PN} += "chicken-egg-packrat"
 

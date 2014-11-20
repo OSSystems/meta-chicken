@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A slicer procedure for lists, strings and vectors"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://slice.meta;md5=caa490b6ba57cd7b34ae5f6f3c83cff4"
-DEPENDS_virtclass-cross += "chicken-egg-utf8-cross"
+DEPENDS_class-cross += "chicken-egg-utf8-cross"
 DEPENDS += "chicken-egg-utf8 chicken-egg-utf8-cross"
 RDEPENDS_${PN} += "chicken-egg-utf8"
 

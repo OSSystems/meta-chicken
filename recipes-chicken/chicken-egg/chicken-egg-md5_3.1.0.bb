@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Computes MD5 (RFC1321) checksums"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://md5.meta;md5=e0865fe3e39fbe1c7c495179f221c358"
-DEPENDS_virtclass-cross += "chicken-egg-message-digest-cross"
+DEPENDS_class-cross += "chicken-egg-message-digest-cross"
 DEPENDS += "chicken-egg-message-digest chicken-egg-message-digest-cross"
 RDEPENDS_${PN} += "chicken-egg-message-digest"
 

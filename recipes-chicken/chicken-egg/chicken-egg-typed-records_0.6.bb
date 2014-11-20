@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Typed variants of various record-definition macros"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://typed-records.meta;md5=71611f6aed4e10f948f9a9e64957bf71"
-DEPENDS_virtclass-cross += "chicken-egg-defstruct-cross chicken-egg-type-stubs-cross"
+DEPENDS_class-cross += "chicken-egg-defstruct-cross chicken-egg-type-stubs-cross"
 DEPENDS += "chicken-egg-defstruct chicken-egg-type-stubs chicken-egg-defstruct-cross chicken-egg-type-stubs-cross"
 RDEPENDS_${PN} += "chicken-egg-defstruct chicken-egg-type-stubs"
 

@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Yet Another Testing Utility"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://test.meta;md5=9d6f9e6becd92deb67b66ef401adf626"
-DEPENDS_virtclass-cross += "chicken-egg-regex-cross"
+DEPENDS_class-cross += "chicken-egg-regex-cross"
 DEPENDS += "chicken-egg-regex chicken-egg-regex-cross"
 RDEPENDS_${PN} += "chicken-egg-regex"
 

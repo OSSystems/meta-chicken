@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Protocol buffer serialization"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://protobuf.meta;md5=24d198a4f4a341329d6971be1385a8ff"
-DEPENDS_virtclass-cross += "chicken-egg-srfi-42-cross chicken-egg-srfi-4-comprehensions-cross chicken-egg-srfi-99-cross chicken-egg-numbers-cross"
+DEPENDS_class-cross += "chicken-egg-srfi-42-cross chicken-egg-srfi-4-comprehensions-cross chicken-egg-srfi-99-cross chicken-egg-numbers-cross"
 DEPENDS += "chicken-egg-srfi-42 chicken-egg-srfi-4-comprehensions chicken-egg-srfi-99 chicken-egg-numbers chicken-egg-srfi-42-cross chicken-egg-srfi-4-comprehensions-cross chicken-egg-srfi-99-cross chicken-egg-numbers-cross chicken-egg-protobuf-cross"
 RDEPENDS_${PN} += "chicken-egg-srfi-42 chicken-egg-srfi-4-comprehensions chicken-egg-srfi-99 chicken-egg-numbers"
 

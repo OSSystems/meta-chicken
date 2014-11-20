@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Generates bindings from C/C++ declarations"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://easyffi.meta;md5=9b730f55a507c69bf40165c4a45c91ce"
-DEPENDS_virtclass-cross += "chicken-egg-silex-cross chicken-egg-matchable-cross chicken-egg-regex-cross chicken-egg-make-cross"
+DEPENDS_class-cross += "chicken-egg-silex-cross chicken-egg-matchable-cross chicken-egg-regex-cross chicken-egg-make-cross"
 DEPENDS += "chicken-egg-silex chicken-egg-matchable chicken-egg-regex chicken-egg-make chicken-egg-silex-cross chicken-egg-matchable-cross chicken-egg-regex-cross chicken-egg-make-cross chicken-egg-easyffi-cross"
 RDEPENDS_${PN} += "chicken-egg-silex chicken-egg-matchable chicken-egg-regex chicken-egg-make"
 

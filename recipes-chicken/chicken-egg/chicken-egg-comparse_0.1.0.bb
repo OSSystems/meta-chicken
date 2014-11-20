@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Schemely parser combinators"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://comparse.meta;md5=7f609215d3f4c25fac874a4b42960923"
-DEPENDS_virtclass-cross += "chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
+DEPENDS_class-cross += "chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
 DEPENDS += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
 RDEPENDS_${PN} += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie"
 

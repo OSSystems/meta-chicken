@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "variable-item"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://variable-item.meta;md5=32068b2881844817da9cf1ec42caf28c"
-DEPENDS_virtclass-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
+DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
 DEPENDS += "chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
 RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-check-errors"
 

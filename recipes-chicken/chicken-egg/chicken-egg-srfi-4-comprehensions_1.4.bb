@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "SRFI-42 Comprehensions for SRFI-4 Vectors"
 LICENSE = "SRFI"
 LIC_FILES_CHKSUM = "file://srfi-4-comprehensions.meta;md5=a27ea0db88e5a1d66fd6cc02ac6d561a"
-DEPENDS_virtclass-cross += "chicken-egg-srfi-42-cross"
+DEPENDS_class-cross += "chicken-egg-srfi-42-cross"
 DEPENDS += "chicken-egg-srfi-42 chicken-egg-srfi-42-cross"
 RDEPENDS_${PN} += "chicken-egg-srfi-42"
 

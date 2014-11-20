@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "LRU cache"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://lru-cache.meta;md5=f7cd5c281d53606c30275470bbce25a3"
-DEPENDS_virtclass-cross += "chicken-egg-record-variants-cross"
+DEPENDS_class-cross += "chicken-egg-record-variants-cross"
 DEPENDS += "chicken-egg-record-variants chicken-egg-record-variants-cross"
 RDEPENDS_${PN} += "chicken-egg-record-variants"
 

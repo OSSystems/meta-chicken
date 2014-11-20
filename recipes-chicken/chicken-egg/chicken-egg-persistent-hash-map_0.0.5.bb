@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A persistent (as in immutable) hash map implementation."
 LICENSE = "EPL-1.0"
 LIC_FILES_CHKSUM = "file://persistent-hash-map.meta;md5=3023cb5a032ca3ff10c99d6ee0203d4b"
-DEPENDS_virtclass-cross += "chicken-egg-fast-generic-cross chicken-egg-clojurian-cross chicken-egg-typed-records-cross"
+DEPENDS_class-cross += "chicken-egg-fast-generic-cross chicken-egg-clojurian-cross chicken-egg-typed-records-cross"
 DEPENDS += "chicken-egg-fast-generic chicken-egg-clojurian chicken-egg-typed-records chicken-egg-fast-generic-cross chicken-egg-clojurian-cross chicken-egg-typed-records-cross"
 RDEPENDS_${PN} += "chicken-egg-fast-generic chicken-egg-clojurian chicken-egg-typed-records"
 

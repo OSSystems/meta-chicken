@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A JSON parser (and emitter) built with comparse"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://medea.meta;md5=db7d04912484e098bdd154c24d05bf6a"
-DEPENDS_virtclass-cross += "chicken-egg-comparse-cross"
+DEPENDS_class-cross += "chicken-egg-comparse-cross"
 DEPENDS += "chicken-egg-comparse chicken-egg-comparse-cross"
 RDEPENDS_${PN} += "chicken-egg-comparse"
 

@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "An SCSS emitter with extensions"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://scss.meta;md5=2724888d59f2cef9f81498bd10ac4dbe"
-DEPENDS_virtclass-cross += "chicken-egg-matchable-cross"
+DEPENDS_class-cross += "chicken-egg-matchable-cross"
 DEPENDS += "chicken-egg-matchable chicken-egg-matchable-cross chicken-egg-scss-cross"
 RDEPENDS_${PN} += "chicken-egg-matchable"
 

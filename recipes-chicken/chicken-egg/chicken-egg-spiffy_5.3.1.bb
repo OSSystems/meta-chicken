@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A small but powerful web server"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://spiffy.meta;md5=a6ad4f7d1b9a61455c3c93df7f436b00"
-DEPENDS_virtclass-cross += "chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-uri-generic-cross chicken-egg-sendfile-cross"
+DEPENDS_class-cross += "chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-uri-generic-cross chicken-egg-sendfile-cross"
 DEPENDS += "chicken-egg-intarweb chicken-egg-uri-common chicken-egg-uri-generic chicken-egg-sendfile chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-uri-generic-cross chicken-egg-sendfile-cross chicken-egg-spiffy-cross"
 RDEPENDS_${PN} += "chicken-egg-intarweb chicken-egg-uri-common chicken-egg-uri-generic chicken-egg-sendfile"
 

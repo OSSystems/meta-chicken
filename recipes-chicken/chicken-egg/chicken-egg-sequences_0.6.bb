@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Generic sequence operators"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://sequences.meta;md5=b81234dd8712c6134ccae9f7b4fd5d00"
-DEPENDS_virtclass-cross += "chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross"
+DEPENDS_class-cross += "chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross"
 DEPENDS += "chicken-egg-fast-generic chicken-egg-srfi-42 chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross chicken-egg-sequences-cross"
 RDEPENDS_${PN} += "chicken-egg-fast-generic chicken-egg-srfi-42"
 

@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "evaluating expressions just once"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://latch.meta;md5=5656f3e9826aa6c3ac4859ed2571475c"
-DEPENDS_virtclass-cross += "chicken-egg-matchable-cross"
+DEPENDS_class-cross += "chicken-egg-matchable-cross"
 DEPENDS += "chicken-egg-matchable chicken-egg-matchable-cross"
 RDEPENDS_${PN} += "chicken-egg-matchable"
 

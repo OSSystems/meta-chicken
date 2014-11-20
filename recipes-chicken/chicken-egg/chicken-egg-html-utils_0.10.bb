@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Procedures to ease the generation of some frequently used [X]HTML/SXML structures"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://html-utils.meta;md5=853a82baebc676b58c852a858a48dd5f"
-DEPENDS_virtclass-cross += "chicken-egg-html-tags-cross"
+DEPENDS_class-cross += "chicken-egg-html-tags-cross"
 DEPENDS += "chicken-egg-html-tags chicken-egg-html-tags-cross"
 RDEPENDS_${PN} += "chicken-egg-html-tags"
 

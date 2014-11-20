@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "The SipHash family of hash functions"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://siphash.meta;md5=81c999501bf0043c95c70dbaebd74bda"
-DEPENDS_virtclass-cross += "chicken-egg-numbers-cross"
+DEPENDS_class-cross += "chicken-egg-numbers-cross"
 DEPENDS += "chicken-egg-numbers chicken-egg-numbers-cross"
 RDEPENDS_${PN} += "chicken-egg-numbers"
 
