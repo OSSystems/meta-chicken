@@ -70,6 +70,7 @@ exec csi -s $0 "$@"
          slice
          stty
          test
+         utf8
          vector-lib
          )))
 
@@ -86,6 +87,7 @@ exec csi -s $0 "$@"
     scss
     sequences
     spiffy
+    utf8
     ))
 
 (define (self-dependent-egg? egg)
