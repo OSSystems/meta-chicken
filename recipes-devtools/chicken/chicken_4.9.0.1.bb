@@ -32,11 +32,10 @@ def chicken_arch(bb, d):
 
 inherit autotools-brokensep
 
-export C_COMPILER="${TARGET_PREFIX}gcc"
-export C_COMPILER_virtclass-cross="${HOST_PREFIX}gcc"
-export TARGET_C_COMPILER="${TARGET_PREFIX}gcc"
-
 EXTRA_OEMAKE = " \
+    C_COMPILER="${TARGET_PREFIX}gcc" \
+    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TUNE_CCARGS} ${TARGET_CFLAGS}" \
+    LINKER_OPTIONS="${TUNE_CCARGS}" \
     BINDIR=${bindir} \
     LIBDIR=${libdir} \
     VARDIR=${localstatedir}/lib \
@@ -58,6 +57,11 @@ EXTRA_OEMAKE_class-cross = " \
     TARGET_PREFIX=${STAGING_DIR_TARGET} \
     TARGETSYSTEM=${TARGET_SYS} \
     TARGET_RUN_PREFIX=${target_prefix} \
+    \
+    C_COMPILER="${HOST_PREFIX}gcc" \
+    TARGET_C_COMPILER="${TARGET_PREFIX}gcc" \
+    TARGET_LINKER_OPTIONS="${TUNE_CCARGS}" \
+    TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TUNE_CCARGS} ${TARGET_CFLAGS}" \
 "
 
 do_install_append_class-cross() {
