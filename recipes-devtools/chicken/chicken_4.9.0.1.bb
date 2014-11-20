@@ -30,7 +30,7 @@ def chicken_arch(bb, d):
     else:
         return ''
 
-inherit autotools
+inherit autotools-brokensep
 
 export C_COMPILER="${TARGET_PREFIX}gcc"
 export C_COMPILER_virtclass-cross="${HOST_PREFIX}gcc"
