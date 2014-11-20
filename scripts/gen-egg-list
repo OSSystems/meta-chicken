@@ -1,0 +1,53 @@
+#!/bin/sh
+#| -*- scheme -*-
+exec csi -s $0 "$@"
+|#
+
+(use extras irregex posix)
+
+(define (strip-recipe-version recipe-file)
+  (irregex-match-substring
+   (irregex-match "(chicken-egg-[^_]+)_.*"
+                  recipe-file)
+   1))
+
+(define (generate-egg-list egg-recipes-dir)
+  (let* ((recipes (map pathname-file
+                       (glob (make-pathname egg-recipes-dir
+                                            "chicken-egg-*.bb"))))
+         (eggs (sort (map strip-recipe-version recipes) string<?)))
+    (print "ALL_CHICKEN_EGG_RECIPES = \"\\")
+    (for-each (lambda (egg)
+                (printf "    ~a \\\n" egg))
+              eggs)
+    (print "\"")))
+
+(define (usage #!optional exit-code)
+  (let ((port (if (and exit-code (not (zero? exit-code)))
+                  (current-error-port)
+                  (current-output-port))))
+    (fprintf port
+             "Usage: ~a <eggs recipes dir>\n"
+             (pathname-strip-directory (program-name))))
+  (when exit-code (exit exit-code)))
+
+
+
+(let ((args (command-line-arguments)))
+
+  (when (or (member "-h" args)
+            (member "-help" args)
+            (member "--help" args))
+    (usage 0))
+
+  (when (null? args)
+    (usage 1))
+
+  (let ((egg-recipes-dir (car args)))
+
+    (unless (directory-exists? egg-recipes-dir)
+      (fprintf (current-error-port)
+               "'~a' doesn't exist.  Aborting.\n"
+               egg-recipes-dir))
+
+    (generate-egg-list egg-recipes-dir)))
