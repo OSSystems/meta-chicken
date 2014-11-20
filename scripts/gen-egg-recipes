@@ -80,6 +80,7 @@ exec csi -s $0 "$@"
   '(awful
     check-errors
     fast-generic
+    message-digest
     protobuf
     scss
     sequences
