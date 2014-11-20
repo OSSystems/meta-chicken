@@ -1,8 +1,8 @@
-DEPENDS_virtclass-cross += "chicken-cross"
+DEPENDS_class-cross += "chicken-cross"
 DEPENDS += "chicken-cross chicken"
 
-PKG_CONFIG_PATH_virtclass-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
-PKG_CONFIG_SYSROOT_DIR_virtclass-cross = ""
+PKG_CONFIG_PATH_class-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
+PKG_CONFIG_SYSROOT_DIR_class-cross = ""
 
 EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
 
@@ -35,7 +35,7 @@ do_install () {
     fi
 }
 
-do_install_virtclass-cross () {
+do_install_class-cross () {
     CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
                  -L${libdir} \
                  -L${base_libdir} \
