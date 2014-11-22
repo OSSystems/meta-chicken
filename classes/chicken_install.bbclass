@@ -19,7 +19,7 @@ do_configure[noexec] = "1"
 do_compile[noexec] = "1"
 
 do_install () {
-    CSC_OPTIONS="-L --sysroot=${STAGING_DIR_TARGET} \
+    CSC_OPTIONS="-L ${TOOLCHAIN_OPTIONS} \
                  -L${STAGING_DIR_TARGET}${libdir} \
                  -L${STAGING_DIR_TARGET}${base_libdir}\
                  -I${STAGING_DIR_TARGET}${includedir} \
