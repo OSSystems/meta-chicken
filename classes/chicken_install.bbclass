@@ -15,6 +15,9 @@ EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
 
 do_fetch[depends] += "chicken-cross:do_populate_sysroot"
 
+do_configure[noexec] = "1"
+do_compile[noexec] = "1"
+
 do_install () {
     CSC_OPTIONS="-L --sysroot=${STAGING_DIR_TARGET} \
                  -L${STAGING_DIR_TARGET}${libdir} \
