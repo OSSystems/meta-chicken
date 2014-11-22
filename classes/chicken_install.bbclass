@@ -4,7 +4,7 @@ DEPENDS += "chicken-cross chicken"
 PKG_CONFIG_PATH_class-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
 PKG_CONFIG_SYSROOT_DIR_class-cross = ""
 
-EGG = "${@d.getVar('PN', True).replace('chicken-egg-', '').replace('-cross', '')}"
+EGG = "${@d.getVar('BPN', True).replace('chicken-egg-', '')}"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 
