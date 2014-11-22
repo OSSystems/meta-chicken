@@ -6,7 +6,7 @@ DEPENDS_class-cross += "chicken-egg-easyffi-cross chicken-egg-matchable-cross ch
 DEPENDS += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmacros chicken-egg-foreigners dbus chicken-egg-easyffi-cross chicken-egg-matchable-cross chicken-egg-miscmacros-cross chicken-egg-foreigners-cross"
 RDEPENDS_${PN} += "chicken-egg-easyffi chicken-egg-matchable chicken-egg-miscmacros chicken-egg-foreigners"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/${EGG}/${EGG}-${PV}.tar.gz file://dbus-error-handling.patch"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz file://dbus-error-handling.patch"
 
 SRC_URI[md5sum] = "cedbdb970aecb940b42b910c4743342b"
 SRC_URI[sha256sum] = "0b10d4aa4f4f9c285cb80af3b951ac50791fa99db7a2c1d86f1312153f5bbe93"
