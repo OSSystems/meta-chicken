@@ -34,8 +34,8 @@ do_configure[noexec] = "1"
 
 EXTRA_OEMAKE = " \
     C_COMPILER="${TARGET_PREFIX}gcc" \
-    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TUNE_CCARGS} ${TARGET_CFLAGS}" \
-    LINKER_OPTIONS="${TUNE_CCARGS}" \
+    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH} ${TARGET_CFLAGS} ${TOOLCHAIN_OPTIONS}" \
+    LINKER_OPTIONS="${TARGET_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
     BINDIR=${bindir} \
     LIBDIR=${libdir} \
     VARDIR=${localstatedir}/lib \
@@ -60,8 +60,8 @@ EXTRA_OEMAKE_class-cross = " \
     \
     C_COMPILER="${HOST_PREFIX}gcc" \
     TARGET_C_COMPILER="${TARGET_PREFIX}gcc" \
-    TARGET_LINKER_OPTIONS="${TUNE_CCARGS}" \
-    TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TUNE_CCARGS} ${TARGET_CFLAGS}" \
+    TARGET_LINKER_OPTIONS="${TARGET_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
+    TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH} ${TARGET_CFLAGS}" \
 "
 
 do_install() {
