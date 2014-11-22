@@ -30,7 +30,7 @@ def chicken_arch(bb, d):
     else:
         return ''
 
-inherit autotools-brokensep
+do_configure[noexec] = "1"
 
 EXTRA_OEMAKE = " \
     C_COMPILER="${TARGET_PREFIX}gcc" \
@@ -63,6 +63,10 @@ EXTRA_OEMAKE_class-cross = " \
     TARGET_LINKER_OPTIONS="${TARGET_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
     TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH} ${TARGET_CFLAGS}" \
 "
+
+do_install() {
+    oe_runmake install DESTDIR=${D}
+}
 
 do_install_append_class-cross() {
     # Remove things we don't need
