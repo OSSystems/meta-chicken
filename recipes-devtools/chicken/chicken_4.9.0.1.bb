@@ -3,9 +3,11 @@ require chicken.inc
 DEPENDS = "chicken-cross"
 DEPENDS_class-cross = ""
 DEPENDS_class-crosssdk = ""
+DEPENDS_class-nativesdk = ""
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
+INSANE_SKIP_nativesdk-libchicken += "useless-rpaths"
 
 EXTRA_OEMAKE = " \
     C_COMPILER="${TARGET_PREFIX}gcc" \
@@ -74,4 +76,4 @@ FILES_${PN}-doc += "${datadir}/*chicken/doc"
 FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug"
 FILES_${PN}-dev += "${localstatedir}/lib/*chicken/*/types.db"
 
-BBCLASSEXTEND = "cross crosssdk"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
