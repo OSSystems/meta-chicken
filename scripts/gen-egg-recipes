@@ -69,6 +69,7 @@ exec csi -s $0 "$@"
          siphash
          slice
          stty
+         sxpath
          test
          utf8
          vector-lib
@@ -87,6 +88,7 @@ exec csi -s $0 "$@"
     scss
     sequences
     spiffy
+    sxpath
     utf8
     ))
 
