@@ -60,6 +60,28 @@ do_install_class-cross () {
     fi
 }
 
+do_install_class-crosssdk () {
+    CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
+                 -L${libdir} \
+                 -L${base_libdir} \
+                 -I${includedir} \
+                 -I${includedir}/chicken \
+                 ${EXTRA_CSC_OPTIONS}" \
+    CHICKEN_INCLUDE_PATH=${localstatedir}/share/chicken \
+    \
+    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
+                                    -host -prefix ${D}${prefix}
+
+    # Fix install path
+    mv ${D}${localstatedir}/lib/chicken ${D}${localstatedir}/lib/${TARGET_PREFIX}chicken
+    if [ -d ${D}${localstatedir}/bin ]; then
+        install -d ${D}/${bindir}
+        mv ${D}${localstatedir}/bin/.debug ${D}${bindir} || true
+        mv ${D}${localstatedir}/bin/*  ${D}${bindir} || true
+        rm -r ${D}${localstatedir}/bin
+    fi
+}
+
 PACKAGES = "${PN}-dbg ${PN}"
 
 FILES_${PN}-dbg += "${localstatedir}/lib/chicken/*/.debug/*"
