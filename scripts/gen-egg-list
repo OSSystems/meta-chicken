@@ -3,7 +3,7 @@
 exec csi -s $0 "$@"
 |#
 
-(use extras irregex posix)
+(use extras irregex posix srfi-1)
 
 (define (strip-recipe-version recipe-file)
   (irregex-match-substring
@@ -15,7 +15,7 @@ exec csi -s $0 "$@"
   (let* ((recipes (map pathname-file
                        (glob (make-pathname egg-recipes-dir
                                             "chicken-egg-*.bb"))))
-         (eggs (sort (map strip-recipe-version recipes) string<?)))
+         (eggs (delete-duplicates (sort (map strip-recipe-version recipes) string<?))))
     (print "ALL_CHICKEN_EGG_RECIPES = \"\\")
     (for-each (lambda (egg)
                 (printf "    ~a \\\n" egg))
