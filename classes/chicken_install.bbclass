@@ -28,7 +28,7 @@ do_install () {
     CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/chicken \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
-                                    -target -prefix ${D}${localstatedir}
+                                    -target -prefix ${D}${prefix}
 
     # Fix install path
     if [ -d ${D}${localstatedir}/bin ]; then
@@ -49,7 +49,7 @@ do_install_class-cross () {
     CHICKEN_INCLUDE_PATH=${localstatedir}/share/chicken \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
-                                    -host -prefix ${D}${localstatedir}
+                                    -host -prefix ${D}${prefix}
 
     # Fix install path
     mv ${D}${localstatedir}/lib/chicken ${D}${localstatedir}/lib/${TARGET_PREFIX}chicken
