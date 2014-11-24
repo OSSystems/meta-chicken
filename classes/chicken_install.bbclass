@@ -1,5 +1,6 @@
 DEPENDS_class-cross += "chicken-cross"
 DEPENDS_class-crosssdk += "chicken-crosssdk"
+DEPENDS_class-nativesdk += "chicken-crosssdk chicken-nativesdk"
 DEPENDS += "chicken-cross chicken"
 
 PKG_CONFIG_PATH_class-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
