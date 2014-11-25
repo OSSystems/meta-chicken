@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Blob Utilities"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://blob-utils.meta;md5=87426bbdce89b822db6138cec889179d"
-DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
-DEPENDS += "chicken-egg-setup-helper chicken-egg-string-utils chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
-RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-string-utils"
+DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-string-utils-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper nativesdk-chicken-egg-string-utils chicken-egg-setup-helper-crosssdk chicken-egg-string-utils-crosssdk"
+DEPENDS = " chicken-egg-setup-helper chicken-egg-string-utils chicken-egg-setup-helper-cross chicken-egg-string-utils-cross"
+RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-string-utils"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
