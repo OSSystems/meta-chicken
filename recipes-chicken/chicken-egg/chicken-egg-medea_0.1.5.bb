@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A JSON parser (and emitter) built with comparse"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://medea.meta;md5=db7d04912484e098bdd154c24d05bf6a"
-DEPENDS_class-cross += "chicken-egg-comparse-cross"
-DEPENDS += "chicken-egg-comparse chicken-egg-comparse-cross"
-RDEPENDS_${PN} += "chicken-egg-comparse"
+DEPENDS_append_class-cross = " chicken-egg-comparse-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-comparse-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-comparse chicken-egg-comparse-crosssdk"
+DEPENDS = " chicken-egg-comparse chicken-egg-comparse-cross"
+RDEPENDS_${PN} = " chicken-egg-comparse"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

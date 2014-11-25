@@ -14,7 +14,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-connman \
     chicken-egg-crypt \
     chicken-egg-dbus \
-    chicken-egg-dbus \
     chicken-egg-defstruct \
     chicken-egg-describe \
     chicken-egg-easyffi \
@@ -75,6 +74,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-string-utils \
     chicken-egg-stty \
     chicken-egg-sxml-transforms \
+    chicken-egg-sxpath \
     chicken-egg-synch \
     chicken-egg-test \
     chicken-egg-trie \

@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "A JSON library"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://json.meta;md5=0a9020a355f36a4a5b66f5f940d1e373"
-DEPENDS_class-cross += "chicken-egg-packrat-cross"
-DEPENDS += "chicken-egg-packrat chicken-egg-packrat-cross"
-RDEPENDS_${PN} += "chicken-egg-packrat"
+DEPENDS_append_class-cross = " chicken-egg-packrat-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-packrat-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-packrat chicken-egg-packrat-crosssdk"
+DEPENDS = " chicken-egg-packrat chicken-egg-packrat-cross"
+RDEPENDS_${PN} = " chicken-egg-packrat"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
