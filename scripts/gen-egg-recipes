@@ -246,7 +246,7 @@ exec csi -s $0 "$@"
 (define (format-deps var deps)
   (if (null? deps)
       '()
-      (list (sprintf "~a += \"~a\""
+      (list (sprintf "~a = \" ~a\""
                      var
                      (string-intersperse deps)))))
 
@@ -258,12 +258,18 @@ exec csi -s $0 "$@"
               '()))
          (deps-pkg (map symbol->string ext-deps))
          (deps-pkg-cross (map egg->recipe/cross deps))
+         (deps-pkg-crosssdk (map egg->recipe/crosssdk deps))
+         (deps-pkg-nativesdk (map egg->recipe/nativesdk deps))
          (deps-pkg-native (map recipe->native ext-deps))
          (cross-deps (append deps-pkg-cross deps-pkg-native))
+         (crosssdk-deps (append deps-pkg-crosssdk deps-pkg-native))
+         (nativesdk-deps (append deps-pkg-nativesdk deps-pkg-crosssdk))
          (target-deps (append deps-eggs deps-pkg deps-pkg-cross deps-self-egg))
          (output
           (append
-           (format-deps "DEPENDS_class-cross" cross-deps)
+           (format-deps "DEPENDS_append_class-cross" cross-deps)
+           (format-deps "DEPENDS_append_class-crosssdk" crosssdk-deps)
+           (format-deps "DEPENDS_append_class-nativesdk" nativesdk-deps)
            (format-deps "DEPENDS" target-deps)
            (format-deps "RDEPENDS_${PN}" deps-eggs))))
     (if (null? output)
@@ -321,8 +327,14 @@ exec csi -s $0 "$@"
 (define (egg->recipe/cross egg)
   (conc "chicken-egg-" egg "-cross"))
 
+(define (egg->recipe/crosssdk egg)
+  (conc "chicken-egg-" egg "-crosssdk"))
+
 (define (recipe->native recipe)
   (conc recipe "-native"))
+
+(define (egg->recipe/nativesdk egg)
+  (conc "nativesdk-chicken-egg-" egg))
 
 (define (gen-recipe egg)
   (let* ((version (latest-egg-version egg))
@@ -347,7 +359,7 @@ exec csi -s $0 "$@"
                "S = \"${WORKDIR}/${EGG}-${PV}\""
                (format-recipe-extra-data egg version)
                (string-append "inherit chicken_install\n")
-               (string-append "BBCLASSEXTEND = \"cross\""))))
+               (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
         (print (string-intersperse (list egg version (->string deps)) "\t"))
         (with-output-to-file recipe-file
           (lambda ()
