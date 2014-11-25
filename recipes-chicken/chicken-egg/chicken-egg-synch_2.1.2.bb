@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Synchronization Forms"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://synch.meta;md5=97b3faf0fcdc0f4ef9cd1fd2a1ae58af"
-DEPENDS_class-cross += "chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
-DEPENDS += "chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
-RDEPENDS_${PN} += "chicken-egg-setup-helper chicken-egg-check-errors"
+DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-check-errors-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper nativesdk-chicken-egg-check-errors chicken-egg-setup-helper-crosssdk chicken-egg-check-errors-crosssdk"
+DEPENDS = " chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
+RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-check-errors"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

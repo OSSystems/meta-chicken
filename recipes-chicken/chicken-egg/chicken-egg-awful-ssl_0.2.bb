@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "SSL support for awful"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://awful-ssl.meta;md5=3b9b3cb66ac772374accc483dfe155a9"
-DEPENDS_class-cross += "chicken-egg-awful-cross chicken-egg-openssl-cross chicken-egg-spiffy-cross"
-DEPENDS += "chicken-egg-awful chicken-egg-openssl chicken-egg-spiffy chicken-egg-awful-cross chicken-egg-openssl-cross chicken-egg-spiffy-cross"
-RDEPENDS_${PN} += "chicken-egg-awful chicken-egg-openssl chicken-egg-spiffy"
+DEPENDS_append_class-cross = " chicken-egg-awful-cross chicken-egg-openssl-cross chicken-egg-spiffy-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-awful-crosssdk chicken-egg-openssl-crosssdk chicken-egg-spiffy-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-awful nativesdk-chicken-egg-openssl nativesdk-chicken-egg-spiffy chicken-egg-awful-crosssdk chicken-egg-openssl-crosssdk chicken-egg-spiffy-crosssdk"
+DEPENDS = " chicken-egg-awful chicken-egg-openssl chicken-egg-spiffy chicken-egg-awful-cross chicken-egg-openssl-cross chicken-egg-spiffy-cross"
+RDEPENDS_${PN} = " chicken-egg-awful chicken-egg-openssl chicken-egg-spiffy"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

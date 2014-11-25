@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Manage ConnMan using the D-Bus API "
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://connman.meta;md5=8cf03ba2b573e782eb436a7126d3b9a9"
-DEPENDS_class-cross += "chicken-egg-dbus-cross chicken-egg-ssax-cross chicken-egg-matchable-cross chicken-egg-advice-cross"
-DEPENDS += "chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice chicken-egg-dbus-cross chicken-egg-ssax-cross chicken-egg-matchable-cross chicken-egg-advice-cross"
-RDEPENDS_${PN} += "chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice"
+DEPENDS_append_class-cross = " chicken-egg-dbus-cross chicken-egg-ssax-cross chicken-egg-matchable-cross chicken-egg-advice-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-dbus-crosssdk chicken-egg-ssax-crosssdk chicken-egg-matchable-crosssdk chicken-egg-advice-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-dbus nativesdk-chicken-egg-ssax nativesdk-chicken-egg-matchable nativesdk-chicken-egg-advice chicken-egg-dbus-crosssdk chicken-egg-ssax-crosssdk chicken-egg-matchable-crosssdk chicken-egg-advice-crosssdk"
+DEPENDS = " chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice chicken-egg-dbus-cross chicken-egg-ssax-cross chicken-egg-matchable-cross chicken-egg-advice-cross"
+RDEPENDS_${PN} = " chicken-egg-dbus chicken-egg-ssax chicken-egg-matchable chicken-egg-advice"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

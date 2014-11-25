@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Binary-compatible flexible gettext reimplementation"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://free-gettext.meta;md5=e9522ab8b41f83507a9b9ed62bdd9b26"
-DEPENDS_class-cross += "chicken-egg-charconv-cross"
-DEPENDS += "chicken-egg-charconv chicken-egg-charconv-cross"
-RDEPENDS_${PN} += "chicken-egg-charconv"
+DEPENDS_append_class-cross = " chicken-egg-charconv-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-charconv-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-charconv chicken-egg-charconv-crosssdk"
+DEPENDS = " chicken-egg-charconv chicken-egg-charconv-cross"
+RDEPENDS_${PN} = " chicken-egg-charconv"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
