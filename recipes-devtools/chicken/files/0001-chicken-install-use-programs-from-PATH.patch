@@ -1,0 +1,27 @@
+From cf8226f2b5d38e3134fdb4149bd0c6b747a363e1 Mon Sep 17 00:00:00 2001
+From: Mario Domenech Goulart <mario@ossystems.com.br>
+Date: Mon, 24 Nov 2014 17:38:49 -0200
+Subject: [PATCH] chicken-install: use programs from PATH
+Organization: O.S. Systems Software LTDA.
+
+Signed-off-by: Mario Domenech Goulart <mario@ossystems.com.br>
+---
+ chicken-install.scm |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/chicken-install.scm b/chicken-install.scm
+index 2ef6ef4..2308d4c 100644
+--- a/chicken-install.scm
++++ b/chicken-install.scm
+@@ -72,7 +72,7 @@
+ 
+   (define *program-path*
+     (or (and-let* ((p (get-environment-variable "CHICKEN_PREFIX")))
+-          (make-pathname p "bin") )
++          #f)
+         C_INSTALL_BIN_HOME))
+ 
+   (define *keep* #f)
+-- 
+1.7.10.4
+
