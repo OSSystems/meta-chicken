@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Schemely parser combinators"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://comparse.meta;md5=7f609215d3f4c25fac874a4b42960923"
-DEPENDS_class-cross += "chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
-DEPENDS += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
-RDEPENDS_${PN} += "chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie"
+DEPENDS_append_class-cross = " chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-lazy-seq-crosssdk chicken-egg-latch-crosssdk chicken-egg-trie-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-lazy-seq nativesdk-chicken-egg-latch nativesdk-chicken-egg-trie chicken-egg-lazy-seq-crosssdk chicken-egg-latch-crosssdk chicken-egg-trie-crosssdk"
+DEPENDS = " chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie chicken-egg-lazy-seq-cross chicken-egg-latch-cross chicken-egg-trie-cross"
+RDEPENDS_${PN} = " chicken-egg-lazy-seq chicken-egg-latch chicken-egg-trie"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

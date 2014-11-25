@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "sql-de-lite support for awful"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://awful-sql-de-lite.meta;md5=cedc6a2441dc8ed6a0ecc3dd0ec69ac0"
-DEPENDS_class-cross += "chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
-DEPENDS += "chicken-egg-awful chicken-egg-sql-de-lite chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
-RDEPENDS_${PN} += "chicken-egg-awful chicken-egg-sql-de-lite"
+DEPENDS_append_class-cross = " chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-awful-crosssdk chicken-egg-sql-de-lite-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-awful nativesdk-chicken-egg-sql-de-lite chicken-egg-awful-crosssdk chicken-egg-sql-de-lite-crosssdk"
+DEPENDS = " chicken-egg-awful chicken-egg-sql-de-lite chicken-egg-awful-cross chicken-egg-sql-de-lite-cross"
+RDEPENDS_${PN} = " chicken-egg-awful chicken-egg-sql-de-lite"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
