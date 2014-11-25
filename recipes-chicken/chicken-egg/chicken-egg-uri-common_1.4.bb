@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Parser for common URI schemes"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://uri-common.meta;md5=3a68c19704242347487cce53495c1dc8"
-DEPENDS_class-cross += "chicken-egg-uri-generic-cross chicken-egg-defstruct-cross chicken-egg-matchable-cross"
-DEPENDS += "chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable chicken-egg-uri-generic-cross chicken-egg-defstruct-cross chicken-egg-matchable-cross"
-RDEPENDS_${PN} += "chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable"
+DEPENDS_append_class-cross = " chicken-egg-uri-generic-cross chicken-egg-defstruct-cross chicken-egg-matchable-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-uri-generic-crosssdk chicken-egg-defstruct-crosssdk chicken-egg-matchable-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-uri-generic nativesdk-chicken-egg-defstruct nativesdk-chicken-egg-matchable chicken-egg-uri-generic-crosssdk chicken-egg-defstruct-crosssdk chicken-egg-matchable-crosssdk"
+DEPENDS = " chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable chicken-egg-uri-generic-cross chicken-egg-defstruct-cross chicken-egg-matchable-cross"
+RDEPENDS_${PN} = " chicken-egg-uri-generic chicken-egg-defstruct chicken-egg-matchable"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
