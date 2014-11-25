@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://openssl.meta;md5=e9ffa5abea8ae6526bc8045a8cb2aa4b"
 DEPENDS_append_class-cross = " openssl-native"
 DEPENDS_append_class-crosssdk = " openssl-native"
+DEPENDS_append_class-nativesdk = " nativesdk-openssl"
 DEPENDS = " openssl"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
