@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Generic sequence operators"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://sequences.meta;md5=b81234dd8712c6134ccae9f7b4fd5d00"
-DEPENDS_class-cross += "chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross"
-DEPENDS += "chicken-egg-fast-generic chicken-egg-srfi-42 chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross chicken-egg-sequences-cross"
-RDEPENDS_${PN} += "chicken-egg-fast-generic chicken-egg-srfi-42"
+DEPENDS_append_class-cross = " chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-fast-generic-crosssdk chicken-egg-srfi-42-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-fast-generic nativesdk-chicken-egg-srfi-42 chicken-egg-fast-generic-crosssdk chicken-egg-srfi-42-crosssdk"
+DEPENDS = " chicken-egg-fast-generic chicken-egg-srfi-42 chicken-egg-fast-generic-cross chicken-egg-srfi-42-cross chicken-egg-sequences-cross"
+RDEPENDS_${PN} = " chicken-egg-fast-generic chicken-egg-srfi-42"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

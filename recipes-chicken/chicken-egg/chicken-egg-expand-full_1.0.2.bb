@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Full macro expansion"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://expand-full.meta;md5=2f9e841945892461c7e390e5a81d17ea"
-DEPENDS_class-cross += "chicken-egg-setup-helper-cross"
-DEPENDS += "chicken-egg-setup-helper chicken-egg-setup-helper-cross"
-RDEPENDS_${PN} += "chicken-egg-setup-helper"
+DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper chicken-egg-setup-helper-crosssdk"
+DEPENDS = " chicken-egg-setup-helper chicken-egg-setup-helper-cross"
+RDEPENDS_${PN} = " chicken-egg-setup-helper"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
