@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "High-level HTTP client library"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://http-client.meta;md5=b93a27cebfaf93a886e0b0be8b1d5baa"
-DEPENDS_class-cross += "chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-message-digest-cross chicken-egg-md5-cross chicken-egg-string-utils-cross chicken-egg-sendfile-cross"
-DEPENDS += "chicken-egg-intarweb chicken-egg-uri-common chicken-egg-message-digest chicken-egg-md5 chicken-egg-string-utils chicken-egg-sendfile chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-message-digest-cross chicken-egg-md5-cross chicken-egg-string-utils-cross chicken-egg-sendfile-cross"
-RDEPENDS_${PN} += "chicken-egg-intarweb chicken-egg-uri-common chicken-egg-message-digest chicken-egg-md5 chicken-egg-string-utils chicken-egg-sendfile"
+DEPENDS_append_class-cross = " chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-message-digest-cross chicken-egg-md5-cross chicken-egg-string-utils-cross chicken-egg-sendfile-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-intarweb-crosssdk chicken-egg-uri-common-crosssdk chicken-egg-message-digest-crosssdk chicken-egg-md5-crosssdk chicken-egg-string-utils-crosssdk chicken-egg-sendfile-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-intarweb nativesdk-chicken-egg-uri-common nativesdk-chicken-egg-message-digest nativesdk-chicken-egg-md5 nativesdk-chicken-egg-string-utils nativesdk-chicken-egg-sendfile chicken-egg-intarweb-crosssdk chicken-egg-uri-common-crosssdk chicken-egg-message-digest-crosssdk chicken-egg-md5-crosssdk chicken-egg-string-utils-crosssdk chicken-egg-sendfile-crosssdk"
+DEPENDS = " chicken-egg-intarweb chicken-egg-uri-common chicken-egg-message-digest chicken-egg-md5 chicken-egg-string-utils chicken-egg-sendfile chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-message-digest-cross chicken-egg-md5-cross chicken-egg-string-utils-cross chicken-egg-sendfile-cross"
+RDEPENDS_${PN} = " chicken-egg-intarweb chicken-egg-uri-common chicken-egg-message-digest chicken-egg-md5 chicken-egg-string-utils chicken-egg-sendfile"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

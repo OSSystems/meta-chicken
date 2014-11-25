@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "The SipHash family of hash functions"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://siphash.meta;md5=81c999501bf0043c95c70dbaebd74bda"
-DEPENDS_class-cross += "chicken-egg-numbers-cross"
-DEPENDS += "chicken-egg-numbers chicken-egg-numbers-cross"
-RDEPENDS_${PN} += "chicken-egg-numbers"
+DEPENDS_append_class-cross = " chicken-egg-numbers-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-numbers-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-numbers chicken-egg-numbers-crosssdk"
+DEPENDS = " chicken-egg-numbers chicken-egg-numbers-cross"
+RDEPENDS_${PN} = " chicken-egg-numbers"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

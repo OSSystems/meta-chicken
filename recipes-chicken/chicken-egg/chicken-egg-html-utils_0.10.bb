@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Procedures to ease the generation of some frequently used [X]HTML/SXML structures"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://html-utils.meta;md5=853a82baebc676b58c852a858a48dd5f"
-DEPENDS_class-cross += "chicken-egg-html-tags-cross"
-DEPENDS += "chicken-egg-html-tags chicken-egg-html-tags-cross"
-RDEPENDS_${PN} += "chicken-egg-html-tags"
+DEPENDS_append_class-cross = " chicken-egg-html-tags-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-html-tags-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-html-tags chicken-egg-html-tags-crosssdk"
+DEPENDS = " chicken-egg-html-tags chicken-egg-html-tags-cross"
+RDEPENDS_${PN} = " chicken-egg-html-tags"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

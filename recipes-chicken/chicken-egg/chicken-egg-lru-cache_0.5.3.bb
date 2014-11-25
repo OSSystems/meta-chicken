@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "LRU cache"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://lru-cache.meta;md5=f7cd5c281d53606c30275470bbce25a3"
-DEPENDS_class-cross += "chicken-egg-record-variants-cross"
-DEPENDS += "chicken-egg-record-variants chicken-egg-record-variants-cross"
-RDEPENDS_${PN} += "chicken-egg-record-variants"
+DEPENDS_append_class-cross = " chicken-egg-record-variants-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-record-variants-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-record-variants chicken-egg-record-variants-crosssdk"
+DEPENDS = " chicken-egg-record-variants chicken-egg-record-variants-cross"
+RDEPENDS_${PN} = " chicken-egg-record-variants"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

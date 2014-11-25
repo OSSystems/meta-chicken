@@ -2,7 +2,7 @@ SECTION = "devel/chicken"
 DESCRIPTION = "The sxpath bits of sxml-tools from the SSAX project at Sourceforge"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://sxpath.meta;md5=99d5fc848a684c9e468accafb012efa8"
-DEPENDS += "chicken-egg-sxpath-cross"
+DEPENDS = " chicken-egg-sxpath-cross"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -13,4 +13,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

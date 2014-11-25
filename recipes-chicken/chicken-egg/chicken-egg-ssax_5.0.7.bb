@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Oleg Kiselyov's XML parser"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://ssax.meta;md5=835a961265c6391fbe0c0b03e3c17bd7"
-DEPENDS_class-cross += "chicken-egg-input-parse-cross"
-DEPENDS += "chicken-egg-input-parse chicken-egg-input-parse-cross"
-RDEPENDS_${PN} += "chicken-egg-input-parse"
+DEPENDS_append_class-cross = " chicken-egg-input-parse-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-input-parse-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-input-parse chicken-egg-input-parse-crosssdk"
+DEPENDS = " chicken-egg-input-parse chicken-egg-input-parse-cross"
+RDEPENDS_${PN} = " chicken-egg-input-parse"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
