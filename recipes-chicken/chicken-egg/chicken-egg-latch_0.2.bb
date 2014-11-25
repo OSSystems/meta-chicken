@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "evaluating expressions just once"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://latch.meta;md5=5656f3e9826aa6c3ac4859ed2571475c"
-DEPENDS_class-cross += "chicken-egg-matchable-cross"
-DEPENDS += "chicken-egg-matchable chicken-egg-matchable-cross"
-RDEPENDS_${PN} += "chicken-egg-matchable"
+DEPENDS_append_class-cross = " chicken-egg-matchable-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-matchable-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-matchable chicken-egg-matchable-crosssdk"
+DEPENDS = " chicken-egg-matchable chicken-egg-matchable-cross"
+RDEPENDS_${PN} = " chicken-egg-matchable"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
