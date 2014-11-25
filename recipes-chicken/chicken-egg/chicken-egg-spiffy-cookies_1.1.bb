@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Procedures for managing cookies"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://spiffy-cookies.meta;md5=ed39681648eee590cbc51b8ade0ac773"
-DEPENDS_class-cross += "chicken-egg-spiffy-cross chicken-egg-intarweb-cross"
-DEPENDS += "chicken-egg-spiffy chicken-egg-intarweb chicken-egg-spiffy-cross chicken-egg-intarweb-cross"
-RDEPENDS_${PN} += "chicken-egg-spiffy chicken-egg-intarweb"
+DEPENDS_append_class-cross = " chicken-egg-spiffy-cross chicken-egg-intarweb-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-spiffy-crosssdk chicken-egg-intarweb-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-spiffy nativesdk-chicken-egg-intarweb chicken-egg-spiffy-crosssdk chicken-egg-intarweb-crosssdk"
+DEPENDS = " chicken-egg-spiffy chicken-egg-intarweb chicken-egg-spiffy-cross chicken-egg-intarweb-cross"
+RDEPENDS_${PN} = " chicken-egg-spiffy chicken-egg-intarweb"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"

@@ -2,9 +2,11 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Yet Another Testing Utility"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://test.meta;md5=9d6f9e6becd92deb67b66ef401adf626"
-DEPENDS_class-cross += "chicken-egg-regex-cross"
-DEPENDS += "chicken-egg-regex chicken-egg-regex-cross"
-RDEPENDS_${PN} += "chicken-egg-regex"
+DEPENDS_append_class-cross = " chicken-egg-regex-cross"
+DEPENDS_append_class-crosssdk = " chicken-egg-regex-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-regex chicken-egg-regex-crosssdk"
+DEPENDS = " chicken-egg-regex chicken-egg-regex-cross"
+RDEPENDS_${PN} = " chicken-egg-regex"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
@@ -15,4 +17,4 @@ S = "${WORKDIR}/${EGG}-${PV}"
 
 inherit chicken_install
 
-BBCLASSEXTEND = "cross"
+BBCLASSEXTEND = "cross crosssdk nativesdk"
