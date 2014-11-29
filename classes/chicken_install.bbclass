@@ -60,7 +60,7 @@ do_install_class-cross () {
     fi
 }
 
-PACKAGES = "${PN}-dbg ${PN}"
+PACKAGES = "${PN}-dbg ${PN}-dev ${PN}"
 
-FILES_${PN}-dbg += "${localstatedir}/lib/chicken/*/.debug/*"
-FILES_${PN} += "${localstatedir}/lib/chicken/*/* ${localstatedir}/share/chicken/*"
+FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug/*"
+FILES_${PN} += "${localstatedir}/lib/*chicken/*/* ${localstatedir}/share/*chicken/*"
