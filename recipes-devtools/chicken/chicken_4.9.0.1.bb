@@ -3,6 +3,7 @@ require chicken.inc
 DEPENDS = "chicken-cross"
 DEPENDS_class-cross = ""
 DEPENDS_class-crosssdk = ""
+DEPENDS_class-native = ""
 DEPENDS_class-nativesdk = ""
 
 INSANE_SKIP_${PN} += "useless-rpaths"
@@ -76,4 +77,4 @@ FILES_${PN}-doc += "${datadir}/*chicken/doc"
 FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug"
 FILES_${PN}-dev += "${localstatedir}/lib/*chicken/*/types.db"
 
-BBCLASSEXTEND = "cross crosssdk nativesdk"
+BBCLASSEXTEND = "cross crosssdk native nativesdk"
