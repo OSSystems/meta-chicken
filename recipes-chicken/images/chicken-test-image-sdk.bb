@@ -9,4 +9,6 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     ${ALL_CHICKEN_EGG_RECIPES} \
 "
 
-TOOLCHAIN_HOST_TASK_append = " chicken-cross-canadian-${TRANSLATED_TARGET_ARCH}"
+TOOLCHAIN_HOST_TASK_append = " chicken-cross-canadian-${TRANSLATED_TARGET_ARCH} \
+                               ${ALL_NATIVESDK_CHICKEN_EGG_RECIPES} \
+                               "
