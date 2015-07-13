@@ -7,3 +7,5 @@ IMAGE_FEATURES += "dev-pkgs \
                    tools-testapps \
                    debug-tweaks \
                    ssh-server-openssh"
+
+TOOLCHAIN_HOST_TASK_append = " chicken-cross-canadian-${TRANSLATED_TARGET_ARCH}"
