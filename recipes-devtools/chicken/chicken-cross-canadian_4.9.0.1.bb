@@ -23,8 +23,8 @@ EXTRA_OEMAKE = " \
     PREFIX=${prefix} \
     ARCH=${@chicken_arch(bb, d)} \
     \
-    C_COMPILER="${HOST_PREFIX}gcc" \
-    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${HOST_CC_ARCH} ${HOST_CFLAGS} ${TOOLCHAIN_OPTIONS}" \
+    C_COMPILER="gcc" \
+    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${HOST_CC_ARCH} ${HOST_CFLAGS}" \
     LINKER_OPTIONS="${HOST_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
     \
     PROGRAM_PREFIX=${TARGET_PREFIX} \
@@ -60,3 +60,5 @@ FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug"
 FILES_${PN}-doc += "${datadir}/*chicken/doc"
 
 BBCLASSEXTEND = "native"
+
+do_chicken_bootstrap[depends] = "chicken-native:do_install"
