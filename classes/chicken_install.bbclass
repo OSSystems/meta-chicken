@@ -40,7 +40,7 @@ do_install () {
     rmdir ${D}${prefix} || true
 }
 
-do_install_class-cross () {
+chicken_cross_build_and_install() {
     CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
                  -L${STAGING_BASE_LIBDIR_NATIVE} \
                  -I${STAGING_INCDIR_NATIVE} \
@@ -61,28 +61,16 @@ do_install_class-cross () {
     fi
     rmdir ${D}${prefix} || true
 }
+
+do_install_class-cross () {
+    chicken_cross_build_and_install
+}
+
 
 do_install_class-crosssdk () {
-    CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
-                 -L${STAGING_BASE_LIBDIR_NATIVE} \
-                 -I${STAGING_INCDIR_NATIVE} \
-                 -I${STAGING_INCDIR_NATIVE}/${TARGET_PREFIX}chicken \
-                 ${EXTRA_CSC_OPTIONS} -v" \
-    CHICKEN_INCLUDE_PATH=${localstatedir}/share/${TARGET_PREFIX}chicken \
-    \
-    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -host -prefix ${D}${prefix}
-
-    # FIXME: chicken-install lacks some important options to better
-    # support packaging of eggs; this workaround those limitations.
-    mkdir -p ${D}${localstatedir}
-    mv ${D}${prefix}/lib ${D}${localstatedir}/lib
-    mv ${D}${localstatedir}/lib/chicken ${D}${localstatedir}/lib/${TARGET_PREFIX}chicken
-    if [ -d ${D}${prefix}/share ]; then
-        mv ${D}${prefix}/share ${D}${localstatedir}/share
-        mv ${D}${localstatedir}/share/chicken ${D}${localstatedir}/share/${TARGET_PREFIX}chicken
-    fi
-    rmdir ${D}${prefix} || true
+    chicken_cross_build_and_install
 }
+
 
 PACKAGES = "${PN}-dbg ${PN}-dev ${PN}"
 
