@@ -1,4 +1,4 @@
-Layer with Chicken toolchain for use with OpenEmbedded
+Layer with CHICKEN toolchain for use with OpenEmbedded
 
 This layer depends on:
 
