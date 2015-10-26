@@ -31,7 +31,7 @@ do_install () {
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
-    # support packaging of eggs; this workaround those limitations.
+    # support packaging of eggs; this works around those limitations.
     mkdir -p ${D}${localstatedir}
     mv ${D}${prefix}/lib ${D}${localstatedir}/lib
     if [ -d ${D}${prefix}/share ]; then
@@ -51,7 +51,7 @@ chicken_cross_build_and_install() {
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -host -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
-    # support packaging of eggs; this workaround those limitations.
+    # support packaging of eggs; this works around those limitations.
     mkdir -p ${D}${localstatedir}
     mv ${D}${prefix}/lib ${D}${localstatedir}/lib
     mv ${D}${localstatedir}/lib/chicken ${D}${localstatedir}/lib/${TARGET_PREFIX}chicken
