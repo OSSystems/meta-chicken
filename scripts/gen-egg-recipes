@@ -135,11 +135,18 @@ exec csi -s $0 "$@"
                  egg)))
     (or (alist-ref egg external-dependencies) '())))
 
+(define (list-extension-versions name dir)
+  (let ((eggdir (make-pathname dir name)))
+    (cond ((directory-exists? eggdir)
+           (string-concatenate
+            (map (cut string-append <> "\n") (directory eggdir))))
+          (else "unknown\n"))))
+
 (define (latest-egg-version egg)
   (let ((versions
          (sort
           (string-split
-           (list-extension-versions (->string egg) 'local *eggs-dir*)
+           (list-extension-versions (->string egg) *eggs-dir*)
            "\n")
           version>=?)))
     (if (null? versions)
@@ -148,7 +155,7 @@ exec csi -s $0 "$@"
         (car versions))))
 
 (define (meta-file-pathname egg version)
-  (make-pathname (list *eggs-dir* egg "tags" version)
+  (make-pathname (list *eggs-dir* egg version)
                  egg
                  "meta"))
 
