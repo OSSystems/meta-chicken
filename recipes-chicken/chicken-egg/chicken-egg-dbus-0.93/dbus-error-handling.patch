@@ -1,7 +1,17 @@
-Index: dbus.scm
-===================================================================
---- a/dbus.scm	(revision 29516)
-+++ b/dbus.scm	(working copy)
+Upstream-Status: Accepted
+
+Subject: [PATCH] dbus error handling
+Organization: O.S. Systems Software LTDA.
+
+Signed-off-by: Fabio Berton <fabio.berton@ossystems.com.br>
+---
+ dbus.scm | 58 ++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 42 insertions(+), 16 deletions(-)
+
+diff --git a/dbus.scm b/dbus.scm
+index 7443612..37caa04 100644
+--- a/dbus.scm
++++ b/dbus.scm
 @@ -339,6 +339,34 @@
  	(define make-message (foreign-lambda message-ptr "dbus_message_new_method_call"
  		c-string c-string c-string c-string))
@@ -41,7 +51,7 @@ Index: dbus.scm
  				(for-each (lambda (parm)
  					(iter-append-basic iter parm))	params)
  				(free-iter iter)
--				(let* ([reply-msg ((foreign-lambda* message-ptr ((connection-ptr conn) (message-ptr msg))
+-				(and-let* ([reply-msg ((foreign-lambda* message-ptr ((connection-ptr conn) (message-ptr msg))
 -							;; idealistic code here; todo: error checking
 -							;; todo: timeout comes from where?  (make-parameter) maybe
 -							"DBusMessage *reply;
@@ -57,7 +67,7 @@ Index: dbus.scm
 -						[reply-iter (make-iter reply-msg)]
 -						[reply-args (iter->list reply-iter)] )
 -					reply-args)))))
-+				(let* ([err (make-error)]
++				(and-let* ([err (make-error)]
 +				       [reply-msg
 +								((foreign-lambda* message-ptr ((connection-ptr conn)
 +																							 (message-ptr msg)
@@ -74,3 +84,6 @@ Index: dbus.scm
  
  	(set! make-method-proxy (lambda (context name)
  		(let ([service (symbol->string (vector-ref context context-idx-service))]
+-- 
+2.1.4
+
