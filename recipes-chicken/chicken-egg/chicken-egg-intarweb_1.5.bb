@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-defstruct chicken-egg-uri-common chicken-egg-base
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "7bb7c7aa4ca04e45a0fb5f3b7e118787"
-SRC_URI[sha256sum] = "a9c24c77bd01646cdc0e2059d91622a7c3eee2b1510d11fadd5d20d35d234d02"
+SRC_URI[md5sum] = "e941ed6cdbbe7706fa3f6f14ee26d33c"
+SRC_URI[sha256sum] = "65c4b1fe00381733523199a784d74214369055486c1d5c9eaa9012f7f92e0bf5"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
