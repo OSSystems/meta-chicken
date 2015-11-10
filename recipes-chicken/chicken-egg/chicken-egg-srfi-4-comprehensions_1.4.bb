@@ -8,7 +8,7 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-srfi-42 chicken-egg-srf
 DEPENDS = " chicken-egg-srfi-42 chicken-egg-srfi-42-cross"
 RDEPENDS_${PN} = " chicken-egg-srfi-42"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/srfi-4-comprehensions/srfi-4-comprehensions-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "24cf82a7a9dbd64a2cef3f83a7ca1738"
 SRC_URI[sha256sum] = "83a3382f8d46376bbc185600f41cf87e08861aa94e4602cd4d95ba748523d133"

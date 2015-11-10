@@ -8,7 +8,7 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-awful nativesdk-chicken
 DEPENDS = " chicken-egg-awful chicken-egg-awful-sql-de-lite chicken-egg-simple-sha1 chicken-egg-intarweb chicken-egg-html-parser chicken-egg-colorize chicken-egg-miscmacros chicken-egg-utf8 chicken-egg-awful-cross chicken-egg-awful-sql-de-lite-cross chicken-egg-simple-sha1-cross chicken-egg-intarweb-cross chicken-egg-html-parser-cross chicken-egg-colorize-cross chicken-egg-miscmacros-cross chicken-egg-utf8-cross"
 RDEPENDS_${PN} = " chicken-egg-awful chicken-egg-awful-sql-de-lite chicken-egg-simple-sha1 chicken-egg-intarweb chicken-egg-html-parser chicken-egg-colorize chicken-egg-miscmacros chicken-egg-utf8"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/pastiche/pastiche-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "0e66371a071b1ddc8a4ef5cd7891cf3b"
 SRC_URI[sha256sum] = "796b50758e1797016c8291ff45cbc6e1063a10731802fb10d83ba17e0e16145c"

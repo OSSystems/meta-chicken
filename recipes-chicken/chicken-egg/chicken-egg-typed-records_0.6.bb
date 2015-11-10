@@ -8,7 +8,7 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-defstruct nativesdk-chi
 DEPENDS = " chicken-egg-defstruct chicken-egg-type-stubs chicken-egg-defstruct-cross chicken-egg-type-stubs-cross"
 RDEPENDS_${PN} = " chicken-egg-defstruct chicken-egg-type-stubs"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/typed-records/typed-records-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "e8d1ff98139faf04e0bc43939893e0aa"
 SRC_URI[sha256sum] = "252cd15114128f682aac2f29005071fa42c188c4166660be1fb0b4c074d40e05"

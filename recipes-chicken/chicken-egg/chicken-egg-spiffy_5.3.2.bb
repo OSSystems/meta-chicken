@@ -8,7 +8,7 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-intarweb nativesdk-chic
 DEPENDS = " chicken-egg-intarweb chicken-egg-uri-common chicken-egg-uri-generic chicken-egg-sendfile chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-uri-generic-cross chicken-egg-sendfile-cross chicken-egg-spiffy-cross"
 RDEPENDS_${PN} = " chicken-egg-intarweb chicken-egg-uri-common chicken-egg-uri-generic chicken-egg-sendfile"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/spiffy/spiffy-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "ac02856b9835c02ee009509036369526"
 SRC_URI[sha256sum] = "cb4bbb5637a6c637532eb5f9ea7ef3cf56bd09f12768689d118cc5e3d25ca0ff"

@@ -8,7 +8,7 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-json nativesdk-chicken-
 DEPENDS = " chicken-egg-json chicken-egg-html-tags chicken-egg-html-utils chicken-egg-http-session chicken-egg-regex chicken-egg-spiffy chicken-egg-spiffy-cookies chicken-egg-spiffy-request-vars chicken-egg-sxml-transforms chicken-egg-json-cross chicken-egg-html-tags-cross chicken-egg-html-utils-cross chicken-egg-http-session-cross chicken-egg-regex-cross chicken-egg-spiffy-cross chicken-egg-spiffy-cookies-cross chicken-egg-spiffy-request-vars-cross chicken-egg-sxml-transforms-cross chicken-egg-awful-cross"
 RDEPENDS_${PN} = " chicken-egg-json chicken-egg-html-tags chicken-egg-html-utils chicken-egg-http-session chicken-egg-regex chicken-egg-spiffy chicken-egg-spiffy-cookies chicken-egg-spiffy-request-vars chicken-egg-sxml-transforms"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/awful/awful-${PV}.tar.gz"
 
 SRC_URI[md5sum] = "9c75466c14198f52df2eb6fec59d2151"
 SRC_URI[sha256sum] = "88b1f49de44d8abf26a288ad6d66141e62c0f023a79ed1a2d32f6f16bdc971b6"
