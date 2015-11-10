@@ -3,10 +3,10 @@ DESCRIPTION = "SRFI-99 record types"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://srfi-99.meta;md5=a9319bc455905331cb6dc21a03533b45"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/srfi-99/srfi-99-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "9f1af2f35d3be51154b2f6cab944677b"
-SRC_URI[sha256sum] = "d59328a6b62c476dff46859a321b950732021909ff46048790b84a9795db549e"
+SRC_URI[md5sum] = "544b866dac8d6deb4d12f0f28d5396c5"
+SRC_URI[sha256sum] = "b769c07334a95d665cc3ef446cf39ef25f560d1de4d2bf4088a367fd588f32fe"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
