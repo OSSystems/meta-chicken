@@ -309,8 +309,10 @@ exec csi -s $0 "$@"
 
 (define (format-src-uri egg version)
   (let ((patches (egg-patches egg version)))
-    (sprintf "SRC_URI = \"~a/${EGG}/${EGG}-${PV}.tar.gz~a\"\n"
+    (sprintf "SRC_URI = \"~a/~a/~a-${PV}.tar.gz~a\"\n"
              egg-tarballs-uri
+             egg
+             egg
              (if (null? patches)
                  ""
                  (string-append " " (format-egg-patches patches))))))
