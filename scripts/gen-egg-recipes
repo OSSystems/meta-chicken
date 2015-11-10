@@ -43,6 +43,7 @@ exec csi -s $0 "$@"
 (define all-eggs
   (map symbol->string
        '(awful-ssl
+         anaphora
          channel
          connman
          crypt
