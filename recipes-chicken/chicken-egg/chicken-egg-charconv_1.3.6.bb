@@ -8,10 +8,10 @@ DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-iconv nativesdk-chicken
 DEPENDS = " chicken-egg-iconv chicken-egg-regex chicken-egg-iconv-cross chicken-egg-regex-cross"
 RDEPENDS_${PN} = " chicken-egg-iconv chicken-egg-regex"
 
-SRC_URI = "http://code.call-cc.org/egg-tarballs/4/${EGG}/${EGG}-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/egg-tarballs/4/charconv/charconv-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "6071cdb6c1fd964aab5cae65729095ca"
-SRC_URI[sha256sum] = "569692c21ea22e23c399ad961bd91bb3215920d6b9730cb6656437706507d82c"
+SRC_URI[md5sum] = "a501a0fbf5671a2caba3b31bbeb1dc3f"
+SRC_URI[sha256sum] = "e5c2c059ff83ff835d756847f412c2dfc8c2a8526e8a6235330a0c0271803910"
 
 S = "${WORKDIR}/${EGG}-${PV}"
 
