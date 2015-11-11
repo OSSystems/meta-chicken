@@ -374,7 +374,7 @@ exec csi -s $0 "$@"
                     (format-extra-chicken-install-options csc-options))
                (format-src-uri egg version)
                (format-hash-sums egg version)
-               "S = \"${WORKDIR}/${EGG}-${PV}\""
+               (sprintf "S = \"${WORKDIR}/~a-${PV}\"" egg)
                (format-recipe-extra-data egg version)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
