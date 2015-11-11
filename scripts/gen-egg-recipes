@@ -103,6 +103,7 @@ exec csi -s $0 "$@"
          packrat
          pastiche
          persistent-hash-map
+         posix-utils
          protobj
          protobuf
          random-bsd
