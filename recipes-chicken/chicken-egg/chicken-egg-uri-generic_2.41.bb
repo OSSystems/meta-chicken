@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/uri-generic/uri-generic-${PV}.
 SRC_URI[md5sum] = "18d9197d85699cdfdd46e147c715043c"
 SRC_URI[sha256sum] = "51653da1f19cf4e0e63520e0c56740866b26bed9c411555418fc7a5c3f99ba49"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/uri-generic-${PV}"
 
 inherit chicken_install
 

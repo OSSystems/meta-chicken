@@ -9,7 +9,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sxpath/sxpath-${PV}.tar.gz"
 SRC_URI[md5sum] = "c8f6edcb631667cb32399a69d8924109"
 SRC_URI[sha256sum] = "09b0e077b63b323f1da5eb73ce96424e164d915b172d789b37252e7c988bcf7d"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/sxpath-${PV}"
 
 inherit chicken_install
 

@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/ssax/ssax-${PV}.tar.gz"
 SRC_URI[md5sum] = "f6d89ab2f6a321cf83a88dcfc629341b"
 SRC_URI[sha256sum] = "37ea2b60db1ac5920fb8b7565dbaf6b973d8e79b4a628e7f8fc4d07259c56307"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/ssax-${PV}"
 
 inherit chicken_install
 

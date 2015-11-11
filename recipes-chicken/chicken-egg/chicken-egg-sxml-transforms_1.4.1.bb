@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sxml-transforms/sxml-transform
 SRC_URI[md5sum] = "4b8150b477ca4df77bcdb7e0707e7112"
 SRC_URI[sha256sum] = "1746da291c75fe03ec8ed5241a348b5f8f4fd9bb5d61cd4dcb793eeb49231e5a"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/sxml-transforms-${PV}"
 
 inherit chicken_install
 

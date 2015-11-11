@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/awful-sql-de-lite/awful-sql-de
 SRC_URI[md5sum] = "1369b7ac0d9ebe2b61ad2efd1d802f46"
 SRC_URI[sha256sum] = "5047f21a6fb7a71bb2145538c9827e1081fc20cf3fd3209c85f44e6a4137f993"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/awful-sql-de-lite-${PV}"
 
 inherit chicken_install
 

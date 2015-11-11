@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/type-stubs/type-stubs-${PV}.ta
 SRC_URI[md5sum] = "f5cfcfa68c20ad12ab73c6a22fe1c635"
 SRC_URI[sha256sum] = "c1503e56b0231ebcc494ffaadcfb8590587fe8f03df90e03b16ebdf218e5f934"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/type-stubs-${PV}"
 
 inherit chicken_install
 

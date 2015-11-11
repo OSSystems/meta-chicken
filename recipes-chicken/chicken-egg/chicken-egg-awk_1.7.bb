@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/awk/awk-${PV}.tar.gz"
 SRC_URI[md5sum] = "07ee315f5420721b64929bb158a1b994"
 SRC_URI[sha256sum] = "d920ba86984419278435dfe3885271e2d4b9100153075df52d73f2c51570f446"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/awk-${PV}"
 
 inherit chicken_install
 

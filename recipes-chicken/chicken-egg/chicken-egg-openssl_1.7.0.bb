@@ -11,7 +11,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/openssl/openssl-${PV}.tar.gz"
 SRC_URI[md5sum] = "bca5006df122e8bf2e898ec05cde5eda"
 SRC_URI[sha256sum] = "b48d40bd7f12639d6408443444faf536cc8731870c919bb1090bbb8ad66e5147"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/openssl-${PV}"
 
 inherit chicken_install
 

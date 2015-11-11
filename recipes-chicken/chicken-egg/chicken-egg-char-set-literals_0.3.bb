@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/char-set-literals/char-set-lit
 SRC_URI[md5sum] = "7c97e41a8d0d27d2ff1850fc16cee023"
 SRC_URI[sha256sum] = "1b453c9609f88522861f3c9a5490eceead5d0dd7bd8a3993555e3dbb5353b04f"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/char-set-literals-${PV}"
 
 inherit chicken_install
 

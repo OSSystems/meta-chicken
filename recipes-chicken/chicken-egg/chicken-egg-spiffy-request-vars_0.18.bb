@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/spiffy-request-vars/spiffy-req
 SRC_URI[md5sum] = "c75a0eef7a3fe9a55513c059120c7758"
 SRC_URI[sha256sum] = "22a646c7e822879f9dbd0aed805ae44b619ba94a2ace460c94092858edd09e1d"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/spiffy-request-vars-${PV}"
 
 inherit chicken_install
 

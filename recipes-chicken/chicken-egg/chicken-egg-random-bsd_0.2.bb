@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/random-bsd/random-bsd-${PV}.ta
 SRC_URI[md5sum] = "988e796bff9ef1d0c4616bd0442f1e03"
 SRC_URI[sha256sum] = "eb73ebc4b8ca5e7867e93819c98e71243a4583938c8755f0f1ef4df5e43ae239"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/random-bsd-${PV}"
 
 inherit chicken_install
 

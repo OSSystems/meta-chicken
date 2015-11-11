@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/synch/synch-${PV}.tar.gz"
 SRC_URI[md5sum] = "b7ffcdeebb0cc055bd023954882ecafc"
 SRC_URI[sha256sum] = "2febc6aefae15b804cb677d07983497c4b00dfe695b47b8d14c96e4a0dab21fe"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/synch-${PV}"
 
 inherit chicken_install
 

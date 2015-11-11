@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/persistent-hash-map/persistent
 SRC_URI[md5sum] = "e5310d7542418b645b58f93a08c355b8"
 SRC_URI[sha256sum] = "28ab765c4b02c3d4b2aa6db263ecca4b28613dab3da016906f95eb256e5fc031"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/persistent-hash-map-${PV}"
 
 inherit chicken_install
 

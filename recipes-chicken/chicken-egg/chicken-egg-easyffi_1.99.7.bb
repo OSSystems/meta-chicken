@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/easyffi/easyffi-${PV}.tar.gz"
 SRC_URI[md5sum] = "24c0350dcb621ec1bf77cf94f03429f4"
 SRC_URI[sha256sum] = "dbc038f6e06c45540a4e086baef9d8c049f9e4294cce8a3bbb2c600405f2e706"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/easyffi-${PV}"
 
 inherit chicken_install
 

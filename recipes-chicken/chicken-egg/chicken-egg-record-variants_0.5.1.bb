@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/record-variants/record-variant
 SRC_URI[md5sum] = "bd0f32e99c7e4f6938b7709eb81984ea"
 SRC_URI[sha256sum] = "fe92b40c676d20cb46bccbd5bd38c71a589ffce340c3bd9dcd91a8e123d64ffc"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/record-variants-${PV}"
 
 inherit chicken_install
 

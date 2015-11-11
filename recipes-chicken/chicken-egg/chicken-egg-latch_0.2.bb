@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/latch/latch-${PV}.tar.gz"
 SRC_URI[md5sum] = "2ece73263861062d1e589f623b26f3f1"
 SRC_URI[sha256sum] = "7bd4d94acfe662321d83157326adadff498b95dce18786ec4a5116339b7c1ac8"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/latch-${PV}"
 
 inherit chicken_install
 

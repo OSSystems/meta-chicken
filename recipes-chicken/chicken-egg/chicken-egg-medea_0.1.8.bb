@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/medea/medea-${PV}.tar.gz"
 SRC_URI[md5sum] = "1a08a6af41c7f72cf0beca53d6990250"
 SRC_URI[sha256sum] = "d26570679de3d2d78d3a8859016ea05e2d2059f1b42ba454888ce4d8fdbd805a"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/medea-${PV}"
 
 inherit chicken_install
 

@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/anaphora/anaphora-${PV}.tar.gz
 SRC_URI[md5sum] = "2ef3d9ef8b78dc666bfad34eee6b1c44"
 SRC_URI[sha256sum] = "d4f224ff68cd6b0efcab6e2537b2804972a8d282959632ffe05b63cbca4eb17a"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/anaphora-${PV}"
 
 inherit chicken_install
 

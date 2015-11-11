@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/iset/iset-${PV}.tar.gz"
 SRC_URI[md5sum] = "f197971409ca02b742f83ea23d21b635"
 SRC_URI[sha256sum] = "0791a89057d3f48d84d4ab0945c1133c025b530cf6590b1e36467991e24a6276"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/iset-${PV}"
 
 inherit chicken_install
 

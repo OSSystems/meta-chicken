@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/clojurian/clojurian-${PV}.tar.
 SRC_URI[md5sum] = "375afe2c141d6caca640aa191012eb94"
 SRC_URI[sha256sum] = "f26ce22a01be478b33c147fe3db6400e2651a1b647d147a906d4f3af62ed525a"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/clojurian-${PV}"
 
 inherit chicken_install
 

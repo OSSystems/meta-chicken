@@ -8,7 +8,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/defstruct/defstruct-${PV}.tar.
 SRC_URI[md5sum] = "1011d237334a5997a4d09786c5b16104"
 SRC_URI[sha256sum] = "ff4c51140eba1ad5435483fd5b88ee7e15c3871517b113bc6f0fb40db5e9c004"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/defstruct-${PV}"
 
 inherit chicken_install
 

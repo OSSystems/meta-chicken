@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/pastiche/pastiche-${PV}.tar.gz
 SRC_URI[md5sum] = "0e66371a071b1ddc8a4ef5cd7891cf3b"
 SRC_URI[sha256sum] = "796b50758e1797016c8291ff45cbc6e1063a10731802fb10d83ba17e0e16145c"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/pastiche-${PV}"
 
 inherit chicken_install
 

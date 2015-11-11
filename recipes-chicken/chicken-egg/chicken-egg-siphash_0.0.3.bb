@@ -13,7 +13,7 @@ SRC_URI = "http://code.call-cc.org/egg-tarballs/4/siphash/siphash-${PV}.tar.gz"
 SRC_URI[md5sum] = "a1700a607b67ecb3301bef86dda61eb3"
 SRC_URI[sha256sum] = "dfd8c91db407a75e4f0f358a4faa792b0c4232cfff7fabb036e41ab407b8931a"
 
-S = "${WORKDIR}/${EGG}-${PV}"
+S = "${WORKDIR}/siphash-${PV}"
 
 inherit chicken_install
 
