@@ -42,45 +42,99 @@ exec csi -s $0 "$@"
 
 (define all-eggs
   (map symbol->string
-       '(awful-ssl
+       '(advice
          anaphora
          arrays
          autoload
+         awful
+         awful-sql-de-lite
+         awful-ssl
          awk
-         box
+         base64
          bindings
+         blob-utils
+         box
          channel
          char-set-literals
+         charconv
+         clojurian
+         colorize
+         comparse
          connman
          crypt
          datatype
          dbus
+         defstruct
          describe
+         easyffi
          expand-full
          F-operator
+         fast-generic
          foreigners
          free-gettext
+         html-parser
+         html-tags
+         html-utils
          http-client
+         http-session
+         iconv
          ini-file
+         input-parse
+         intarweb
+         iset
          jsmin
          json
+         latch
+         lazy-seq
+         lookup-table
+         lru-cache
          make
+         matchable
+         md5
          medea
+         message-digest
+         miscmacros
+         numbers
+         openssl
+         packrat
          pastiche
          persistent-hash-map
          protobj
          protobuf
          random-bsd
-         scss
+         record-variants
+         regex
          scron
+         scss
+         sendfile
          sequences
          server-test
+         setup-helper
+         silex
+         simple-sha1
          siphash
          slice
+         spiffy-cookies
+         spiffy-request-vars
+         spiffy
+         sql-de-lite
+         srfi-4-comprehensions
+         srfi-42
+         srfi-99
+         ssax
+         string-utils
          stty
+         sxml-transforms
          sxpath
+         synch
          test
+         trie
+         type-stubs
+         typed-records
+         uri-common
+         uri-generic
          utf8
+         variable-item
          vector-lib
          )))
 
