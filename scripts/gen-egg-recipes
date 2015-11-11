@@ -340,19 +340,19 @@ exec csi -s $0 "$@"
            csc-options))
 
 (define (egg->recipe egg)
-  (conc "chicken-egg-" egg))
+  (conc "chicken-egg-" (string-downcase egg)))
 
 (define (egg->recipe/cross egg)
-  (conc "chicken-egg-" egg "-cross"))
+  (conc "chicken-egg-" (string-downcase egg) "-cross"))
 
 (define (egg->recipe/crosssdk egg)
-  (conc "chicken-egg-" egg "-crosssdk"))
+  (conc "chicken-egg-" (string-downcase egg) "-crosssdk"))
 
 (define (recipe->native recipe)
   (conc recipe "-native"))
 
 (define (egg->recipe/nativesdk egg)
-  (conc "nativesdk-chicken-egg-" egg))
+  (conc "nativesdk-chicken-egg-" (string-downcase egg)))
 
 (define (gen-recipe egg)
   (let* ((version (latest-egg-version egg))
