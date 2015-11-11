@@ -50,6 +50,7 @@ exec csi -s $0 "$@"
          box
          bindings
          channel
+         char-set-literals
          connman
          crypt
          datatype
