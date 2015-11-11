@@ -48,6 +48,7 @@ exec csi -s $0 "$@"
          channel
          connman
          crypt
+         datatype
          dbus
          describe
          expand-full
