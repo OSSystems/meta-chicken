@@ -45,6 +45,7 @@ exec csi -s $0 "$@"
        '(awful-ssl
          anaphora
          arrays
+         autoload
          box
          channel
          connman
