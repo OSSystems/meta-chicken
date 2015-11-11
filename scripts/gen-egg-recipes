@@ -57,6 +57,7 @@ exec csi -s $0 "$@"
          dbus
          describe
          expand-full
+         F-operator
          foreigners
          free-gettext
          http-client
@@ -91,6 +92,7 @@ exec csi -s $0 "$@"
     bindings
     check-errors
     easyffi
+    F-operator
     fast-generic
     message-digest
     protobuf
