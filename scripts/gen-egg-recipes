@@ -60,6 +60,7 @@ exec csi -s $0 "$@"
          clojurian
          colorize
          comparse
+         condition-utils
          connman
          continuations
          crypt
