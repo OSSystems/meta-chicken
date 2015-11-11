@@ -89,6 +89,7 @@ exec csi -s $0 "$@"
          json
          latch
          lazy-seq
+         locale
          lookup-table
          lru-cache
          make
@@ -151,6 +152,7 @@ exec csi -s $0 "$@"
     easyffi
     F-operator
     fast-generic
+    locale
     message-digest
     protobuf
     scss
