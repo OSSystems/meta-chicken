@@ -46,6 +46,7 @@ exec csi -s $0 "$@"
          anaphora
          arrays
          autoload
+         awk
          box
          channel
          connman
