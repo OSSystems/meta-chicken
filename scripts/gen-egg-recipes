@@ -44,6 +44,7 @@ exec csi -s $0 "$@"
   (map symbol->string
        '(awful-ssl
          anaphora
+         arrays
          box
          channel
          connman
