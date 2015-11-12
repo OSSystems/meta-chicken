@@ -136,6 +136,7 @@ exec csi -s $0 "$@"
          openssl
          options
          packrat
+         parley
          pastiche
          pdf
          persistent-hash-map
@@ -219,6 +220,7 @@ exec csi -s $0 "$@"
     loop
     message-digest
     moremacros
+    parley
     protobuf
     r7rs
     scss
