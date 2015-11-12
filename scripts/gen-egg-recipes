@@ -87,6 +87,7 @@ exec csi -s $0 "$@"
          foof-loop
          foreigners
          format
+         fps
          free-gettext
          hahn
          html-parser
