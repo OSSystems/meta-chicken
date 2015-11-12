@@ -133,6 +133,7 @@ exec csi -s $0 "$@"
          regex-case
          regex-literals
          sandbox
+         schemeweb
          scron
          scss
          sendfile
