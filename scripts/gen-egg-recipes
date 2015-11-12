@@ -169,6 +169,7 @@ exec csi -s $0 "$@"
          synch
          test
          trie
+         type-extensions
          type-stubs
          typed-records
          uri-common
