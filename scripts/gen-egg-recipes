@@ -68,6 +68,7 @@ exec csi -s $0 "$@"
          condition-utils
          connman
          continuations
+         coops
          crypt
          datatype
          datatypes
