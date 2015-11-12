@@ -51,6 +51,7 @@ exec csi -s $0 "$@"
          awful-sql-de-lite
          awful-ssl
          awk
+         banterpixra
          base64
          bindings
          blob-utils
