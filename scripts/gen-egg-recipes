@@ -76,6 +76,7 @@ exec csi -s $0 "$@"
          fast-generic
          foreigners
          free-gettext
+         hahn
          html-parser
          html-tags
          html-utils
