@@ -96,6 +96,7 @@ exec csi -s $0 "$@"
          graphviz
          groc
          hahn
+         hexgrid
          html-parser
          html-tags
          html-utils
