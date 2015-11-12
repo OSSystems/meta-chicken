@@ -118,6 +118,7 @@ exec csi -s $0 "$@"
          nondeterminism
          numbers
          openssl
+         options
          packrat
          pastiche
          persistent-hash-map
