@@ -103,6 +103,7 @@ exec csi -s $0 "$@"
          list-utils
          locale
          lookup-table
+         loop
          lru-cache
          make
          matchable
@@ -170,6 +171,7 @@ exec csi -s $0 "$@"
     F-operator
     fast-generic
     locale
+    loop
     message-digest
     moremacros
     protobuf
