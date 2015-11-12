@@ -132,6 +132,7 @@ exec csi -s $0 "$@"
          moremacros
          nondeterminism
          numbers
+         octave
          openssl
          options
          packrat
