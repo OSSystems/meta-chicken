@@ -93,6 +93,7 @@ exec csi -s $0 "$@"
          fps
          free-gettext
          gl-math
+         graphviz
          hahn
          html-parser
          html-tags
