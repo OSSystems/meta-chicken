@@ -137,6 +137,7 @@ exec csi -s $0 "$@"
          options
          packrat
          pastiche
+         pdf
          persistent-hash-map
          posix-utils
          protobj
