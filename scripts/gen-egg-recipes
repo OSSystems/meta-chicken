@@ -142,6 +142,7 @@ exec csi -s $0 "$@"
          posix-utils
          protobj
          protobuf
+         qrencode
          r7rs
          random-bsd
          record-variants
