@@ -190,6 +190,7 @@ exec csi -s $0 "$@"
          utf8
          variable-item
          vector-lib
+         z3
          )))
 
 (define self-dependent-eggs
