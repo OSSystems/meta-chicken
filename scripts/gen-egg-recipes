@@ -93,6 +93,7 @@ exec csi -s $0 "$@"
          ini-file
          input-parse
          intarweb
+         interfaces
          iset
          jsmin
          json
