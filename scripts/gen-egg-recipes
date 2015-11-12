@@ -101,6 +101,7 @@ exec csi -s $0 "$@"
          medea
          message-digest
          miscmacros
+         nondeterminism
          numbers
          openssl
          packrat
