@@ -127,6 +127,7 @@ exec csi -s $0 "$@"
          sequences
          server-test
          setup-helper
+         shell
          silex
          simple-sha1
          siphash
