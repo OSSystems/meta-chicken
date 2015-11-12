@@ -162,6 +162,7 @@ exec csi -s $0 "$@"
          static-modules
          string-utils
          stty
+         suspension
          sxml-transforms
          sxpath
          synch
