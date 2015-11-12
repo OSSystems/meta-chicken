@@ -69,6 +69,7 @@ exec csi -s $0 "$@"
          dbc
          dbus
          define-record-and-printer
+         define-structure
          defstruct
          describe
          easyffi
