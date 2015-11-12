@@ -132,6 +132,7 @@ exec csi -s $0 "$@"
          regex
          regex-case
          regex-literals
+         sandbox
          scron
          scss
          sendfile
