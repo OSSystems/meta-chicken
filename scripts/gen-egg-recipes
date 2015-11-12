@@ -131,6 +131,7 @@ exec csi -s $0 "$@"
          records
          regex
          regex-case
+         regex-literals
          scron
          scss
          sendfile
