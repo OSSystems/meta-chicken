@@ -73,6 +73,7 @@ exec csi -s $0 "$@"
          defstruct
          describe
          easyffi
+         environments
          expand-full
          F-operator
          fast-generic
