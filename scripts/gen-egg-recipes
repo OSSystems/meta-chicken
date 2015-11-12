@@ -82,6 +82,7 @@ exec csi -s $0 "$@"
          fluids
          foof-loop
          foreigners
+         format
          free-gettext
          hahn
          html-parser
