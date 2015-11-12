@@ -99,6 +99,7 @@ exec csi -s $0 "$@"
          json
          latch
          lazy-seq
+         list-of
          locale
          lookup-table
          lru-cache
