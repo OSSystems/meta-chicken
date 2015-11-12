@@ -79,6 +79,7 @@ exec csi -s $0 "$@"
          fast-generic
          fast-loop
          feature-test
+         fluids
          foreigners
          free-gettext
          hahn
