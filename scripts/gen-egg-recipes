@@ -172,6 +172,7 @@ exec csi -s $0 "$@"
          type-extensions
          type-stubs
          typeclass
+         typed-lists
          typed-records
          uri-common
          uri-generic
