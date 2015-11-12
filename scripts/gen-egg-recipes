@@ -105,6 +105,7 @@ exec csi -s $0 "$@"
          lookup-table
          loop
          loops
+         loopy-loop
          lru-cache
          make
          matchable
