@@ -118,6 +118,7 @@ exec csi -s $0 "$@"
          protobuf
          random-bsd
          record-variants
+         records
          regex
          scron
          scss
