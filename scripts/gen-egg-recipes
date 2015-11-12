@@ -159,6 +159,7 @@ exec csi -s $0 "$@"
          srfi-4-comprehensions
          srfi-42
          srfi-45
+         srfi-63
          srfi-71
          srfi-99
          srfi-101
