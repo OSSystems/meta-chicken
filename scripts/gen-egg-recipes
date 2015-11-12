@@ -165,6 +165,7 @@ exec csi -s $0 "$@"
          suspension
          sxml-transforms
          sxpath
+         syn-param
          synch
          test
          trie
