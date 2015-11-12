@@ -94,6 +94,7 @@ exec csi -s $0 "$@"
          free-gettext
          gl-math
          graphviz
+         groc
          hahn
          html-parser
          html-tags
