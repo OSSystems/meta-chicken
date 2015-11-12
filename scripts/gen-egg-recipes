@@ -154,6 +154,7 @@ exec csi -s $0 "$@"
          srfi-4-comprehensions
          srfi-42
          srfi-99
+         srfi-101
          ssax
          string-utils
          stty
@@ -190,6 +191,7 @@ exec csi -s $0 "$@"
     scss
     sequences
     spiffy
+    srfi-101
     sxpath
     utf8
     ))
