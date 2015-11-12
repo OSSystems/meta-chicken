@@ -130,6 +130,7 @@ exec csi -s $0 "$@"
          record-variants
          records
          regex
+         regex-case
          scron
          scss
          sendfile
