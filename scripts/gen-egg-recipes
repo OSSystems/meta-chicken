@@ -102,6 +102,7 @@ exec csi -s $0 "$@"
          html-utils
          http-client
          http-session
+         hyperscene
          iconv
          ini-file
          input-parse
