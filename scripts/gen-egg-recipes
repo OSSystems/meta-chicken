@@ -86,6 +86,7 @@ exec csi -s $0 "$@"
          fast-loop
          feature-test
          fluids
+         fmt
          foof-loop
          foreigners
          format
@@ -204,6 +205,7 @@ exec csi -s $0 "$@"
     easyffi
     F-operator
     fast-generic
+    fmt
     locale
     loop
     message-digest
