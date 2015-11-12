@@ -78,6 +78,7 @@ exec csi -s $0 "$@"
          F-operator
          fast-generic
          fast-loop
+         feature-test
          foreigners
          free-gettext
          hahn
