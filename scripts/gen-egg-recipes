@@ -201,6 +201,7 @@ exec csi -s $0 "$@"
          utf8
          variable-item
          vector-lib
+         x11-colors
          z3
          )))
 
