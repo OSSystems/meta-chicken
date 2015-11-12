@@ -80,6 +80,7 @@ exec csi -s $0 "$@"
          fast-loop
          feature-test
          fluids
+         foof-loop
          foreigners
          free-gettext
          hahn
