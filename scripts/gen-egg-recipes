@@ -158,6 +158,7 @@ exec csi -s $0 "$@"
          srfi-99
          srfi-101
          ssax
+         static-modules
          string-utils
          stty
          sxml-transforms
