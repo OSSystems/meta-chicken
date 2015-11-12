@@ -104,6 +104,7 @@ exec csi -s $0 "$@"
          locale
          lookup-table
          loop
+         loops
          lru-cache
          make
          matchable
