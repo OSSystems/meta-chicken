@@ -100,6 +100,7 @@ exec csi -s $0 "$@"
          latch
          lazy-seq
          list-of
+         list-utils
          locale
          lookup-table
          lru-cache
