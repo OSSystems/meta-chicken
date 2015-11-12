@@ -146,6 +146,7 @@ exec csi -s $0 "$@"
          simple-sha1
          siphash
          slice
+         special-case
          spiffy-cookies
          spiffy-request-vars
          spiffy
