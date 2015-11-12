@@ -108,6 +108,7 @@ exec csi -s $0 "$@"
          medea
          message-digest
          miscmacros
+         moremacros
          nondeterminism
          numbers
          openssl
@@ -168,6 +169,7 @@ exec csi -s $0 "$@"
     fast-generic
     locale
     message-digest
+    moremacros
     protobuf
     scss
     sequences
