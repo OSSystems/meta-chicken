@@ -66,6 +66,7 @@ exec csi -s $0 "$@"
          crypt
          datatype
          datatypes
+         dbc
          dbus
          defstruct
          describe
