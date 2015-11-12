@@ -150,6 +150,7 @@ exec csi -s $0 "$@"
          regex
          regex-case
          regex-literals
+         rfb
          s11n
          sandbox
          schemeweb
