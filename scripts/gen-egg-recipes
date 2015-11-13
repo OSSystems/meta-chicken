@@ -137,6 +137,7 @@ exec csi -s $0 "$@"
          matchable
          md5
          medea
+         memcached
          message-digest
          miscmacros
          module-declarations
