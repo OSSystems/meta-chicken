@@ -166,6 +166,7 @@ exec csi -s $0 "$@"
          regex-case
          regex-literals
          rfb
+         rpc
          s11n
          sandbox
          schelog
