@@ -196,6 +196,7 @@ exec csi -s $0 "$@"
          synch
          syslog
          test
+         tiny-prolog
          trie
          type-extensions
          type-stubs
