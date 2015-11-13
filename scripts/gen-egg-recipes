@@ -114,6 +114,7 @@ exec csi -s $0 "$@"
          iset
          jsmin
          json
+         kanren
          latch
          lazy-seq
          linden-scheme
