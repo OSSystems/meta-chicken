@@ -105,6 +105,7 @@ exec csi -s $0 "$@"
          groc
          hahn
          hexgrid
+         hostinfo
          html-parser
          html-tags
          html-utils
