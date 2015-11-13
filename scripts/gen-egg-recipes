@@ -227,7 +227,8 @@ exec csi -s $0 "$@"
   (let ((description (meta-field 'synopsis meta-data)))
     (and description
          (sprintf "DESCRIPTION = \"~a\""
-                  (string-translate* (car description) `(("`" . "")))))))
+                  (string-translate* (car description) `(("`" . "")
+                                                         ("\n" . "\\n\\\n")))))))
 
 (define (format-license meta-data)
   (let ((license (meta-field 'license meta-data)))
