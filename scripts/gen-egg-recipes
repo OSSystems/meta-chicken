@@ -74,6 +74,7 @@ exec csi -s $0 "$@"
          datatypes
          dbc
          dbus
+         debug
          define-record-and-printer
          define-structure
          defstruct
