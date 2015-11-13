@@ -188,6 +188,7 @@ exec csi -s $0 "$@"
          sxpath
          syn-param
          synch
+         syslog
          test
          trie
          type-extensions
