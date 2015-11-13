@@ -114,6 +114,10 @@ exec csi -s $0 "$@"
              "BSD")
             ((equal? license "EPL")
              "EPL-1.0")
+            ((equal? license "GPL-2 or later")
+             "GPLv2+")
+            ((equal? license "Free Use")
+             "PD")
             (else license))
       license))
 
