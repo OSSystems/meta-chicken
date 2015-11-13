@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://condition-utils.meta;md5=373003b7aed90f4e744a02ae9169
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-check-errors-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper nativesdk-chicken-egg-check-errors chicken-egg-setup-helper-crosssdk chicken-egg-check-errors-crosssdk"
-DEPENDS = " chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross"
+DEPENDS = " chicken-egg-setup-helper chicken-egg-check-errors chicken-egg-setup-helper-cross chicken-egg-check-errors-cross chicken-egg-condition-utils-cross"
 RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-check-errors"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/condition-utils/condition-utils-${PV}.tar.gz"
