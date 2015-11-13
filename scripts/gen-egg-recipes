@@ -98,6 +98,7 @@ exec csi -s $0 "$@"
          format
          fps
          free-gettext
+         ftp
          gl-math
          graphviz
          groc
