@@ -82,6 +82,7 @@ exec csi -s $0 "$@"
          define-structure
          defstruct
          describe
+         dict
          dissector
          easyffi
          environments
