@@ -84,6 +84,7 @@ exec csi -s $0 "$@"
          describe
          dict
          dissector
+         dsssl-utils
          easyffi
          environments
          expand-full
