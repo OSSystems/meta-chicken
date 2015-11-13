@@ -203,6 +203,7 @@ exec csi -s $0 "$@"
          vector-lib
          x11-colors
          xlib
+         xlib-utils
          z3
          )))
 
