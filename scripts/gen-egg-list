@@ -20,6 +20,11 @@ exec csi -s $0 "$@"
     (for-each (lambda (egg)
                 (printf "    ~a \\\n" egg))
               eggs)
+    (print "\"\n")
+    (print "ALL_NATIVESDK_CHICKEN_EGG_RECIPES = \"\\")
+    (for-each (lambda (egg)
+                (printf "    nativesdk-~a \\\n" egg))
+              eggs)
     (print "\"")))
 
 (define (usage #!optional exit-code)
