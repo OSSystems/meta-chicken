@@ -79,6 +79,7 @@ exec csi -s $0 "$@"
          define-structure
          defstruct
          describe
+         dissector
          easyffi
          environments
          expand-full
