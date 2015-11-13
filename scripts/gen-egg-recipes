@@ -159,6 +159,7 @@ exec csi -s $0 "$@"
          rfb
          s11n
          sandbox
+         schelog
          schemeweb
          scron
          scss
