@@ -204,6 +204,7 @@ exec csi -s $0 "$@"
          syn-param
          synch
          syslog
+         tcp-server
          test
          tiny-prolog
          trie
