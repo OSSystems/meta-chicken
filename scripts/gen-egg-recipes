@@ -117,6 +117,7 @@ exec csi -s $0 "$@"
          input-parse
          intarweb
          interfaces
+         irc
          iset
          jsmin
          json
