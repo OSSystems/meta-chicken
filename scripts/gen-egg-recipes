@@ -153,6 +153,7 @@ exec csi -s $0 "$@"
          pastiche
          pdf
          persistent-hash-map
+         pop3
          posix-utils
          protobj
          protobuf
