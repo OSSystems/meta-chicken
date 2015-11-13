@@ -133,6 +133,7 @@ exec csi -s $0 "$@"
          module-declarations
          moremacros
          nondeterminism
+         nrepl
          numbers
          octave
          openssl
