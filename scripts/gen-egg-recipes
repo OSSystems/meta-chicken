@@ -104,7 +104,7 @@ exec csi -s $0 "$@"
 
 (define external-dependencies
   '((dbus    dbus)
-    (lzma    lzma)
+    (lzma    xz)
     (openssl openssl)
     (ncurses ncurses)
     (readline readline)
