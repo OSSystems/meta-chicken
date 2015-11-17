@@ -15,6 +15,8 @@ SRC_URI[sha256sum] = "2febc6aefae15b804cb677d07983497c4b00dfe695b47b8d14c96e4a0d
 
 S = "${WORKDIR}/synch-${PV}"
 
+require chicken-egg-synch.inc
+
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

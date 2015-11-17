@@ -1,0 +1,27 @@
+From 43c52e665440dfb11352f0f4d77910de3f90136f Mon Sep 17 00:00:00 2001
+From: Mario Domenech Goulart <mario@ossystems.com.br>
+Date: Tue, 17 Nov 2015 15:28:06 -0200
+Subject: [PATCH] Import setup-helper-mod instead of including setup-helper
+Organization: O.S. Systems Software LTDA.
+
+Signed-off-by: Mario Domenech Goulart <mario@ossystems.com.br>
+Upstream-Status: Pending
+---
+ synch.setup | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/synch.setup b/synch.setup
+index 05cb553..2a13867 100644
+--- a/synch.setup
++++ b/synch.setup
+@@ -1,6 +1,6 @@
+ ;;;; synch.setup
+ 
+-(include "setup-helper")
++(use setup-helper-mod)
+ 
+ (verify-extension-name 'synch)
+ 
+-- 
+2.1.4
+
