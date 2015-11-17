@@ -1,3 +1,0 @@
-This directory contains extra data to be added to egg recipes (.red
-files). They are used by the gen-egg-recipes script to generate egg
-recipes.
