@@ -23,10 +23,6 @@ exec csi -s $0 "$@"
   (normalize-pathname
    (make-pathname (current-directory) "egg-tarballs")))
 
-(define recipes-extra-data-dir
-  (normalize-pathname
-   (make-pathname (current-directory) "recipes-extra-data")))
-
 (define force? (make-parameter #f))
 
 (define (die fmt . args)
@@ -304,41 +300,17 @@ exec csi -s $0 "$@"
              (car hashes)
              (cdr hashes))))
 
-(define (egg-patches egg version)
-  (let ((patches-dir
-         (make-pathname *egg-recipes-dir*
-                        (sprintf "chicken-egg-~a-~a"
-                                 egg
-                                 version))))
-    (if (directory-exists? patches-dir)
-        (directory patches-dir)
-        '())))
-
-(define (format-egg-patches patches)
-  (string-intersperse
-   (map (lambda (patch)
-          (string-append "file://" patch))
-        patches)
-   " "))
-
 (define (format-src-uri egg version)
-  (let ((patches (egg-patches egg version)))
-    (sprintf "SRC_URI = \"~a/~a/~a-${PV}.tar.gz~a\"\n"
+  (sprintf "SRC_URI = \"~a/~a/~a-${PV}.tar.gz\"\n"
              egg-tarballs-uri
              egg
-             egg
-             (if (null? patches)
-                 ""
-                 (string-append " " (format-egg-patches patches))))))
+             egg))
 
-(define (format-recipe-extra-data egg version)
-  (let ((extra-data-file
-         (make-pathname recipes-extra-data-dir
-                        (sprintf "~a_~a.red"
-                                 egg
-                                 version))))
-    (if (file-exists? extra-data-file)
-        (read-all extra-data-file)
+(define (maybe-require-inc egg version)
+  (let* ((inc-filename (sprintf "chicken-egg-~a.inc" egg))
+         (inc-path (make-pathname *egg-recipes-dir* inc-filename)))
+    (if (file-exists? inc-path)
+        (sprintf "\nrequire ~a\n" inc-filename)
         "")))
 
 (define (format-extra-chicken-install-options csc-options)
@@ -381,7 +353,7 @@ exec csi -s $0 "$@"
                (format-src-uri egg version)
                (format-hash-sums egg version)
                (sprintf "S = \"${WORKDIR}/~a-${PV}\"" egg)
-               (format-recipe-extra-data egg version)
+               (maybe-require-inc egg version)
                (string-append "inherit chicken_install\n")
                (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
         (print (string-intersperse (list egg version (->string deps)) "\t"))
