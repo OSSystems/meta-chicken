@@ -10,6 +10,8 @@ SRC_URI[sha256sum] = "1eb7399ef6c22923ffdeb4951bf23ed132ad4bdfcdc58f8832457bad49
 
 S = "${WORKDIR}/scron-${PV}"
 
+require chicken-egg-scron.inc
+
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

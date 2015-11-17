@@ -1,5 +1,3 @@
-PR = "r1"
-
 INITSCRIPT_NAME = "scron"
 INITSCRIPT_PARAMS = "start 90 2 3 4 5 ."
 
