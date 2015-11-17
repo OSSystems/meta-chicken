@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A literate programming processor for scheme, similar to CWEB"
-LICENSE = "GPL-2 or later"
+LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://schemeweb.meta;md5=2027b8f411a74e88015a038f4a8069a9"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/schemeweb/schemeweb-${PV}.tar.gz"
