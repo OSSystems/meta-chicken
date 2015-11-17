@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Functional PostScript"
-LICENSE = "Free Use"
+LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://fps.meta;md5=ea422a022a557e149750ef368cc6ca98"
 DEPENDS_append_class-cross = " chicken-egg-records-cross chicken-egg-format-cross chicken-egg-regex-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-records-crosssdk chicken-egg-format-crosssdk chicken-egg-regex-crosssdk"
