@@ -1,35 +1,93 @@
 ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-9p \
+    chicken-egg-abnf \
+    chicken-egg-accents-substitute \
+    chicken-egg-ad \
     chicken-egg-advice \
+    chicken-egg-aes \
+    chicken-egg-agrep \
+    chicken-egg-alist-lib \
+    chicken-egg-amb \
     chicken-egg-anaphora \
     chicken-egg-animation \
+    chicken-egg-ansi-escape-sequences \
+    chicken-egg-args \
     chicken-egg-arrays \
+    chicken-egg-atom \
+    chicken-egg-autocompile \
+    chicken-egg-autoform \
+    chicken-egg-autoform-jquery \
     chicken-egg-autoload \
     chicken-egg-awful \
+    chicken-egg-awful-path-matchers \
     chicken-egg-awful-sql-de-lite \
+    chicken-egg-awful-sse \
     chicken-egg-awful-ssl \
+    chicken-egg-awful-ssql \
+    chicken-egg-awful-static-pages \
     chicken-egg-awk \
     chicken-egg-banterpixra \
     chicken-egg-base64 \
+    chicken-egg-bencode \
+    chicken-egg-berkeley-db \
+    chicken-egg-big-chicken \
+    chicken-egg-binary-heap \
+    chicken-egg-binary-parse \
     chicken-egg-bind \
     chicken-egg-bindings \
+    chicken-egg-bitcoin \
+    chicken-egg-bitstring \
+    chicken-egg-blob-record \
     chicken-egg-blob-utils \
+    chicken-egg-blowfish \
     chicken-egg-box \
+    chicken-egg-breadcrumbs \
+    chicken-egg-buffer-ports \
+    chicken-egg-byte-blob \
+    chicken-egg-c3 \
     chicken-egg-cairo \
+    chicken-egg-call-with-environment-variables \
+    chicken-egg-callable-data-structures \
+    chicken-egg-cells \
+    chicken-egg-cgi \
     chicken-egg-channel \
     chicken-egg-char-set-literals \
     chicken-egg-charconv \
     chicken-egg-charplot \
     chicken-egg-check-errors \
+    chicken-egg-chickadee \
+    chicken-egg-chicken-belt \
+    chicken-egg-chicken-doc \
+    chicken-egg-chicken-doc-admin \
+    chicken-egg-chicken-doc-html \
+    chicken-egg-chickumber \
+    chicken-egg-chunk-vector \
+    chicken-egg-cis \
+    chicken-egg-civet \
     chicken-egg-clojurian \
+    chicken-egg-cluckcheck \
+    chicken-egg-cmaes \
+    chicken-egg-cock \
     chicken-egg-colorize \
     chicken-egg-combinator-birds \
+    chicken-egg-combinatorics \
+    chicken-egg-combinators \
     chicken-egg-comparse \
+    chicken-egg-concurrent-native-callbacks \
     chicken-egg-condition-utils \
     chicken-egg-connman \
     chicken-egg-continuations \
+    chicken-egg-contracts \
     chicken-egg-coops \
+    chicken-egg-coops-utils \
+    chicken-egg-couchdb-view-server \
+    chicken-egg-crunch \
     chicken-egg-crypt \
+    chicken-egg-crypto-tools \
+    chicken-egg-csp \
+    chicken-egg-csv \
+    chicken-egg-csv-xml \
+    chicken-egg-data-generators \
     chicken-egg-datatype \
     chicken-egg-datatypes \
     chicken-egg-dbc \
@@ -39,173 +97,453 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-define-structure \
     chicken-egg-defstruct \
     chicken-egg-describe \
+    chicken-egg-describe-coops \
+    chicken-egg-dict \
+    chicken-egg-digraph \
+    chicken-egg-disjoint-set \
     chicken-egg-dissector \
+    chicken-egg-doctype \
+    chicken-egg-dollar \
+    chicken-egg-dot-locking \
+    chicken-egg-dsssl-utils \
+    chicken-egg-dummy-user \
+    chicken-egg-dyn-vector \
+    chicken-egg-easy-args \
     chicken-egg-easyffi \
+    chicken-egg-edn \
+    chicken-egg-egg-pack-sources \
+    chicken-egg-egg-tarballs \
+    chicken-egg-eggdoc \
+    chicken-egg-eggdoc-svnwiki \
+    chicken-egg-embedded-test \
+    chicken-egg-endian-blob \
+    chicken-egg-endian-port \
     chicken-egg-environments \
+    chicken-egg-er-macros \
+    chicken-egg-ersatz \
     chicken-egg-expand-full \
     chicken-egg-f-operator \
+    chicken-egg-fancypants \
     chicken-egg-fast-generic \
     chicken-egg-fast-loop \
     chicken-egg-feature-test \
+    chicken-egg-filepath \
+    chicken-egg-flsim \
     chicken-egg-fluids \
     chicken-egg-fmt \
+    chicken-egg-fnmatch \
     chicken-egg-foof-loop \
     chicken-egg-foreigners \
     chicken-egg-format \
+    chicken-egg-format-compiler \
+    chicken-egg-format-compiler-base \
+    chicken-egg-format-graph \
+    chicken-egg-format-textdiff \
+    chicken-egg-fox \
     chicken-egg-fps \
     chicken-egg-free-gettext \
+    chicken-egg-ftl \
+    chicken-egg-ftp \
+    chicken-egg-gap-buffer \
+    chicken-egg-gather-egg-information \
+    chicken-egg-getopt-long \
+    chicken-egg-git-egg-author \
     chicken-egg-gl-math \
+    chicken-egg-gochan \
+    chicken-egg-gopher \
+    chicken-egg-graph-bfs \
+    chicken-egg-graph-cycles \
+    chicken-egg-graph-dfs \
+    chicken-egg-graph-dominators \
+    chicken-egg-graph-scc \
+    chicken-egg-graph-separators \
+    chicken-egg-graph-ssa \
     chicken-egg-graphviz \
     chicken-egg-groc \
     chicken-egg-hahn \
+    chicken-egg-hardwood \
+    chicken-egg-heap \
+    chicken-egg-heap-o-rama \
+    chicken-egg-henrietta \
     chicken-egg-hexgrid \
+    chicken-egg-high-load-scheduler \
+    chicken-egg-honu \
+    chicken-egg-hostinfo \
+    chicken-egg-hpack \
+    chicken-egg-html-form \
     chicken-egg-html-parser \
     chicken-egg-html-tags \
     chicken-egg-html-utils \
+    chicken-egg-htmlprag \
     chicken-egg-http-client \
     chicken-egg-http-session \
     chicken-egg-hyperscene \
     chicken-egg-iconv \
+    chicken-egg-iexpr \
+    chicken-egg-imperative-command-line-a \
+    chicken-egg-impromptu \
+    chicken-egg-inclub \
     chicken-egg-ini-file \
+    chicken-egg-inline \
+    chicken-egg-input-classes \
     chicken-egg-input-parse \
+    chicken-egg-install \
     chicken-egg-intarweb \
     chicken-egg-interfaces \
+    chicken-egg-internet-message \
+    chicken-egg-internet-timestamp \
+    chicken-egg-interp1d \
+    chicken-egg-interval-digraph \
+    chicken-egg-introspect \
+    chicken-egg-ioctl \
+    chicken-egg-ir-macros \
+    chicken-egg-irc \
     chicken-egg-iset \
+    chicken-egg-javahack \
     chicken-egg-jsmin \
+    chicken-egg-jso \
     chicken-egg-json \
+    chicken-egg-json-abnf \
     chicken-egg-kanren \
+    chicken-egg-kd-tree \
+    chicken-egg-lalr \
+    chicken-egg-landauer \
     chicken-egg-latch \
+    chicken-egg-lazy-lists \
     chicken-egg-lazy-seq \
+    chicken-egg-level \
+    chicken-egg-lexgen \
     chicken-egg-linden-scheme \
+    chicken-egg-linear-algebra \
+    chicken-egg-linenoise \
+    chicken-egg-list-bindings \
     chicken-egg-list-of \
     chicken-egg-list-utils \
+    chicken-egg-llrb-syntax \
+    chicken-egg-llrb-tree \
     chicken-egg-locale \
+    chicken-egg-lognum \
+    chicken-egg-logpro \
     chicken-egg-lookup-table \
     chicken-egg-loop \
     chicken-egg-loops \
     chicken-egg-loopy-loop \
     chicken-egg-lru-cache \
+    chicken-egg-lua \
+    chicken-egg-lz4 \
     chicken-egg-make \
+    chicken-egg-mat5-lib \
     chicken-egg-matchable \
+    chicken-egg-mathh \
     chicken-egg-md5 \
     chicken-egg-medea \
+    chicken-egg-memcached \
+    chicken-egg-memoize \
     chicken-egg-message-digest \
+    chicken-egg-micro-benchmark \
     chicken-egg-miscmacros \
+    chicken-egg-missbehave \
+    chicken-egg-modular-arithmetic \
     chicken-egg-module-declarations \
     chicken-egg-moremacros \
+    chicken-egg-mpd-client \
+    chicken-egg-multi-methods \
+    chicken-egg-multidoc \
+    chicken-egg-multipart-form-data \
+    chicken-egg-ncurses \
+    chicken-egg-netstring \
+    chicken-egg-neurolucida \
+    chicken-egg-neuromorpho \
     chicken-egg-nondeterminism \
+    chicken-egg-npdiff \
     chicken-egg-nrepl \
+    chicken-egg-null \
     chicken-egg-numbers \
+    chicken-egg-numspell \
+    chicken-egg-object-graph \
+    chicken-egg-oblist \
     chicken-egg-octave \
     chicken-egg-openssl \
+    chicken-egg-operations \
     chicken-egg-options \
+    chicken-egg-packedobjects \
     chicken-egg-packrat \
     chicken-egg-parley \
     chicken-egg-pastiche \
+    chicken-egg-patch \
+    chicken-egg-pathfinder \
+    chicken-egg-pathname-expand \
     chicken-egg-pdf \
+    chicken-egg-peep \
     chicken-egg-persistent-hash-map \
+    chicken-egg-php-s11n \
+    chicken-egg-pilgrim \
+    chicken-egg-pool \
+    chicken-egg-pop3 \
+    chicken-egg-posix-extras \
+    chicken-egg-posix-semaphore \
     chicken-egg-posix-utils \
+    chicken-egg-procedure-decoration \
+    chicken-egg-progress-indicators \
     chicken-egg-protobj \
     chicken-egg-protobuf \
+    chicken-egg-pstk \
+    chicken-egg-pty \
     chicken-egg-qrencode \
+    chicken-egg-quaternions \
     chicken-egg-r7rs \
     chicken-egg-random-bsd \
+    chicken-egg-random-mtzig \
+    chicken-egg-random-swb \
+    chicken-egg-random-test \
+    chicken-egg-rb-tree \
+    chicken-egg-readline \
     chicken-egg-record-variants \
     chicken-egg-records \
     chicken-egg-regex \
     chicken-egg-regex-case \
     chicken-egg-regex-literals \
+    chicken-egg-rest-bind \
     chicken-egg-rfb \
+    chicken-egg-rfc3339 \
+    chicken-egg-rfc822 \
+    chicken-egg-rope \
+    chicken-egg-rpc \
+    chicken-egg-rss \
+    chicken-egg-s \
     chicken-egg-s11n \
+    chicken-egg-s48-modules \
     chicken-egg-sandbox \
+    chicken-egg-sassy \
     chicken-egg-schelog \
+    chicken-egg-scheme0-pe \
+    chicken-egg-scheme2c-compatibility \
     chicken-egg-schemeweb \
     chicken-egg-scron \
+    chicken-egg-scsh-process \
     chicken-egg-scss \
+    chicken-egg-sdbm \
+    chicken-egg-sedna \
     chicken-egg-sendfile \
     chicken-egg-sequences \
+    chicken-egg-serial \
     chicken-egg-server-test \
+    chicken-egg-sets \
     chicken-egg-setup-helper \
+    chicken-egg-sexp-diff \
+    chicken-egg-sfht \
     chicken-egg-shell \
+    chicken-egg-sigma \
     chicken-egg-silex \
+    chicken-egg-simple-configuration \
     chicken-egg-simple-exceptions \
+    chicken-egg-simple-logging \
     chicken-egg-simple-sha1 \
+    chicken-egg-simple-tests \
     chicken-egg-siphash \
     chicken-egg-slice \
+    chicken-egg-smtp \
+    chicken-egg-snowdigest \
+    chicken-egg-snowtar \
+    chicken-egg-sparse-vectors \
+    chicken-egg-spatial-trees \
     chicken-egg-special-case \
+    chicken-egg-specialized-io \
+    chicken-egg-speech-dispatcher-client \
     chicken-egg-spiffy \
     chicken-egg-spiffy-cookies \
+    chicken-egg-spiffy-directory-listing \
+    chicken-egg-spiffy-dynamic-handlers \
     chicken-egg-spiffy-request-vars \
+    chicken-egg-spiffy-sexpr-log \
+    chicken-egg-spiffy-uri-match \
+    chicken-egg-sqdb \
     chicken-egg-sql-de-lite \
+    chicken-egg-sql-null \
     chicken-egg-srfi-101 \
+    chicken-egg-srfi-116 \
+    chicken-egg-srfi-117 \
+    chicken-egg-srfi-25 \
+    chicken-egg-srfi-34 \
+    chicken-egg-srfi-37 \
+    chicken-egg-srfi-38 \
     chicken-egg-srfi-4-comprehensions \
+    chicken-egg-srfi-4-utils \
     chicken-egg-srfi-42 \
     chicken-egg-srfi-45 \
     chicken-egg-srfi-63 \
+    chicken-egg-srfi-7 \
     chicken-egg-srfi-71 \
+    chicken-egg-srfi-78 \
     chicken-egg-srfi-99 \
+    chicken-egg-srfi-modules \
     chicken-egg-ssax \
+    chicken-egg-ssql \
+    chicken-egg-stalin \
     chicken-egg-static-modules \
+    chicken-egg-statvfs \
+    chicken-egg-strictly-pretty \
     chicken-egg-string-utils \
     chicken-egg-stty \
+    chicken-egg-sublevel \
+    chicken-egg-suffix-tree \
     chicken-egg-suspension \
+    chicken-egg-svn-egg-author \
+    chicken-egg-svnwiki-sxml \
+    chicken-egg-sxml-informal \
+    chicken-egg-sxml-modifications \
+    chicken-egg-sxml-serializer \
     chicken-egg-sxml-transforms \
     chicken-egg-sxpath \
+    chicken-egg-symbol-utils \
     chicken-egg-syn-param \
     chicken-egg-synch \
+    chicken-egg-sysexits \
     chicken-egg-syslog \
+    chicken-egg-system \
+    chicken-egg-tabexpand \
+    chicken-egg-tagged-netstring \
+    chicken-egg-tcp-server \
+    chicken-egg-templort \
+    chicken-egg-termbox \
     chicken-egg-test \
+    chicken-egg-test-generative \
+    chicken-egg-testdrive \
+    chicken-egg-testeez \
     chicken-egg-tiny-prolog \
+    chicken-egg-tinyclos \
+    chicken-egg-tinyclos-xerox \
+    chicken-egg-tk \
+    chicken-egg-token-substitution \
+    chicken-egg-toml \
+    chicken-egg-trace \
+    chicken-egg-traversal \
+    chicken-egg-treap \
+    chicken-egg-treaps \
+    chicken-egg-tree-rewrite \
     chicken-egg-trie \
+    chicken-egg-tween \
     chicken-egg-type-extensions \
     chicken-egg-type-stubs \
     chicken-egg-typeclass \
     chicken-egg-typed-lists \
     chicken-egg-typed-modules \
     chicken-egg-typed-records \
+    chicken-egg-udp \
+    chicken-egg-unix-sockets \
     chicken-egg-uri-common \
+    chicken-egg-uri-dispatch \
     chicken-egg-uri-generic \
+    chicken-egg-uri-match \
+    chicken-egg-usage \
     chicken-egg-utf8 \
+    chicken-egg-uuid \
     chicken-egg-variable-item \
+    chicken-egg-varsubst \
     chicken-egg-vector-lib \
+    chicken-egg-versions \
+    chicken-egg-vfs \
+    chicken-egg-vlist \
+    chicken-egg-wmiirc \
     chicken-egg-x11-colors \
+    chicken-egg-x11-keysyms \
+    chicken-egg-xbmc-api \
     chicken-egg-xlib \
     chicken-egg-xlib-utils \
+    chicken-egg-yasos \
     chicken-egg-z3 \
 "
 
 ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-9p \
+    nativesdk-chicken-egg-abnf \
+    nativesdk-chicken-egg-accents-substitute \
+    nativesdk-chicken-egg-ad \
     nativesdk-chicken-egg-advice \
+    nativesdk-chicken-egg-aes \
+    nativesdk-chicken-egg-agrep \
+    nativesdk-chicken-egg-alist-lib \
+    nativesdk-chicken-egg-amb \
     nativesdk-chicken-egg-anaphora \
     nativesdk-chicken-egg-animation \
+    nativesdk-chicken-egg-ansi-escape-sequences \
+    nativesdk-chicken-egg-args \
     nativesdk-chicken-egg-arrays \
+    nativesdk-chicken-egg-atom \
+    nativesdk-chicken-egg-autocompile \
+    nativesdk-chicken-egg-autoform \
+    nativesdk-chicken-egg-autoform-jquery \
     nativesdk-chicken-egg-autoload \
     nativesdk-chicken-egg-awful \
+    nativesdk-chicken-egg-awful-path-matchers \
     nativesdk-chicken-egg-awful-sql-de-lite \
+    nativesdk-chicken-egg-awful-sse \
     nativesdk-chicken-egg-awful-ssl \
+    nativesdk-chicken-egg-awful-ssql \
+    nativesdk-chicken-egg-awful-static-pages \
     nativesdk-chicken-egg-awk \
     nativesdk-chicken-egg-banterpixra \
     nativesdk-chicken-egg-base64 \
+    nativesdk-chicken-egg-bencode \
+    nativesdk-chicken-egg-berkeley-db \
+    nativesdk-chicken-egg-big-chicken \
+    nativesdk-chicken-egg-binary-heap \
+    nativesdk-chicken-egg-binary-parse \
     nativesdk-chicken-egg-bind \
     nativesdk-chicken-egg-bindings \
+    nativesdk-chicken-egg-bitcoin \
+    nativesdk-chicken-egg-bitstring \
+    nativesdk-chicken-egg-blob-record \
     nativesdk-chicken-egg-blob-utils \
+    nativesdk-chicken-egg-blowfish \
     nativesdk-chicken-egg-box \
+    nativesdk-chicken-egg-breadcrumbs \
+    nativesdk-chicken-egg-buffer-ports \
+    nativesdk-chicken-egg-byte-blob \
+    nativesdk-chicken-egg-c3 \
     nativesdk-chicken-egg-cairo \
+    nativesdk-chicken-egg-call-with-environment-variables \
+    nativesdk-chicken-egg-callable-data-structures \
+    nativesdk-chicken-egg-cells \
+    nativesdk-chicken-egg-cgi \
     nativesdk-chicken-egg-channel \
     nativesdk-chicken-egg-char-set-literals \
     nativesdk-chicken-egg-charconv \
     nativesdk-chicken-egg-charplot \
     nativesdk-chicken-egg-check-errors \
+    nativesdk-chicken-egg-chickadee \
+    nativesdk-chicken-egg-chicken-belt \
+    nativesdk-chicken-egg-chicken-doc \
+    nativesdk-chicken-egg-chicken-doc-admin \
+    nativesdk-chicken-egg-chicken-doc-html \
+    nativesdk-chicken-egg-chickumber \
+    nativesdk-chicken-egg-chunk-vector \
+    nativesdk-chicken-egg-cis \
+    nativesdk-chicken-egg-civet \
     nativesdk-chicken-egg-clojurian \
+    nativesdk-chicken-egg-cluckcheck \
+    nativesdk-chicken-egg-cmaes \
+    nativesdk-chicken-egg-cock \
     nativesdk-chicken-egg-colorize \
     nativesdk-chicken-egg-combinator-birds \
+    nativesdk-chicken-egg-combinatorics \
+    nativesdk-chicken-egg-combinators \
     nativesdk-chicken-egg-comparse \
+    nativesdk-chicken-egg-concurrent-native-callbacks \
     nativesdk-chicken-egg-condition-utils \
     nativesdk-chicken-egg-connman \
     nativesdk-chicken-egg-continuations \
+    nativesdk-chicken-egg-contracts \
     nativesdk-chicken-egg-coops \
+    nativesdk-chicken-egg-coops-utils \
+    nativesdk-chicken-egg-couchdb-view-server \
+    nativesdk-chicken-egg-crunch \
     nativesdk-chicken-egg-crypt \
+    nativesdk-chicken-egg-crypto-tools \
+    nativesdk-chicken-egg-csp \
+    nativesdk-chicken-egg-csv \
+    nativesdk-chicken-egg-csv-xml \
+    nativesdk-chicken-egg-data-generators \
     nativesdk-chicken-egg-datatype \
     nativesdk-chicken-egg-datatypes \
     nativesdk-chicken-egg-dbc \
@@ -215,137 +553,359 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-define-structure \
     nativesdk-chicken-egg-defstruct \
     nativesdk-chicken-egg-describe \
+    nativesdk-chicken-egg-describe-coops \
+    nativesdk-chicken-egg-dict \
+    nativesdk-chicken-egg-digraph \
+    nativesdk-chicken-egg-disjoint-set \
     nativesdk-chicken-egg-dissector \
+    nativesdk-chicken-egg-doctype \
+    nativesdk-chicken-egg-dollar \
+    nativesdk-chicken-egg-dot-locking \
+    nativesdk-chicken-egg-dsssl-utils \
+    nativesdk-chicken-egg-dummy-user \
+    nativesdk-chicken-egg-dyn-vector \
+    nativesdk-chicken-egg-easy-args \
     nativesdk-chicken-egg-easyffi \
+    nativesdk-chicken-egg-edn \
+    nativesdk-chicken-egg-egg-pack-sources \
+    nativesdk-chicken-egg-egg-tarballs \
+    nativesdk-chicken-egg-eggdoc \
+    nativesdk-chicken-egg-eggdoc-svnwiki \
+    nativesdk-chicken-egg-embedded-test \
+    nativesdk-chicken-egg-endian-blob \
+    nativesdk-chicken-egg-endian-port \
     nativesdk-chicken-egg-environments \
+    nativesdk-chicken-egg-er-macros \
+    nativesdk-chicken-egg-ersatz \
     nativesdk-chicken-egg-expand-full \
     nativesdk-chicken-egg-f-operator \
+    nativesdk-chicken-egg-fancypants \
     nativesdk-chicken-egg-fast-generic \
     nativesdk-chicken-egg-fast-loop \
     nativesdk-chicken-egg-feature-test \
+    nativesdk-chicken-egg-filepath \
+    nativesdk-chicken-egg-flsim \
     nativesdk-chicken-egg-fluids \
     nativesdk-chicken-egg-fmt \
+    nativesdk-chicken-egg-fnmatch \
     nativesdk-chicken-egg-foof-loop \
     nativesdk-chicken-egg-foreigners \
     nativesdk-chicken-egg-format \
+    nativesdk-chicken-egg-format-compiler \
+    nativesdk-chicken-egg-format-compiler-base \
+    nativesdk-chicken-egg-format-graph \
+    nativesdk-chicken-egg-format-textdiff \
+    nativesdk-chicken-egg-fox \
     nativesdk-chicken-egg-fps \
     nativesdk-chicken-egg-free-gettext \
+    nativesdk-chicken-egg-ftl \
+    nativesdk-chicken-egg-ftp \
+    nativesdk-chicken-egg-gap-buffer \
+    nativesdk-chicken-egg-gather-egg-information \
+    nativesdk-chicken-egg-getopt-long \
+    nativesdk-chicken-egg-git-egg-author \
     nativesdk-chicken-egg-gl-math \
+    nativesdk-chicken-egg-gochan \
+    nativesdk-chicken-egg-gopher \
+    nativesdk-chicken-egg-graph-bfs \
+    nativesdk-chicken-egg-graph-cycles \
+    nativesdk-chicken-egg-graph-dfs \
+    nativesdk-chicken-egg-graph-dominators \
+    nativesdk-chicken-egg-graph-scc \
+    nativesdk-chicken-egg-graph-separators \
+    nativesdk-chicken-egg-graph-ssa \
     nativesdk-chicken-egg-graphviz \
     nativesdk-chicken-egg-groc \
     nativesdk-chicken-egg-hahn \
+    nativesdk-chicken-egg-hardwood \
+    nativesdk-chicken-egg-heap \
+    nativesdk-chicken-egg-heap-o-rama \
+    nativesdk-chicken-egg-henrietta \
     nativesdk-chicken-egg-hexgrid \
+    nativesdk-chicken-egg-high-load-scheduler \
+    nativesdk-chicken-egg-honu \
+    nativesdk-chicken-egg-hostinfo \
+    nativesdk-chicken-egg-hpack \
+    nativesdk-chicken-egg-html-form \
     nativesdk-chicken-egg-html-parser \
     nativesdk-chicken-egg-html-tags \
     nativesdk-chicken-egg-html-utils \
+    nativesdk-chicken-egg-htmlprag \
     nativesdk-chicken-egg-http-client \
     nativesdk-chicken-egg-http-session \
     nativesdk-chicken-egg-hyperscene \
     nativesdk-chicken-egg-iconv \
+    nativesdk-chicken-egg-iexpr \
+    nativesdk-chicken-egg-imperative-command-line-a \
+    nativesdk-chicken-egg-impromptu \
+    nativesdk-chicken-egg-inclub \
     nativesdk-chicken-egg-ini-file \
+    nativesdk-chicken-egg-inline \
+    nativesdk-chicken-egg-input-classes \
     nativesdk-chicken-egg-input-parse \
+    nativesdk-chicken-egg-install \
     nativesdk-chicken-egg-intarweb \
     nativesdk-chicken-egg-interfaces \
+    nativesdk-chicken-egg-internet-message \
+    nativesdk-chicken-egg-internet-timestamp \
+    nativesdk-chicken-egg-interp1d \
+    nativesdk-chicken-egg-interval-digraph \
+    nativesdk-chicken-egg-introspect \
+    nativesdk-chicken-egg-ioctl \
+    nativesdk-chicken-egg-ir-macros \
+    nativesdk-chicken-egg-irc \
     nativesdk-chicken-egg-iset \
+    nativesdk-chicken-egg-javahack \
     nativesdk-chicken-egg-jsmin \
+    nativesdk-chicken-egg-jso \
     nativesdk-chicken-egg-json \
+    nativesdk-chicken-egg-json-abnf \
     nativesdk-chicken-egg-kanren \
+    nativesdk-chicken-egg-kd-tree \
+    nativesdk-chicken-egg-lalr \
+    nativesdk-chicken-egg-landauer \
     nativesdk-chicken-egg-latch \
+    nativesdk-chicken-egg-lazy-lists \
     nativesdk-chicken-egg-lazy-seq \
+    nativesdk-chicken-egg-level \
+    nativesdk-chicken-egg-lexgen \
     nativesdk-chicken-egg-linden-scheme \
+    nativesdk-chicken-egg-linear-algebra \
+    nativesdk-chicken-egg-linenoise \
+    nativesdk-chicken-egg-list-bindings \
     nativesdk-chicken-egg-list-of \
     nativesdk-chicken-egg-list-utils \
+    nativesdk-chicken-egg-llrb-syntax \
+    nativesdk-chicken-egg-llrb-tree \
     nativesdk-chicken-egg-locale \
+    nativesdk-chicken-egg-lognum \
+    nativesdk-chicken-egg-logpro \
     nativesdk-chicken-egg-lookup-table \
     nativesdk-chicken-egg-loop \
     nativesdk-chicken-egg-loops \
     nativesdk-chicken-egg-loopy-loop \
     nativesdk-chicken-egg-lru-cache \
+    nativesdk-chicken-egg-lua \
+    nativesdk-chicken-egg-lz4 \
     nativesdk-chicken-egg-make \
+    nativesdk-chicken-egg-mat5-lib \
     nativesdk-chicken-egg-matchable \
+    nativesdk-chicken-egg-mathh \
     nativesdk-chicken-egg-md5 \
     nativesdk-chicken-egg-medea \
+    nativesdk-chicken-egg-memcached \
+    nativesdk-chicken-egg-memoize \
     nativesdk-chicken-egg-message-digest \
+    nativesdk-chicken-egg-micro-benchmark \
     nativesdk-chicken-egg-miscmacros \
+    nativesdk-chicken-egg-missbehave \
+    nativesdk-chicken-egg-modular-arithmetic \
     nativesdk-chicken-egg-module-declarations \
     nativesdk-chicken-egg-moremacros \
+    nativesdk-chicken-egg-mpd-client \
+    nativesdk-chicken-egg-multi-methods \
+    nativesdk-chicken-egg-multidoc \
+    nativesdk-chicken-egg-multipart-form-data \
+    nativesdk-chicken-egg-ncurses \
+    nativesdk-chicken-egg-netstring \
+    nativesdk-chicken-egg-neurolucida \
+    nativesdk-chicken-egg-neuromorpho \
     nativesdk-chicken-egg-nondeterminism \
+    nativesdk-chicken-egg-npdiff \
     nativesdk-chicken-egg-nrepl \
+    nativesdk-chicken-egg-null \
     nativesdk-chicken-egg-numbers \
+    nativesdk-chicken-egg-numspell \
+    nativesdk-chicken-egg-object-graph \
+    nativesdk-chicken-egg-oblist \
     nativesdk-chicken-egg-octave \
     nativesdk-chicken-egg-openssl \
+    nativesdk-chicken-egg-operations \
     nativesdk-chicken-egg-options \
+    nativesdk-chicken-egg-packedobjects \
     nativesdk-chicken-egg-packrat \
     nativesdk-chicken-egg-parley \
     nativesdk-chicken-egg-pastiche \
+    nativesdk-chicken-egg-patch \
+    nativesdk-chicken-egg-pathfinder \
+    nativesdk-chicken-egg-pathname-expand \
     nativesdk-chicken-egg-pdf \
+    nativesdk-chicken-egg-peep \
     nativesdk-chicken-egg-persistent-hash-map \
+    nativesdk-chicken-egg-php-s11n \
+    nativesdk-chicken-egg-pilgrim \
+    nativesdk-chicken-egg-pool \
+    nativesdk-chicken-egg-pop3 \
+    nativesdk-chicken-egg-posix-extras \
+    nativesdk-chicken-egg-posix-semaphore \
     nativesdk-chicken-egg-posix-utils \
+    nativesdk-chicken-egg-procedure-decoration \
+    nativesdk-chicken-egg-progress-indicators \
     nativesdk-chicken-egg-protobj \
     nativesdk-chicken-egg-protobuf \
+    nativesdk-chicken-egg-pstk \
+    nativesdk-chicken-egg-pty \
     nativesdk-chicken-egg-qrencode \
+    nativesdk-chicken-egg-quaternions \
     nativesdk-chicken-egg-r7rs \
     nativesdk-chicken-egg-random-bsd \
+    nativesdk-chicken-egg-random-mtzig \
+    nativesdk-chicken-egg-random-swb \
+    nativesdk-chicken-egg-random-test \
+    nativesdk-chicken-egg-rb-tree \
+    nativesdk-chicken-egg-readline \
     nativesdk-chicken-egg-record-variants \
     nativesdk-chicken-egg-records \
     nativesdk-chicken-egg-regex \
     nativesdk-chicken-egg-regex-case \
     nativesdk-chicken-egg-regex-literals \
+    nativesdk-chicken-egg-rest-bind \
     nativesdk-chicken-egg-rfb \
+    nativesdk-chicken-egg-rfc3339 \
+    nativesdk-chicken-egg-rfc822 \
+    nativesdk-chicken-egg-rope \
+    nativesdk-chicken-egg-rpc \
+    nativesdk-chicken-egg-rss \
+    nativesdk-chicken-egg-s \
     nativesdk-chicken-egg-s11n \
+    nativesdk-chicken-egg-s48-modules \
     nativesdk-chicken-egg-sandbox \
+    nativesdk-chicken-egg-sassy \
     nativesdk-chicken-egg-schelog \
+    nativesdk-chicken-egg-scheme0-pe \
+    nativesdk-chicken-egg-scheme2c-compatibility \
     nativesdk-chicken-egg-schemeweb \
     nativesdk-chicken-egg-scron \
+    nativesdk-chicken-egg-scsh-process \
     nativesdk-chicken-egg-scss \
+    nativesdk-chicken-egg-sdbm \
+    nativesdk-chicken-egg-sedna \
     nativesdk-chicken-egg-sendfile \
     nativesdk-chicken-egg-sequences \
+    nativesdk-chicken-egg-serial \
     nativesdk-chicken-egg-server-test \
+    nativesdk-chicken-egg-sets \
     nativesdk-chicken-egg-setup-helper \
+    nativesdk-chicken-egg-sexp-diff \
+    nativesdk-chicken-egg-sfht \
     nativesdk-chicken-egg-shell \
+    nativesdk-chicken-egg-sigma \
     nativesdk-chicken-egg-silex \
+    nativesdk-chicken-egg-simple-configuration \
     nativesdk-chicken-egg-simple-exceptions \
+    nativesdk-chicken-egg-simple-logging \
     nativesdk-chicken-egg-simple-sha1 \
+    nativesdk-chicken-egg-simple-tests \
     nativesdk-chicken-egg-siphash \
     nativesdk-chicken-egg-slice \
+    nativesdk-chicken-egg-smtp \
+    nativesdk-chicken-egg-snowdigest \
+    nativesdk-chicken-egg-snowtar \
+    nativesdk-chicken-egg-sparse-vectors \
+    nativesdk-chicken-egg-spatial-trees \
     nativesdk-chicken-egg-special-case \
+    nativesdk-chicken-egg-specialized-io \
+    nativesdk-chicken-egg-speech-dispatcher-client \
     nativesdk-chicken-egg-spiffy \
     nativesdk-chicken-egg-spiffy-cookies \
+    nativesdk-chicken-egg-spiffy-directory-listing \
+    nativesdk-chicken-egg-spiffy-dynamic-handlers \
     nativesdk-chicken-egg-spiffy-request-vars \
+    nativesdk-chicken-egg-spiffy-sexpr-log \
+    nativesdk-chicken-egg-spiffy-uri-match \
+    nativesdk-chicken-egg-sqdb \
     nativesdk-chicken-egg-sql-de-lite \
+    nativesdk-chicken-egg-sql-null \
     nativesdk-chicken-egg-srfi-101 \
+    nativesdk-chicken-egg-srfi-116 \
+    nativesdk-chicken-egg-srfi-117 \
+    nativesdk-chicken-egg-srfi-25 \
+    nativesdk-chicken-egg-srfi-34 \
+    nativesdk-chicken-egg-srfi-37 \
+    nativesdk-chicken-egg-srfi-38 \
     nativesdk-chicken-egg-srfi-4-comprehensions \
+    nativesdk-chicken-egg-srfi-4-utils \
     nativesdk-chicken-egg-srfi-42 \
     nativesdk-chicken-egg-srfi-45 \
     nativesdk-chicken-egg-srfi-63 \
+    nativesdk-chicken-egg-srfi-7 \
     nativesdk-chicken-egg-srfi-71 \
+    nativesdk-chicken-egg-srfi-78 \
     nativesdk-chicken-egg-srfi-99 \
+    nativesdk-chicken-egg-srfi-modules \
     nativesdk-chicken-egg-ssax \
+    nativesdk-chicken-egg-ssql \
+    nativesdk-chicken-egg-stalin \
     nativesdk-chicken-egg-static-modules \
+    nativesdk-chicken-egg-statvfs \
+    nativesdk-chicken-egg-strictly-pretty \
     nativesdk-chicken-egg-string-utils \
     nativesdk-chicken-egg-stty \
+    nativesdk-chicken-egg-sublevel \
+    nativesdk-chicken-egg-suffix-tree \
     nativesdk-chicken-egg-suspension \
+    nativesdk-chicken-egg-svn-egg-author \
+    nativesdk-chicken-egg-svnwiki-sxml \
+    nativesdk-chicken-egg-sxml-informal \
+    nativesdk-chicken-egg-sxml-modifications \
+    nativesdk-chicken-egg-sxml-serializer \
     nativesdk-chicken-egg-sxml-transforms \
     nativesdk-chicken-egg-sxpath \
+    nativesdk-chicken-egg-symbol-utils \
     nativesdk-chicken-egg-syn-param \
     nativesdk-chicken-egg-synch \
+    nativesdk-chicken-egg-sysexits \
     nativesdk-chicken-egg-syslog \
+    nativesdk-chicken-egg-system \
+    nativesdk-chicken-egg-tabexpand \
+    nativesdk-chicken-egg-tagged-netstring \
+    nativesdk-chicken-egg-tcp-server \
+    nativesdk-chicken-egg-templort \
+    nativesdk-chicken-egg-termbox \
     nativesdk-chicken-egg-test \
+    nativesdk-chicken-egg-test-generative \
+    nativesdk-chicken-egg-testdrive \
+    nativesdk-chicken-egg-testeez \
     nativesdk-chicken-egg-tiny-prolog \
+    nativesdk-chicken-egg-tinyclos \
+    nativesdk-chicken-egg-tinyclos-xerox \
+    nativesdk-chicken-egg-tk \
+    nativesdk-chicken-egg-token-substitution \
+    nativesdk-chicken-egg-toml \
+    nativesdk-chicken-egg-trace \
+    nativesdk-chicken-egg-traversal \
+    nativesdk-chicken-egg-treap \
+    nativesdk-chicken-egg-treaps \
+    nativesdk-chicken-egg-tree-rewrite \
     nativesdk-chicken-egg-trie \
+    nativesdk-chicken-egg-tween \
     nativesdk-chicken-egg-type-extensions \
     nativesdk-chicken-egg-type-stubs \
     nativesdk-chicken-egg-typeclass \
     nativesdk-chicken-egg-typed-lists \
     nativesdk-chicken-egg-typed-modules \
     nativesdk-chicken-egg-typed-records \
+    nativesdk-chicken-egg-udp \
+    nativesdk-chicken-egg-unix-sockets \
     nativesdk-chicken-egg-uri-common \
+    nativesdk-chicken-egg-uri-dispatch \
     nativesdk-chicken-egg-uri-generic \
+    nativesdk-chicken-egg-uri-match \
+    nativesdk-chicken-egg-usage \
     nativesdk-chicken-egg-utf8 \
+    nativesdk-chicken-egg-uuid \
     nativesdk-chicken-egg-variable-item \
+    nativesdk-chicken-egg-varsubst \
     nativesdk-chicken-egg-vector-lib \
+    nativesdk-chicken-egg-versions \
+    nativesdk-chicken-egg-vfs \
+    nativesdk-chicken-egg-vlist \
+    nativesdk-chicken-egg-wmiirc \
     nativesdk-chicken-egg-x11-colors \
+    nativesdk-chicken-egg-x11-keysyms \
+    nativesdk-chicken-egg-xbmc-api \
     nativesdk-chicken-egg-xlib \
     nativesdk-chicken-egg-xlib-utils \
+    nativesdk-chicken-egg-yasos \
     nativesdk-chicken-egg-z3 \
 "
