@@ -86,6 +86,7 @@ exec csi -s $0 "$@"
     fast-generic
     fmt
     locale
+    lookup-table
     loop
     message-digest
     moremacros
