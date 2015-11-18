@@ -11,6 +11,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-anaphora \
     chicken-egg-animation \
     chicken-egg-ansi-escape-sequences \
+    chicken-egg-apropos \
     chicken-egg-args \
     chicken-egg-arrays \
     chicken-egg-atom \
@@ -468,6 +469,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-anaphora \
     nativesdk-chicken-egg-animation \
     nativesdk-chicken-egg-ansi-escape-sequences \
+    nativesdk-chicken-egg-apropos \
     nativesdk-chicken-egg-args \
     nativesdk-chicken-egg-arrays \
     nativesdk-chicken-egg-atom \

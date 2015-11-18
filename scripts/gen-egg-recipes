@@ -45,7 +45,6 @@ exec csi -s $0 "$@"
     (allegro "error")
     (alut "error")
     (amazon-s3 "error")
-    (apropos "error")
     (atlas-lapack "error")
     (augeas "error")
     (autoform-postgresql "error")
