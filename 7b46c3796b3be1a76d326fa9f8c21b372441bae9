@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a245df4_6a82d701",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2015-11-18T18:41:05Z",
+      "side": 1,
+      "message": "chicken-egg-condition-utils: Fix cross dependency\n\nThe condition-utils depends on its own modules for cross-compilation.",
+      "revId": "7b46c3796b3be1a76d326fa9f8c21b372441bae9",
+      "serverId": "57f9965e-cfb2-4db6-8589-8b17f788c97f",
+      "unresolved": false
+    }
+  ]
+}
