@@ -215,7 +215,6 @@ exec csi -s $0 "$@"
     (remote-mailbox "error")
     (remote-mailbox-threads "error")
     (ripemd "error")
-    (salmonella "error")
     (salmonella-diff "error")
     (salmonella-feeds "error")
     (salmonella-html-report "error")
@@ -355,6 +354,7 @@ exec csi -s $0 "$@"
     parley
     protobuf
     r7rs
+    salmonella
     scss
     sequences
     streams-primitive
