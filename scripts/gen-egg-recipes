@@ -80,6 +80,7 @@ exec csi -s $0 "$@"
     bindings
     check-errors
     condition-utils
+    coops
     easyffi
     F-operator
     fast-generic

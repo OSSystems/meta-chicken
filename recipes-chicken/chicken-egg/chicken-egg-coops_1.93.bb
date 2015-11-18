@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://coops.meta;md5=042d38ad2b2fa2add8c0b5626fd8dbf7"
 DEPENDS_append_class-cross = " chicken-egg-matchable-cross chicken-egg-record-variants-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-matchable-crosssdk chicken-egg-record-variants-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-matchable nativesdk-chicken-egg-record-variants chicken-egg-matchable-crosssdk chicken-egg-record-variants-crosssdk"
-DEPENDS = " chicken-egg-matchable chicken-egg-record-variants chicken-egg-matchable-cross chicken-egg-record-variants-cross"
+DEPENDS = " chicken-egg-matchable chicken-egg-record-variants chicken-egg-matchable-cross chicken-egg-record-variants-cross chicken-egg-coops-cross"
 RDEPENDS_${PN} = " chicken-egg-matchable chicken-egg-record-variants"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/coops/coops-${PV}.tar.gz"
