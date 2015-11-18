@@ -36,7 +36,7 @@ exec csi -s $0 "$@"
 
 (define *eggs-dir* #f)
 
-(define skip-eggs
+(define skip-eggs/reasons
   ;; List of (<egg [symbol]> <reason [string]>)
   '((cock "obsolete")
     (cock-utils "obsolete")
@@ -62,13 +62,15 @@ exec csi -s $0 "$@"
     (statistics "obsolete")
     ))
 
+(define skip-eggs (map car skip-eggs/reasons))
+
 (define (all-eggs)
   (lset-difference
    equal?
    (remove string-null?
            (with-input-from-pipe "chicken-install -list | sort"
              read-lines))
-   (map (compose symbol->string car) skip-eggs)))
+   (map symbol->string skip-eggs)))
 
 (define self-dependent-eggs
   ;; Eggs that generate multiple modules that have interdependencies.
@@ -343,28 +345,33 @@ exec csi -s $0 "$@"
       (let* ((meta-data (read-meta-file egg version))
              (deps (egg-dependencies meta-data))
              (ext-deps (egg-external-dependencies egg))
-             (has-deps? (or (not (null? ext-deps)) (not (null? deps))))
-             (csc-options (egg-extra-chicken-install-options egg))
-             (content
-              (list
-               "SECTION = \"devel/chicken\""
-               (format-description meta-data)
-               (format-license meta-data)
-               (format-license-checksum egg version)
-               (format-all-deps egg deps ext-deps)
-               (and csc-options
-                    (format-extra-chicken-install-options csc-options))
-               (format-src-uri egg version)
-               (format-hash-sums egg version)
-               (sprintf "S = \"${WORKDIR}/~a-${PV}\"" egg)
-               (maybe-require-inc egg version)
-               (string-append "inherit chicken_install\n")
-               (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
-        (print (string-intersperse (list egg version (->string deps)) "\t"))
-        (with-output-to-file recipe-file
-          (lambda ()
-            (print (string-intersperse (filter identity content) "\n"))))
-        (when has-deps? (for-each gen-recipe deps))))))
+             (has-deps? (or (not (null? ext-deps)) (not (null? deps)))))
+        (if (any (cut memq <> skip-eggs) deps)
+            (fprintf (current-error-port)
+                     "Skipping ~a because it contains skipped dependencies ~S\n"
+                     egg (filter (cut memq <> skip-eggs) deps))
+            (let* ((csc-options (egg-extra-chicken-install-options egg))
+                   (content
+                    (list
+                     "SECTION = \"devel/chicken\""
+                     (format-description meta-data)
+                     (format-license meta-data)
+                     (format-license-checksum egg version)
+                     (format-all-deps egg deps ext-deps)
+                     (and csc-options
+                          (format-extra-chicken-install-options csc-options))
+                     (format-src-uri egg version)
+                     (format-hash-sums egg version)
+                     (sprintf "S = \"${WORKDIR}/~a-${PV}\"" egg)
+                     (maybe-require-inc egg version)
+                     (string-append "inherit chicken_install\n")
+                     (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
+              (print (string-intersperse (list egg version (->string deps)) "\t"))
+              (with-output-to-file recipe-file
+                (lambda ()
+                  (print (string-intersperse (filter identity content) "\n"))))
+              (when has-deps?
+                (for-each gen-recipe deps))))))))
 
 (define (command-line-argument option args)
   ;; Returns the argument associated to the command line option OPTION
