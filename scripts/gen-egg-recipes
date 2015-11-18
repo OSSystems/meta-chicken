@@ -103,7 +103,8 @@ exec csi -s $0 "$@"
   (and (memq egg self-dependent-eggs) #t))
 
 (define external-dependencies
-  '((dbus    dbus)
+  '((cairo   cairo)
+    (dbus    dbus)
     (lzma    xz)
     (openssl openssl)
     (ncurses ncurses)

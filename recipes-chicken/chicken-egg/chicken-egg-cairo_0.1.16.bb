@@ -2,6 +2,9 @@ SECTION = "devel/chicken"
 DESCRIPTION = "Chicken bindings for Cairo, a vector graphics library"
 LICENSE = "LGPL-2.1"
 LIC_FILES_CHKSUM = "file://cairo.meta;md5=cf2ed7913ed45c0b287e33d3c06bf3ed"
+DEPENDS_append_class-cross = " cairo-native"
+DEPENDS_append_class-crosssdk = " cairo-native"
+DEPENDS = " cairo"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/cairo/cairo-${PV}.tar.gz"
 
