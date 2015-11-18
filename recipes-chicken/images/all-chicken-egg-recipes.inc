@@ -313,6 +313,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-s \
     chicken-egg-s11n \
     chicken-egg-s48-modules \
+    chicken-egg-salmonella \
     chicken-egg-sandbox \
     chicken-egg-sassy \
     chicken-egg-schelog \
@@ -769,6 +770,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-s \
     nativesdk-chicken-egg-s11n \
     nativesdk-chicken-egg-s48-modules \
+    nativesdk-chicken-egg-salmonella \
     nativesdk-chicken-egg-sandbox \
     nativesdk-chicken-egg-sassy \
     nativesdk-chicken-egg-schelog \
