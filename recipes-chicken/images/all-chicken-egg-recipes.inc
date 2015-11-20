@@ -263,6 +263,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-null \
     chicken-egg-numbers \
     chicken-egg-numspell \
+    chicken-egg-oauth \
     chicken-egg-object-graph \
     chicken-egg-oblist \
     chicken-egg-octave \
@@ -723,6 +724,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-null \
     nativesdk-chicken-egg-numbers \
     nativesdk-chicken-egg-numspell \
+    nativesdk-chicken-egg-oauth \
     nativesdk-chicken-egg-object-graph \
     nativesdk-chicken-egg-oblist \
     nativesdk-chicken-egg-octave \

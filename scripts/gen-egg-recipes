@@ -173,7 +173,6 @@ exec csi -s $0 "$@"
     (noise "error")
     (nomads "error")
     (number-limits "error")
-    (oauth "error")
     (objc "error")
     (openal "error")
     (opengl "error")
