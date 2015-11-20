@@ -107,7 +107,6 @@ exec csi -s $0 "$@"
     (hahn-utils "error")
     (hashes "error")
     (hen "error")
-    (henrietta-cache "error")
     (hfs+ "error")
     (http-client "error")
     (hyde "error")
