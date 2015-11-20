@@ -169,6 +169,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-henrietta \
     chicken-egg-hexgrid \
     chicken-egg-high-load-scheduler \
+    chicken-egg-hmac \
     chicken-egg-honu \
     chicken-egg-hostinfo \
     chicken-egg-hpack \
@@ -628,6 +629,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-henrietta \
     nativesdk-chicken-egg-hexgrid \
     nativesdk-chicken-egg-high-load-scheduler \
+    nativesdk-chicken-egg-hmac \
     nativesdk-chicken-egg-honu \
     nativesdk-chicken-egg-hostinfo \
     nativesdk-chicken-egg-hpack \
