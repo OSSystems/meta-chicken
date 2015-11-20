@@ -115,6 +115,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-easy-args \
     chicken-egg-easyffi \
     chicken-egg-edn \
+    chicken-egg-efax \
     chicken-egg-egg-pack-sources \
     chicken-egg-egg-tarballs \
     chicken-egg-eggdoc \
@@ -579,6 +580,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-easy-args \
     nativesdk-chicken-egg-easyffi \
     nativesdk-chicken-egg-edn \
+    nativesdk-chicken-egg-efax \
     nativesdk-chicken-egg-egg-pack-sources \
     nativesdk-chicken-egg-egg-tarballs \
     nativesdk-chicken-egg-eggdoc \
