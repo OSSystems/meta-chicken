@@ -77,7 +77,6 @@ exec csi -s $0 "$@"
     (doodle "error")
     (dropbox "error")
     (easyffi "obsolete")
-    (efax "error")
     (elliptic-curves "error")
     (epeg "error")
     (eping "error")
