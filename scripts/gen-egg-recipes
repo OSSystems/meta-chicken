@@ -113,7 +113,6 @@ exec csi -s $0 "$@"
     (i3 "error")
     (image-processing "error")
     (ir-macros "obsolete")
-    (isbn "error")
     (iup "error")
     (jni "error")
     (json-rpc "error")
