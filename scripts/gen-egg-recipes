@@ -103,7 +103,6 @@ exec csi -s $0 "$@"
     (glm "error")
     (glpk "error")
     (glut "error")
-    (graphs "error")
     (gts "error")
     (hahn-utils "error")
     (hashes "error")
@@ -331,6 +330,7 @@ exec csi -s $0 "$@"
     F-operator
     fast-generic
     fmt
+    graphs
     inline
     locale
     lookup-table
