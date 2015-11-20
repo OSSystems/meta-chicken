@@ -190,6 +190,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-htmlprag \
     chicken-egg-http-client \
     chicken-egg-http-session \
+    chicken-egg-hyde \
     chicken-egg-hyperscene \
     chicken-egg-iconv \
     chicken-egg-iexpr \
@@ -664,6 +665,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-htmlprag \
     nativesdk-chicken-egg-http-client \
     nativesdk-chicken-egg-http-session \
+    nativesdk-chicken-egg-hyde \
     nativesdk-chicken-egg-hyperscene \
     nativesdk-chicken-egg-iconv \
     nativesdk-chicken-egg-iexpr \
