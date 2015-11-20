@@ -82,6 +82,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-contracts \
     chicken-egg-coops \
     chicken-egg-coops-utils \
+    chicken-egg-correios \
     chicken-egg-couchdb-view-server \
     chicken-egg-crunch \
     chicken-egg-crypt \
@@ -544,6 +545,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-contracts \
     nativesdk-chicken-egg-coops \
     nativesdk-chicken-egg-coops-utils \
+    nativesdk-chicken-egg-correios \
     nativesdk-chicken-egg-couchdb-view-server \
     nativesdk-chicken-egg-crunch \
     nativesdk-chicken-egg-crypt \
