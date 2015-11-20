@@ -127,6 +127,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-environments \
     chicken-egg-er-macros \
     chicken-egg-ersatz \
+    chicken-egg-estraier-client \
     chicken-egg-expand-full \
     chicken-egg-f-operator \
     chicken-egg-fancypants \
@@ -593,6 +594,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-environments \
     nativesdk-chicken-egg-er-macros \
     nativesdk-chicken-egg-ersatz \
+    nativesdk-chicken-egg-estraier-client \
     nativesdk-chicken-egg-expand-full \
     nativesdk-chicken-egg-f-operator \
     nativesdk-chicken-egg-fancypants \
