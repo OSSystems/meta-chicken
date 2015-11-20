@@ -66,7 +66,6 @@ exec csi -s $0 "$@"
     (coerce "error")
     (contracts "obsolete")
     (coq-au-vin "error")
-    (couchdb "error")
     (couchdb-view-server "obsolete")
     (crc "error")
     (cryptlib "error")
