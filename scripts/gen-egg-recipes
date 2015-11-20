@@ -228,7 +228,6 @@ exec csi -s $0 "$@"
     (send-grid "error")
     (setup-helper-cock "obsolete")
     (seulex "error")
-    (sha1 "error")
     (sha2 "error")
     (sicp "error")
     (signal-diagram "error")
