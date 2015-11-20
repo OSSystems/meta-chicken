@@ -168,6 +168,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-graph-scc \
     chicken-egg-graph-separators \
     chicken-egg-graph-ssa \
+    chicken-egg-graphs \
     chicken-egg-graphviz \
     chicken-egg-groc \
     chicken-egg-hahn \
@@ -640,6 +641,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-graph-scc \
     nativesdk-chicken-egg-graph-separators \
     nativesdk-chicken-egg-graph-ssa \
+    nativesdk-chicken-egg-graphs \
     nativesdk-chicken-egg-graphviz \
     nativesdk-chicken-egg-groc \
     nativesdk-chicken-egg-hahn \
