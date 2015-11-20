@@ -109,7 +109,6 @@ exec csi -s $0 "$@"
     (hen "error")
     (hfs+ "error")
     (http-client "error")
-    (hyde "error")
     (hypergiant "error")
     (i3 "error")
     (image-processing "error")
@@ -330,6 +329,7 @@ exec csi -s $0 "$@"
     fast-generic
     fmt
     graphs
+    hyde
     inline
     locale
     lookup-table
