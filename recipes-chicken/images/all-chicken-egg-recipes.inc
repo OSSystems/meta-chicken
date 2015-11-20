@@ -213,6 +213,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-ioctl \
     chicken-egg-ir-macros \
     chicken-egg-irc \
+    chicken-egg-isbn \
     chicken-egg-iset \
     chicken-egg-javahack \
     chicken-egg-jsmin \
@@ -688,6 +689,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-ioctl \
     nativesdk-chicken-egg-ir-macros \
     nativesdk-chicken-egg-irc \
+    nativesdk-chicken-egg-isbn \
     nativesdk-chicken-egg-iset \
     nativesdk-chicken-egg-javahack \
     nativesdk-chicken-egg-jsmin \
