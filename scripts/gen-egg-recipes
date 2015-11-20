@@ -81,7 +81,6 @@ exec csi -s $0 "$@"
     (eping "error")
     (er-macros "obsolete")
     (error-utils "error")
-    (estraier-client "error")
     (exif "error")
     (expand-full "error")
     (expat "error")
