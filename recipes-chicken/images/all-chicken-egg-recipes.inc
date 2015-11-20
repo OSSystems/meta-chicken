@@ -67,6 +67,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-civet \
     chicken-egg-clojurian \
     chicken-egg-cluckcheck \
+    chicken-egg-clucker \
     chicken-egg-cmaes \
     chicken-egg-cock \
     chicken-egg-colorize \
@@ -525,6 +526,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-civet \
     nativesdk-chicken-egg-clojurian \
     nativesdk-chicken-egg-cluckcheck \
+    nativesdk-chicken-egg-clucker \
     nativesdk-chicken-egg-cmaes \
     nativesdk-chicken-egg-cock \
     nativesdk-chicken-egg-colorize \

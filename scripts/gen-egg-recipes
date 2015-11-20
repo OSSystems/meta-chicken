@@ -60,7 +60,6 @@ exec csi -s $0 "$@"
     (call-with-query "error")
     (call-with-sqlite3-connection "error")
     (canvas-draw "error")
-    (clucker "error")
     (cmark "error")
     (cock  "obsolete")
     (cock-utils "obsolete")
