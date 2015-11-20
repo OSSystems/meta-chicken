@@ -190,6 +190,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-hyperscene \
     chicken-egg-iconv \
     chicken-egg-iexpr \
+    chicken-egg-imlib2 \
     chicken-egg-imperative-command-line-a \
     chicken-egg-impromptu \
     chicken-egg-inclub \
@@ -659,6 +660,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-hyperscene \
     nativesdk-chicken-egg-iconv \
     nativesdk-chicken-egg-iexpr \
+    nativesdk-chicken-egg-imlib2 \
     nativesdk-chicken-egg-imperative-command-line-a \
     nativesdk-chicken-egg-impromptu \
     nativesdk-chicken-egg-inclub \
