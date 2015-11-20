@@ -134,6 +134,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-fancypants \
     chicken-egg-fast-generic \
     chicken-egg-fast-loop \
+    chicken-egg-fastcgi \
     chicken-egg-feature-test \
     chicken-egg-filepath \
     chicken-egg-flsim \
@@ -602,6 +603,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-fancypants \
     nativesdk-chicken-egg-fast-generic \
     nativesdk-chicken-egg-fast-loop \
+    nativesdk-chicken-egg-fastcgi \
     nativesdk-chicken-egg-feature-test \
     nativesdk-chicken-egg-filepath \
     nativesdk-chicken-egg-flsim \
