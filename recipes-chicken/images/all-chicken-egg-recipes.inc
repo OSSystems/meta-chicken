@@ -120,6 +120,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-egg-tarballs \
     chicken-egg-eggdoc \
     chicken-egg-eggdoc-svnwiki \
+    chicken-egg-elliptic-curves \
     chicken-egg-embedded-test \
     chicken-egg-endian-blob \
     chicken-egg-endian-port \
@@ -585,6 +586,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-egg-tarballs \
     nativesdk-chicken-egg-eggdoc \
     nativesdk-chicken-egg-eggdoc-svnwiki \
+    nativesdk-chicken-egg-elliptic-curves \
     nativesdk-chicken-egg-embedded-test \
     nativesdk-chicken-egg-endian-blob \
     nativesdk-chicken-egg-endian-port \

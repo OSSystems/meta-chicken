@@ -77,7 +77,6 @@ exec csi -s $0 "$@"
     (doodle "error")
     (dropbox "error")
     (easyffi "obsolete")
-    (elliptic-curves "error")
     (epeg "error")
     (eping "error")
     (er-macros "obsolete")
@@ -334,6 +333,7 @@ exec csi -s $0 "$@"
     csv
     data-generators
     easyffi
+    elliptic-curves
     F-operator
     fast-generic
     fmt
