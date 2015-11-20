@@ -118,7 +118,6 @@ exec csi -s $0 "$@"
     (hen "error")
     (henrietta-cache "error")
     (hfs+ "error")
-    (hmac "error")
     (http-client "error")
     (hyde "error")
     (hypergiant "error")
