@@ -246,6 +246,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-loop \
     chicken-egg-loops \
     chicken-egg-loopy-loop \
+    chicken-egg-lowdown \
     chicken-egg-lru-cache \
     chicken-egg-lua \
     chicken-egg-lz4 \
@@ -724,6 +725,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-loop \
     nativesdk-chicken-egg-loops \
     nativesdk-chicken-egg-loopy-loop \
+    nativesdk-chicken-egg-lowdown \
     nativesdk-chicken-egg-lru-cache \
     nativesdk-chicken-egg-lua \
     nativesdk-chicken-egg-lz4 \
