@@ -239,6 +239,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-llrb-syntax \
     chicken-egg-llrb-tree \
     chicken-egg-locale \
+    chicken-egg-log5scm \
     chicken-egg-lognum \
     chicken-egg-logpro \
     chicken-egg-lookup-table \
@@ -716,6 +717,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-llrb-syntax \
     nativesdk-chicken-egg-llrb-tree \
     nativesdk-chicken-egg-locale \
+    nativesdk-chicken-egg-log5scm \
     nativesdk-chicken-egg-lognum \
     nativesdk-chicken-egg-logpro \
     nativesdk-chicken-egg-lookup-table \
