@@ -125,7 +125,6 @@ exec csi -s $0 "$@"
     (libsvm "obsolete")
     (list-bindings "obsolete")
     (locale "error")
-    (low-level-macros "obsolete")
     (lzma "error")
     (macosx "error")
     (magic "error")
@@ -331,6 +330,7 @@ exec csi -s $0 "$@"
     log5scm
     lookup-table
     loop
+    low-level-macros
     lowdown
     message-digest
     moremacros
