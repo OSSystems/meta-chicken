@@ -125,7 +125,6 @@ exec csi -s $0 "$@"
     (libsvm "obsolete")
     (list-bindings "obsolete")
     (locale "error")
-    (log5scm "error")
     (low-level-macros "obsolete")
     (lowdown "error")
     (lzma "error")
@@ -330,6 +329,7 @@ exec csi -s $0 "$@"
     hyde
     inline
     locale
+    log5scm
     lookup-table
     loop
     message-digest
