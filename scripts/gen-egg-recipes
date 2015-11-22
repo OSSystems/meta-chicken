@@ -184,7 +184,6 @@ exec csi -s $0 "$@"
     (ripemd "error")
     (salt "error")
     (sass "error")
-    (scbib "error")
     (schematic "error")
     (sdl "error")
     (sdl-base "error")
@@ -330,6 +329,7 @@ exec csi -s $0 "$@"
     r7rs
     refbd
     salmonella
+    scbib
     scss
     sequences
     streams-primitive

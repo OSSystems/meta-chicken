@@ -352,6 +352,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-salmonella-html-report \
     chicken-egg-sandbox \
     chicken-egg-sassy \
+    chicken-egg-scbib \
     chicken-egg-schelog \
     chicken-egg-scheme0-pe \
     chicken-egg-scheme2c-compatibility \
@@ -847,6 +848,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-salmonella-html-report \
     nativesdk-chicken-egg-sandbox \
     nativesdk-chicken-egg-sassy \
+    nativesdk-chicken-egg-scbib \
     nativesdk-chicken-egg-schelog \
     nativesdk-chicken-egg-scheme0-pe \
     nativesdk-chicken-egg-scheme2c-compatibility \
