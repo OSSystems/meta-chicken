@@ -191,7 +191,6 @@ exec csi -s $0 "$@"
     (sdl-img "error")
     (sdl-mixer "error")
     (sdl-ttf "error")
-    (send-grid "error")
     (setup-helper-cock "obsolete")
     (seulex "error")
     (sha2 "error")
