@@ -254,7 +254,6 @@ exec csi -s $0 "$@"
     (udp6 "error")
     (ugarit "error")
     (ugarit-manifest-maker "error")
-    (unitconv "error")
     (usb "error")
     (uuid-lib "error")
     (uuid-ossp "error")
@@ -345,7 +344,7 @@ exec csi -s $0 "$@"
     ssql
     sxpath
     tinyclos
-    initconv
+    unitconv
     utf8
     ))
 
