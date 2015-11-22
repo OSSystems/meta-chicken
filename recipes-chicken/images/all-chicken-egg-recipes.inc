@@ -292,6 +292,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-object-graph \
     chicken-egg-oblist \
     chicken-egg-octave \
+    chicken-egg-openal \
     chicken-egg-opengl-glew \
     chicken-egg-openssl \
     chicken-egg-operations \
@@ -781,6 +782,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-object-graph \
     nativesdk-chicken-egg-oblist \
     nativesdk-chicken-egg-octave \
+    nativesdk-chicken-egg-openal \
     nativesdk-chicken-egg-opengl-glew \
     nativesdk-chicken-egg-openssl \
     nativesdk-chicken-egg-operations \
