@@ -193,7 +193,6 @@ exec csi -s $0 "$@"
     (sdl-ttf "error")
     (setup-helper-cock "obsolete")
     (seulex "error")
-    (sha2 "error")
     (sicp "error")
     (signal-diagram "error")
     (simple-graphics "error")
