@@ -348,6 +348,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-s48-modules \
     chicken-egg-salmonella \
     chicken-egg-salmonella-diff \
+    chicken-egg-salmonella-feeds \
     chicken-egg-sandbox \
     chicken-egg-sassy \
     chicken-egg-schelog \
@@ -841,6 +842,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-s48-modules \
     nativesdk-chicken-egg-salmonella \
     nativesdk-chicken-egg-salmonella-diff \
+    nativesdk-chicken-egg-salmonella-feeds \
     nativesdk-chicken-egg-sandbox \
     nativesdk-chicken-egg-sassy \
     nativesdk-chicken-egg-schelog \

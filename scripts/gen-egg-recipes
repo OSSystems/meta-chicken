@@ -182,7 +182,6 @@ exec csi -s $0 "$@"
     (remote-mailbox "error")
     (remote-mailbox-threads "error")
     (ripemd "error")
-    (salmonella-feeds "error")
     (salmonella-html-report "error")
     (salt "error")
     (sass "error")
