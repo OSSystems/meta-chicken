@@ -223,7 +223,6 @@ exec csi -s $0 "$@"
     (tokyocabinet "error")
     (tuples "error")
     (tweetnacl "error")
-    (udev "error")
     (udp6 "error")
     (ugarit "error")
     (ugarit-manifest-maker "error")
@@ -354,6 +353,7 @@ exec csi -s $0 "$@"
     (soil  mesa)
     (sql-de-lite sqlite3)
     (sqlite3  sqlite3)
+    (udev  udev)
     (xlib    libx11)
     ))
 
