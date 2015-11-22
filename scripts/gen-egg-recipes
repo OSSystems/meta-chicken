@@ -216,7 +216,6 @@ exec csi -s $0 "$@"
     (statistics "obsolete")
     (stemmer "error")
     (string-utils "error")
-    (striped-zebra "error")
     (sundials "error")
     (svn-client "error")
     (sxml-fu "error")

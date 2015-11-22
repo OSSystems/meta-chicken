@@ -436,6 +436,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-statvfs \
     chicken-egg-strictly-pretty \
     chicken-egg-string-utils \
+    chicken-egg-striped-zebra \
     chicken-egg-stty \
     chicken-egg-sublevel \
     chicken-egg-suffix-tree \
@@ -947,6 +948,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-statvfs \
     nativesdk-chicken-egg-strictly-pretty \
     nativesdk-chicken-egg-string-utils \
+    nativesdk-chicken-egg-striped-zebra \
     nativesdk-chicken-egg-stty \
     nativesdk-chicken-egg-sublevel \
     nativesdk-chicken-egg-suffix-tree \
