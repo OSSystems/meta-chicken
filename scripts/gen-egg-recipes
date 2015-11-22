@@ -166,7 +166,6 @@ exec csi -s $0 "$@"
     (probdist "error")
     (proccpuinfo "error")
     (prometheus "error")
-    (protolk "error")
     (pseudo-meta-egg-info "error")
     (pstk "obsolete")
     (pyffi "error")
@@ -331,6 +330,7 @@ exec csi -s $0 "$@"
     moremacros
     parley
     protobuf
+    protolk
     r7rs
     salmonella
     scss

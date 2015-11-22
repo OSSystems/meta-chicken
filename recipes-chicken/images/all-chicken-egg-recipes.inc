@@ -318,6 +318,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-progress-indicators \
     chicken-egg-protobj \
     chicken-egg-protobuf \
+    chicken-egg-protolk \
     chicken-egg-pstk \
     chicken-egg-pty \
     chicken-egg-qrencode \
@@ -808,6 +809,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-progress-indicators \
     nativesdk-chicken-egg-protobj \
     nativesdk-chicken-egg-protobuf \
+    nativesdk-chicken-egg-protolk \
     nativesdk-chicken-egg-pstk \
     nativesdk-chicken-egg-pty \
     nativesdk-chicken-egg-qrencode \
