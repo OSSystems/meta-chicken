@@ -218,7 +218,6 @@ exec csi -s $0 "$@"
     (string-utils "error")
     (sundials "error")
     (svn-client "error")
-    (sxml-fu "error")
     (sxml-templates "error")
     (tcp6 "error")
     (tiger-hash "error")
@@ -327,6 +326,7 @@ exec csi -s $0 "$@"
     srfi-101
     srfi-102
     ssql
+    sxml-fu
     sxpath
     thread-utils
     tinyclos

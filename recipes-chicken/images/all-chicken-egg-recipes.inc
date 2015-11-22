@@ -443,6 +443,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-suspension \
     chicken-egg-svn-egg-author \
     chicken-egg-svnwiki-sxml \
+    chicken-egg-sxml-fu \
     chicken-egg-sxml-informal \
     chicken-egg-sxml-modifications \
     chicken-egg-sxml-serializer \
@@ -955,6 +956,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-suspension \
     nativesdk-chicken-egg-svn-egg-author \
     nativesdk-chicken-egg-svnwiki-sxml \
+    nativesdk-chicken-egg-sxml-fu \
     nativesdk-chicken-egg-sxml-informal \
     nativesdk-chicken-egg-sxml-modifications \
     nativesdk-chicken-egg-sxml-serializer \
