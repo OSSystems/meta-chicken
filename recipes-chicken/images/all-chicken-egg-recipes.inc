@@ -362,6 +362,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-scss \
     chicken-egg-sdbm \
     chicken-egg-sedna \
+    chicken-egg-selenium \
     chicken-egg-sendfile \
     chicken-egg-sequences \
     chicken-egg-serial \
@@ -858,6 +859,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-scss \
     nativesdk-chicken-egg-sdbm \
     nativesdk-chicken-egg-sedna \
+    nativesdk-chicken-egg-selenium \
     nativesdk-chicken-egg-sendfile \
     nativesdk-chicken-egg-sequences \
     nativesdk-chicken-egg-serial \
