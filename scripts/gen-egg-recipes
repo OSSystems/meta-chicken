@@ -140,7 +140,6 @@ exec csi -s $0 "$@"
     (mowedline "error")
     (mpfi "error")
     (mpi "error")
-    (msgpack "error")
     (multidoc "obsolete")
     (mw "error")
     (mw-core "error")

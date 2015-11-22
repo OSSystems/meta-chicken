@@ -272,6 +272,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-monad \
     chicken-egg-moremacros \
     chicken-egg-mpd-client \
+    chicken-egg-msgpack \
     chicken-egg-multi-methods \
     chicken-egg-multidoc \
     chicken-egg-multipart-form-data \
@@ -757,6 +758,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-monad \
     nativesdk-chicken-egg-moremacros \
     nativesdk-chicken-egg-mpd-client \
+    nativesdk-chicken-egg-msgpack \
     nativesdk-chicken-egg-multi-methods \
     nativesdk-chicken-egg-multidoc \
     nativesdk-chicken-egg-multipart-form-data \
