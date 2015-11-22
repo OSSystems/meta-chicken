@@ -461,6 +461,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-typed-modules \
     chicken-egg-typed-records \
     chicken-egg-udp \
+    chicken-egg-unitconv \
     chicken-egg-unix-sockets \
     chicken-egg-uri-common \
     chicken-egg-uri-dispatch \
@@ -948,6 +949,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-typed-modules \
     nativesdk-chicken-egg-typed-records \
     nativesdk-chicken-egg-udp \
+    nativesdk-chicken-egg-unitconv \
     nativesdk-chicken-egg-unix-sockets \
     nativesdk-chicken-egg-uri-common \
     nativesdk-chicken-egg-uri-dispatch \
