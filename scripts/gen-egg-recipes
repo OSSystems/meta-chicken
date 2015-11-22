@@ -134,7 +134,6 @@ exec csi -s $0 "$@"
     (matrix-utils "error")
     (md5 "error")
     (message-digest "error")
-    (miniML "error")
     (mistie "error")
     (mojo "error")
     (monad "error")
@@ -333,6 +332,7 @@ exec csi -s $0 "$@"
     markdown-svnwiki
     mbox
     message-digest
+    miniML
     moremacros
     parley
     protobuf
