@@ -332,6 +332,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-readline \
     chicken-egg-record-variants \
     chicken-egg-records \
+    chicken-egg-refdb \
     chicken-egg-regex \
     chicken-egg-regex-case \
     chicken-egg-regex-literals \
@@ -823,6 +824,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-readline \
     nativesdk-chicken-egg-record-variants \
     nativesdk-chicken-egg-records \
+    nativesdk-chicken-egg-refdb \
     nativesdk-chicken-egg-regex \
     nativesdk-chicken-egg-regex-case \
     nativesdk-chicken-egg-regex-literals \
