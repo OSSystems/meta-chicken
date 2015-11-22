@@ -145,7 +145,6 @@ exec csi -s $0 "$@"
     (mw-core "error")
     (nanomsg "error")
     (nemo "error")
-    (neo4j "error")
     (noise "error")
     (nomads "error")
     (number-limits "error")

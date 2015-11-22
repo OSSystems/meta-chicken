@@ -278,6 +278,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-multipart-form-data \
     chicken-egg-mysql-client \
     chicken-egg-ncurses \
+    chicken-egg-neo4j \
     chicken-egg-netstring \
     chicken-egg-neurolucida \
     chicken-egg-neuromorpho \
@@ -766,6 +767,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-multipart-form-data \
     nativesdk-chicken-egg-mysql-client \
     nativesdk-chicken-egg-ncurses \
+    nativesdk-chicken-egg-neo4j \
     nativesdk-chicken-egg-netstring \
     nativesdk-chicken-egg-neurolucida \
     nativesdk-chicken-egg-neuromorpho \
