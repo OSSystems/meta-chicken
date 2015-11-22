@@ -392,6 +392,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-smtp \
     chicken-egg-snowdigest \
     chicken-egg-snowtar \
+    chicken-egg-soil \
     chicken-egg-sparse-vectors \
     chicken-egg-spatial-trees \
     chicken-egg-special-case \
@@ -896,6 +897,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-smtp \
     nativesdk-chicken-egg-snowdigest \
     nativesdk-chicken-egg-snowtar \
+    nativesdk-chicken-egg-soil \
     nativesdk-chicken-egg-sparse-vectors \
     nativesdk-chicken-egg-spatial-trees \
     nativesdk-chicken-egg-special-case \
