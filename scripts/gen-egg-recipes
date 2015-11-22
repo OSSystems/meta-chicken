@@ -202,7 +202,6 @@ exec csi -s $0 "$@"
     (spiffy-cgi-handlers "error")
     (spiffy-dynamic-handlers "obsolete")
     (spock "error")
-    (srfi-102 "error")
     (srfi-19 "error")
     (srfi-27 "error")
     (srfi-29 "error")
@@ -329,6 +328,7 @@ exec csi -s $0 "$@"
     spiffy
     srfi-41
     srfi-101
+    srfi-102
     ssql
     sxpath
     tinyclos
