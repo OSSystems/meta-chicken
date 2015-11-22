@@ -269,6 +269,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-missbehave \
     chicken-egg-modular-arithmetic \
     chicken-egg-module-declarations \
+    chicken-egg-monad \
     chicken-egg-moremacros \
     chicken-egg-mpd-client \
     chicken-egg-multi-methods \
@@ -753,6 +754,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-missbehave \
     nativesdk-chicken-egg-modular-arithmetic \
     nativesdk-chicken-egg-module-declarations \
+    nativesdk-chicken-egg-monad \
     nativesdk-chicken-egg-moremacros \
     nativesdk-chicken-egg-mpd-client \
     nativesdk-chicken-egg-multi-methods \

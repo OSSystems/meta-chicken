@@ -136,7 +136,6 @@ exec csi -s $0 "$@"
     (message-digest "error")
     (mistie "error")
     (mojo "error")
-    (monad "error")
     (moremacros "error")
     (mowedline "error")
     (mpfi "error")
@@ -333,6 +332,7 @@ exec csi -s $0 "$@"
     mbox
     message-digest
     miniML
+    monad
     moremacros
     parley
     protobuf
