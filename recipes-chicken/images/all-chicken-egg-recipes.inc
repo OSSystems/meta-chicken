@@ -375,6 +375,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sha1 \
     chicken-egg-sha2 \
     chicken-egg-shell \
+    chicken-egg-sicp \
     chicken-egg-sigma \
     chicken-egg-silex \
     chicken-egg-simple-configuration \
@@ -874,6 +875,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sha1 \
     nativesdk-chicken-egg-sha2 \
     nativesdk-chicken-egg-shell \
+    nativesdk-chicken-egg-sicp \
     nativesdk-chicken-egg-sigma \
     nativesdk-chicken-egg-silex \
     nativesdk-chicken-egg-simple-configuration \
