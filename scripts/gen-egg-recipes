@@ -198,7 +198,6 @@ exec csi -s $0 "$@"
     (simple-units "error")
     (sixtyfive-oh-two "error")
     (skiplists "error")
-    (slatex "error")
     (slime "error")
     (smsmatrix "error")
     (socket "error")
@@ -329,6 +328,7 @@ exec csi -s $0 "$@"
     sequences
     sicp
     signal-diagram
+    slatex
     streams-primitive
     spiffy
     srfi-41
