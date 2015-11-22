@@ -223,7 +223,6 @@ exec csi -s $0 "$@"
     (tokyocabinet "error")
     (tuples "error")
     (tweetnacl "error")
-    (twilio "error")
     (udev "error")
     (udp6 "error")
     (ugarit "error")

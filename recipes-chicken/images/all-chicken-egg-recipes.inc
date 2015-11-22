@@ -480,6 +480,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-tree-rewrite \
     chicken-egg-trie \
     chicken-egg-tween \
+    chicken-egg-twilio \
     chicken-egg-type-extensions \
     chicken-egg-type-stubs \
     chicken-egg-typeclass \
@@ -994,6 +995,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-tree-rewrite \
     nativesdk-chicken-egg-trie \
     nativesdk-chicken-egg-tween \
+    nativesdk-chicken-egg-twilio \
     nativesdk-chicken-egg-type-extensions \
     nativesdk-chicken-egg-type-stubs \
     nativesdk-chicken-egg-typeclass \
