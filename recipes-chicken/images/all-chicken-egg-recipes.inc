@@ -463,6 +463,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-testdrive \
     chicken-egg-testeez \
     chicken-egg-thread-utils \
+    chicken-egg-timed-resource \
     chicken-egg-tiny-prolog \
     chicken-egg-tinyclos \
     chicken-egg-tinyclos-xerox \
@@ -973,6 +974,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-testdrive \
     nativesdk-chicken-egg-testeez \
     nativesdk-chicken-egg-thread-utils \
+    nativesdk-chicken-egg-timed-resource \
     nativesdk-chicken-egg-tiny-prolog \
     nativesdk-chicken-egg-tinyclos \
     nativesdk-chicken-egg-tinyclos-xerox \
