@@ -130,7 +130,6 @@ exec csi -s $0 "$@"
     (magic "error")
     (mailbox "error")
     (mailbox-threads "error")
-    (markdown-svnwiki "error")
     (matlab "error")
     (matrix-utils "error")
     (mbox "error")
@@ -332,6 +331,7 @@ exec csi -s $0 "$@"
     low-level-macros
     lowdown
     manual-labor
+    markdown-svnwiki
     message-digest
     moremacros
     parley

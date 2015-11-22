@@ -253,6 +253,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-lz4 \
     chicken-egg-make \
     chicken-egg-manual-labor \
+    chicken-egg-markdown-svnwiki \
     chicken-egg-mat5-lib \
     chicken-egg-matchable \
     chicken-egg-mathh \
@@ -734,6 +735,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-lz4 \
     nativesdk-chicken-egg-make \
     nativesdk-chicken-egg-manual-labor \
+    nativesdk-chicken-egg-markdown-svnwiki \
     nativesdk-chicken-egg-mat5-lib \
     nativesdk-chicken-egg-matchable \
     nativesdk-chicken-egg-mathh \
