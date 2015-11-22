@@ -385,6 +385,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-simple-sha1 \
     chicken-egg-simple-tests \
     chicken-egg-siphash \
+    chicken-egg-slatex \
     chicken-egg-slice \
     chicken-egg-smtp \
     chicken-egg-snowdigest \
@@ -886,6 +887,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-simple-sha1 \
     nativesdk-chicken-egg-simple-tests \
     nativesdk-chicken-egg-siphash \
+    nativesdk-chicken-egg-slatex \
     nativesdk-chicken-egg-slice \
     nativesdk-chicken-egg-smtp \
     nativesdk-chicken-egg-snowdigest \
