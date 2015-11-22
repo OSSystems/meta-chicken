@@ -203,7 +203,6 @@ exec csi -s $0 "$@"
     (spiffy-dynamic-handlers "obsolete")
     (spock "error")
     (srfi-19 "error")
-    (srfi-27 "error")
     (srfi-29 "error")
     (srfi-40 "error")
     (srfi-41 "error")
@@ -325,6 +324,7 @@ exec csi -s $0 "$@"
     streams-primitive
     sp
     spiffy
+    srfi-27
     srfi-41
     srfi-101
     srfi-102
