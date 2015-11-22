@@ -373,6 +373,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sexp-diff \
     chicken-egg-sfht \
     chicken-egg-sha1 \
+    chicken-egg-sha2 \
     chicken-egg-shell \
     chicken-egg-sigma \
     chicken-egg-silex \
@@ -871,6 +872,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sexp-diff \
     nativesdk-chicken-egg-sfht \
     nativesdk-chicken-egg-sha1 \
+    nativesdk-chicken-egg-sha2 \
     nativesdk-chicken-egg-shell \
     nativesdk-chicken-egg-sigma \
     nativesdk-chicken-egg-silex \
