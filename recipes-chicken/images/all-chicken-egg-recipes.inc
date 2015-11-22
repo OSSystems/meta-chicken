@@ -264,6 +264,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-memoize \
     chicken-egg-message-digest \
     chicken-egg-micro-benchmark \
+    chicken-egg-miniml \
     chicken-egg-miscmacros \
     chicken-egg-missbehave \
     chicken-egg-modular-arithmetic \
@@ -747,6 +748,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-memoize \
     nativesdk-chicken-egg-message-digest \
     nativesdk-chicken-egg-micro-benchmark \
+    nativesdk-chicken-egg-miniml \
     nativesdk-chicken-egg-miscmacros \
     nativesdk-chicken-egg-missbehave \
     nativesdk-chicken-egg-modular-arithmetic \
