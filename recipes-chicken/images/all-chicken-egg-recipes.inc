@@ -257,6 +257,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-mat5-lib \
     chicken-egg-matchable \
     chicken-egg-mathh \
+    chicken-egg-mbox \
     chicken-egg-md5 \
     chicken-egg-medea \
     chicken-egg-memcached \
@@ -739,6 +740,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-mat5-lib \
     nativesdk-chicken-egg-matchable \
     nativesdk-chicken-egg-mathh \
+    nativesdk-chicken-egg-mbox \
     nativesdk-chicken-egg-md5 \
     nativesdk-chicken-egg-medea \
     nativesdk-chicken-egg-memcached \

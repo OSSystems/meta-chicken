@@ -132,7 +132,6 @@ exec csi -s $0 "$@"
     (mailbox-threads "error")
     (matlab "error")
     (matrix-utils "error")
-    (mbox "error")
     (md5 "error")
     (message-digest "error")
     (miniML "error")
@@ -332,6 +331,7 @@ exec csi -s $0 "$@"
     lowdown
     manual-labor
     markdown-svnwiki
+    mbox
     message-digest
     moremacros
     parley
