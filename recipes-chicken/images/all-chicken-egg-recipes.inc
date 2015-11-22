@@ -409,6 +409,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sqdb \
     chicken-egg-sql-de-lite \
     chicken-egg-sql-null \
+    chicken-egg-sqlite3 \
     chicken-egg-srfi-101 \
     chicken-egg-srfi-116 \
     chicken-egg-srfi-117 \
@@ -915,6 +916,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sqdb \
     nativesdk-chicken-egg-sql-de-lite \
     nativesdk-chicken-egg-sql-null \
+    nativesdk-chicken-egg-sqlite3 \
     nativesdk-chicken-egg-srfi-101 \
     nativesdk-chicken-egg-srfi-116 \
     nativesdk-chicken-egg-srfi-117 \

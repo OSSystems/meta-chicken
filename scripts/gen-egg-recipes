@@ -202,7 +202,6 @@ exec csi -s $0 "$@"
     (spiffy-cgi-handlers "error")
     (spiffy-dynamic-handlers "obsolete")
     (spock "error")
-    (sqlite3 "error")
     (srfi-102 "error")
     (srfi-19 "error")
     (srfi-27 "error")
@@ -358,6 +357,7 @@ exec csi -s $0 "$@"
     (readline readline)
     (soil  mesa)
     (sql-de-lite sqlite3)
+    (sqlite3  sqlite3)
     (xlib    libx11)
     ))
 
