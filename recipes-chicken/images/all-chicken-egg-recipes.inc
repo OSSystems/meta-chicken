@@ -498,6 +498,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-uri-generic \
     chicken-egg-uri-match \
     chicken-egg-usage \
+    chicken-egg-usb \
     chicken-egg-utf8 \
     chicken-egg-uuid \
     chicken-egg-variable-item \
@@ -1016,6 +1017,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-uri-generic \
     nativesdk-chicken-egg-uri-match \
     nativesdk-chicken-egg-usage \
+    nativesdk-chicken-egg-usb \
     nativesdk-chicken-egg-utf8 \
     nativesdk-chicken-egg-uuid \
     nativesdk-chicken-egg-variable-item \
