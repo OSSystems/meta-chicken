@@ -234,7 +234,6 @@ exec csi -s $0 "$@"
     (xml-rpc "error")
     (xosd "error")
     (xtypes "error")
-    (yaml "error")
     (yelp "error")
     (zlib "error")
     (zmq "error")
@@ -352,6 +351,7 @@ exec csi -s $0 "$@"
     (udev  udev)
     (usb  libusb)
     (uuid-ossp  ossp-uuid)
+    (yaml  libyaml)
     (xlib    libx11)
     ))
 
