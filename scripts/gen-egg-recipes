@@ -224,7 +224,6 @@ exec csi -s $0 "$@"
     (tuples "error")
     (tweetnacl "error")
     (udp6 "error")
-    (ugarit "error")
     (ugarit-manifest-maker "error")
     (usb "error")
     (uuid-lib "error")
@@ -327,6 +326,7 @@ exec csi -s $0 "$@"
     sxpath
     thread-utils
     tinyclos
+    ugarit
     unitconv
     utf8
     ))
