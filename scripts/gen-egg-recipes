@@ -550,7 +550,7 @@ exec csi -s $0 "$@"
              egg))
 
 (define (maybe-require-inc egg version)
-  (let* ((inc-filename (sprintf "chicken-egg-~a.inc" egg))
+  (let* ((inc-filename (sprintf "chicken-egg-~a.inc" (string-downcase egg)))
          (inc-path (make-pathname *egg-recipes-dir* inc-filename)))
     (if (file-exists? inc-path)
         (sprintf "\nrequire ~a\n" inc-filename)
