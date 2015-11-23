@@ -231,7 +231,6 @@ exec csi -s $0 "$@"
     (win32-msgbox "error")
     (xft "error")
     (xlib-utils "error")
-    (xml-rpc "error")
     (xosd "error")
     (xtypes "error")
     (zlib "error")
@@ -323,6 +322,7 @@ exec csi -s $0 "$@"
     unitconv
     utf8
     vandusen
+    xml-rpc
     ))
 
 (define (self-dependent-egg? egg)
