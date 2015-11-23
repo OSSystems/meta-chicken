@@ -225,7 +225,6 @@ exec csi -s $0 "$@"
     (tweetnacl "error")
     (udp6 "error")
     (uuid-lib "error")
-    (vandusen "error")
     (webgate "error")
     (webkit "error")
     (websockets "error")
@@ -326,6 +325,7 @@ exec csi -s $0 "$@"
     ugarit
     unitconv
     utf8
+    vandusen
     ))
 
 (define (self-dependent-egg? egg)

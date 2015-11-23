@@ -502,6 +502,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-utf8 \
     chicken-egg-uuid \
     chicken-egg-uuid-ossp \
+    chicken-egg-vandusen \
     chicken-egg-variable-item \
     chicken-egg-varsubst \
     chicken-egg-vector-lib \
@@ -1022,6 +1023,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-utf8 \
     nativesdk-chicken-egg-uuid \
     nativesdk-chicken-egg-uuid-ossp \
+    nativesdk-chicken-egg-vandusen \
     nativesdk-chicken-egg-variable-item \
     nativesdk-chicken-egg-varsubst \
     nativesdk-chicken-egg-vector-lib \
