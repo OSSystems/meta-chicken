@@ -521,6 +521,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-yasos \
     chicken-egg-yelp \
     chicken-egg-z3 \
+    chicken-egg-zlib \
 "
 
 ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
@@ -1046,4 +1047,5 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-yasos \
     nativesdk-chicken-egg-yelp \
     nativesdk-chicken-egg-z3 \
+    nativesdk-chicken-egg-zlib \
 "
