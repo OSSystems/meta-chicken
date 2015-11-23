@@ -233,7 +233,6 @@ exec csi -s $0 "$@"
     (xlib-utils "error")
     (xosd "error")
     (xtypes "error")
-    (zlib "error")
     (zmq "error")
     ))
 
@@ -352,6 +351,7 @@ exec csi -s $0 "$@"
     (uuid-ossp  ossp-uuid)
     (yaml  libyaml)
     (xlib    libx11)
+    (zlib  zlib)
     ))
 
 (define extra-chicken-install-options
