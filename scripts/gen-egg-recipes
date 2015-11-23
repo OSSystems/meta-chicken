@@ -225,7 +225,6 @@ exec csi -s $0 "$@"
     (tweetnacl "error")
     (udp6 "error")
     (uuid-lib "error")
-    (uuid-ossp "error")
     (vandusen "error")
     (webgate "error")
     (webkit "error")
@@ -353,6 +352,7 @@ exec csi -s $0 "$@"
     (sqlite3  sqlite3)
     (udev  udev)
     (usb  libusb)
+    (uuid-ossp  ossp-uuid)
     (xlib    libx11)
     ))
 
