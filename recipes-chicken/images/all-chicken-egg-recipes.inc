@@ -515,6 +515,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-xbmc-api \
     chicken-egg-xlib \
     chicken-egg-xlib-utils \
+    chicken-egg-yahoo-finance \
     chicken-egg-yasos \
     chicken-egg-z3 \
 "
@@ -1036,6 +1037,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-xbmc-api \
     nativesdk-chicken-egg-xlib \
     nativesdk-chicken-egg-xlib-utils \
+    nativesdk-chicken-egg-yahoo-finance \
     nativesdk-chicken-egg-yasos \
     nativesdk-chicken-egg-z3 \
 "
