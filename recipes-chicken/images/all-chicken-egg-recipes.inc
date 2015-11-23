@@ -490,6 +490,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-udev \
     chicken-egg-udp \
     chicken-egg-ugarit \
+    chicken-egg-ugarit-manifest-maker \
     chicken-egg-unitconv \
     chicken-egg-unix-sockets \
     chicken-egg-uri-common \
@@ -1007,6 +1008,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-udev \
     nativesdk-chicken-egg-udp \
     nativesdk-chicken-egg-ugarit \
+    nativesdk-chicken-egg-ugarit-manifest-maker \
     nativesdk-chicken-egg-unitconv \
     nativesdk-chicken-egg-unix-sockets \
     nativesdk-chicken-egg-uri-common \

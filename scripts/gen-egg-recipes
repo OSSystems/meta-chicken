@@ -224,7 +224,6 @@ exec csi -s $0 "$@"
     (tuples "error")
     (tweetnacl "error")
     (udp6 "error")
-    (ugarit-manifest-maker "error")
     (usb "error")
     (uuid-lib "error")
     (uuid-ossp "error")
