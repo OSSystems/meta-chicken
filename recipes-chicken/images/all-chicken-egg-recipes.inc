@@ -223,6 +223,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-json-abnf \
     chicken-egg-kanren \
     chicken-egg-kd-tree \
+    chicken-egg-kvlists \
     chicken-egg-lalr \
     chicken-egg-landauer \
     chicken-egg-latch \
@@ -750,6 +751,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-json-abnf \
     nativesdk-chicken-egg-kanren \
     nativesdk-chicken-egg-kd-tree \
+    nativesdk-chicken-egg-kvlists \
     nativesdk-chicken-egg-lalr \
     nativesdk-chicken-egg-landauer \
     nativesdk-chicken-egg-latch \

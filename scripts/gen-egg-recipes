@@ -114,7 +114,6 @@ exec csi -s $0 "$@"
     (jni "error")
     (json-rpc "error")
     (kalaha "error")
-    (kvlists "error")
     (lazy-ffi "error")
     (leptonica "obsolete")
     (leveldb "error")
