@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "The SCSH/PLT 'awk' macro"
-LICENSE = "LGPL"
+LICENSE = "LGPL-1"
 LIC_FILES_CHKSUM = "file://awk.meta;md5=4e9e958f9791c7a1f7078ad5a0149a12"
 DEPENDS_append_class-cross = " chicken-egg-regex-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-regex-crosssdk"
