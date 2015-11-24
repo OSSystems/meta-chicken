@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Gap buffer."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://gap-buffer.meta;md5=31d064a1605cf138ec23187537d30a7e"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/gap-buffer/gap-buffer-${PV}.tar.gz"
