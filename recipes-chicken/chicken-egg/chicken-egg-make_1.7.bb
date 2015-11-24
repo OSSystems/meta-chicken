@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "The PLT 'make' macro"
-LICENSE = "LGPL"
+LICENSE = "LGPL-1"
 LIC_FILES_CHKSUM = "file://make.meta;md5=0506d579d40548dba3bd0c53144c2465"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/make/make-${PV}.tar.gz"
