@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://missbehave.meta;md5=9f0e03500ac8c458c1f7fe7950379f09"
 DEPENDS_append_class-cross = " chicken-egg-args-cross chicken-egg-fmt-cross chicken-egg-advice-cross chicken-egg-miscmacros-cross chicken-egg-sequences-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-args-crosssdk chicken-egg-fmt-crosssdk chicken-egg-advice-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-sequences-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-args nativesdk-chicken-egg-fmt nativesdk-chicken-egg-advice nativesdk-chicken-egg-miscmacros nativesdk-chicken-egg-sequences chicken-egg-args-crosssdk chicken-egg-fmt-crosssdk chicken-egg-advice-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-sequences-crosssdk"
-DEPENDS = " chicken-egg-args chicken-egg-fmt chicken-egg-advice chicken-egg-miscmacros chicken-egg-sequences chicken-egg-args-cross chicken-egg-fmt-cross chicken-egg-advice-cross chicken-egg-miscmacros-cross chicken-egg-sequences-cross"
+DEPENDS = " chicken-egg-args chicken-egg-fmt chicken-egg-advice chicken-egg-miscmacros chicken-egg-sequences chicken-egg-args-cross chicken-egg-fmt-cross chicken-egg-advice-cross chicken-egg-miscmacros-cross chicken-egg-sequences-cross chicken-egg-missbehave-cross"
 RDEPENDS_${PN} = " chicken-egg-args chicken-egg-fmt chicken-egg-advice chicken-egg-miscmacros chicken-egg-sequences"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/missbehave/missbehave-${PV}.tar.gz"
