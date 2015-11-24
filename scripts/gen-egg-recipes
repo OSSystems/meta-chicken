@@ -83,7 +83,6 @@ exec csi -s $0 "$@"
     (exif "error")
     (expand-full "error")
     (ezxdisp "error")
-    (f-operator "error")
     (fann "error")
     (ffmpeg-video "error")
     (formular "error")
