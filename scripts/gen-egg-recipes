@@ -291,6 +291,7 @@ exec csi -s $0 "$@"
     mbox
     message-digest
     miniML
+    missbehave
     monad
     moremacros
     parley
