@@ -521,7 +521,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-x11-keysyms \
     chicken-egg-xbmc-api \
     chicken-egg-xlib \
-    chicken-egg-xlib-utils \
     chicken-egg-xml-rpc \
     chicken-egg-yahoo-finance \
     chicken-egg-yaml \
@@ -1054,7 +1053,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-x11-keysyms \
     nativesdk-chicken-egg-xbmc-api \
     nativesdk-chicken-egg-xlib \
-    nativesdk-chicken-egg-xlib-utils \
     nativesdk-chicken-egg-xml-rpc \
     nativesdk-chicken-egg-yahoo-finance \
     nativesdk-chicken-egg-yaml \
