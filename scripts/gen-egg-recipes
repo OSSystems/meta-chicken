@@ -369,8 +369,6 @@ exec csi -s $0 "$@"
                                       ;; in the .meta file
       (cond ((string-ci=? license "public domain")
              "PD")
-            ((string-ci=? license "LGPL-1")
-             "LGPL")
             ((or (string-ci=? license "LGPL 3")
                  (string-ci=? license "LGPL-3"))
              "LGPL-3.0")
