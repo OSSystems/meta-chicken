@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Parsing comma-separated values"
-LICENSE = "LGPL 3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://csv-xml.meta;md5=84026fc2464da357047f3dd4dde177ea"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk"

@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Dynamic (dense) vectors based on SRFI-43."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://dyn-vector.meta;md5=dd59e0aeb699020773b115ba4030705e"
 DEPENDS_append_class-cross = " chicken-egg-vector-lib-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-vector-lib-crosssdk"

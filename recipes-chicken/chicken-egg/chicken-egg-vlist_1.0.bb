@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An implementation of vlists, a functional list-like data structure."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://vlist.meta;md5=b6dd028f0cea91d92b914f2de993b67e"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/vlist/vlist-${PV}.tar.gz"

@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An efficient LALR(1) parser generator"
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://lalr.meta;md5=24eefbcbb7734978dc41fc7a04c48141"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/lalr/lalr-${PV}.tar.gz"

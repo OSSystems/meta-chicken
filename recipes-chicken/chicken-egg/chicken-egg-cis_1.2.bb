@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Compact integer sets."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://cis.meta;md5=5d6330ce7299c96ef31cd21e0cd5cdef"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/cis/cis-${PV}.tar.gz"
