@@ -132,7 +132,6 @@ exec csi -s $0 "$@"
     (message-digest "error")
     (mistie "error")
     (mojo "error")
-    (moremacros "error")
     (mowedline "error")
     (mpfi "error")
     (mpi "error")
