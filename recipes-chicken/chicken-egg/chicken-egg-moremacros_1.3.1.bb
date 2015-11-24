@@ -15,6 +15,8 @@ SRC_URI[sha256sum] = "7aaf151d1ba091684b61640d619b23b2fdda15e533880df21e9db91ec9
 
 S = "${WORKDIR}/moremacros-${PV}"
 
+require chicken-egg-moremacros.inc
+
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"
