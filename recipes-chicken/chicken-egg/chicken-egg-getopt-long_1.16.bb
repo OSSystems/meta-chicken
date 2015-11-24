@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Command line option parsing."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://getopt-long.meta;md5=363f7d6ad5fa3cb9d123b0b427e8d593"
 DEPENDS_append_class-cross = " chicken-egg-matchable-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-matchable-crosssdk"

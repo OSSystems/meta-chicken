@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Byte array utility procedures for blobs."
-LICENSE = "LGPL-3"
+LICENSE = "LGPL-3.0"
 LIC_FILES_CHKSUM = "file://byte-blob.meta;md5=b7318a6d51a0dd606d55f9c48fbd5663"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/byte-blob/byte-blob-${PV}.tar.gz"
