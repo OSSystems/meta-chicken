@@ -290,6 +290,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-npdiff \
     chicken-egg-nrepl \
     chicken-egg-null \
+    chicken-egg-number-limits \
     chicken-egg-numbers \
     chicken-egg-numspell \
     chicken-egg-oauth \
@@ -819,6 +820,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-npdiff \
     nativesdk-chicken-egg-nrepl \
     nativesdk-chicken-egg-null \
+    nativesdk-chicken-egg-number-limits \
     nativesdk-chicken-egg-numbers \
     nativesdk-chicken-egg-numspell \
     nativesdk-chicken-egg-oauth \

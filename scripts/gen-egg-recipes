@@ -140,7 +140,6 @@ exec csi -s $0 "$@"
     (nemo "error")
     (noise "error")
     (nomads "error")
-    (number-limits "error")
     (objc "error")
     (opengl "error")
     (osxattr "error")
