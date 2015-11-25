@@ -15,6 +15,8 @@ SRC_URI[sha256sum] = "de570b942c441413ac3b1c37d49d1347b81ff64747e07f4d77267b1f8c
 
 S = "${WORKDIR}/xlib-utils-${PV}"
 
+require chicken-egg-xlib-utils.inc
+
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

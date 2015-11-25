@@ -1,0 +1,27 @@
+From 22ac1a8bfbed21d29f9ad132ff54080442e5b34a Mon Sep 17 00:00:00 2001
+From: Mario Domenech Goulart <mario@ossystems.com.br>
+Date: Wed, 25 Nov 2015 10:49:21 -0200
+Subject: [PATCH] Remove hardcoded include/library path
+Organization: O.S. Systems Software LTDA.
+Upstream-Status: Pending
+---
+ xlib-utils.setup | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/xlib-utils.setup b/xlib-utils.setup
+index 0473ced..e78eb54 100644
+--- a/xlib-utils.setup
++++ b/xlib-utils.setup
+@@ -1,8 +1,6 @@
+ ;; -*- scheme -*-
+ 
+-(compile xlib-utils.scm -j xlib-utils -s -O2 -d0
+-         -L "\"-L/usr/X11R6/lib -lX11\""
+-         -C "\"-I/usr/X11R6/include\"")
++(compile xlib-utils.scm -j xlib-utils -s -O2 -d0)
+ (compile xlib-utils.import.scm -s -O2 -d0)
+ 
+ (install-extension
+-- 
+2.1.4
+
