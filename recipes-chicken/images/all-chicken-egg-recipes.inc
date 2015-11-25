@@ -107,6 +107,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-describe-coops \
     chicken-egg-dict \
     chicken-egg-digraph \
+    chicken-egg-directory-utils \
     chicken-egg-disjoint-set \
     chicken-egg-dissector \
     chicken-egg-doctype \
@@ -651,6 +652,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-describe-coops \
     nativesdk-chicken-egg-dict \
     nativesdk-chicken-egg-digraph \
+    nativesdk-chicken-egg-directory-utils \
     nativesdk-chicken-egg-disjoint-set \
     nativesdk-chicken-egg-dissector \
     nativesdk-chicken-egg-doctype \

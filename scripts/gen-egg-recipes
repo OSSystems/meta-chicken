@@ -70,7 +70,6 @@ exec csi -s $0 "$@"
     (cryptlib "error")
     (date-literals "error")
     (dict "error")
-    (directory-utils "error")
     (discount "error")
     (disjoint-set "obsolete")
     (doodle "error")
