@@ -345,6 +345,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-rfb \
     chicken-egg-rfc3339 \
     chicken-egg-rfc822 \
+    chicken-egg-ripemd \
     chicken-egg-rope \
     chicken-egg-rpc \
     chicken-egg-rss \
@@ -876,6 +877,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-rfb \
     nativesdk-chicken-egg-rfc3339 \
     nativesdk-chicken-egg-rfc822 \
+    nativesdk-chicken-egg-ripemd \
     nativesdk-chicken-egg-rope \
     nativesdk-chicken-egg-rpc \
     nativesdk-chicken-egg-rss \
