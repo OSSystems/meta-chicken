@@ -81,7 +81,6 @@ exec csi -s $0 "$@"
     (ezxdisp "error")
     (fann "error")
     (ffmpeg-video "error")
-    (formular "error")
     (fpio "error")
     (freetds "error")
     (freetype "error")
@@ -253,6 +252,7 @@ exec csi -s $0 "$@"
     F-operator
     fast-generic
     fmt
+    formular
     graphs
     hashes
     hyde

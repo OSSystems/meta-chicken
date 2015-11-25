@@ -154,6 +154,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-format-compiler-base \
     chicken-egg-format-graph \
     chicken-egg-format-textdiff \
+    chicken-egg-formular \
     chicken-egg-fox \
     chicken-egg-fps \
     chicken-egg-free-gettext \
@@ -701,6 +702,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-format-compiler-base \
     nativesdk-chicken-egg-format-graph \
     nativesdk-chicken-egg-format-textdiff \
+    nativesdk-chicken-egg-formular \
     nativesdk-chicken-egg-fox \
     nativesdk-chicken-egg-fps \
     nativesdk-chicken-egg-free-gettext \
