@@ -460,6 +460,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sxml-informal \
     chicken-egg-sxml-modifications \
     chicken-egg-sxml-serializer \
+    chicken-egg-sxml-templates \
     chicken-egg-sxml-transforms \
     chicken-egg-sxpath \
     chicken-egg-symbol-utils \
@@ -999,6 +1000,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sxml-informal \
     nativesdk-chicken-egg-sxml-modifications \
     nativesdk-chicken-egg-sxml-serializer \
+    nativesdk-chicken-egg-sxml-templates \
     nativesdk-chicken-egg-sxml-transforms \
     nativesdk-chicken-egg-sxpath \
     nativesdk-chicken-egg-symbol-utils \

@@ -203,7 +203,6 @@ exec csi -s $0 "$@"
     (string-utils "error")
     (sundials "error")
     (svn-client "error")
-    (sxml-templates "error")
     (tcp6 "error")
     (tokyocabinet "error")
     (tuples "error")
