@@ -428,6 +428,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-srfi-38 \
     chicken-egg-srfi-4-comprehensions \
     chicken-egg-srfi-4-utils \
+    chicken-egg-srfi-40 \
     chicken-egg-srfi-42 \
     chicken-egg-srfi-45 \
     chicken-egg-srfi-63 \
@@ -961,6 +962,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-srfi-38 \
     nativesdk-chicken-egg-srfi-4-comprehensions \
     nativesdk-chicken-egg-srfi-4-utils \
+    nativesdk-chicken-egg-srfi-40 \
     nativesdk-chicken-egg-srfi-42 \
     nativesdk-chicken-egg-srfi-45 \
     nativesdk-chicken-egg-srfi-63 \

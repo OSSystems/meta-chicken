@@ -196,7 +196,6 @@ exec csi -s $0 "$@"
     (spock "error")
     (srfi-19 "error")
     (srfi-29 "error")
-    (srfi-40 "error")
     (srfi-41 "error")
     (srfi-45 "error")
     (srfi-60 "error")
