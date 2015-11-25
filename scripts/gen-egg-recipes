@@ -86,7 +86,6 @@ exec csi -s $0 "$@"
     (freetype "error")
     (fuse "error")
     (g2 "error")
-    (genturfahi "error")
     (git "error")
     (gl-type "error")
     (gl-utils "error")
@@ -253,6 +252,7 @@ exec csi -s $0 "$@"
     fast-generic
     fmt
     formular
+    genturfahi
     graphs
     hashes
     hyde

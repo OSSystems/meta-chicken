@@ -163,6 +163,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-gap-buffer \
     chicken-egg-gather-egg-information \
     chicken-egg-gdbm \
+    chicken-egg-genturfahi \
     chicken-egg-getopt-long \
     chicken-egg-git-egg-author \
     chicken-egg-gl-math \
@@ -711,6 +712,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-gap-buffer \
     nativesdk-chicken-egg-gather-egg-information \
     nativesdk-chicken-egg-gdbm \
+    nativesdk-chicken-egg-genturfahi \
     nativesdk-chicken-egg-getopt-long \
     nativesdk-chicken-egg-git-egg-author \
     nativesdk-chicken-egg-gl-math \
