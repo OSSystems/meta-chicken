@@ -78,7 +78,6 @@ exec csi -s $0 "$@"
     (epeg "error")
     (eping "error")
     (er-macros "obsolete")
-    (error-utils "error")
     (exif "error")
     (ezxdisp "error")
     (fann "error")

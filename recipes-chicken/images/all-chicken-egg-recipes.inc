@@ -130,6 +130,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-endian-port \
     chicken-egg-environments \
     chicken-egg-er-macros \
+    chicken-egg-error-utils \
     chicken-egg-ersatz \
     chicken-egg-estraier-client \
     chicken-egg-expand-full \
@@ -675,6 +676,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-endian-port \
     nativesdk-chicken-egg-environments \
     nativesdk-chicken-egg-er-macros \
+    nativesdk-chicken-egg-error-utils \
     nativesdk-chicken-egg-ersatz \
     nativesdk-chicken-egg-estraier-client \
     nativesdk-chicken-egg-expand-full \
