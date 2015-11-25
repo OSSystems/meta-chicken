@@ -49,6 +49,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-c3 \
     chicken-egg-cairo \
     chicken-egg-call-with-environment-variables \
+    chicken-egg-call-with-sqlite3-connection \
     chicken-egg-callable-data-structures \
     chicken-egg-cells \
     chicken-egg-cgi \
@@ -592,6 +593,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-c3 \
     nativesdk-chicken-egg-cairo \
     nativesdk-chicken-egg-call-with-environment-variables \
+    nativesdk-chicken-egg-call-with-sqlite3-connection \
     nativesdk-chicken-egg-callable-data-structures \
     nativesdk-chicken-egg-cells \
     nativesdk-chicken-egg-cgi \
