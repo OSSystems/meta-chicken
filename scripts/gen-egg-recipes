@@ -152,7 +152,6 @@ exec csi -s $0 "$@"
     (plot "error")
     (ploticus "error")
     (posix-shm "error")
-    (posix-utils "error")
     (postgresql "error")
     (prcc "error")
     (probdist "error")
