@@ -104,7 +104,6 @@ exec csi -s $0 "$@"
     (glut "error")
     (gts "error")
     (hahn-utils "error")
-    (hashes "error")
     (hen "error")
     (hfs+ "OSX only")
     (http-client "error")
@@ -260,6 +259,7 @@ exec csi -s $0 "$@"
     fast-generic
     fmt
     graphs
+    hashes
     hyde
     inline
     locale

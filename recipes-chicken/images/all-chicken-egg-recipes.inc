@@ -174,6 +174,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-groc \
     chicken-egg-hahn \
     chicken-egg-hardwood \
+    chicken-egg-hashes \
     chicken-egg-heap \
     chicken-egg-heap-o-rama \
     chicken-egg-henrietta \
@@ -715,6 +716,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-groc \
     nativesdk-chicken-egg-hahn \
     nativesdk-chicken-egg-hardwood \
+    nativesdk-chicken-egg-hashes \
     nativesdk-chicken-egg-heap \
     nativesdk-chicken-egg-heap-o-rama \
     nativesdk-chicken-egg-henrietta \
