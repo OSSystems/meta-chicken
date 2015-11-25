@@ -136,7 +136,6 @@ exec csi -s $0 "$@"
     (mpfi "error")
     (mpi "error")
     (multidoc "obsolete")
-    (mw "error")
     (nanomsg "error")
     (nemo "error")
     (noise "error")
@@ -286,6 +285,7 @@ exec csi -s $0 "$@"
     message-digest
     miniML
     missbehave
+    mw
     mw-core
     monad
     moremacros
