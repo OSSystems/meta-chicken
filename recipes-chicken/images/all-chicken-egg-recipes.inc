@@ -46,6 +46,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-breadcrumbs \
     chicken-egg-buffer-ports \
     chicken-egg-byte-blob \
+    chicken-egg-byte-blob-stream \
     chicken-egg-c3 \
     chicken-egg-cairo \
     chicken-egg-call-with-environment-variables \
@@ -592,6 +593,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-breadcrumbs \
     nativesdk-chicken-egg-buffer-ports \
     nativesdk-chicken-egg-byte-blob \
+    nativesdk-chicken-egg-byte-blob-stream \
     nativesdk-chicken-egg-c3 \
     nativesdk-chicken-egg-cairo \
     nativesdk-chicken-egg-call-with-environment-variables \

@@ -57,7 +57,6 @@ exec csi -s $0 "$@"
     (blas "error")
     (blob-utils "error")
     (bvsp-spline "error")
-    (byte-blob-stream "error")
     (call-with-query "error")
     (canvas-draw "error")
     (cmark "error")
