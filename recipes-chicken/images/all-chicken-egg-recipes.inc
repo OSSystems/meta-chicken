@@ -437,6 +437,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-srfi-7 \
     chicken-egg-srfi-71 \
     chicken-egg-srfi-78 \
+    chicken-egg-srfi-9-ext \
     chicken-egg-srfi-95 \
     chicken-egg-srfi-99 \
     chicken-egg-srfi-modules \
@@ -974,6 +975,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-srfi-7 \
     nativesdk-chicken-egg-srfi-71 \
     nativesdk-chicken-egg-srfi-78 \
+    nativesdk-chicken-egg-srfi-9-ext \
     nativesdk-chicken-egg-srfi-95 \
     nativesdk-chicken-egg-srfi-99 \
     nativesdk-chicken-egg-srfi-modules \
