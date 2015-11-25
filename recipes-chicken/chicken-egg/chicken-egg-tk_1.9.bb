@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An interface to the Tk GUI toolkit"
-LICENSE = "Bremer License"
+LICENSE = "Bremer"
 LIC_FILES_CHKSUM = "file://tk.meta;md5=888e32531b9dcf202e9022c465b733c1"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/tk/tk-${PV}.tar.gz"
