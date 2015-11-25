@@ -40,6 +40,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-bitstring \
     chicken-egg-blob-record \
     chicken-egg-blob-utils \
+    chicken-egg-bloom-filter \
     chicken-egg-blowfish \
     chicken-egg-box \
     chicken-egg-breadcrumbs \
@@ -582,6 +583,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-bitstring \
     nativesdk-chicken-egg-blob-record \
     nativesdk-chicken-egg-blob-utils \
+    nativesdk-chicken-egg-bloom-filter \
     nativesdk-chicken-egg-blowfish \
     nativesdk-chicken-egg-box \
     nativesdk-chicken-egg-breadcrumbs \

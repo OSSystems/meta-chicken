@@ -56,7 +56,6 @@ exec csi -s $0 "$@"
     (bitcoin "error")
     (blas "error")
     (blob-utils "error")
-    (bloom-filter "error")
     (bvsp-spline "error")
     (byte-blob-stream "error")
     (call-with-query "error")
