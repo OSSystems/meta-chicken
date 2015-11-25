@@ -374,6 +374,8 @@ exec csi -s $0 "$@"
              "GPLv2+")
             ((equal? license "Free Use")
              "PD")
+            ((equal? license "Bremer License")
+             "Bremer")
             (else license))
       license))
 
