@@ -198,7 +198,6 @@ exec csi -s $0 "$@"
     (srfi-29 "error")
     (srfi-78 "obsolete")
     (ssql-postgresql "error")
-    (stack "error")
     (statistics "obsolete")
     (stemmer "error")
     (string-utils "error")
