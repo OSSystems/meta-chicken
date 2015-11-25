@@ -36,6 +36,8 @@ exec csi -s $0 "$@"
 
 (define *eggs-dir* #f)
 
+(define *verbose?* #f)
+
 (define skip-eggs/reasons
   ;; List of (<egg [symbol]> <reason [string]>)
   '((2d-primitives "error")
@@ -597,7 +599,8 @@ exec csi -s $0 "$@"
                      (maybe-require-inc egg version)
                      (string-append "inherit chicken_install\n")
                      (string-append "BBCLASSEXTEND = \"cross crosssdk nativesdk\""))))
-              (print (string-intersperse (list egg version (->string deps)) "\t"))
+              (when *verbose?*
+                (print (string-intersperse (list egg version (->string deps)) "\t")))
               (with-output-to-file recipe-file
                 (lambda ()
                   (print (string-intersperse (filter identity content) "\n"))))
@@ -620,7 +623,7 @@ exec csi -s $0 "$@"
                   (current-error-port)
                   (current-output-port))))
     (fprintf port
-             "~a --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [ --force ]\n"
+             "~a --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [--force] [--verbose]\n"
              (pathname-strip-directory (program-name))))
   (when exit-code (exit exit-code)))
 
@@ -633,6 +636,9 @@ exec csi -s $0 "$@"
             (member "-help" args)
             (member "--help" args))
     (usage 0))
+
+  (when (member "--verbose" args)
+    (set! *verbose?* #t))
 
   (set! *eggs-dir* (command-line-argument '--eggs-dir args))
   (unless *eggs-dir* (die "Missing --eggs-dir=<eggs dir>"))
