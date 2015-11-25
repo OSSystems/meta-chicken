@@ -26,7 +26,7 @@ do_install () {
                  -L${STAGING_DIR_TARGET}${base_libdir}\
                  -I${STAGING_DIR_TARGET}${includedir} \
                  -I${STAGING_DIR_TARGET}${includedir}/chicken" \
-    CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/chicken \
+    CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/${TARGET_PREFIX}chicken \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
 
