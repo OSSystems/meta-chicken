@@ -332,6 +332,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-posix-extras \
     chicken-egg-posix-semaphore \
     chicken-egg-posix-utils \
+    chicken-egg-prcc \
     chicken-egg-procedural-macros \
     chicken-egg-procedure-decoration \
     chicken-egg-progress-indicators \
@@ -886,6 +887,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-posix-extras \
     nativesdk-chicken-egg-posix-semaphore \
     nativesdk-chicken-egg-posix-utils \
+    nativesdk-chicken-egg-prcc \
     nativesdk-chicken-egg-procedural-macros \
     nativesdk-chicken-egg-procedure-decoration \
     nativesdk-chicken-egg-progress-indicators \
