@@ -110,7 +110,6 @@ exec csi -s $0 "$@"
     (lazy-ffi "error")
     (leptonica "obsolete")
     (leveldb "error")
-    (levenshtein "error")
     (libsvm "obsolete")
     (list-bindings "obsolete")
     (locale "error")
@@ -254,6 +253,7 @@ exec csi -s $0 "$@"
     hashes
     hyde
     inline
+    levenshtein
     locale
     log5scm
     lookup-table
