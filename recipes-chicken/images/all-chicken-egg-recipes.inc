@@ -73,6 +73,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-clucker \
     chicken-egg-cmaes \
     chicken-egg-cock \
+    chicken-egg-coerce \
     chicken-egg-colorize \
     chicken-egg-combinator-birds \
     chicken-egg-combinatorics \
@@ -626,6 +627,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-clucker \
     nativesdk-chicken-egg-cmaes \
     nativesdk-chicken-egg-cock \
+    nativesdk-chicken-egg-coerce \
     nativesdk-chicken-egg-colorize \
     nativesdk-chicken-egg-combinator-birds \
     nativesdk-chicken-egg-combinatorics \

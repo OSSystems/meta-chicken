@@ -62,7 +62,6 @@ exec csi -s $0 "$@"
     (cmark "error")
     (cock  "obsolete")
     (cock-utils "obsolete")
-    (coerce "error")
     (contracts "obsolete")
     (coq-au-vin "error")
     (couchdb-view-server "obsolete")
@@ -234,6 +233,7 @@ exec csi -s $0 "$@"
     chickadee
     chicken-doc-admin
     chickumber
+    coerce
     combinators
     condition-utils
     concurrent-native-callbacks
