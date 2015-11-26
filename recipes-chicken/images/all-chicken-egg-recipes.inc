@@ -261,6 +261,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-lru-cache \
     chicken-egg-lua \
     chicken-egg-lz4 \
+    chicken-egg-mailbox \
     chicken-egg-make \
     chicken-egg-manual-labor \
     chicken-egg-markdown-svnwiki \
@@ -810,6 +811,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-lru-cache \
     nativesdk-chicken-egg-lua \
     nativesdk-chicken-egg-lz4 \
+    nativesdk-chicken-egg-mailbox \
     nativesdk-chicken-egg-make \
     nativesdk-chicken-egg-manual-labor \
     nativesdk-chicken-egg-markdown-svnwiki \

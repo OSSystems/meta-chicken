@@ -118,7 +118,6 @@ exec csi -s $0 "$@"
     (lzma "error")
     (macosx "OSX only")
     (magic "error")
-    (mailbox "error")
     (mailbox-threads "error")
     (matlab "error")
     (matrix-utils "error")
