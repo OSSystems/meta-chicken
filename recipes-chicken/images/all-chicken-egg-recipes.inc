@@ -336,6 +336,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-procedural-macros \
     chicken-egg-procedure-decoration \
     chicken-egg-progress-indicators \
+    chicken-egg-prometheus \
     chicken-egg-protobj \
     chicken-egg-protobuf \
     chicken-egg-protolk \
@@ -891,6 +892,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-procedural-macros \
     nativesdk-chicken-egg-procedure-decoration \
     nativesdk-chicken-egg-progress-indicators \
+    nativesdk-chicken-egg-prometheus \
     nativesdk-chicken-egg-protobj \
     nativesdk-chicken-egg-protobuf \
     nativesdk-chicken-egg-protolk \

@@ -144,7 +144,6 @@ exec csi -s $0 "$@"
     (postgresql "error")
     (probdist "error")
     (proccpuinfo "error")
-    (prometheus "error")
     (pseudo-meta-egg-info "error")
     (pstk "obsolete")
     (pyffi "error")
@@ -270,6 +269,7 @@ exec csi -s $0 "$@"
     monad
     moremacros
     parley
+    prometheus
     protobuf
     protolk
     r7rs
