@@ -106,7 +106,6 @@ exec csi -s $0 "$@"
     (ir-macros "obsolete")
     (iup "error")
     (jni "error")
-    (json-rpc "error")
     (kalaha "error")
     (lazy-ffi "error")
     (leptonica "obsolete")
