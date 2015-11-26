@@ -3,23 +3,20 @@
 egg_locations_uri="http://code.call-cc.org/svn/chicken-eggs/release/4/egg-locations"
 egg_locations_file=`mktemp`
 
-case "$1" in
-   --dl-dir=*)
-       bb_download_dir=${1##--dl-dir=}
-       ;;
-esac
+cache_dir=$1
 
-if [ -z "$bb_download_dir" ]; then
+if [ -z "$cache_dir" ]; then
     bb_download_dir=`bitbake -e | grep ^DL_DIR | sed 's/DL_DIR *= *"\(.*\)\"/\1/'`
 
     if [ -z "$bb_download_dir" ]; then
-        echo "Could not determine bitbake's DL_DIR value."
-        echo "You can provide it using command line --dl-dir=<path>. Aborting."
+        echo "Could not determine bitbake's DL_DIR value." >&2
+        echo "You can provide the cache directory as argument to this script. Aborting." >&2
         exit 1
+    else
+        cache_dir=$bb_download_dir/henrietta-cache
     fi
 fi
 
-cache_dir=$bb_download_dir/henrietta-cache
 
 trap "rm -f $egg_locations_file; exit" INT TERM EXIT
 
