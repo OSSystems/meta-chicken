@@ -588,44 +588,40 @@ exec csi -s $0 "$@"
               (when has-deps?
                 (for-each gen-recipe deps))))))))
 
-(define (command-line-argument option args)
-  ;; Returns the argument associated to the command line option OPTION
-  ;; in ARGS or #f if OPTION is not found in ARGS or doesn't have any
-  ;; argument.
-  (let ((param/val (filter (lambda (opt)
-                             (string-prefix? (conc option "=") opt))
-                           args)))
-    (and (not (null? param/val))
-         (let ((tokens (string-split (last param/val) "=")))
-           (string-intersperse (cdr tokens) "")))))
-
 (define (usage #!optional exit-code)
   (let ((port (if (and exit-code (not (zero? exit-code)))
                   (current-error-port)
                   (current-output-port))))
     (fprintf port
-             "~a --eggs-dir=<eggs-dir> --dest-dir=<dest dir> [--force] [--verbose]\n"
+             "~a [--force] [--verbose] <eggs source dir>\n"
              (pathname-strip-directory (program-name))))
   (when exit-code (exit exit-code)))
 
 
-(let ((args (command-line-arguments)))
-  (when (null? args)
-    (usage 1))
+(let* ((args (command-line-arguments))
+       (non-options (remove (lambda (opt)
+                              (string-prefix? "--" opt))
+                            args)))
 
   (when (or (member "-h" args)
             (member "-help" args)
             (member "--help" args))
     (usage 0))
 
+  (when (null? non-options)
+    (usage 1))
+
   (when (member "--verbose" args)
     (set! *verbose?* #t))
 
-  (set! *eggs-dir* (command-line-argument '--eggs-dir args))
-  (unless *eggs-dir* (die "Missing --eggs-dir=<eggs dir>"))
+  (set! *egg-recipes-dir*
+        (normalize-pathname
+         (make-pathname (list (pathname-directory (program-name))
+                              ".."
+                              "recipes-chicken")
+                        "chicken-egg")))
 
-  (set! *egg-recipes-dir* (command-line-argument '--dest-dir args))
-  (unless *egg-recipes-dir* (die "Missing --dest-dir=<dest-dir>"))
+  (set! *eggs-dir* (car non-options))
 
   (when (and (file-exists? *egg-recipes-dir*)
              (not (directory? *egg-recipes-dir*)))
