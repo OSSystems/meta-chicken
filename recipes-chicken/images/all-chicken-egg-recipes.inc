@@ -407,6 +407,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-simple-logging \
     chicken-egg-simple-sha1 \
     chicken-egg-simple-tests \
+    chicken-egg-simple-units \
     chicken-egg-siphash \
     chicken-egg-slatex \
     chicken-egg-slice \
@@ -965,6 +966,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-simple-logging \
     nativesdk-chicken-egg-simple-sha1 \
     nativesdk-chicken-egg-simple-tests \
+    nativesdk-chicken-egg-simple-units \
     nativesdk-chicken-egg-siphash \
     nativesdk-chicken-egg-slatex \
     nativesdk-chicken-egg-slice \
