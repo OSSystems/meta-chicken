@@ -631,8 +631,7 @@ exec csi -s $0 "$@"
              (not (directory? *egg-recipes-dir*)))
     (die "~a exists but is not a directory." *egg-recipes-dir* ))
 
-  (unless (file-exists? *egg-recipes-dir*)
-    (create-directory *egg-recipes-dir*))
+  (create-directory *egg-recipes-dir*)
 
   (when (member "--force" args)
     (force? #t))
