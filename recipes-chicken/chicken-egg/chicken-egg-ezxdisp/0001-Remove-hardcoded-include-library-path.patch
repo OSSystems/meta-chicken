@@ -1,0 +1,39 @@
+From 0168f2594eb0f6daa3f948c3be96123832e561f7 Mon Sep 17 00:00:00 2001
+From: Fabio Berton <fabio.berton@ossystems.com.br>
+Date: Mon, 30 Nov 2015 16:36:14 +0000
+Subject: [PATCH] Remove hardcoded include/library path
+Organization: O.S. Systems Software LTDA.
+Upstream-Status: Pending
+
+Signed-off-by: Fabio Berton <fabio.berton@ossystems.com.br>
+---
+ ezxdisp.setup | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+
+diff --git a/ezxdisp.setup b/ezxdisp.setup
+index a795a84..0de21d8 100644
+--- a/ezxdisp.setup
++++ b/ezxdisp.setup
+@@ -1,18 +1,6 @@
+ ;;; ezxdisp.setup -*- Scheme -*-
+ 
+-
+-(define-values (native-module copt lopt)
+-  (cond-expand
+-    (windows (values "ezxdisp-win32" "-I." "-luser32 -lgdi32"))
+-    (else
+-     (values "ezxdisp-x11" "-C \"-I. -I/usr/X11R6/include\""
+-	     "-L/usr/X11R6/lib -lX11"))))
+-
+-(compile 
+- -s -O3 -d1 -X easyffi ezxdisp.scm -C -w
+- ,(string-append native-module ".c")
+- ,copt -L ,(string-append "\"" lopt "\"")
+- -j ezxdisp)
++(compile -ss -O3 -d1 -X easyffi ezxdisp.scm -C -w ezxdisp-x11.c -lX11 -j ezxdisp)
+ 
+ (compile -O3 -d0 -s ezxdisp.import.scm)
+ 
+-- 
+2.1.4
+
