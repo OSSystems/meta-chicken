@@ -1,0 +1,25 @@
+From 10b88170c6384fe537a1e0b95a960ba7fd1f0d54 Mon Sep 17 00:00:00 2001
+From: Fabio Berton <fabio.berton@ossystems.com.br>
+Date: Fri, 27 Nov 2015 17:39:13 +0000
+Subject: [PATCH] Remove hardcoded include/library path
+Organization: O.S. Systems Software LTDA.
+Upstream-Status: Pending
+
+Signed-off-by: Fabio Berton <fabio.berton@ossystems.com.br>
+---
+ exif.setup | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/exif.setup b/exif.setup
+index e52f9f7..6b34a25 100644
+--- a/exif.setup
++++ b/exif.setup
+@@ -1,4 +1,4 @@
+-(compile exif.scm -J -s -lexif -I/usr/local/include -L/usr/local/lib)
++(compile exif.scm -J -s -lexif)
+ (compile -s exif.import.scm)
+ 
+ (install-extension
+-- 
+2.1.4
+
