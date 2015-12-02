@@ -268,7 +268,7 @@ exec csi -s $0 "$@"
     protobuf
     protolk
     r7rs
-    refbd
+    refdb
     remote-mailbox
     salmonella
     scbib
