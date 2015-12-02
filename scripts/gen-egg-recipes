@@ -226,6 +226,7 @@ exec csi -s $0 "$@"
     cgi
     check-errors
     chickadee
+    chicken-doc
     chicken-doc-admin
     chickumber
     coerce
