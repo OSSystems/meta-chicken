@@ -66,6 +66,7 @@ exec csi -s $0 "$@"
     (coq-au-vin "error")
     (couchdb-view-server "obsolete")
     (cryptlib "error")
+    (datatypes "Broken Upstream")
     (date-literals "error")
     (dict "error")
     (discount "error")
