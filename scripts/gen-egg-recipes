@@ -95,6 +95,7 @@ exec csi -s $0 "$@"
     (gts "error")
     (hahn-utils "error")
     (hen "error")
+    (hexgrid "Broken Upstream")
     (hfs+ "OSX only")
     (http-client "error")
     (hypergiant "error")
