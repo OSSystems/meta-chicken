@@ -134,8 +134,10 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-error-utils \
     chicken-egg-ersatz \
     chicken-egg-estraier-client \
+    chicken-egg-exif \
     chicken-egg-expand-full \
     chicken-egg-expat \
+    chicken-egg-ezxdisp \
     chicken-egg-f-operator \
     chicken-egg-fancypants \
     chicken-egg-fast-generic \
@@ -691,8 +693,10 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-error-utils \
     nativesdk-chicken-egg-ersatz \
     nativesdk-chicken-egg-estraier-client \
+    nativesdk-chicken-egg-exif \
     nativesdk-chicken-egg-expand-full \
     nativesdk-chicken-egg-expat \
+    nativesdk-chicken-egg-ezxdisp \
     nativesdk-chicken-egg-f-operator \
     nativesdk-chicken-egg-fancypants \
     nativesdk-chicken-egg-fast-generic \
