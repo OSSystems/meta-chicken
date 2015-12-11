@@ -253,6 +253,7 @@ exec csi -s $0 "$@"
     manual-labor
     markdown-svnwiki
     mbox
+    mdcd
     message-digest
     miniML
     missbehave
