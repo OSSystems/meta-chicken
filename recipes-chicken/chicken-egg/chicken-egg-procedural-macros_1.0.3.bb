@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://procedural-macros.meta;md5=30e64d93f978bc22201937ffc8
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/procedural-macros/procedural-macros-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "a6eeeb69e0d7f69b11e6d1b5b5540354"
-SRC_URI[sha256sum] = "6d6a656f05e326e1adc161ea54606ecaec1485ebde6c9e8f833694bc2db435ac"
+SRC_URI[md5sum] = "d4538fc554d5d9cb05c62b6935016b2a"
+SRC_URI[sha256sum] = "1c88e88e5b9c0cdda5dde4b3b0c5011e7d5f0fa0c5738e69198ba420f97855f2"
 
 S = "${WORKDIR}/procedural-macros-${PV}"
 
