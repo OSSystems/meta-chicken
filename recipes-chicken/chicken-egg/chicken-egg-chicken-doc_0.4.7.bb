@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-matchable chicken-egg-regex chicken-egg-fmt chick
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/chicken-doc/chicken-doc-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "817e5d63b0c64679ba034b05acf2a390"
-SRC_URI[sha256sum] = "4f0659b865cb3a413972817ad2b7ec280b765ca84c6177c4e6b05e8f4392048f"
+SRC_URI[md5sum] = "f4903cafad67d091f74f4ca5dc80a7c3"
+SRC_URI[sha256sum] = "e0dc0364831553f0672d46f714f8bce13a6f5066257bcb2b507c9827579e4861"
 
 S = "${WORKDIR}/chicken-doc-${PV}"
 
