@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-iset chicken-egg-regex chicken-egg-make"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/utf8/utf8-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "e87be1d9686a59336d8a39f498403a58"
-SRC_URI[sha256sum] = "0b2c349931c34addaf7aa243ab7ab7fc0d2313fbc3016f541c902a818ddb9a06"
+SRC_URI[md5sum] = "e797b330608c84e7e1621f4e01e4a8cb"
+SRC_URI[sha256sum] = "4a84574914977f74510b4ff25460ead7857d20991011b3dd215490ccfca50c33"
 
 S = "${WORKDIR}/utf8-${PV}"
 
