@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-datatype"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/typed-lists/typed-lists-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "c089dfe152bc70f5d653104ee7b84490"
-SRC_URI[sha256sum] = "4f15f6f25d40e14d286c46b2a43a240be1707363c217297ded20ed695af6df1e"
+SRC_URI[md5sum] = "b81a032aa35cbaea319ff77e4ed0fa2b"
+SRC_URI[sha256sum] = "1a8c15b79e82f5d19cbe5eebd7544658b245659323191f561a0480d2d154f2dc"
 
 S = "${WORKDIR}/typed-lists-${PV}"
 
