@@ -92,6 +92,7 @@ exec csi -s $0 "$@"
     (glm "error")
     (glpk "error")
     (glut "error")
+    (graphs  "Installation failure")
     (gts "error")
     (hahn-utils "error")
     (hen "error")
