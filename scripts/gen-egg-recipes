@@ -170,6 +170,7 @@ exec csi -s $0 "$@"
     (sixtyfive-oh-two "error")
     (skiplists "error")
     (socket "error")
+    (spatial-trees  "removed as requested by author")
     (spiffy-cgi-handlers "error")
     (spiffy-dynamic-handlers "obsolete")
     (spock "error")

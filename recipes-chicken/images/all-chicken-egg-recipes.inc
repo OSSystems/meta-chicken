@@ -419,7 +419,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-soil \
     chicken-egg-sp \
     chicken-egg-sparse-vectors \
-    chicken-egg-spatial-trees \
     chicken-egg-special-case \
     chicken-egg-specialized-io \
     chicken-egg-speech-dispatcher-client \
@@ -978,7 +977,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-soil \
     nativesdk-chicken-egg-sp \
     nativesdk-chicken-egg-sparse-vectors \
-    nativesdk-chicken-egg-spatial-trees \
     nativesdk-chicken-egg-special-case \
     nativesdk-chicken-egg-specialized-io \
     nativesdk-chicken-egg-speech-dispatcher-client \
