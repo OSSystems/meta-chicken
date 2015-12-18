@@ -59,6 +59,7 @@ exec csi -s $0 "$@"
     (bvsp-spline "error")
     (call-with-query "error")
     (canvas-draw "error")
+    (clucker "Installation failure")
     (cmark "error")
     (cock  "obsolete")
     (cock-utils "obsolete")
