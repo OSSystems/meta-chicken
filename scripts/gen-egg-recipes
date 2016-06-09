@@ -60,7 +60,6 @@ exec csi -s $0 "$@"
     (canvas-draw "error")
     (clucker "Installation failure")
     (cmark "error")
-    (cock  "obsolete")
     (cock-utils "obsolete")
     (contracts "obsolete")
     (coq-au-vin "error")
