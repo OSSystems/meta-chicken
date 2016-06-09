@@ -163,7 +163,6 @@ exec csi -s $0 "$@"
     (socket "error")
     (spatial-trees  "removed as requested by author")
     (spiffy-cgi-handlers "error")
-    (spiffy-dynamic-handlers "obsolete")
     (spock "error")
     (srfi-19 "error")
     (srfi-78 "obsolete")
