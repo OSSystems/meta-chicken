@@ -99,6 +99,7 @@ exec csi -s $0 "$@"
     (iup "error")
     (jni "error")
     (kalaha "error")
+    (kiwi "error")
     (lazy-ffi "error")
     (leptonica "obsolete")
     (leveldb "error")
