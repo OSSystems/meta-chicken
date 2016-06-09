@@ -96,7 +96,6 @@ exec csi -s $0 "$@"
     (hypergiant "error")
     (i3 "error")
     (image-processing "error")
-    (ir-macros "obsolete")
     (iup "error")
     (jni "error")
     (kalaha "error")
