@@ -53,7 +53,6 @@ exec csi -s $0 "$@"
     (awful-postgresql "error")
     (awful-sqlite3 "error")
     (bb "error")
-    (bitcoin "error")
     (blas "error")
     (blob-utils "error")
     (bvsp-spline "error")
