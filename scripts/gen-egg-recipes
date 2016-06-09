@@ -71,7 +71,6 @@ exec csi -s $0 "$@"
     (easyffi "obsolete")
     (epeg "error")
     (eping "error")
-    (er-macros "obsolete")
     (fann "error")
     (ffmpeg-video "error")
     (fpio "error")
