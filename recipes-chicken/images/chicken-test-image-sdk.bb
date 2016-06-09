@@ -1,13 +1,6 @@
-inherit core-image
-
-require recipes-chicken/images/all-chicken-egg-recipes.inc
+include recipes-chicken/images/chicken-test-image.bb
 
 IMAGE_FEATURES += "tools-sdk dev-pkgs tools-debug"
 
-CORE_IMAGE_EXTRA_INSTALL += "\
-    chicken \
-    ${ALL_CHICKEN_EGG_RECIPES} \
-"
-
-TOOLCHAIN_HOST_TASK_append = " chicken-cross-canadian-${TRANSLATED_TARGET_ARCH} \
-                               ${ALL_NATIVESDK_CHICKEN_EGG_RECIPES}"
+# Includes all native eggs inside of the toolchain
+TOOLCHAIN_HOST_TASK_append = " ${ALL_NATIVESDK_CHICKEN_EGG_RECIPES}"
