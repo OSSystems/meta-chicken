@@ -103,7 +103,6 @@ exec csi -s $0 "$@"
     (leptonica "obsolete")
     (leveldb "error")
     (libsvm "obsolete")
-    (list-bindings "obsolete")
     (lzma "error")
     (macosx "OSX only")
     (magic "error")
