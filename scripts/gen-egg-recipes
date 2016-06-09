@@ -122,7 +122,6 @@ exec csi -s $0 "$@"
     (opengl "error")
     (osxattr "OSX only")
     (parametric-curve "error")
-    (peep "obsolete")
     (phoghorn "error")
     (phricken "error")
     (physfs "error")
