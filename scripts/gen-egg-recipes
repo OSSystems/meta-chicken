@@ -61,7 +61,6 @@ exec csi -s $0 "$@"
     (clucker "Installation failure")
     (cmark "error")
     (cock-utils "obsolete")
-    (contracts "obsolete")
     (coq-au-vin "error")
     (couchdb-view-server "obsolete")
     (cryptlib "error")
