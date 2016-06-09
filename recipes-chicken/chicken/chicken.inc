@@ -5,10 +5,10 @@ PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=627898e92f4ea7924d68a34baea22606"
 
-SRC_URI = "http://code.call-cc.org/releases/4.10.0/chicken-${PV}.tar.gz"
+SRC_URI = "http://code.call-cc.org/releases/4.11.0/chicken-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "5585edb369eb2a49f1f92775419852e7"
-SRC_URI[sha256sum] = "0e07f5abcd11961986950dbeaa5a40db415f8a1b65daff9c300e9b05b334899b"
+SRC_URI[md5sum] = "065a6bae6e91e75f6e296cf3f5cb8b1d"
+SRC_URI[sha256sum] = "e3dc2b8f95b6a3cd59c85b5bb6bdb2bd9cefc45b5d536a20cad74e3c63f4ad89"
 
 S = "${WORKDIR}/chicken-${PV}"
 
