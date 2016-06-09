@@ -5,5 +5,4 @@ IMAGE_FEATURES += "dev-pkgs \
                    tools-debug \
                    tools-profile \
                    tools-testapps \
-                   debug-tweaks \
                    ssh-server-openssh"
