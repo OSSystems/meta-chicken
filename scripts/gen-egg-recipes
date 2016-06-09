@@ -178,6 +178,7 @@ exec csi -s $0 "$@"
     (svn-client "error")
     (tcp6 "error")
     (tokyocabinet "error")
+    (tun "error")
     (tuples "error")
     (tweetnacl "error")
     (udp6 "error")
