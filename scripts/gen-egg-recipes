@@ -158,7 +158,6 @@ exec csi -s $0 "$@"
     (setup-helper-cock "obsolete")
     (seulex "error")
     (simple-graphics "error")
-    (simple-logging "obsolete")
     (sixtyfive-oh-two "error")
     (skiplists "error")
     (socket "error")
