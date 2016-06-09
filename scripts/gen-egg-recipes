@@ -120,6 +120,7 @@ exec csi -s $0 "$@"
     (noise "error")
     (nomads "error")
     (objc "error")
+    (ola "error")
     (opengl "error")
     (osxattr "OSX only")
     (parametric-curve "error")
