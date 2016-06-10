@@ -6,6 +6,3 @@ IMAGE_FEATURES += "dev-pkgs \
                    tools-profile \
                    tools-testapps \
                    ssh-server-openssh"
-
-# Includes all native eggs inside of the toolchain
-TOOLCHAIN_HOST_TASK_append = " ${ALL_NATIVESDK_CHICKEN_EGG_RECIPES}"
