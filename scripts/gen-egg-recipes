@@ -158,6 +158,7 @@ exec csi -s $0 "$@"
     (sdl-img "error")
     (sdl-mixer "error")
     (sdl-ttf "error")
+    (sdl2-ttf "error")
     (setup-helper-cock "obsolete")
     (seulex "error")
     (simple-graphics "error")
