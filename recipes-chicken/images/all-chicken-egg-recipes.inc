@@ -29,6 +29,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-awk \
     chicken-egg-banterpixra \
     chicken-egg-base64 \
+    chicken-egg-begin-syntax \
     chicken-egg-bencode \
     chicken-egg-berkeley-db \
     chicken-egg-big-chicken \
@@ -68,15 +69,18 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-chunk-vector \
     chicken-egg-cis \
     chicken-egg-civet \
+    chicken-egg-ck-macros \
     chicken-egg-clojurian \
     chicken-egg-cluckcheck \
     chicken-egg-cmaes \
     chicken-egg-cock \
     chicken-egg-coerce \
+    chicken-egg-color \
     chicken-egg-colorize \
     chicken-egg-combinator-birds \
     chicken-egg-combinatorics \
     chicken-egg-combinators \
+    chicken-egg-comparators \
     chicken-egg-comparse \
     chicken-egg-concurrent-native-callbacks \
     chicken-egg-condition-utils \
@@ -100,6 +104,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-dbc \
     chicken-egg-dbus \
     chicken-egg-debug \
+    chicken-egg-debugger-protocol \
     chicken-egg-define-record-and-printer \
     chicken-egg-define-structure \
     chicken-egg-defstruct \
@@ -133,6 +138,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-error-utils \
     chicken-egg-ersatz \
     chicken-egg-estraier-client \
+    chicken-egg-ethernet \
     chicken-egg-exif \
     chicken-egg-expand-full \
     chicken-egg-expat \
@@ -149,6 +155,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-fmt \
     chicken-egg-fnmatch \
     chicken-egg-foof-loop \
+    chicken-egg-forcible \
     chicken-egg-foreigners \
     chicken-egg-format \
     chicken-egg-format-compiler \
@@ -189,6 +196,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-high-load-scheduler \
     chicken-egg-hmac \
     chicken-egg-honu \
+    chicken-egg-hopefully \
     chicken-egg-hostinfo \
     chicken-egg-hpack \
     chicken-egg-html-form \
@@ -250,6 +258,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-llrb-syntax \
     chicken-egg-llrb-tree \
     chicken-egg-locale \
+    chicken-egg-locals \
     chicken-egg-log5scm \
     chicken-egg-lognum \
     chicken-egg-logpro \
@@ -278,6 +287,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-memoize \
     chicken-egg-message-digest \
     chicken-egg-micro-benchmark \
+    chicken-egg-mini-kanren \
     chicken-egg-miniml \
     chicken-egg-miscmacros \
     chicken-egg-missbehave \
@@ -325,7 +335,10 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-peep \
     chicken-egg-persistent-hash-map \
     chicken-egg-php-s11n \
+    chicken-egg-pigeon-hole \
     chicken-egg-pilgrim \
+    chicken-egg-pledge \
+    chicken-egg-pll \
     chicken-egg-pool \
     chicken-egg-pop3 \
     chicken-egg-posix-extras \
@@ -339,11 +352,13 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-protobj \
     chicken-egg-protobuf \
     chicken-egg-protolk \
-    chicken-egg-pstk \
+    chicken-egg-pthreads \
     chicken-egg-pty \
+    chicken-egg-punycode \
     chicken-egg-qrencode \
-    chicken-egg-quaternions \
+    chicken-egg-r6rs-bytevectors \
     chicken-egg-r7rs \
+    chicken-egg-rabbit \
     chicken-egg-random-bsd \
     chicken-egg-random-mtzig \
     chicken-egg-random-swb \
@@ -432,10 +447,13 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sql-de-lite \
     chicken-egg-sql-null \
     chicken-egg-sqlite3 \
+    chicken-egg-sqlite3pth \
     chicken-egg-srfi-101 \
     chicken-egg-srfi-102 \
+    chicken-egg-srfi-113 \
     chicken-egg-srfi-116 \
     chicken-egg-srfi-117 \
+    chicken-egg-srfi-128 \
     chicken-egg-srfi-25 \
     chicken-egg-srfi-27 \
     chicken-egg-srfi-29 \
@@ -540,6 +558,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-vfs \
     chicken-egg-vlist \
     chicken-egg-websockets \
+    chicken-egg-with-current-directory \
     chicken-egg-wmiirc \
     chicken-egg-x11-colors \
     chicken-egg-x11-keysyms \
@@ -586,6 +605,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-awk \
     nativesdk-chicken-egg-banterpixra \
     nativesdk-chicken-egg-base64 \
+    nativesdk-chicken-egg-begin-syntax \
     nativesdk-chicken-egg-bencode \
     nativesdk-chicken-egg-berkeley-db \
     nativesdk-chicken-egg-big-chicken \
@@ -625,15 +645,18 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-chunk-vector \
     nativesdk-chicken-egg-cis \
     nativesdk-chicken-egg-civet \
+    nativesdk-chicken-egg-ck-macros \
     nativesdk-chicken-egg-clojurian \
     nativesdk-chicken-egg-cluckcheck \
     nativesdk-chicken-egg-cmaes \
     nativesdk-chicken-egg-cock \
     nativesdk-chicken-egg-coerce \
+    nativesdk-chicken-egg-color \
     nativesdk-chicken-egg-colorize \
     nativesdk-chicken-egg-combinator-birds \
     nativesdk-chicken-egg-combinatorics \
     nativesdk-chicken-egg-combinators \
+    nativesdk-chicken-egg-comparators \
     nativesdk-chicken-egg-comparse \
     nativesdk-chicken-egg-concurrent-native-callbacks \
     nativesdk-chicken-egg-condition-utils \
@@ -657,6 +680,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-dbc \
     nativesdk-chicken-egg-dbus \
     nativesdk-chicken-egg-debug \
+    nativesdk-chicken-egg-debugger-protocol \
     nativesdk-chicken-egg-define-record-and-printer \
     nativesdk-chicken-egg-define-structure \
     nativesdk-chicken-egg-defstruct \
@@ -690,6 +714,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-error-utils \
     nativesdk-chicken-egg-ersatz \
     nativesdk-chicken-egg-estraier-client \
+    nativesdk-chicken-egg-ethernet \
     nativesdk-chicken-egg-exif \
     nativesdk-chicken-egg-expand-full \
     nativesdk-chicken-egg-expat \
@@ -706,6 +731,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-fmt \
     nativesdk-chicken-egg-fnmatch \
     nativesdk-chicken-egg-foof-loop \
+    nativesdk-chicken-egg-forcible \
     nativesdk-chicken-egg-foreigners \
     nativesdk-chicken-egg-format \
     nativesdk-chicken-egg-format-compiler \
@@ -746,6 +772,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-high-load-scheduler \
     nativesdk-chicken-egg-hmac \
     nativesdk-chicken-egg-honu \
+    nativesdk-chicken-egg-hopefully \
     nativesdk-chicken-egg-hostinfo \
     nativesdk-chicken-egg-hpack \
     nativesdk-chicken-egg-html-form \
@@ -807,6 +834,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-llrb-syntax \
     nativesdk-chicken-egg-llrb-tree \
     nativesdk-chicken-egg-locale \
+    nativesdk-chicken-egg-locals \
     nativesdk-chicken-egg-log5scm \
     nativesdk-chicken-egg-lognum \
     nativesdk-chicken-egg-logpro \
@@ -835,6 +863,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-memoize \
     nativesdk-chicken-egg-message-digest \
     nativesdk-chicken-egg-micro-benchmark \
+    nativesdk-chicken-egg-mini-kanren \
     nativesdk-chicken-egg-miniml \
     nativesdk-chicken-egg-miscmacros \
     nativesdk-chicken-egg-missbehave \
@@ -882,7 +911,10 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-peep \
     nativesdk-chicken-egg-persistent-hash-map \
     nativesdk-chicken-egg-php-s11n \
+    nativesdk-chicken-egg-pigeon-hole \
     nativesdk-chicken-egg-pilgrim \
+    nativesdk-chicken-egg-pledge \
+    nativesdk-chicken-egg-pll \
     nativesdk-chicken-egg-pool \
     nativesdk-chicken-egg-pop3 \
     nativesdk-chicken-egg-posix-extras \
@@ -896,11 +928,13 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-protobj \
     nativesdk-chicken-egg-protobuf \
     nativesdk-chicken-egg-protolk \
-    nativesdk-chicken-egg-pstk \
+    nativesdk-chicken-egg-pthreads \
     nativesdk-chicken-egg-pty \
+    nativesdk-chicken-egg-punycode \
     nativesdk-chicken-egg-qrencode \
-    nativesdk-chicken-egg-quaternions \
+    nativesdk-chicken-egg-r6rs-bytevectors \
     nativesdk-chicken-egg-r7rs \
+    nativesdk-chicken-egg-rabbit \
     nativesdk-chicken-egg-random-bsd \
     nativesdk-chicken-egg-random-mtzig \
     nativesdk-chicken-egg-random-swb \
@@ -989,10 +1023,13 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sql-de-lite \
     nativesdk-chicken-egg-sql-null \
     nativesdk-chicken-egg-sqlite3 \
+    nativesdk-chicken-egg-sqlite3pth \
     nativesdk-chicken-egg-srfi-101 \
     nativesdk-chicken-egg-srfi-102 \
+    nativesdk-chicken-egg-srfi-113 \
     nativesdk-chicken-egg-srfi-116 \
     nativesdk-chicken-egg-srfi-117 \
+    nativesdk-chicken-egg-srfi-128 \
     nativesdk-chicken-egg-srfi-25 \
     nativesdk-chicken-egg-srfi-27 \
     nativesdk-chicken-egg-srfi-29 \
@@ -1097,6 +1134,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-vfs \
     nativesdk-chicken-egg-vlist \
     nativesdk-chicken-egg-websockets \
+    nativesdk-chicken-egg-with-current-directory \
     nativesdk-chicken-egg-wmiirc \
     nativesdk-chicken-egg-x11-colors \
     nativesdk-chicken-egg-x11-keysyms \
