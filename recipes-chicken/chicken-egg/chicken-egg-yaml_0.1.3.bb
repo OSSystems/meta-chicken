@@ -4,7 +4,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://yaml.meta;md5=ec6c9c1e11fa19cce6da128b377be99c"
 DEPENDS_append_class-cross = " chicken-egg-sql-null-cross libyaml-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-sql-null-crosssdk libyaml-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-sql-null chicken-egg-sql-null-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-sql-null nativesdk-chicken-egg-libyaml chicken-egg-sql-null-crosssdk"
 DEPENDS = " chicken-egg-sql-null libyaml chicken-egg-sql-null-cross"
 RDEPENDS_${PN} = " chicken-egg-sql-null"
 

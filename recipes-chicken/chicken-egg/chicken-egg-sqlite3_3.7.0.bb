@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://sqlite3.meta;md5=6caf33d13bfd7b31de73796e10530444"
 DEPENDS_append_class-cross = " chicken-egg-check-errors-cross chicken-egg-synch-cross chicken-egg-miscmacros-cross chicken-egg-matchable-cross chicken-egg-sql-null-cross sqlite3-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-check-errors-crosssdk chicken-egg-synch-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-matchable-crosssdk chicken-egg-sql-null-crosssdk sqlite3-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-check-errors nativesdk-chicken-egg-synch nativesdk-chicken-egg-miscmacros nativesdk-chicken-egg-matchable nativesdk-chicken-egg-sql-null chicken-egg-check-errors-crosssdk chicken-egg-synch-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-matchable-crosssdk chicken-egg-sql-null-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-check-errors nativesdk-chicken-egg-synch nativesdk-chicken-egg-miscmacros nativesdk-chicken-egg-matchable nativesdk-chicken-egg-sql-null nativesdk-chicken-egg-sqlite3 chicken-egg-check-errors-crosssdk chicken-egg-synch-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-matchable-crosssdk chicken-egg-sql-null-crosssdk"
 DEPENDS = " chicken-egg-check-errors chicken-egg-synch chicken-egg-miscmacros chicken-egg-matchable chicken-egg-sql-null sqlite3 chicken-egg-check-errors-cross chicken-egg-synch-cross chicken-egg-miscmacros-cross chicken-egg-matchable-cross chicken-egg-sql-null-cross"
 RDEPENDS_${PN} = " chicken-egg-check-errors chicken-egg-synch chicken-egg-miscmacros chicken-egg-matchable chicken-egg-sql-null"
 

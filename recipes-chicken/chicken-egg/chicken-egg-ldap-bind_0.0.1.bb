@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://ldap-bind.meta;md5=79cc45fbec4c729a32e3df49d8b34f3e"
 DEPENDS_append_class-cross = " openldap-native"
 DEPENDS_append_class-crosssdk = " openldap-native"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-openldap"
 DEPENDS = " openldap"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/ldap-bind/ldap-bind-${PV}.tar.gz"

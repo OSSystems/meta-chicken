@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://uuid-ossp.meta;md5=c42bd68297087fc007132c0e2b54769f"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross ossp-uuid-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk ossp-uuid-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper chicken-egg-setup-helper-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper nativesdk-chicken-egg-ossp-uuid chicken-egg-setup-helper-crosssdk"
 DEPENDS = " chicken-egg-setup-helper ossp-uuid chicken-egg-setup-helper-cross"
 RDEPENDS_${PN} = " chicken-egg-setup-helper"
 

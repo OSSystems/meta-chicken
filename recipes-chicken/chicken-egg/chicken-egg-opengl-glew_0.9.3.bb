@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://opengl-glew.meta;md5=9395357584979aa6cf73c6e80a8868b5"
 DEPENDS_append_class-cross = " chicken-egg-bind-cross glew-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-bind-crosssdk glew-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-bind chicken-egg-bind-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-bind nativesdk-chicken-egg-glew chicken-egg-bind-crosssdk"
 DEPENDS = " chicken-egg-bind glew chicken-egg-bind-cross"
 RDEPENDS_${PN} = " chicken-egg-bind"
 

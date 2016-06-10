@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://ncurses.meta;md5=243bcfa98c69c77df8e3cd0f1c41f96d"
 DEPENDS_append_class-cross = " chicken-egg-easyffi-cross ncurses-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-easyffi-crosssdk ncurses-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-easyffi chicken-egg-easyffi-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-easyffi nativesdk-chicken-egg-ncurses chicken-egg-easyffi-crosssdk"
 DEPENDS = " chicken-egg-easyffi ncurses chicken-egg-easyffi-cross"
 RDEPENDS_${PN} = " chicken-egg-easyffi"
 

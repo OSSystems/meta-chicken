@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://udev.meta;md5=8cfcdb7a78b723c20fa2203479a50290"
 DEPENDS_append_class-cross = " udev-native"
 DEPENDS_append_class-crosssdk = " udev-native"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-udev"
 DEPENDS = " udev"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/udev/udev-${PV}.tar.gz"

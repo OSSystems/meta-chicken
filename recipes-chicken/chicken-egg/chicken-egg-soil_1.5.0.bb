@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://soil.meta;md5=60cb16d9bec8814902a0dc3a6d75af23"
 DEPENDS_append_class-cross = " mesa-native"
 DEPENDS_append_class-crosssdk = " mesa-native"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-mesa"
 DEPENDS = " mesa"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/soil/soil-${PV}.tar.gz"
