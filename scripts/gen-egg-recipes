@@ -500,7 +500,8 @@ exec csi -s $0 "$@"
          (deps-pkg (map symbol->string ext-deps))
          (deps-pkg-cross (map egg->recipe/cross deps))
          (deps-pkg-crosssdk (map egg->recipe/crosssdk deps))
-         (deps-pkg-nativesdk (map egg->recipe/nativesdk deps))
+         (deps-pkg-nativesdk (append (map egg->recipe/nativesdk deps)
+                                     (map recipe->nativesdk ext-deps)))
          (deps-pkg-native (map recipe->native ext-deps))
          (cross-deps (append deps-pkg-cross deps-pkg-native))
          (crosssdk-deps (append deps-pkg-crosssdk deps-pkg-native))
@@ -551,6 +552,9 @@ exec csi -s $0 "$@"
 
 (define (recipe->native recipe)
   (conc recipe "-native"))
+
+(define (recipe->nativesdk recipe)
+  (conc "nativesdk-" recipe))
 
 (define (egg->recipe/nativesdk egg)
   (conc "nativesdk-chicken-egg-" (string-downcase egg)))

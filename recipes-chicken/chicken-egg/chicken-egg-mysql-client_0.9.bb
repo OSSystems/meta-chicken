@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://mysql-client.meta;md5=11a1242ed026514612c0c734423454f6"
 DEPENDS_append_class-cross = " mariadb-native"
 DEPENDS_append_class-crosssdk = " mariadb-native"
+DEPENDS_append_class-nativesdk = " nativesdk-mariadb"
 DEPENDS = " mariadb"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/mysql-client/mysql-client-${PV}.tar.gz"

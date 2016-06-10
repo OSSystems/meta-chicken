@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://openal.meta;md5=f13e4c93f96dfae2f30743989b801d0c"
 DEPENDS_append_class-cross = " chicken-egg-easyffi-cross chicken-egg-make-cross openal-soft-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-easyffi-crosssdk chicken-egg-make-crosssdk openal-soft-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-easyffi nativesdk-chicken-egg-make chicken-egg-easyffi-crosssdk chicken-egg-make-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-easyffi nativesdk-chicken-egg-make nativesdk-openal-soft chicken-egg-easyffi-crosssdk chicken-egg-make-crosssdk"
 DEPENDS = " chicken-egg-easyffi chicken-egg-make openal-soft chicken-egg-easyffi-cross chicken-egg-make-cross"
 RDEPENDS_${PN} = " chicken-egg-easyffi chicken-egg-make"
 

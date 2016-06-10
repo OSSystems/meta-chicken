@@ -4,6 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://berkeley-db.meta;md5=0a8dd7cdc91fd9961e5257516460cf9a"
 DEPENDS_append_class-cross = " db-native"
 DEPENDS_append_class-crosssdk = " db-native"
+DEPENDS_append_class-nativesdk = " nativesdk-db"
 DEPENDS = " db"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/berkeley-db/berkeley-db-${PV}.tar.gz"

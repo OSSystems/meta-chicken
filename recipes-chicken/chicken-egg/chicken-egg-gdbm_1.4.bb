@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://gdbm.meta;md5=9a37f0f5d3044a03d37ba9c4a6399c71"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross gdbm-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk gdbm-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper chicken-egg-setup-helper-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-setup-helper nativesdk-gdbm chicken-egg-setup-helper-crosssdk"
 DEPENDS = " chicken-egg-setup-helper gdbm chicken-egg-setup-helper-cross"
 RDEPENDS_${PN} = " chicken-egg-setup-helper"
 

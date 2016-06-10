@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://imlib2.meta;md5=e46ef54b24e31d4669ee085ab438c38b"
 DEPENDS_append_class-cross = " chicken-egg-foreigners-cross imlib2-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-foreigners-crosssdk imlib2-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-foreigners chicken-egg-foreigners-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-foreigners nativesdk-imlib2 chicken-egg-foreigners-crosssdk"
 DEPENDS = " chicken-egg-foreigners imlib2 chicken-egg-foreigners-cross"
 RDEPENDS_${PN} = " chicken-egg-foreigners"
 

@@ -4,7 +4,7 @@ LICENSE = "GPL-3"
 LIC_FILES_CHKSUM = "file://zlib.meta;md5=958a6d4acb3753f1566be93a083c9e24"
 DEPENDS_append_class-cross = " chicken-egg-foreigners-cross chicken-egg-miscmacros-cross zlib-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-foreigners-crosssdk chicken-egg-miscmacros-crosssdk zlib-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-foreigners nativesdk-chicken-egg-miscmacros chicken-egg-foreigners-crosssdk chicken-egg-miscmacros-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-foreigners nativesdk-chicken-egg-miscmacros nativesdk-zlib chicken-egg-foreigners-crosssdk chicken-egg-miscmacros-crosssdk"
 DEPENDS = " chicken-egg-foreigners chicken-egg-miscmacros zlib chicken-egg-foreigners-cross chicken-egg-miscmacros-cross"
 RDEPENDS_${PN} = " chicken-egg-foreigners chicken-egg-miscmacros"
 

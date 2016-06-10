@@ -4,7 +4,7 @@ LICENSE = "unknown"
 LIC_FILES_CHKSUM = "file://xlib.meta;md5=8b010a58f7c074ab94f2a1d89833fcb3"
 DEPENDS_append_class-cross = " chicken-egg-matchable-cross libx11-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-matchable-crosssdk libx11-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-matchable chicken-egg-matchable-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-matchable nativesdk-libx11 chicken-egg-matchable-crosssdk"
 DEPENDS = " chicken-egg-matchable libx11 chicken-egg-matchable-cross"
 RDEPENDS_${PN} = " chicken-egg-matchable"
 

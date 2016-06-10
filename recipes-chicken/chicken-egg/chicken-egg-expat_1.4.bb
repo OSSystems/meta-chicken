@@ -4,7 +4,7 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://expat.meta;md5=477f13301b0f84a39fbb994994d7eee8"
 DEPENDS_append_class-cross = " chicken-egg-silex-cross chicken-egg-easyffi-cross expat-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-silex-crosssdk chicken-egg-easyffi-crosssdk expat-native"
-DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-silex nativesdk-chicken-egg-easyffi chicken-egg-silex-crosssdk chicken-egg-easyffi-crosssdk"
+DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-silex nativesdk-chicken-egg-easyffi nativesdk-expat chicken-egg-silex-crosssdk chicken-egg-easyffi-crosssdk"
 DEPENDS = " chicken-egg-silex chicken-egg-easyffi expat chicken-egg-silex-cross chicken-egg-easyffi-cross"
 RDEPENDS_${PN} = " chicken-egg-silex chicken-egg-easyffi"
 

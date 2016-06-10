@@ -4,6 +4,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://usb.meta;md5=9a6768cd732417f785349b2c1f853b62"
 DEPENDS_append_class-cross = " libusb-native"
 DEPENDS_append_class-crosssdk = " libusb-native"
+DEPENDS_append_class-nativesdk = " nativesdk-libusb"
 DEPENDS = " libusb"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/usb/usb-${PV}.tar.gz"

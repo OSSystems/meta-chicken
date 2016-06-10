@@ -4,6 +4,7 @@ LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://readline.meta;md5=0e4a890de24f3766c261814dcab4fabf"
 DEPENDS_append_class-cross = " readline-native"
 DEPENDS_append_class-crosssdk = " readline-native"
+DEPENDS_append_class-nativesdk = " nativesdk-readline"
 DEPENDS = " readline"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/readline/readline-${PV}.tar.gz"
