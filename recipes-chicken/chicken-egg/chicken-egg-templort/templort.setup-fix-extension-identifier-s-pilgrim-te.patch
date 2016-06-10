@@ -1,0 +1,35 @@
+From d4255ddde2ef836a3fd2e022d748a53e1480b1b6 Mon Sep 17 00:00:00 2001
+From: Mario Domenech Goulart <mario.goulart@gmail.com>
+Date: Fri, 10 Jun 2016 20:51:30 +0200
+Subject: [PATCH] templort.setup: fix extension identifier (s/pilgrim/templort)
+
+templort was using pilgrim as extension identifier (the same as
+pligrim's). This causes a name clash with the .setup-info files, which
+are named after extension identifiers.
+
+This error, reported by Otavio Salvador, was caught while building
+CHICKEN eggs with OpenEmbedded (meta-chicken layer:
+https://github.com/OSSystems/meta-chicken).  While generating a Linux
+image with packages for both pilgrim and templort eggs, the package
+manager failed because multiple packages were trying to install the
+same file (pilgrim.setup-info).
+---
+ templort.setup | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/templort.setup b/templort.setup
+index 8f2bace..3cc5f6f 100644
+--- a/templort.setup
++++ b/templort.setup
+@@ -1,6 +1,6 @@
+-;; pilgrim.setup
++;; templort.setup
+ ;;
+ 
+ (compile -s templort)
+ 
+-(install-extension 'pilgrim "templort.so")
++(install-extension 'templort "templort.so")
+-- 
+2.1.4
+

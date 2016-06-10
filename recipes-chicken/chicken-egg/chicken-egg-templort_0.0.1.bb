@@ -10,6 +10,8 @@ SRC_URI[sha256sum] = "0156ddca71a464068ed965ee8ec061bc7963bd97b1e5714a37bd544d29
 
 S = "${WORKDIR}/templort-${PV}"
 
+require chicken-egg-templort.inc
+
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"
