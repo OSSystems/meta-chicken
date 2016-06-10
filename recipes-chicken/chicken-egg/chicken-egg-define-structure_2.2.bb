@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "QobiScheme-compatible define-structure"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://define-structure.meta;md5=4ab4f977773cd6c459a2d5c4d5916cc8"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-check-errors-cross chicken-egg-condition-utils-cross chicken-egg-nondeterminism-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-check-errors-crosssdk chicken-egg-condition-utils-crosssdk chicken-egg-nondeterminism-crosssdk"

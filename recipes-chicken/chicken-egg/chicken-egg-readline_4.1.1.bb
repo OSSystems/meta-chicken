@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An interface to the GNU readline library"
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://readline.meta;md5=0e4a890de24f3766c261814dcab4fabf"
 DEPENDS_append_class-cross = " readline-native"
 DEPENDS_append_class-crosssdk = " readline-native"

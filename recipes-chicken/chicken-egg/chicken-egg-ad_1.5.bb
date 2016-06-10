@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Performs automatic differentiation"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://AD.meta;md5=6810e6ea53ddc5779867dcb60125ece2"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-define-structure-cross chicken-egg-traversal-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-define-structure-crosssdk chicken-egg-traversal-crosssdk"

@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Scheme->c compatibility package"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://scheme2c-compatibility.meta;md5=a4f56fbf26ec19a7d27781ad52bce4b8"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-check-errors-cross chicken-egg-condition-utils-cross chicken-egg-foreigners-cross chicken-egg-xlib-cross chicken-egg-traversal-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-check-errors-crosssdk chicken-egg-condition-utils-crosssdk chicken-egg-foreigners-crosssdk chicken-egg-xlib-crosssdk chicken-egg-traversal-crosssdk"

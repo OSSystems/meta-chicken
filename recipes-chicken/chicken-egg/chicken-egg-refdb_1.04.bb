@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Tool for converting and maintaining a gnumeric spreadsheet as a set of flat text files."
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://refdb.meta;md5=c93664b0d10edab56ebf1a10b09defa4"
 DEPENDS_append_class-cross = " chicken-egg-ssax-cross chicken-egg-sxml-serializer-cross chicken-egg-sxml-modifications-cross chicken-egg-regex-cross chicken-egg-regex-case-cross chicken-egg-json-cross chicken-egg-csv-cross chicken-egg-sqlite3-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-ssax-crosssdk chicken-egg-sxml-serializer-crosssdk chicken-egg-sxml-modifications-crosssdk chicken-egg-regex-crosssdk chicken-egg-regex-case-crosssdk chicken-egg-json-crosssdk chicken-egg-csv-crosssdk chicken-egg-sqlite3-crosssdk"

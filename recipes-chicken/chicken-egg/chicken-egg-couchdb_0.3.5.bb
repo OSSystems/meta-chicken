@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Apache CouchDB client library"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://couchdb.meta;md5=7547f58e03abff9c21d4b88da9704163"
 DEPENDS_append_class-cross = " chicken-egg-http-client-cross chicken-egg-intarweb-cross chicken-egg-json-cross chicken-egg-uri-common-cross chicken-egg-defstruct-cross chicken-egg-regex-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-http-client-crosssdk chicken-egg-intarweb-crosssdk chicken-egg-json-crosssdk chicken-egg-uri-common-crosssdk chicken-egg-defstruct-crosssdk chicken-egg-regex-crosssdk"

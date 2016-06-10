@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An aggressively optimizing Scheme->C compiler"
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://stalin.meta;md5=bdc12b9e7e048f3886f763e1ee97ff5a"
 DEPENDS_append_class-cross = " chicken-egg-make-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-make-crosssdk"

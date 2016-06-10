@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Basic linear algebra: vectors, matrices, and sparse matrices along with related operations"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://linear-algebra.meta;md5=99d646068f6d5a0d8ecfcf36fda59f55"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-check-errors-cross chicken-egg-condition-utils-cross chicken-egg-traversal-cross chicken-egg-ad-cross chicken-egg-define-structure-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-check-errors-crosssdk chicken-egg-condition-utils-crosssdk chicken-egg-traversal-crosssdk chicken-egg-ad-crosssdk chicken-egg-define-structure-crosssdk"

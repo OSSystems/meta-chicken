@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "The Common Lisp LOOP macro"
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://loop.meta;md5=7a7680943bf2d39ff52fc8b5f8a4f963"
 DEPENDS_append_class-cross = " chicken-egg-make-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-make-crosssdk"

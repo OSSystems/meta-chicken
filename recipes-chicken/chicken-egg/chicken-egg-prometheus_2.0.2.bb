@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "The Prometheus prototype-based object system"
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://prometheus.meta;md5=f5ea5852a604703b64454a6f9bece35d"
 DEPENDS_append_class-cross = " chicken-egg-s48-modules-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-s48-modules-crosssdk"

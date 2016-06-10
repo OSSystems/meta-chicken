@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "The CMA-ES library for non-linear function minimization."
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://cmaes.meta;md5=f8afbfa1ac46e61f7e27b315a9b979d8"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/cmaes/cmaes-${PV}.tar.gz"

@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Blowfish"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://blowfish.meta;md5=4f342ed051f9654831f6b99ab6056539"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/blowfish/blowfish-${PV}.tar.gz"

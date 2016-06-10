@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Solve constraint satisfaction problems"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://csp.meta;md5=e10643dac35cc891f902803a3861d330"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross chicken-egg-miscmacros-cross chicken-egg-check-errors-cross chicken-egg-condition-utils-cross chicken-egg-traversal-cross chicken-egg-nondeterminism-cross chicken-egg-define-structure-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk chicken-egg-miscmacros-crosssdk chicken-egg-check-errors-crosssdk chicken-egg-condition-utils-crosssdk chicken-egg-traversal-crosssdk chicken-egg-nondeterminism-crosssdk chicken-egg-define-structure-crosssdk"

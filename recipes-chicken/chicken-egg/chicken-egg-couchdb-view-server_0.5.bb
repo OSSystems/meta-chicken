@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A Scheme view server for Apache CouchDB"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://couchdb-view-server.meta;md5=13906910cf6fd31442a523a5684ce398"
 DEPENDS_append_class-cross = " chicken-egg-json-cross chicken-egg-environments-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-json-crosssdk chicken-egg-environments-crosssdk"

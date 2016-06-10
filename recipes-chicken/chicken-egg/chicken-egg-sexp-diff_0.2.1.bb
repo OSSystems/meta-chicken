@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "S-Expression diff algorithm"
-LICENSE = "LGPL"
+LICENSE = "LGPLv2+"
 LIC_FILES_CHKSUM = "file://sexp-diff.meta;md5=a593670673cba292507e2066007124b6"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sexp-diff/sexp-diff-${PV}.tar.gz"

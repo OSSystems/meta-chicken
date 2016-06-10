@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Tool for analyzing log files to extract PASS/FAIL status"
-LICENSE = "GPL-2"
+LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://logpro.meta;md5=578ecd0626836a531318547abdc882d5"
 DEPENDS_append_class-cross = " chicken-egg-format-cross chicken-egg-regex-cross chicken-egg-regex-literals-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-format-crosssdk chicken-egg-regex-crosssdk chicken-egg-regex-literals-crosssdk"

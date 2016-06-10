@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A simple 2D and 3D graphics library for X11"
-LICENSE = "LGPL-2"
+LICENSE = "LGPLv2"
 LIC_FILES_CHKSUM = "file://ezxdisp.meta;md5=b9fe2ecb64f89b77d968b9e9d7f27608"
 DEPENDS_append_class-cross = " chicken-egg-easyffi-cross libx11-native"
 DEPENDS_append_class-crosssdk = " chicken-egg-easyffi-crosssdk libx11-native"

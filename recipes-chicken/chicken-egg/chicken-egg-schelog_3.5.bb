@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Dorai Sitaram's embedding of logic programming into Scheme"
-LICENSE = "LGPL-2"
+LICENSE = "LGPLv2"
 LIC_FILES_CHKSUM = "file://schelog.meta;md5=65474a022bd5fd3a5bd5d6e1f667e95b"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/schelog/schelog-${PV}.tar.gz"
