@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-message-digest"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/ripemd/ripemd-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "6064a68a6807ccb7fcac2313f0a7494e"
-SRC_URI[sha256sum] = "5b97199b4acd7829e51ff9071105053edd995ca7103eb4749bd1eade555e65ad"
+SRC_URI[md5sum] = "e31b9b6674dd94988775161b16d766af"
+SRC_URI[sha256sum] = "1d56afb237d2f752e800574729ba926c09670211906231c4f1b91bb01ba7b24c"
 
 S = "${WORKDIR}/ripemd-${PV}"
 
