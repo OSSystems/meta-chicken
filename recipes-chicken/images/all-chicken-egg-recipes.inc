@@ -624,7 +624,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-byte-blob \
     nativesdk-chicken-egg-byte-blob-stream \
     nativesdk-chicken-egg-c3 \
-    nativesdk-chicken-egg-cairo \
     nativesdk-chicken-egg-call-with-environment-variables \
     nativesdk-chicken-egg-call-with-sqlite3-connection \
     nativesdk-chicken-egg-callable-data-structures \
@@ -714,7 +713,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-ersatz \
     nativesdk-chicken-egg-estraier-client \
     nativesdk-chicken-egg-ethernet \
-    nativesdk-chicken-egg-exif \
     nativesdk-chicken-egg-expand-full \
     nativesdk-chicken-egg-expat \
     nativesdk-chicken-egg-ezxdisp \
@@ -722,7 +720,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-fancypants \
     nativesdk-chicken-egg-fast-generic \
     nativesdk-chicken-egg-fast-loop \
-    nativesdk-chicken-egg-fastcgi \
     nativesdk-chicken-egg-feature-test \
     nativesdk-chicken-egg-filepath \
     nativesdk-chicken-egg-flsim \
@@ -785,7 +782,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-hyperscene \
     nativesdk-chicken-egg-iconv \
     nativesdk-chicken-egg-iexpr \
-    nativesdk-chicken-egg-imlib2 \
     nativesdk-chicken-egg-imperative-command-line-a \
     nativesdk-chicken-egg-impromptu \
     nativesdk-chicken-egg-inclub \
@@ -820,7 +816,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-latch \
     nativesdk-chicken-egg-lazy-lists \
     nativesdk-chicken-egg-lazy-seq \
-    nativesdk-chicken-egg-ldap-bind \
     nativesdk-chicken-egg-level \
     nativesdk-chicken-egg-levenshtein \
     nativesdk-chicken-egg-lexgen \
@@ -876,7 +871,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-multipart-form-data \
     nativesdk-chicken-egg-mw \
     nativesdk-chicken-egg-mw-core \
-    nativesdk-chicken-egg-mysql-client \
     nativesdk-chicken-egg-ncurses \
     nativesdk-chicken-egg-neo4j \
     nativesdk-chicken-egg-netstring \
@@ -893,7 +887,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-object-graph \
     nativesdk-chicken-egg-oblist \
     nativesdk-chicken-egg-octave \
-    nativesdk-chicken-egg-openal \
     nativesdk-chicken-egg-opengl-glew \
     nativesdk-chicken-egg-openssl \
     nativesdk-chicken-egg-operations \
@@ -1004,7 +997,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-smtp \
     nativesdk-chicken-egg-snowdigest \
     nativesdk-chicken-egg-snowtar \
-    nativesdk-chicken-egg-soil \
     nativesdk-chicken-egg-sp \
     nativesdk-chicken-egg-sparse-vectors \
     nativesdk-chicken-egg-special-case \
@@ -1109,7 +1101,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-typed-lists \
     nativesdk-chicken-egg-typed-modules \
     nativesdk-chicken-egg-typed-records \
-    nativesdk-chicken-egg-udev \
     nativesdk-chicken-egg-udp \
     nativesdk-chicken-egg-ugarit \
     nativesdk-chicken-egg-ugarit-manifest-maker \
@@ -1141,7 +1132,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-xlib-utils \
     nativesdk-chicken-egg-xml-rpc \
     nativesdk-chicken-egg-yahoo-finance \
-    nativesdk-chicken-egg-yaml \
     nativesdk-chicken-egg-yasos \
     nativesdk-chicken-egg-yelp \
     nativesdk-chicken-egg-z3 \
