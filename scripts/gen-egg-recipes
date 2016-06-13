@@ -364,6 +364,8 @@ exec csi -s $0 "$@"
              "Artistic-1.0")
             ((equal? license "BSD3")
              "BSD-3-Clause")
+            ((equal? license "Apache")
+             "Apache-1.0")
             (else license))
       license))
 
