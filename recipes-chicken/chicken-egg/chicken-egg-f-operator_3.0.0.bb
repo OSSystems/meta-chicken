@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-miscmacros chicken-egg-d
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/F-operator/F-operator-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "67bc40b6d1c765496511cf1494bfbd6a"
-SRC_URI[sha256sum] = "6ae765e1db239901de87d98cb677ff568fb7e431484d85f94f6901bf08dd781a"
+SRC_URI[md5sum] = "fe835fa0dde15364d0519a5d12976ffb"
+SRC_URI[sha256sum] = "609432d148033198c3ef68c771254441e7f2cb0cf6706d532f660169630e2b30"
 
 S = "${WORKDIR}/F-operator-${PV}"
 
