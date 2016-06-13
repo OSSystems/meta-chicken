@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "An interface to the Sedna XML database management system."
-LICENSE = "Apache"
+LICENSE = "Apache-1.0"
 LIC_FILES_CHKSUM = "file://sedna.meta;md5=a9b321639393c83fe217d6546abdaf13"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sedna/sedna-${PV}.tar.gz"
