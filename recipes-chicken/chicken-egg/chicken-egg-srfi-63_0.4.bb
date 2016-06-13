@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Homogeneous and heterogeneous arrays"
-LICENSE = "Artistic"
+LICENSE = "Artistic-1.0"
 LIC_FILES_CHKSUM = "file://srfi-63.meta;md5=519148dea50888f42a4a6e2e605d2610"
 DEPENDS_append_class-cross = " chicken-egg-records-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-records-crosssdk"
