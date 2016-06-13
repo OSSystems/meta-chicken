@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Integers as bits"
-LICENSE = "Artistic"
+LICENSE = "Artistic-1.0"
 LIC_FILES_CHKSUM = "file://srfi-60.meta;md5=2c39dcd67551cd571999e261c796361c"
 DEPENDS_append_class-cross = " chicken-egg-setup-helper-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-setup-helper-crosssdk"
