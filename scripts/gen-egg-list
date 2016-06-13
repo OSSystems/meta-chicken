@@ -5,6 +5,23 @@ exec csi -s $0 "$@"
 
 (use extras irregex posix srfi-1)
 
+(define nativesdk-skip-eggs/reasons
+  ;; List of (<egg [symbol]> <reason [string]>)
+  '((chicken-egg-cairo "Does not has nativesdk recipe")
+    (chicken-egg-exif "Does not has nativesdk recipe")
+    (chicken-egg-fastcgi "Does not has nativesdk recipe")
+    (chicken-egg-imlib2 "Does not has nativesdk recipe")
+    (chicken-egg-ldap-bind "Does not has nativesdk recipe")
+    (chicken-egg-mysql-client "Does not has nativesdk recipe")
+    (chicken-egg-openal "Does not has nativesdk recipe")
+    (chicken-egg-openal-glew "Does not has nativesdk recipe")
+    (chicken-egg-opengl-glew "Does not has nativesdk recipe")
+    (chicken-egg-soil "Does not has nativesdk recipe")
+    (chicken-egg-udev "Does not has nativesdk recipe")
+    (chicken-egg-yaml "Does not has nativesdk recipe")))
+
+(define nativesdk-skip-eggs (map car nativesdk-skip-eggs/reasons))
+
 (define (strip-recipe-version recipe-file)
   (irregex-match-substring
    (irregex-match "(chicken-egg-[^_]+)_.*"
@@ -24,7 +41,9 @@ exec csi -s $0 "$@"
     (print "ALL_NATIVESDK_CHICKEN_EGG_RECIPES = \"\\")
     (for-each (lambda (egg)
                 (printf "    nativesdk-~a \\\n" egg))
-              eggs)
+              (lset-difference
+               equal?
+               eggs (map symbol->string nativesdk-skip-eggs)))
     (print "\"")))
 
 (define (usage #!optional exit-code)
