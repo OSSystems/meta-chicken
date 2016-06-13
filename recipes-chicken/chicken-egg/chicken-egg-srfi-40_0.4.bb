@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A library of streams"
-LICENSE = "Artistic"
+LICENSE = "Artistic-1.0"
 LIC_FILES_CHKSUM = "file://srfi-40.meta;md5=9e00ac54ad9d3610bc4ab1f1632f07bd"
 DEPENDS_append_class-cross = " chicken-egg-records-cross chicken-egg-setup-helper-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-records-crosssdk chicken-egg-setup-helper-crosssdk"
