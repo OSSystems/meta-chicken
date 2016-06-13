@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-sxml-transforms chicken-egg-records chicken-egg-s
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sxml-templates/sxml-templates-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "98f4d8110f61cdfca66590d66ae62734"
-SRC_URI[sha256sum] = "39909b45ead1cff09555ee70be54a6e3b7a2db107aecddda541f587b9391ff45"
+SRC_URI[md5sum] = "ed5de336882fa783436ea9af25cad455"
+SRC_URI[sha256sum] = "b0bb11166b6e62e465a29f98018a62237ce4546140318b0e2778f88a196d1ab2"
 
 S = "${WORKDIR}/sxml-templates-${PV}"
 
