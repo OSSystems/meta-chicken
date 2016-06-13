@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-srfi-63 chicken-egg-setup-helper"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/srfi-95/srfi-95-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "015ecc7fdea57b8946990067aa8a7725"
-SRC_URI[sha256sum] = "4e013e199a9999fd4a9f1cca6bd535a3e5cfa56357a5400dfa33bdef7c8fead5"
+SRC_URI[md5sum] = "2dee3c53cedb63213b35db1193c7d49b"
+SRC_URI[sha256sum] = "3286afa63c49af5e951552735c99a75e665863253a0aa898d8df0b38bf14aad9"
 
 S = "${WORKDIR}/srfi-95-${PV}"
 
