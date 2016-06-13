@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "7084920b294fa32f07632dd39b5da060a102d9685dca9fabd336bb13b3
 
 S = "${WORKDIR}/kvlists-${PV}"
 
-require chicken-egg-kvlists.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

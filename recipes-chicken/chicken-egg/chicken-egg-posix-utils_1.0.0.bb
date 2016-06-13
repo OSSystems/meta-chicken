@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "732f790789afbadf863d1f86e42970b4dbb2ff8715f737c6ecc338ec38
 
 S = "${WORKDIR}/posix-utils-${PV}"
 
-require chicken-egg-posix-utils.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

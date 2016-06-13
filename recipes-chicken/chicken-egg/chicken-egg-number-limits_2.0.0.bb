@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "6bec4eb07b463f0285875b535e990bba4e30837b37a5d3c13c65a0f86c
 
 S = "${WORKDIR}/number-limits-${PV}"
 
-require chicken-egg-number-limits.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "4e013e199a9999fd4a9f1cca6bd535a3e5cfa56357a5400dfa33bdef7c
 
 S = "${WORKDIR}/srfi-95-${PV}"
 
-require chicken-egg-srfi-95.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

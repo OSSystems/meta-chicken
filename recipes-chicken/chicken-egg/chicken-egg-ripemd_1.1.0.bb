@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "5b97199b4acd7829e51ff9071105053edd995ca7103eb4749bd1eade55
 
 S = "${WORKDIR}/ripemd-${PV}"
 
-require chicken-egg-ripemd.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

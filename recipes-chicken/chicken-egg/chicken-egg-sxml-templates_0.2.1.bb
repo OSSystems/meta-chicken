@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "39909b45ead1cff09555ee70be54a6e3b7a2db107aecddda541f587b93
 
 S = "${WORKDIR}/sxml-templates-${PV}"
 
-require chicken-egg-sxml-templates.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"

@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "f8f537ed798aee08adba14f928174f612c0537d33997080d2587bbeb77
 
 S = "${WORKDIR}/mw-${PV}"
 
-require chicken-egg-mw.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"
