@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-simple-sha1 chicken-egg-spiffy chicken-egg-intarw
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/http-session/http-session-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "bfe6598de48ef59c2468e29191ef5059"
-SRC_URI[sha256sum] = "d5bc458598d50520cb9a1ad90596cde8fb8d2a75cb0888ff2e0f1edd0c84d6c8"
+SRC_URI[md5sum] = "b7c9a2d3f03f10fa2d77c7b9cb06c22f"
+SRC_URI[sha256sum] = "6f67a23b38b136f8f34fd7269ef51541a904b79296facbffd9ade6ab920f950a"
 
 S = "${WORKDIR}/http-session-${PV}"
 
