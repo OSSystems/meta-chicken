@@ -501,6 +501,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-synch \
     chicken-egg-sysexits \
     chicken-egg-syslog \
+    chicken-egg-syslog-port \
     chicken-egg-system \
     chicken-egg-tabexpand \
     chicken-egg-tagged-netstring \
@@ -1067,6 +1068,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-synch \
     nativesdk-chicken-egg-sysexits \
     nativesdk-chicken-egg-syslog \
+    nativesdk-chicken-egg-syslog-port \
     nativesdk-chicken-egg-system \
     nativesdk-chicken-egg-tabexpand \
     nativesdk-chicken-egg-tagged-netstring \
