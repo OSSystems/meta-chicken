@@ -360,6 +360,8 @@ exec csi -s $0 "$@"
              "PD")
             ((equal? license "Bremer License")
              "Bremer")
+            ((equal? license "Artistic")
+             "Artistic-1.0")
             (else license))
       license))
 
