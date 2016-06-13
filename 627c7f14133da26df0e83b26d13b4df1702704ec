@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baada198_feb5d931",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000121
+      },
+      "writtenOn": "2016-06-13T19:26:10Z",
+      "side": 1,
+      "message": "Add chicken-egg-opengl-glew",
+      "revId": "627c7f14133da26df0e83b26d13b4df1702704ec",
+      "serverId": "57f9965e-cfb2-4db6-8589-8b17f788c97f",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baada198_deb8152d",
+        "filename": "scripts/gen-egg-list",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000121
+      },
+      "writtenOn": "2016-06-13T19:26:10Z",
+      "side": 1,
+      "message": "You also need add chicken-egg-opengl-glew to this list.",
+      "revId": "627c7f14133da26df0e83b26d13b4df1702704ec",
+      "serverId": "57f9965e-cfb2-4db6-8589-8b17f788c97f",
+      "unresolved": false
+    }
+  ]
+}
