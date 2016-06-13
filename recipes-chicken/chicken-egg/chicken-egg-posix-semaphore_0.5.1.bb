@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "POSIX Semaphores"
-LICENSE = "BSD3"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://posix-semaphore.meta;md5=3e7621fc448a97e15d59b1cbb81f49ac"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/posix-semaphore/posix-semaphore-${PV}.tar.gz"
