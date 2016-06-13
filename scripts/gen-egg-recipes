@@ -362,6 +362,8 @@ exec csi -s $0 "$@"
              "Bremer")
             ((equal? license "Artistic")
              "Artistic-1.0")
+            ((equal? license "BSD3")
+             "BSD-3-Clause")
             (else license))
       license))
 
