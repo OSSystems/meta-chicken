@@ -121,6 +121,7 @@ exec csi -s $0 "$@"
     (nemo "error")
     (noise "error")
     (nomads "error")
+    (nuklear "error")
     (objc "error")
     (ola "error")
     (opengl "error")
