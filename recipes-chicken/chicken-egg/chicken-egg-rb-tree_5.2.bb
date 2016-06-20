@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-datatype chicken-egg-matchable chicken-egg-typecl
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/rb-tree/rb-tree-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "19185c5f3a99d62f854c30ab2490ee61"
-SRC_URI[sha256sum] = "ee16e1c5d7e091b9b0d2a651f207e9d1e4847c82e2663b6ccbb1d6fe80ccfd83"
+SRC_URI[md5sum] = "2e5ebb2d06ef6a55b9f955aef76fca03"
+SRC_URI[sha256sum] = "fcf304d35743717db5bfc13c5fb6f40423f3045d96fe8283e08977fff2622fde"
 
 S = "${WORKDIR}/rb-tree-${PV}"
 
