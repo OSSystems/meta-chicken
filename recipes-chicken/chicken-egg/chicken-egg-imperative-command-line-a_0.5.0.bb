@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-miscmacros"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/imperative-command-line-a/imperative-command-line-a-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "d1b1bc117972a255681c7d4d6b1a113d"
-SRC_URI[sha256sum] = "6eba3ac75c3ae9864ae05713a3687fcf44c5fc16d2de466f3a2a16ab120f7435"
+SRC_URI[md5sum] = "f268b52550fe1bd6208ff4577727788d"
+SRC_URI[sha256sum] = "5cff7237ddba8afc372c3cb1e4e7204ae91910eb647913c694ac04642a19aaa2"
 
 S = "${WORKDIR}/imperative-command-line-a-${PV}"
 
