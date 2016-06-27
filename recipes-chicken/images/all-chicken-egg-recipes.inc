@@ -87,6 +87,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-connman \
     chicken-egg-continuations \
     chicken-egg-contracts \
+    chicken-egg-cooperative \
     chicken-egg-coops \
     chicken-egg-coops-utils \
     chicken-egg-correios \
@@ -662,6 +663,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-connman \
     nativesdk-chicken-egg-continuations \
     nativesdk-chicken-egg-contracts \
+    nativesdk-chicken-egg-cooperative \
     nativesdk-chicken-egg-coops \
     nativesdk-chicken-egg-coops-utils \
     nativesdk-chicken-egg-correios \
