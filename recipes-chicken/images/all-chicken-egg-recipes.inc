@@ -14,6 +14,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-apropos \
     chicken-egg-args \
     chicken-egg-arrays \
+    chicken-egg-async-io \
     chicken-egg-atom \
     chicken-egg-autocompile \
     chicken-egg-autoform \
@@ -591,6 +592,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-apropos \
     nativesdk-chicken-egg-args \
     nativesdk-chicken-egg-arrays \
+    nativesdk-chicken-egg-async-io \
     nativesdk-chicken-egg-atom \
     nativesdk-chicken-egg-autocompile \
     nativesdk-chicken-egg-autoform \
