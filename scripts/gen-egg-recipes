@@ -103,6 +103,7 @@ exec csi -s $0 "$@"
     (lazy-ffi "error")
     (leptonica "obsolete")
     (leveldb "error")
+    (libui "error")
     (libsvm "obsolete")
     (list-bindings "obsolete")
     (lmdb "error")
