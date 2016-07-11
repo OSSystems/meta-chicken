@@ -1,0 +1,36 @@
+From 70393bef5441d68eef3edfeab4541ecfe4ca91f3 Mon Sep 17 00:00:00 2001
+From: Otavio Salvador <otavio@ossystems.com.br>
+Date: Mon, 11 Jul 2016 15:57:03 -0300
+Subject: [PATCH] defaults.make: Allow changing of install flags
+Organization: O.S. Systems Software LTDA.
+
+The default build schema does not allow for different compiler flags
+for build and runtime, this is added using the target prefix.
+
+Upstream-Status: Pending
+
+Signed-off-by: Otavio Salvador <otavio@ossystems.com.br>
+---
+ defaults.make | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/defaults.make b/defaults.make
+index ea0fe28..276d8fd 100644
+--- a/defaults.make
++++ b/defaults.make
+@@ -336,10 +336,10 @@ endif
+ 	$(call echo, >>, $@,# define C_INSTALL_RC_COMPILER "$(RC_COMPILER)")
+ 	$(call echo, >>, $@,#endif)
+ 	$(call echo, >>, $@,#ifndef C_INSTALL_CFLAGS)
+-	$(call echo, >>, $@,# define C_INSTALL_CFLAGS "$(C_COMPILER_OPTIONS) $(C_COMPILER_OPTIMIZATION_OPTIONS)")
++	$(call echo, >>, $@,# define C_INSTALL_CFLAGS "$(TARGET_C_COMPILER_OPTIONS) $(TARGET_C_COMPILER_OPTIMIZATION_OPTIONS)")
+ 	$(call echo, >>, $@,#endif)
+ 	$(call echo, >>, $@,#ifndef C_INSTALL_LDFLAGS)
+-	$(call echo, >>, $@,# define C_INSTALL_LDFLAGS "$(LINKER_OPTIONS) $(LINKER_OPTIMIZATION_OPTIONS)")
++	$(call echo, >>, $@,# define C_INSTALL_LDFLAGS "$(TARGET_LINKER_OPTIONS) $(TARGET_LINKER_OPTIMIZATION_OPTIONS)")
+ 	$(call echo, >>, $@,#endif)
+ 	$(call echo, >>, $@,#ifndef C_INSTALL_PREFIX)
+ 	$(call echo, >>, $@,# define C_INSTALL_PREFIX "$(PREFIX)")
+-- 
+2.9.0
+
