@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Coroutines and Finite State Machines"
-LICENSE = "3 Clause BSD"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://cooperative.meta;md5=2cced87390ed06d77948f22079f3cf6f"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/cooperative/cooperative-${PV}.tar.gz"

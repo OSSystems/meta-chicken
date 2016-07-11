@@ -1,6 +1,6 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Asynchronous I/O"
-LICENSE = "3 Clause BSD"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://async-io.meta;md5=007c8cb138ee951cb99f224cc50f51db"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/async-io/async-io-${PV}.tar.gz"
