@@ -11,15 +11,19 @@ INSANE_SKIP_libchicken += "useless-rpaths"
 INSANE_SKIP_nativesdk-libchicken += "useless-rpaths"
 
 EXTRA_OEMAKE = " \
-    C_COMPILER="${TARGET_PREFIX}gcc" \
-    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH} ${TARGET_CFLAGS} ${TOOLCHAIN_OPTIONS}" \
-    LINKER_OPTIONS="${TARGET_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
     BINDIR=${bindir} \
     LIBDIR=${libdir} \
     VARDIR=${localstatedir}/lib \
     PLATFORM=linux \
     PREFIX=${prefix} \
     ARCH=${@chicken_arch(bb, d)} \
+    \
+    C_COMPILER="${TARGET_PREFIX}gcc" \
+    C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH} ${TARGET_CFLAGS} ${TOOLCHAIN_OPTIONS}" \
+    LINKER_OPTIONS="${TARGET_CC_ARCH} ${TOOLCHAIN_OPTIONS}" \
+    \
+    TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH}" \
+    TARGET_LINKER_OPTIONS="${TARGET_CC_ARCH}" \
 "
 
 EXTRA_OEMAKE_class-cross = " \
