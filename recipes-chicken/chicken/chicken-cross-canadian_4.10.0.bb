@@ -59,6 +59,4 @@ INSANE_SKIP_${PN} += "useless-rpaths"
 FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug"
 FILES_${PN}-doc += "${datadir}/*chicken/doc"
 
-BBCLASSEXTEND = "native"
-
 do_chicken_bootstrap[depends] = "chicken-native:do_install"
