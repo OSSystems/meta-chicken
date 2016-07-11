@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-level chicken-egg-interfaces chicken-egg-lazy-seq
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/sublevel/sublevel-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "7ac36e637fce9e1dc29d4d0cfffc5030"
-SRC_URI[sha256sum] = "0af55b354a071699ae5ef877e2263b2423a4bcec6c7130cfec38a94d8143b6c0"
+SRC_URI[md5sum] = "7bc017a4cf6deb67345c6fef3b6f5f6a"
+SRC_URI[sha256sum] = "4024ff60c6b3009eb34f8f592163bfd4f9d6e4ff917a9fffbde8cf0d17ae665e"
 
 S = "${WORKDIR}/sublevel-${PV}"
 
