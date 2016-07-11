@@ -9,8 +9,8 @@ DEPENDS = " fcgi"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/fastcgi/fastcgi-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "c22e09652f7463d557bc51e85ca623c5"
-SRC_URI[sha256sum] = "6a14745aff000b52e0737264463ff1aa1f373d9b3011899c9a363627792c4e04"
+SRC_URI[md5sum] = "099af3a79453dab0d18cb8061810ab76"
+SRC_URI[sha256sum] = "93d2961397c93b8e5728686250f9b13297a6701a9f36e7365bff6f4aad50b95b"
 
 S = "${WORKDIR}/fastcgi-${PV}"
 
