@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.call-cc.org/"
 SECTION = "devel"
 PRIORITY = "optional"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=627898e92f4ea7924d68a34baea22606"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=2daeb0ee01dccec5eaa812c48aa1bf94"
 
 SRC_URI = "http://code.call-cc.org/releases/4.10.0/chicken-${PV}.tar.gz"
 
