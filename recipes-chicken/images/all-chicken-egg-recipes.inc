@@ -249,6 +249,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-lazy-seq \
     chicken-egg-ldap-bind \
     chicken-egg-level \
+    chicken-egg-level-sexp \
     chicken-egg-levenshtein \
     chicken-egg-lexgen \
     chicken-egg-linden-scheme \
@@ -822,6 +823,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-lazy-lists \
     nativesdk-chicken-egg-lazy-seq \
     nativesdk-chicken-egg-level \
+    nativesdk-chicken-egg-level-sexp \
     nativesdk-chicken-egg-levenshtein \
     nativesdk-chicken-egg-lexgen \
     nativesdk-chicken-egg-linden-scheme \
