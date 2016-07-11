@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-interfaces"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/level/level-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "a531db489b1469e5b4b8eeeb4dba04ed"
-SRC_URI[sha256sum] = "f03fd0b948b7ccbcd83516034ed329273e87d67f65cd59934c915dd1ba248b94"
+SRC_URI[md5sum] = "253169e5807b0537b0d452b670753cb2"
+SRC_URI[sha256sum] = "24807ac005fbaf88f3424a8287094cc57aa93581ab1e647254695183ef29cc2d"
 
 S = "${WORKDIR}/level-${PV}"
 
