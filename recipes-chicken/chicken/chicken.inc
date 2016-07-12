@@ -30,7 +30,14 @@ def chicken_arch(bb, d):
     else:
         return ''
 
-do_configure[noexec] = "1"
+
+do_configure() {
+    rm -f ${S}/chicken-defaults.h
+}
+
+do_compile() {
+    oe_runmake all
+}
 
 do_install() {
     oe_runmake install DESTDIR=${D}
