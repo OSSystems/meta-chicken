@@ -13,6 +13,7 @@ INSANE_SKIP_${PN} += "useless-rpaths"
 # For recipes which use this class and need D.
 export DESTDIR="${D}"
 
+EXTRA_CSC_OPTIONS ?= ""
 EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
 
 do_fetch[depends] += "chicken-cross:do_populate_sysroot"
@@ -25,7 +26,8 @@ do_install () {
                  -L${STAGING_DIR_TARGET}${libdir} \
                  -L${STAGING_DIR_TARGET}${base_libdir}\
                  -I${STAGING_DIR_TARGET}${includedir} \
-                 -I${STAGING_DIR_TARGET}${includedir}/chicken" \
+                 -I${STAGING_DIR_TARGET}${includedir}/chicken \
+                 ${EXTRA_CSC_OPTIONS} -v" \
     CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/${TARGET_PREFIX}chicken \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
