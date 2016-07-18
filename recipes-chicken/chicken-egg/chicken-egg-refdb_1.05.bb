@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-ssax chicken-egg-sxml-serializer chicken-egg-sxml
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/refdb/refdb-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "db48bf53f3092425bc4797748180e97f"
-SRC_URI[sha256sum] = "c232d9ed6e1d3471de4dbdd38d47bcca4fc7416933412b892f033c850cb6829e"
+SRC_URI[md5sum] = "6ab1cccaac632b37fc121fdc5cb23042"
+SRC_URI[sha256sum] = "e1e2f7b054bd1f7ec264eb8f0a2ae25c9d7c7a34781ca129e6631eb907fcbb8b"
 
 S = "${WORKDIR}/refdb-${PV}"
 
