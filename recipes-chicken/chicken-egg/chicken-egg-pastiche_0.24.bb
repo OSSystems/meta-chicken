@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-awful chicken-egg-awful-sql-de-lite chicken-egg-s
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/pastiche/pastiche-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "0e66371a071b1ddc8a4ef5cd7891cf3b"
-SRC_URI[sha256sum] = "796b50758e1797016c8291ff45cbc6e1063a10731802fb10d83ba17e0e16145c"
+SRC_URI[md5sum] = "c667c4ffde7605882835b1ddf6d459b6"
+SRC_URI[sha256sum] = "c612fd9e36cd9ab47fd5a49f352c7bf2fccca1a6245352f6ebaa6e028e43c0ca"
 
 S = "${WORKDIR}/pastiche-${PV}"
 
