@@ -30,6 +30,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-awk \
     chicken-egg-banterpixra \
     chicken-egg-base64 \
+    chicken-egg-basic-sequences \
     chicken-egg-begin-syntax \
     chicken-egg-bencode \
     chicken-egg-berkeley-db \
@@ -610,6 +611,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-awk \
     nativesdk-chicken-egg-banterpixra \
     nativesdk-chicken-egg-base64 \
+    nativesdk-chicken-egg-basic-sequences \
     nativesdk-chicken-egg-begin-syntax \
     nativesdk-chicken-egg-bencode \
     nativesdk-chicken-egg-berkeley-db \
