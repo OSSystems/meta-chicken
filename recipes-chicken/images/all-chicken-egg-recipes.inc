@@ -105,6 +105,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-data-generators \
     chicken-egg-datatype \
     chicken-egg-dbc \
+    chicken-egg-dbi \
     chicken-egg-dbus \
     chicken-egg-debug \
     chicken-egg-debugger-protocol \
@@ -685,6 +686,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-data-generators \
     nativesdk-chicken-egg-datatype \
     nativesdk-chicken-egg-dbc \
+    nativesdk-chicken-egg-dbi \
     nativesdk-chicken-egg-dbus \
     nativesdk-chicken-egg-debug \
     nativesdk-chicken-egg-debugger-protocol \
