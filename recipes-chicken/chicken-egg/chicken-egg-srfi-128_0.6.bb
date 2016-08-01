@@ -1,7 +1,7 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "SRFI-128: Comparators (reduced)"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://srfi-128.meta;md5=aed6f4fbb17c212d7c76d4f47f0f163d"
+LIC_FILES_CHKSUM = "file://srfi-128.meta;md5=ab01b830a8f3f280865690c3feb3ab1a"
 DEPENDS_append_class-cross = " chicken-egg-numbers-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-numbers-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-numbers chicken-egg-numbers-crosssdk"
@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-numbers"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/srfi-128/srfi-128-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "41e3de78f48707fb7e9ed3314a09fdac"
-SRC_URI[sha256sum] = "27c63f3e575f09a3c3ce9b6dc7ef3ead93765467b23b6bd676556b2257125e73"
+SRC_URI[md5sum] = "8e5df29793652f5e85f4af6f8ecdf752"
+SRC_URI[sha256sum] = "a46bea58a4d710c1d23e0700e4cfbaffa96905733d6881b59307d3cda6ce69db"
 
 S = "${WORKDIR}/srfi-128-${PV}"
 
