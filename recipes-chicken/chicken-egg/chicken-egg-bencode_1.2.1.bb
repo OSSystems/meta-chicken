@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-miscmacros chicken-egg-vector-lib"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/bencode/bencode-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "f834f61669d41ef51a4f144f84a9b0b7"
-SRC_URI[sha256sum] = "6a93b990ae53e32b340940bf6bd0d80b5d54e46de8dcfdf3e03f0c8fba1babbb"
+SRC_URI[md5sum] = "e0766f298d189d71a177543ba478b3aa"
+SRC_URI[sha256sum] = "2d7f8d3eabf5a88d500a12cf45b4b269b2b340883386bbdd545b3230ddb75232"
 
 S = "${WORKDIR}/bencode-${PV}"
 
