@@ -50,6 +50,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-buffer-ports \
     chicken-egg-byte-blob \
     chicken-egg-byte-blob-stream \
+    chicken-egg-bytestructures \
     chicken-egg-c3 \
     chicken-egg-cairo \
     chicken-egg-call-with-environment-variables \
@@ -636,6 +637,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-buffer-ports \
     nativesdk-chicken-egg-byte-blob \
     nativesdk-chicken-egg-byte-blob-stream \
+    nativesdk-chicken-egg-bytestructures \
     nativesdk-chicken-egg-c3 \
     nativesdk-chicken-egg-call-with-environment-variables \
     nativesdk-chicken-egg-call-with-sqlite3-connection \
