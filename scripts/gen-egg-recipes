@@ -217,6 +217,7 @@ exec csi -s $0 "$@"
     awful-static-pages
     bind
     bindings
+    bytestructures
     callable-data-structures
     cgi
     check-errors
