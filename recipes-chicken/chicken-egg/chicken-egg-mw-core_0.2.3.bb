@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-uri-common chicken-egg-intarweb chicken-egg-http-
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/mw-core/mw-core-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "9990515fdac436796752666c34e377fa"
-SRC_URI[sha256sum] = "4921a3b49243d9fe5adfe55afab1c6ce90129d9f250981902db06ca2036d0bff"
+SRC_URI[md5sum] = "cf6270ab3108c8b7ad71403bf38dba52"
+SRC_URI[sha256sum] = "446690ae9e6dc28af1add977197623ead2302408e89f980dc4e08a6797748a65"
 
 S = "${WORKDIR}/mw-core-${PV}"
 
