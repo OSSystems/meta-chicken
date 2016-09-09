@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-setup-helper"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/mathh/mathh-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "56a62fc07c07176fedab156a51b80b42"
-SRC_URI[sha256sum] = "f4b6cf0cac83ba169ff00b8e152929b3a849bd376a94aeb7a2276ea85fd12569"
+SRC_URI[md5sum] = "585f13ae0d35af700e312ea0c983191a"
+SRC_URI[sha256sum] = "9eb4b2fc588053b512330bc8cacfe6ab3c2171f8fcad82c92f26bbb21cd21277"
 
 S = "${WORKDIR}/mathh-${PV}"
 
