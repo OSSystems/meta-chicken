@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-module-declarations chicken-egg-syslog"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/syslog-port/syslog-port-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "1abeace1c8923cf82bdde4b15a826e73"
-SRC_URI[sha256sum] = "9300e539c31205adda91f91d8c4a05254cf7b7ca532806858bbe7fd7fad813e7"
+SRC_URI[md5sum] = "df1fc4d2a9900d409b708d7345ebd856"
+SRC_URI[sha256sum] = "75234a30546b5fe67b40b5482a8f579c51ad9eaebcded651ee8bdbacada705f7"
 
 S = "${WORKDIR}/syslog-port-${PV}"
 
