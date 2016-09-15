@@ -15,8 +15,6 @@ SRC_URI[sha256sum] = "7ce98d8703ffbda9cee87ada7c67499b0985f2c5923012caba975a38d0
 
 S = "${WORKDIR}/call-with-sqlite3-connection-${PV}"
 
-require chicken-egg-call-with-sqlite3-connection.inc
-
 inherit chicken_install
 
 BBCLASSEXTEND = "cross crosssdk nativesdk"
