@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-setup-helper"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/kvlists/kvlists-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "9647b69ccb7ad00498b37f43ac8c4cb1"
-SRC_URI[sha256sum] = "7084920b294fa32f07632dd39b5da060a102d9685dca9fabd336bb13b3ab5dbb"
+SRC_URI[md5sum] = "e28d4efc68a9e74dbe6d8f71b14533b7"
+SRC_URI[sha256sum] = "f2ba739e3b3cd7a2c7dacfbad4ebf834b1041a0bcdc2976a875acde9e595a734"
 
 S = "${WORKDIR}/kvlists-${PV}"
 
