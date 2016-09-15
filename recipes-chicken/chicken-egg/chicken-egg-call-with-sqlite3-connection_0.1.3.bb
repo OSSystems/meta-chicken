@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-setup-helper chicken-egg-sqlite3"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/call-with-sqlite3-connection/call-with-sqlite3-connection-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "2e3405d91408aa119a382d363435e88f"
-SRC_URI[sha256sum] = "7ce98d8703ffbda9cee87ada7c67499b0985f2c5923012caba975a38d096af84"
+SRC_URI[md5sum] = "e3521da371d7cb50ba446b81fce2c230"
+SRC_URI[sha256sum] = "1b51d4f074b7dc074a79072dd85f4392bdbc34dff946f63cabd6cd5f940f7bf2"
 
 S = "${WORKDIR}/call-with-sqlite3-connection-${PV}"
 
