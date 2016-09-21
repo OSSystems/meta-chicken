@@ -98,6 +98,7 @@ exec csi -s $0 "$@"
     (image-processing "error")
     (iup "error")
     (jni "error")
+    (json-rpc "error")
     (kalaha "error")
     (kiwi "error")
     (lazy-ffi "error")

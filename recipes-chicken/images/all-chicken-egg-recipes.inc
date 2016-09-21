@@ -241,7 +241,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-jso \
     chicken-egg-json \
     chicken-egg-json-abnf \
-    chicken-egg-json-rpc \
     chicken-egg-kanren \
     chicken-egg-kd-tree \
     chicken-egg-kvlists \
@@ -823,7 +822,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-jso \
     nativesdk-chicken-egg-json \
     nativesdk-chicken-egg-json-abnf \
-    nativesdk-chicken-egg-json-rpc \
     nativesdk-chicken-egg-kanren \
     nativesdk-chicken-egg-kd-tree \
     nativesdk-chicken-egg-kvlists \
