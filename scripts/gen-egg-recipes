@@ -174,6 +174,7 @@ exec csi -s $0 "$@"
     (spiffy-cgi-handlers "error")
     (spock "error")
     (srfi-19 "error")
+    (srfi-64 "error")
     (ssql-postgresql "error")
     (statistics "obsolete")
     (stemmer "error")
