@@ -317,7 +317,7 @@ exec csi -s $0 "$@"
     (openssl openssl)
     (ncurses ncurses)
     (readline readline)
-    (soil  mesa)
+    (soil  virtual/libgl)
     (sql-de-lite sqlite3)
     (sqlite3  sqlite3)
     (udev  udev)
