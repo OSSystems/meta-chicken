@@ -192,6 +192,7 @@ exec csi -s $0 "$@"
     (uuid-lib "error")
     (webgate "error")
     (webkit "error")
+    (websockets "error")
     (win32-msgbox "Windows only")
     (xft "error")
     (xosd "error")

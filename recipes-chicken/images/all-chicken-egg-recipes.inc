@@ -564,7 +564,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-versions \
     chicken-egg-vfs \
     chicken-egg-vlist \
-    chicken-egg-websockets \
     chicken-egg-with-current-directory \
     chicken-egg-wmiirc \
     chicken-egg-x11-colors \
@@ -1137,7 +1136,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-versions \
     nativesdk-chicken-egg-vfs \
     nativesdk-chicken-egg-vlist \
-    nativesdk-chicken-egg-websockets \
     nativesdk-chicken-egg-with-current-directory \
     nativesdk-chicken-egg-wmiirc \
     nativesdk-chicken-egg-x11-colors \
