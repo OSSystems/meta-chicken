@@ -374,7 +374,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-regex \
     chicken-egg-regex-case \
     chicken-egg-regex-literals \
-    chicken-egg-remote-mailbox \
     chicken-egg-rest-bind \
     chicken-egg-rfb \
     chicken-egg-rfc3339 \
@@ -950,7 +949,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-regex \
     nativesdk-chicken-egg-regex-case \
     nativesdk-chicken-egg-regex-literals \
-    nativesdk-chicken-egg-remote-mailbox \
     nativesdk-chicken-egg-rest-bind \
     nativesdk-chicken-egg-rfb \
     nativesdk-chicken-egg-rfc3339 \

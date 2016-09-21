@@ -153,6 +153,7 @@ exec csi -s $0 "$@"
     (raspberry-pi-gpio "error")
     (redis "error")
     (redis-client "error")
+    (remote-mailbox "error")
     (remote-mailbox-threads "error")
     (salt "error")
     (sass "error")
