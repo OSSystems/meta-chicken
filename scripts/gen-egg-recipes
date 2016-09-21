@@ -110,6 +110,7 @@ exec csi -s $0 "$@"
     (lmdb "error")
     (lzma "error")
     (macosx "OSX only")
+    (mailbox "error")
     (mailbox-threads "error")
     (magic "error")
     (matlab "error")
