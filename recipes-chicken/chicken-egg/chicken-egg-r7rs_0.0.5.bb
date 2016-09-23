@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-matchable chicken-egg-make chicken-egg-numbers"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/r7rs/r7rs-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "f9fe1741bbcb7b8271384963ab2defa4"
-SRC_URI[sha256sum] = "47089757a8fb7f7c53a2dedf02313581c60a66bc5f3ca751ebe7e5e8c8e9d500"
+SRC_URI[md5sum] = "f01e7284a90573716a57f718e9080785"
+SRC_URI[sha256sum] = "7211a4e5cdeb8031360aafa03e49197c93306bc142f84ccf260960c474105c46"
 
 S = "${WORKDIR}/r7rs-${PV}"
 
