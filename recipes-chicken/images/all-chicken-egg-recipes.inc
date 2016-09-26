@@ -486,6 +486,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-ssql \
     chicken-egg-stack \
     chicken-egg-stalin \
+    chicken-egg-stargate \
     chicken-egg-static-modules \
     chicken-egg-statvfs \
     chicken-egg-strictly-pretty \
@@ -1060,6 +1061,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-ssql \
     nativesdk-chicken-egg-stack \
     nativesdk-chicken-egg-stalin \
+    nativesdk-chicken-egg-stargate \
     nativesdk-chicken-egg-static-modules \
     nativesdk-chicken-egg-statvfs \
     nativesdk-chicken-egg-strictly-pretty \
