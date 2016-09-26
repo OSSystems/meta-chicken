@@ -384,6 +384,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-rss \
     chicken-egg-s \
     chicken-egg-s11n \
+    chicken-egg-s11n4j \
     chicken-egg-s48-modules \
     chicken-egg-salmonella \
     chicken-egg-salmonella-diff \
@@ -958,6 +959,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-rss \
     nativesdk-chicken-egg-s \
     nativesdk-chicken-egg-s11n \
+    nativesdk-chicken-egg-s11n4j \
     nativesdk-chicken-egg-s48-modules \
     nativesdk-chicken-egg-salmonella \
     nativesdk-chicken-egg-salmonella-diff \
