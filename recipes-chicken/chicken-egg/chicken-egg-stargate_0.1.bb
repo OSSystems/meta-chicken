@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://stargate.meta;md5=ab3bdad85f3ddd84e9b346be622e5362"
 DEPENDS_append_class-cross = " chicken-egg-rest-bind-cross chicken-egg-http-client-cross chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-medea-cross chicken-egg-base64-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-rest-bind-crosssdk chicken-egg-http-client-crosssdk chicken-egg-intarweb-crosssdk chicken-egg-uri-common-crosssdk chicken-egg-medea-crosssdk chicken-egg-base64-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-rest-bind nativesdk-chicken-egg-http-client nativesdk-chicken-egg-intarweb nativesdk-chicken-egg-uri-common nativesdk-chicken-egg-medea nativesdk-chicken-egg-base64 chicken-egg-rest-bind-crosssdk chicken-egg-http-client-crosssdk chicken-egg-intarweb-crosssdk chicken-egg-uri-common-crosssdk chicken-egg-medea-crosssdk chicken-egg-base64-crosssdk"
-DEPENDS = " chicken-egg-rest-bind chicken-egg-http-client chicken-egg-intarweb chicken-egg-uri-common chicken-egg-medea chicken-egg-base64 chicken-egg-rest-bind-cross chicken-egg-http-client-cross chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-medea-cross chicken-egg-base64-cross"
+DEPENDS = " chicken-egg-rest-bind chicken-egg-http-client chicken-egg-intarweb chicken-egg-uri-common chicken-egg-medea chicken-egg-base64 chicken-egg-rest-bind-cross chicken-egg-http-client-cross chicken-egg-intarweb-cross chicken-egg-uri-common-cross chicken-egg-medea-cross chicken-egg-base64-cross chicken-egg-stargate-cross"
 RDEPENDS_${PN} = " chicken-egg-rest-bind chicken-egg-http-client chicken-egg-intarweb chicken-egg-uri-common chicken-egg-medea chicken-egg-base64"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/stargate/stargate-${PV}.tar.gz"

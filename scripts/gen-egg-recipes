@@ -292,6 +292,7 @@ exec csi -s $0 "$@"
     srfi-101
     srfi-102
     ssql
+    stargate
     sxml-fu
     sxpath
     thread-utils
