@@ -55,6 +55,7 @@ exec csi -s $0 "$@"
     (bb "error")
     (blas "error")
     (blob-utils "error")
+    (bytestructures "error")
     (bvsp-spline "error")
     (call-with-query "error")
     (canvas-draw "error")
