@@ -157,6 +157,7 @@ exec csi -s $0 "$@"
     (redis-client "error")
     (remote-mailbox "error")
     (remote-mailbox-threads "error")
+    (s11n4j "error")
     (salt "error")
     (sass "error")
     (schematic "error")
