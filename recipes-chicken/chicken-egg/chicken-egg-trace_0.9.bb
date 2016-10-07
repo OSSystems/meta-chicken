@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-advice chicken-egg-miscmacros"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/trace/trace-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "4dfe1062acac0b26d11a6e1f88fee6f6"
-SRC_URI[sha256sum] = "e54ed4c6790b9d9d4421d18ed08e8fc4feef3ddb2112a39ad2acc8c93a34344e"
+SRC_URI[md5sum] = "038929b870f18e06e085d274bc710007"
+SRC_URI[sha256sum] = "2e1f00af04a12a8e65160be2caf154315787c015f4fa3a2cf2358b3471f9e3f5"
 
 S = "${WORKDIR}/trace-${PV}"
 
