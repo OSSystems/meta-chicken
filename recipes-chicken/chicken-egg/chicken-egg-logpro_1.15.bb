@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-format chicken-egg-regex chicken-egg-regex-litera
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/logpro/logpro-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "ee98d5abdfa4067bb73bc3945f81388f"
-SRC_URI[sha256sum] = "58994cd31ec0c9a43cca7892280608685360ed26bb391a3406b296d6a9ab1438"
+SRC_URI[md5sum] = "bbff79dae143a6e70274e5edac08f2b0"
+SRC_URI[sha256sum] = "c8244d69f8cac42913591fd74367a73cdda84c1b56d67cc4b76ef0f6d7a4f9cc"
 
 S = "${WORKDIR}/logpro-${PV}"
 
