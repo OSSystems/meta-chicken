@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-foreigners"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/imlib2/imlib2-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "7837eed214852c4004e8b23e87a83cfb"
-SRC_URI[sha256sum] = "3f0f21c5fd1c47670a277bb920fe0157763df14bf7c8f927b00efb7275ffdff6"
+SRC_URI[md5sum] = "001f8a431476c50cf971ddb0d015271a"
+SRC_URI[sha256sum] = "449d78524dca24ea79e37e92550046caf48b660ee900beac8ba11c8488eff498"
 
 S = "${WORKDIR}/imlib2-${PV}"
 
