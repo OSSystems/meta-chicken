@@ -11,8 +11,8 @@ exec csi -s $0 "$@"
 (module gen-egg-recipes ()
 
 (import chicken scheme)
-(use posix setup-download setup-api srfi-1 srfi-13
-     files extras data-structures utils ports)
+(use posix setup-api srfi-1 srfi-13 files extras data-structures utils ports)
+(use (except setup-download list-extension-versions))
 
 (define chicken-major-version 4)
 
