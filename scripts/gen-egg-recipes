@@ -54,7 +54,6 @@ exec csi -s $0 "$@"
     (awful-sqlite3 "error")
     (bb "error")
     (blas "error")
-    (blob-utils "error")
     (bytestructures "error")
     (bvsp-spline "error")
     (call-with-query "error")
