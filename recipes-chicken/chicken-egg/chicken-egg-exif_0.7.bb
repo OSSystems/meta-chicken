@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-foreigners"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/exif/exif-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "aaa6f394899fb5a9f9c8ac78e399ffa0"
-SRC_URI[sha256sum] = "755e0714b88c59bb745d043d6fadc429b3243c0d40f576a4fb054c9943f0b84e"
+SRC_URI[md5sum] = "04787ef4d4cd96b6ffa5968960df4ca3"
+SRC_URI[sha256sum] = "80d318b08b8f2b0a97b36378156cfcc78a5a9ceece9b27020c8fb4f1be785e86"
 
 S = "${WORKDIR}/exif-${PV}"
 
