@@ -63,7 +63,6 @@ exec csi -s $0 "$@"
     (cock-utils "obsolete")
     (coq-au-vin "error")
     (cryptlib "error")
-    (datatypes "Broken Upstream")
     (date-literals "error")
     (discount "error")
     (doodle "error")
