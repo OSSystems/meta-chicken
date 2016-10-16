@@ -16,6 +16,7 @@ exec csi -s $0 "$@"
     (chicken-egg-openal "Does not have nativesdk recipe")
     (chicken-egg-openal-glew "Does not have nativesdk recipe")
     (chicken-egg-opengl-glew "Does not have nativesdk recipe")
+    (chicken-egg-postgresql "Does not have nativesdk recipe")
     (chicken-egg-soil "Does not have nativesdk recipe")
     (chicken-egg-udev "Does not have nativesdk recipe")
     (chicken-egg-yaml "Does not have nativesdk recipe")))

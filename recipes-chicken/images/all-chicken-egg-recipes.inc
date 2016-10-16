@@ -347,6 +347,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-posix-extras \
     chicken-egg-posix-semaphore \
     chicken-egg-posix-utils \
+    chicken-egg-postgresql \
     chicken-egg-prcc \
     chicken-egg-procedural-macros \
     chicken-egg-procedure-decoration \
