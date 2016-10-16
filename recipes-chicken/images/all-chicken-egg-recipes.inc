@@ -104,6 +104,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-csv-xml \
     chicken-egg-data-generators \
     chicken-egg-datatype \
+    chicken-egg-datatypes \
     chicken-egg-dbc \
     chicken-egg-dbi \
     chicken-egg-dbus \
@@ -687,6 +688,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-csv-xml \
     nativesdk-chicken-egg-data-generators \
     nativesdk-chicken-egg-datatype \
+    nativesdk-chicken-egg-datatypes \
     nativesdk-chicken-egg-dbc \
     nativesdk-chicken-egg-dbi \
     nativesdk-chicken-egg-dbus \
