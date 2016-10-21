@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-sql-null"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/postgresql/postgresql-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "a61d29c800196d0635c0ee3ac6aec217"
-SRC_URI[sha256sum] = "a62a0e681a14c30f4274da80350399c3af7cbbd025f685a237f1e87924a1f6de"
+SRC_URI[md5sum] = "8cc08572940886a88398f979371d4d86"
+SRC_URI[sha256sum] = "972205a0c66dc4cf827a19e77d1e018f2064a3a37824da70a994d7406cc3b016"
 
 S = "${WORKDIR}/postgresql-${PV}"
 
