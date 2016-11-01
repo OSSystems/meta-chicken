@@ -19,8 +19,6 @@ S = "${WORKDIR}/chicken-${PV}"
 # Parallel building is not supported
 PARALLEL_MAKE = ""
 
-TARGET_CC_ARCH += "${LDFLAGS}"
-
 def chicken_arch(bb, d):
     import re
 
