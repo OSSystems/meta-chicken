@@ -309,6 +309,7 @@ exec csi -s $0 "$@"
   '((berkeley-db db)
     (cairo   cairo)
     (dbus    dbus)
+    (dbus2    dbus)
     (exif  libexif)
     (expat  expat)
     (ezxdisp  libx11)
