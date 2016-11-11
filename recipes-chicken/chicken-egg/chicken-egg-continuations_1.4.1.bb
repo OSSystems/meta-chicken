@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://continuations.meta;md5=11a023ca713824783ee612ad86bd1a
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/continuations/continuations-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "3f37408d928d16c8740b16055fb239a1"
-SRC_URI[sha256sum] = "c96f703cf37947bfd27e47640f5615b423dc396532075ac9d1c9b365bb9f26fb"
+SRC_URI[md5sum] = "fa692961289e05ed5a91c7989ce67c93"
+SRC_URI[sha256sum] = "297e5f56ab97d20cc1ac29e7aa56bcb6241f3fbcada477708adb39dc2afb4b64"
 
 S = "${WORKDIR}/continuations-${PV}"
 
