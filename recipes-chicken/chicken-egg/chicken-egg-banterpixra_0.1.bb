@@ -1,7 +1,7 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "A tool to generate syntax diagrams (in SVG format) from BNF-esque grammars"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://banterpixra.meta;md5=99b072eabe74e5ba4afc068da62c8bbf"
+LIC_FILES_CHKSUM = "file://banterpixra.meta;md5=900a9ae8beee06f20c5bc2122b60bae1"
 DEPENDS_append_class-cross = " chicken-egg-sxpath-cross chicken-egg-matchable-cross"
 DEPENDS_append_class-crosssdk = " chicken-egg-sxpath-crosssdk chicken-egg-matchable-crosssdk"
 DEPENDS_append_class-nativesdk = " nativesdk-chicken-egg-sxpath nativesdk-chicken-egg-matchable chicken-egg-sxpath-crosssdk chicken-egg-matchable-crosssdk"
