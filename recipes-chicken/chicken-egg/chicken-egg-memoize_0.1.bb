@@ -1,7 +1,7 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Procedures memoization"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://memoize.meta;md5=f5426cd20533f4825f375de0a506f0cd"
+LIC_FILES_CHKSUM = "file://memoize.meta;md5=9d12e8fdd349c206e15ce86135c2febc"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/memoize/memoize-${PV}.tar.gz"
 
