@@ -486,6 +486,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-srfi-modules \
     chicken-egg-ssax \
     chicken-egg-ssql \
+    chicken-egg-ssql-record \
     chicken-egg-stack \
     chicken-egg-stalin \
     chicken-egg-stargate \
@@ -1062,6 +1063,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-srfi-modules \
     nativesdk-chicken-egg-ssax \
     nativesdk-chicken-egg-ssql \
+    nativesdk-chicken-egg-ssql-record \
     nativesdk-chicken-egg-stack \
     nativesdk-chicken-egg-stalin \
     nativesdk-chicken-egg-stargate \
