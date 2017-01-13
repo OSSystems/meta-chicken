@@ -423,6 +423,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-sigma \
     chicken-egg-signal-diagram \
     chicken-egg-silex \
+    chicken-egg-simple-cells \
     chicken-egg-simple-configuration \
     chicken-egg-simple-contracts \
     chicken-egg-simple-exceptions \
@@ -1003,6 +1004,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-sigma \
     nativesdk-chicken-egg-signal-diagram \
     nativesdk-chicken-egg-silex \
+    nativesdk-chicken-egg-simple-cells \
     nativesdk-chicken-egg-simple-configuration \
     nativesdk-chicken-egg-simple-contracts \
     nativesdk-chicken-egg-simple-exceptions \
