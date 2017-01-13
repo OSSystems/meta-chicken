@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-simple-exceptions"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/simple-contracts/simple-contracts-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "3b607a6c3e3bfc8e87fc4ff6db0168e3"
-SRC_URI[sha256sum] = "abc7a03e46635df48e337fa401b516e525e869c8c1bb53d02e244fc34b62e9d1"
+SRC_URI[md5sum] = "95f4440fcec5c4f1fa0cae9f62df40d1"
+SRC_URI[sha256sum] = "e19d23915d522553be26643cccac09e633d8e1c2ab46ca5b03b0b639a6aadfff"
 
 S = "${WORKDIR}/simple-contracts-${PV}"
 
