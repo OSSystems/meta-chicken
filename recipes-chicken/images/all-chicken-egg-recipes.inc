@@ -309,6 +309,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-mw \
     chicken-egg-mw-core \
     chicken-egg-mysql-client \
+    chicken-egg-natural-sort \
     chicken-egg-ncurses \
     chicken-egg-neo4j \
     chicken-egg-netstring \
@@ -891,6 +892,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-multipart-form-data \
     nativesdk-chicken-egg-mw \
     nativesdk-chicken-egg-mw-core \
+    nativesdk-chicken-egg-natural-sort \
     nativesdk-chicken-egg-ncurses \
     nativesdk-chicken-egg-neo4j \
     nativesdk-chicken-egg-netstring \
