@@ -260,6 +260,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-linden-scheme \
     chicken-egg-linear-algebra \
     chicken-egg-linenoise \
+    chicken-egg-list-comprehensions \
     chicken-egg-list-of \
     chicken-egg-list-utils \
     chicken-egg-llrb-syntax \
@@ -842,6 +843,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-linden-scheme \
     nativesdk-chicken-egg-linear-algebra \
     nativesdk-chicken-egg-linenoise \
+    nativesdk-chicken-egg-list-comprehensions \
     nativesdk-chicken-egg-list-of \
     nativesdk-chicken-egg-list-utils \
     nativesdk-chicken-egg-llrb-syntax \
