@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-simple-exceptions"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/basic-sequences/basic-sequences-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "7ca4dac97c60e04e6a8b86623308b0ac"
-SRC_URI[sha256sum] = "52fd913bb819a2d3e393d4661c12ab3b4965803b408307bc4028d2fb3d715fc0"
+SRC_URI[md5sum] = "899b0b54758b4e82d300d57a71102f76"
+SRC_URI[sha256sum] = "041b8eb468f14d00fddfbb7c8d61571ba5d2b9d756b78382d9966462e12b52e2"
 
 S = "${WORKDIR}/basic-sequences-${PV}"
 
