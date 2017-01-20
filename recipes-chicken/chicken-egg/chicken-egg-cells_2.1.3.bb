@@ -1,12 +1,12 @@
 SECTION = "devel/chicken"
 DESCRIPTION = "Implementation of typed cells to replace general set! operators"
 LICENSE = "BSD"
-LIC_FILES_CHKSUM = "file://cells.meta;md5=6ece06becd30546ca5cc67217abfc358"
+LIC_FILES_CHKSUM = "file://cells.meta;md5=04bd592103905208788ea433269692af"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/cells/cells-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "af1c1dcea4e469cadd9526e1444a9f6d"
-SRC_URI[sha256sum] = "876098a71f44e1912199100613ba4cd0ee4854664462566bcf0233cc914efe27"
+SRC_URI[md5sum] = "8a9720f0ff84b2550d62fa444fe6ca8d"
+SRC_URI[sha256sum] = "c40a14e8e2b9a36772ccbc65d38333d5813faf3ee452aab99f5ae31eb77e76c8"
 
 S = "${WORKDIR}/cells-${PV}"
 
