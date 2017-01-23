@@ -223,6 +223,7 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-inclub \
     chicken-egg-ini-file \
     chicken-egg-inline \
+    chicken-egg-inotify \
     chicken-egg-input-classes \
     chicken-egg-input-parse \
     chicken-egg-install \
@@ -809,6 +810,7 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-inclub \
     nativesdk-chicken-egg-ini-file \
     nativesdk-chicken-egg-inline \
+    nativesdk-chicken-egg-inotify \
     nativesdk-chicken-egg-input-classes \
     nativesdk-chicken-egg-input-parse \
     nativesdk-chicken-egg-install \
