@@ -107,6 +107,7 @@ exec csi -s $0 "$@"
     (libsvm "obsolete")
     (list-bindings "obsolete")
     (lmdb "error")
+    (lmdb-lolevel "error")
     (lzma "error")
     (macosx "OSX only")
     (mailbox "error")
