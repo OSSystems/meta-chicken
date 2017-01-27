@@ -251,6 +251,7 @@ exec csi -s $0 "$@"
     hashes
     hyde
     inline
+    inotify
     levenshtein
     locale
     log5scm
