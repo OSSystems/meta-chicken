@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " chicken-egg-typed-records"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/ssql-record/ssql-record-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "dd8a9cbba928fb7ca3010732112fd78a"
-SRC_URI[sha256sum] = "383dab3f4931cd4b5177c92785b644284f7e8ed79fd4fc215ad5b59f79f11b7a"
+SRC_URI[md5sum] = "b3ab654082f573ce00694ba57f7757b6"
+SRC_URI[sha256sum] = "3a3c845908ef1864c5d109a77e940a10eb59a0540a356a418ce5ce4c21d2253b"
 
 S = "${WORKDIR}/ssql-record-${PV}"
 
