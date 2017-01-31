@@ -43,6 +43,7 @@ exec csi -s $0 "$@"
   '((2d-primitives "error")
     (3viewer "error")
     (9ML-toolkit "error")
+    (ad "error")
     (aima "error")
     (allegro "error")
     (alut "error")
