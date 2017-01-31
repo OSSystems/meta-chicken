@@ -2,7 +2,6 @@ ALL_CHICKEN_EGG_RECIPES = "\
     chicken-egg-9p \
     chicken-egg-abnf \
     chicken-egg-accents-substitute \
-    chicken-egg-ad \
     chicken-egg-advice \
     chicken-egg-aes \
     chicken-egg-agrep \
@@ -592,7 +591,6 @@ ALL_NATIVESDK_CHICKEN_EGG_RECIPES = "\
     nativesdk-chicken-egg-9p \
     nativesdk-chicken-egg-abnf \
     nativesdk-chicken-egg-accents-substitute \
-    nativesdk-chicken-egg-ad \
     nativesdk-chicken-egg-advice \
     nativesdk-chicken-egg-aes \
     nativesdk-chicken-egg-agrep \
