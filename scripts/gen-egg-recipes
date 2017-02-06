@@ -61,6 +61,7 @@ exec csi -s $0 "$@"
     (call-with-query "error")
     (canvas-draw "error")
     (clucker "Installation failure")
+    (cjson "error")
     (cmark "error")
     (cock-utils "obsolete")
     (coq-au-vin "error")
