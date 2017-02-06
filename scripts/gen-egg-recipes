@@ -105,6 +105,7 @@ exec csi -s $0 "$@"
     (leveldb "error")
     (libui "error")
     (libsvm "obsolete")
+    (linear-algebra "error")
     (list-bindings "obsolete")
     (lmdb "error")
     (lmdb-lolevel "error")
