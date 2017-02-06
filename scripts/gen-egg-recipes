@@ -47,6 +47,7 @@ exec csi -s $0 "$@"
     (aima "error")
     (allegro "error")
     (alut "error")
+    (agar "error")
     (amazon-s3 "error")
     (atlas-lapack "error")
     (augeas "error")
