@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://holes.meta;md5=f4548dfd255a14c1338082d8e7e0d63e"
 
 SRC_URI = "http://code.call-cc.org/egg-tarballs/4/holes/holes-${PV}.tar.gz"
 
-SRC_URI[md5sum] = "ec58d6317fae8afc5646f13bf8e1a35a"
-SRC_URI[sha256sum] = "d6432427010115061740f913e35e1197736d12e2c7630c9f6672029c9f7bc81e"
+SRC_URI[md5sum] = "de813caa9968ad724d69b267f8128b47"
+SRC_URI[sha256sum] = "90a34644a28125607b58fcfe2535b4e0c7a90ae80366ee69115903ed1900961c"
 
 S = "${WORKDIR}/holes-${PV}"
 
