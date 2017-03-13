@@ -5,14 +5,14 @@ PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=372956880a14c8e58055cdb2de5e6a38"
 
-SRC_URI = "http://code.call-cc.org/dev-snapshots/2017/02/06/chicken-4.12.0rc2.tar.gz"
+SRC_URI = "https://code.call-cc.org/releases/${PV}/chicken-${PV}.tar.gz"
 
 SRC_URI_append_class-target = " \
            file://defaults.make-Allow-changing-of-install-flags.patch \
 "
 
-SRC_URI[md5sum] = "4d1010eddb9793ffddbb9ee3e74df0d2"
-SRC_URI[sha256sum] = "19bc4d2e2a866a84f5fcd71af55b4c924fa1409ad990e9d912e41d1975da7a3a"
+SRC_URI[md5sum] = "96cd37a476157b5e3f0a647dd3c1cb63"
+SRC_URI[sha256sum] = "605ace459bc66e8c5f82abb03d9b1c9ca36f1c2295931d244d03629a947a6989"
 
 S = "${WORKDIR}/chicken-${PV}"
 

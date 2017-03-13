@@ -15,6 +15,8 @@ export DESTDIR="${D}"
 
 EXTRA_CSC_OPTIONS ?= ""
 EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
+EXTRA_CHICKEN_INSTALL_OPTIONS_class-target ?= " -no-install-deps"
+EXTRA_CHICKEN_INSTALL_OPTIONS_class-cross ?= " -no-install-deps"
 
 do_fetch[depends] += "chicken-cross:do_populate_sysroot"
 
@@ -30,7 +32,7 @@ do_install () {
                  ${EXTRA_CSC_OPTIONS} -v" \
     CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/${TARGET_PREFIX}chicken \
     \
-    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -no-install-deps -target -prefix ${D}${prefix}
+    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
     # support packaging of eggs; this works around those limitations.
@@ -50,7 +52,7 @@ chicken_cross_build_and_install() {
                  ${EXTRA_CSC_OPTIONS} -v" \
     CHICKEN_INCLUDE_PATH=${localstatedir}/share/${TARGET_PREFIX}chicken \
     \
-    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -no-install-deps -host -prefix ${D}${prefix}
+    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -host -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
     # support packaging of eggs; this works around those limitations.
