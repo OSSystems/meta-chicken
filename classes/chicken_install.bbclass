@@ -79,4 +79,5 @@ do_install_class-crosssdk () {
 PACKAGES = "${PN}-dbg ${PN}-dev ${PN}"
 
 FILES_${PN}-dbg += "${localstatedir}/lib/*chicken/*/.debug/*"
+FILES_${PN}-dev += "${localstatedir}/lib/*chicken/*/*.o ${localstatedir}/lib/*chicken/*/*.types"
 FILES_${PN} += "${localstatedir}/lib/*chicken/*/* ${localstatedir}/share/*chicken/*"
