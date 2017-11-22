@@ -1,10 +1,6 @@
 require chicken.inc
 
-DEPENDS = "chicken-cross"
-DEPENDS_class-cross = ""
-DEPENDS_class-crosssdk = ""
-DEPENDS_class-native = ""
-DEPENDS_class-nativesdk = ""
+DEPENDS_class-target_append = " chicken-cross"
 
 INSANE_SKIP_${PN} += "useless-rpaths"
 INSANE_SKIP_libchicken += "useless-rpaths"
