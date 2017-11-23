@@ -8,6 +8,8 @@ PKG_CONFIG_SYSROOT_DIR_class-cross = ""
 
 EGG = "${@d.getVar('BPN', True).replace('chicken-egg-', '')}"
 
+CHICKEN_ABI_VERSION ?= "8"
+
 INSANE_SKIP_${PN} += "useless-rpaths"
 
 # For recipes which use this class and need D.
@@ -30,7 +32,7 @@ do_install () {
                  -I${STAGING_DIR_TARGET}${includedir} \
                  -I${STAGING_DIR_TARGET}${includedir}/chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
-    CHICKEN_INCLUDE_PATH=${STAGING_DIR_NATIVE}/${localstatedir}/share/${TARGET_PREFIX}chicken \
+    CHICKEN_REPOSITORY=${STAGING_DIR_NATIVE}/${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
 
@@ -50,7 +52,7 @@ chicken_cross_build_and_install() {
                  -I${STAGING_INCDIR_NATIVE} \
                  -I${STAGING_INCDIR_NATIVE}/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
-    CHICKEN_INCLUDE_PATH=${localstatedir}/share/${TARGET_PREFIX}chicken \
+    CHICKEN_REPOSITORY=${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -host -prefix ${D}${prefix}
 
