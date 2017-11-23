@@ -1,7 +1,7 @@
-DEPENDS_class-cross += "chicken-cross"
-DEPENDS_class-crosssdk += "chicken-crosssdk"
-DEPENDS_class-nativesdk += "chicken-crosssdk chicken-nativesdk"
-DEPENDS += "chicken-cross chicken"
+DEPENDS_class-cross += "virtual/${TARGET_PREFIX}chicken"
+DEPENDS_class-crosssdk += "virtual/${TARGET_PREFIX}chickensdk"
+DEPENDS_class-nativesdk += "virtual/${TARGET_PREFIX}chickensdk chicken-nativesdk"
+DEPENDS += "virtual/${TARGET_PREFIX}chicken chicken"
 
 PKG_CONFIG_PATH_class-cross .= "${STAGING_LIBDIR_NATIVE}/pkgconfig:${STAGING_DATADIR_NATIVE}/pkgconfig"
 PKG_CONFIG_SYSROOT_DIR_class-cross = ""
@@ -18,7 +18,7 @@ EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
 EXTRA_CHICKEN_INSTALL_OPTIONS_class-target ?= " -no-install-deps"
 EXTRA_CHICKEN_INSTALL_OPTIONS_class-cross ?= " -no-install-deps"
 
-do_fetch[depends] += "chicken-cross:do_populate_sysroot"
+do_fetch[depends] += "virtual/${TARGET_PREFIX}chicken:do_populate_sysroot"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
