@@ -35,6 +35,7 @@ do_install () {
                  -I${STAGING_DIR_TARGET}${includedir} \
                  -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
+    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS}
     CHICKEN_REPOSITORY=${STAGING_DIR_NATIVE}/${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install \
@@ -61,6 +62,7 @@ chicken_cross_build_and_install() {
                  -I${STAGING_INCDIR_NATIVE} \
                  -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
+    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS}
     CHICKEN_REPOSITORY=${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install \

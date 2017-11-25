@@ -1,8 +1,5 @@
 require chicken.inc
 
-DEPENDS += "chicken-native"
-SRC_URI += "file://0001-chicken-install-use-programs-from-PATH.patch"
-
 inherit cross
 
 PROVIDES = "virtual/${TARGET_PREFIX}chicken"
