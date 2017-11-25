@@ -25,16 +25,24 @@ do_fetch[depends] += "virtual/${TARGET_PREFIX}chicken:do_populate_sysroot"
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
 
+PATH_prepend = "${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin:"
+
 do_install () {
     CSC_OPTIONS="-L ${TOOLCHAIN_OPTIONS} \
                  -L${STAGING_DIR_TARGET}${libdir} \
                  -L${STAGING_DIR_TARGET}${base_libdir}\
                  -I${STAGING_DIR_TARGET}${includedir} \
                  -I${STAGING_DIR_TARGET}${includedir}/chicken \
+                 -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
+    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS} \
     CHICKEN_REPOSITORY=${STAGING_DIR_NATIVE}/${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
-    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -target -prefix ${D}${prefix}
+    ${TARGET_PREFIX}chicken-install \
+        -location ${S} \
+        -csi ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}csi \
+        ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
+        -target -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
     # support packaging of eggs; this works around those limitations.
@@ -47,14 +55,21 @@ do_install () {
 }
 
 chicken_cross_build_and_install() {
-    CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE} \
+    CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE}/${TARGET_SYS} \
+                 -L${STAGING_LIBDIR_NATIVE} \
                  -L${STAGING_BASE_LIBDIR_NATIVE} \
                  -I${STAGING_INCDIR_NATIVE} \
                  -I${STAGING_INCDIR_NATIVE}/${TARGET_PREFIX}chicken \
+                 -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
+    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS} \
     CHICKEN_REPOSITORY=${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
-    ${TARGET_PREFIX}chicken-install ${EXTRA_CHICKEN_INSTALL_OPTIONS} -host -prefix ${D}${prefix}
+    ${TARGET_PREFIX}chicken-install \
+        -location ${S} \
+        -csi ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}csi \
+        ${EXTRA_CHICKEN_INSTALL_OPTIONS} \
+        -host -prefix ${D}${prefix}
 
     # FIXME: chicken-install lacks some important options to better
     # support packaging of eggs; this works around those limitations.

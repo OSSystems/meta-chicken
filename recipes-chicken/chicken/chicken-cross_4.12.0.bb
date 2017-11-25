@@ -7,13 +7,14 @@ PROVIDES = "virtual/${TARGET_PREFIX}chicken"
 PN = "chicken-cross-${TARGET_ARCH}"
 
 EXTRA_OEMAKE = " \
-    BINDIR=${bindir} \
+    BINDIR=${bindir}/bin \
     LIBDIR=${libdir} \
     VARDIR=${localstatedir}/lib \
     PLATFORM=linux \
     PREFIX=${prefix} \
     ARCH=${@chicken_arch(bb, d)} \
     \
+    CHICKEN_PREFIX=${bindir} \
     PROGRAM_PREFIX=${TARGET_PREFIX} \
     TARGET_LIB_NAME=chicken \
     TARGET_PREFIX=${STAGING_DIR_TARGET} \
