@@ -10,13 +10,13 @@ EGG = "${@d.getVar('BPN', True).replace('chicken-egg-', '')}"
 
 CHICKEN_ABI_VERSION ?= "8"
 
-INSANE_SKIP_${PN} += "useless-rpaths"
+INSANE_SKIP_${PN} += "useless-rpaths ldflags"
 
 # For recipes which use this class and need D.
 export DESTDIR="${D}"
 
 EXTRA_CSC_OPTIONS ?= ""
-EXTRA_CHICKEN_INSTALL_OPTIONS ?= ""
+EXTRA_CHICKEN_INSTALL_OPTIONS ?= " -no-install-deps"
 EXTRA_CHICKEN_INSTALL_OPTIONS_class-target ?= " -no-install-deps"
 EXTRA_CHICKEN_INSTALL_OPTIONS_class-cross ?= " -no-install-deps"
 
@@ -31,11 +31,10 @@ do_install () {
     CSC_OPTIONS="-L ${TOOLCHAIN_OPTIONS} \
                  -L${STAGING_DIR_TARGET}${libdir} \
                  -L${STAGING_DIR_TARGET}${base_libdir}\
+                 -I${STAGING_DIR_NATIVE}${includedir}/${TARGET_PREFIX}chicken \
                  -I${STAGING_DIR_TARGET}${includedir} \
-                 -I${STAGING_DIR_TARGET}${includedir}/chicken \
                  -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
-    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS} \
     CHICKEN_REPOSITORY=${STAGING_DIR_NATIVE}/${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install \
@@ -58,11 +57,10 @@ chicken_cross_build_and_install() {
     CSC_OPTIONS="-L${STAGING_LIBDIR_NATIVE}/${TARGET_SYS} \
                  -L${STAGING_LIBDIR_NATIVE} \
                  -L${STAGING_BASE_LIBDIR_NATIVE} \
-                 -I${STAGING_INCDIR_NATIVE} \
                  -I${STAGING_INCDIR_NATIVE}/${TARGET_PREFIX}chicken \
+                 -I${STAGING_INCDIR_NATIVE} \
                  -compiler ${STAGING_BINDIR_NATIVE}/${TARGET_SYS}/bin/${TARGET_PREFIX}chicken \
                  ${EXTRA_CSC_OPTIONS} -v" \
-    CHICKEN_PREFIX=${STAGING_BINDIR_NATIVE}/${TARGET_SYS} \
     CHICKEN_REPOSITORY=${localstatedir}/lib/${TARGET_PREFIX}chicken/${CHICKEN_ABI_VERSION} \
     \
     ${TARGET_PREFIX}chicken-install \

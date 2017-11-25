@@ -20,6 +20,7 @@ EXTRA_OEMAKE = " \
     \
     TARGET_C_COMPILER_OPTIONS="-fno-strict-aliasing -fwrapv -DHAVE_CHICKEN_CONFIG_H ${TARGET_CC_ARCH}" \
     TARGET_LINKER_OPTIONS="${TARGET_CC_ARCH}" \
+    TARGET_RUN_LIB_HOME=${base_prefix}/var \
 "
 
 EXTRA_OEMAKE_class-crosssdk = " \

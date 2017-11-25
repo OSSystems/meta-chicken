@@ -1,5 +1,8 @@
 require chicken.inc
 
+DEPENDS += "chicken-native"
+SRC_URI += "file://0001-chicken-install-use-programs-from-PATH.patch"
+
 inherit cross
 
 PROVIDES = "virtual/${TARGET_PREFIX}chicken"
@@ -20,6 +23,8 @@ EXTRA_OEMAKE = " \
     TARGET_PREFIX=${STAGING_DIR_TARGET} \
     TARGETSYSTEM=${TARGET_SYS} \
     TARGET_RUN_PREFIX=${target_prefix} \
+    TARGET_RUN_LIB_HOME=${target_base_prefix}/var \
+    TARGET_LIB_HOME=${target_base_prefix}/var \
     \
     C_COMPILER="${HOST_PREFIX}gcc" \
     TARGET_C_COMPILER="${TARGET_PREFIX}gcc" \

@@ -1,0 +1,48 @@
+From b3c5b2cb9d166a164686e601dab201afbd6c3b60 Mon Sep 17 00:00:00 2001
+From: Otavio Salvador <otavio@ossystems.com.br>
+Date: Thu, 23 Nov 2017 09:39:47 -0200
+Subject: [PATCH] defaults.make: Allow C_TARGET_RUN_LIB_HOME to be set
+Organization: O.S. Systems Software LTDA.
+
+The new TARGET_RUN_LIB_HOME overrides C_TARGET_RUN_LIB_HOME. This is
+especially important for cross-compile support.
+
+Upstream-Status: Pending
+
+Signed-off-by: Otavio Salvador <otavio@ossystems.com.br>
+---
+ defaults.make | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+diff --git a/defaults.make b/defaults.make
+index d6ee5319..f67dd0c8 100644
+--- a/defaults.make
++++ b/defaults.make
+@@ -109,6 +109,11 @@ TARGET_C_COMPILER_OPTIONS ?= $(C_COMPILER_OPTIONS)
+ TARGET_C_COMPILER_OPTIMIZATION_OPTIONS ?= $(C_COMPILER_OPTIMIZATION_OPTIONS)
+ TARGET_PREFIX ?= $(PREFIX)
+ TARGET_RUN_PREFIX ?= $(TARGET_PREFIX)
++ifdef DLLSINPATH
++TARGET_RUN_LIB_HOME ?= $(TARGET_RUN_PREFIX)/bin
++else
++TARGET_RUN_LIB_HOME ?= $(TARGET_RUN_PREFIX)/lib
++endif
+ TARGET_LIBRARIES ?= $(LIBRARIES)
+ TARGET_LINKER_OPTIONS ?= $(LINKER_OPTIONS)
+ TARGET_LINKER_OPTIMIZATION_OPTIONS ?= $(LINKER_OPTIMIZATION_OPTIONS)
+@@ -414,11 +419,7 @@ endif
+ 	$(call echo, >>, $@,# define C_TARGET_LIB_NAME "$(TARGET_LIB_NAME)")
+ 	$(call echo, >>, $@,#endif)
+ 	$(call echo, >>, $@,#ifndef C_TARGET_RUN_LIB_HOME)
+-ifdef DLLSINPATH
+-	$(call echo, >>, $@,# define C_TARGET_RUN_LIB_HOME "$(TARGET_RUN_PREFIX)/bin")
+-else
+-	$(call echo, >>, $@,# define C_TARGET_RUN_LIB_HOME "$(TARGET_RUN_PREFIX)/lib")
+-endif
++	$(call echo, >>, $@,# define C_TARGET_RUN_LIB_HOME "$(TARGET_RUN_LIB_HOME)")
+ 	$(call echo, >>, $@,#endif)
+ 	$(call echo, >>, $@,#ifndef C_TARGET_SHARE_HOME)
+ 	$(call echo, >>, $@,# define C_TARGET_SHARE_HOME "$(TARGET_PREFIX)/share")
+-- 
+2.15.0
+

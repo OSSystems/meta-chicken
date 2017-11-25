@@ -5,7 +5,9 @@ PRIORITY = "optional"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=372956880a14c8e58055cdb2de5e6a38"
 
-SRC_URI = "https://code.call-cc.org/releases/${PV}/chicken-${PV}.tar.gz"
+SRC_URI = "https://code.call-cc.org/releases/${PV}/chicken-${PV}.tar.gz \
+           file://defaults.make-Allow-C_TARGET_RUN_LIB_HOME-to-be-set.patch \
+           file://defaults.make-Allow-C_TARGET_LIB_HOME-to-be-set.patch"
 
 SRC_URI_append_class-target = " \
            file://defaults.make-Allow-changing-of-install-flags.patch \
